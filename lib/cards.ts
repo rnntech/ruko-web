@@ -28,6 +28,12 @@ export function visibleCards(): ScamCard[] {
     .sort((a, b) => b.added.localeCompare(a.added));
 }
 
+/** Drops the outer quotes only when the whole text is one quote, so inner quotes stay paired. */
+export function unquote(text: string): string {
+  const quotes = (text.match(/"/g) ?? []).length;
+  return text.length > 1 && text.startsWith('"') && text.endsWith('"') && quotes === 2 ? text.slice(1, -1) : text;
+}
+
 /** Card text uses plain quotes; show proper curly ones. */
 export function curly(text: string): string {
   return text.replace(/"([^"]*)"/g, "“$1”").replace(/'/g, "’");

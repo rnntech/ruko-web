@@ -21,7 +21,7 @@ export default function InstallPage() {
             our team. <strong>Never install any app sent to you as a file on WhatsApp</strong>, including Ruko.
           </p>
 
-          <h2 style={{ marginTop: 48 }}>Five steps</h2>
+          <h2 style={{ marginTop: 48 }}>Six steps</h2>
           <ol className="steps">
             <li>
               <strong>Download the file</strong> from the link on this page.
@@ -41,6 +41,10 @@ export default function InstallPage() {
               <strong>If Android says &ldquo;Restricted setting&rdquo;:</strong> open <em>Settings → Apps → Ruko</em>, tap
               the <em>⋮</em> menu at the top right, choose <em>Allow restricted settings</em>, enter your phone&rsquo;s PIN,
               then go back to Ruko and turn the setting on.
+            </li>
+            <li>
+              <strong>Keep Ruko running.</strong> Some phones close apps to save battery.{" "}
+              <a href="/keep-running">Follow the battery steps for your phone</a>.
             </li>
           </ol>
           <p className="note">A one-minute video of these steps will be added here.</p>

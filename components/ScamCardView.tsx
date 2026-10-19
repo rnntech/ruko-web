@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./ScamCardView.module.css";
-import { curly, pretty, whatsappShareLink, type ScamCard } from "@/lib/cards";
+import { curly, pretty, unquote, whatsappShareLink, type ScamCard } from "@/lib/cards";
 import { t } from "@/lib/content";
 
 /**
@@ -29,7 +29,7 @@ export function ScamCardView({ card, full = false }: { card: ScamCard; full?: bo
 
       <figure className={styles.says}>
         <figcaption>{t.scams.theySay}</figcaption>
-        <blockquote>{curly(card.they_say.en.replace(/^"|"$/g, ""))}</blockquote>
+        <blockquote>{curly(unquote(card.they_say.en))}</blockquote>
       </figure>
 
       {full && (

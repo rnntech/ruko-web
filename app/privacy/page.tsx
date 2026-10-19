@@ -77,10 +77,22 @@ export default function PrivacyPage() {
             <li>The name and number of the person you choose to call stay on your phone.</li>
             <li>Numbers you mark &ldquo;I know this caller&rdquo; are kept only as a scrambled code (a hash), not as the number.</li>
             <li>
+              Screenshots you check are read on your phone by Google&rsquo;s on-device text reader (through Google Play
+              services) and are never stored or sent by Ruko. The testing version of Ruko has no internet permission at all.
+            </li>
+            <li>
               &ldquo;Scam of the week&rdquo; uses the scam alerts already inside the app. Sharing a scam on WhatsApp opens
               WhatsApp&rsquo;s own share screen; Ruko doesn&rsquo;t see who you send it to.
             </li>
           </ul>
+          <h2 style={{ marginTop: 56 }}>Deleting your data</h2>
+          <p className="measure">
+            Everything Ruko keeps is on your phone: your settings, the person you chose to call, scrambled codes of numbers
+            you trust, and a small test log of warnings (no names, numbers or messages). <strong>Uninstalling Ruko deletes
+            all of it.</strong> To clear only the test log, open Ruko → Settings → Setup check. When Ruko starts using a
+            server for helper alerts, this page will explain how to delete anything kept there, and you&rsquo;ll be able to
+            do it from the app.
+          </p>
           <h2 style={{ marginTop: 56 }}>During testing</h2>
           <p className="measure">
             The testing version keeps everything on your phone and sends nothing about you to any server. To remove
