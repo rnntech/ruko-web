@@ -1,0 +1,379 @@
+{
+  "version": 2,
+  "updated": "2026-10-19",
+  "note": "DRAFT. Every card must be checked by a person (and the Hindi by a Hindi speaker) before testers see it. Phrases that match messages to cards live in android/engine/src/main/kotlin/com/ruko/engine/Lists.kt. Format: docs/CONTRACTS.md Section 5 (v0.4). \"notify\" marks cards the approver allows as the weekly notification.",
+  "cards": [
+    {
+      "id": "digital-arrest",
+      "status": "draft",
+      "added": "2026-10-19",
+      "notify": true,
+      "name": {
+        "en": "Fake police / CBI \"digital arrest\"",
+        "hi": "नकली पुलिस / सीबीआई \"डिजिटल अरेस्ट\""
+      },
+      "they_say": {
+        "en": "\"This is the police / CBI. Your Aadhaar is linked to money laundering. You are under digital arrest.\"",
+        "hi": "\"मैं पुलिस / सीबीआई से बोल रहा हूँ। आपका आधार मनी लॉन्ड्रिंग में जुड़ा है। आप डिजिटल अरेस्ट में हैं।\""
+      },
+      "they_ask": {
+        "en": "Stay on the video call, tell no one, and send money \"for verification\" or \"bail\".",
+        "hi": "वीडियो कॉल पर बने रहें, किसी को न बताएं, और \"जाँच\" या \"ज़मानत\" के लिए पैसे भेजें।"
+      },
+      "red_flag": {
+        "en": "There is no \"digital arrest\" in Indian law. Police never arrest anyone on a call or ask for money.",
+        "hi": "भारत के कानून में \"डिजिटल अरेस्ट\" जैसा कुछ नहीं है। पुलिस कभी फ़ोन पर गिरफ़्तार नहीं करती और पैसे नहीं माँगती।"
+      },
+      "do": {
+        "en": "Hang up. Call someone you trust. Report it on 1930 or cybercrime.gov.in.",
+        "hi": "फ़ोन काट दें। किसी भरोसेमंद व्यक्ति को फ़ोन करें। 1930 या cybercrime.gov.in पर शिकायत करें।"
+      },
+      "sources": [
+        {
+          "name": "The Tribune",
+          "url": "https://www.tribuneindia.com/news/india/will-deal-with-iron-hand-top-court-on-rs-3000-cr-extortion-via-digital-arrests/amp"
+        },
+        {
+          "name": "ETV Bharat",
+          "url": "https://www.etvbharat.com/en/bharat/sc-expresses-grave-concern-over-digital-arrests-scams-issues-notice-to-centre-and-cbi-enn25101702554"
+        }
+      ]
+    },
+    {
+      "id": "trai-sim-block",
+      "status": "draft",
+      "added": "2026-10-19",
+      "notify": false,
+      "name": {
+        "en": "Fake TRAI \"your SIM will be blocked\" call",
+        "hi": "नकली TRAI कॉल: \"आपका सिम बंद होगा\""
+      },
+      "they_say": {
+        "en": "\"This is TRAI. Your SIM will be blocked in 2 hours because it was misused. Press 9 to talk to an officer.\"",
+        "hi": "\"मैं TRAI से हूँ। आपका सिम ग़लत काम में इस्तेमाल हुआ है, 2 घंटे में बंद हो जाएगा। अफ़सर से बात करने के लिए 9 दबाएं।\""
+      },
+      "they_ask": {
+        "en": "Talk to an \"officer\", who then hands you to fake police asking for money.",
+        "hi": "\"अफ़सर\" से बात करें, जो फिर आपको नकली पुलिस से जोड़ता है जो पैसे माँगती है।"
+      },
+      "red_flag": {
+        "en": "TRAI does not call people to block SIMs.",
+        "hi": "TRAI किसी को सिम बंद करने के लिए फ़ोन नहीं करता।"
+      },
+      "do": {
+        "en": "Hang up. If worried, check your number on the government's Sanchar Saathi website. Report on 1930.",
+        "hi": "फ़ोन काट दें। चिंता हो तो सरकार की संचार साथी वेबसाइट पर अपना नंबर जाँचें। 1930 पर शिकायत करें।"
+      },
+      "sources": [
+        {
+          "name": "ThePrint",
+          "url": "https://theprint.in/india/delhi-police-prevents-potential-losses-of-rs-1-53-crore-in-five-digital-arrest-scams/3075336/"
+        }
+      ]
+    },
+    {
+      "id": "courier-parcel",
+      "status": "draft",
+      "added": "2026-10-19",
+      "notify": true,
+      "name": {
+        "en": "Fake courier: \"drugs found in your parcel\"",
+        "hi": "नकली कूरियर: \"आपके पार्सल में ड्रग्स मिले\""
+      },
+      "they_say": {
+        "en": "\"FedEx / DHL here. A parcel in your name has drugs and fake passports. Customs has seized it.\"",
+        "hi": "\"FedEx / DHL से बोल रहे हैं। आपके नाम के पार्सल में ड्रग्स और नकली पासपोर्ट मिले हैं। कस्टम ने ज़ब्त कर लिया है।\""
+      },
+      "they_ask": {
+        "en": "Talk to \"Mumbai police\", then pay to \"clear your name\".",
+        "hi": "\"मुंबई पुलिस\" से बात करें, फिर \"नाम साफ़ करने\" के लिए पैसे दें।"
+      },
+      "red_flag": {
+        "en": "Courier companies don't connect you to the police, and police don't take money on calls.",
+        "hi": "कूरियर कंपनियाँ आपको पुलिस से नहीं जोड़तीं, और पुलिस फ़ोन पर पैसे नहीं लेती।"
+      },
+      "do": {
+        "en": "Hang up. Don't pay. Report on 1930.",
+        "hi": "फ़ोन काट दें। पैसे न दें। 1930 पर शिकायत करें।"
+      },
+      "sources": [
+        {
+          "name": "Deccan Herald",
+          "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fmangaluru-woman-duped-of-rs-39-lakh-in-parcel-scam-3215597"
+        }
+      ]
+    },
+    {
+      "id": "kyc-update",
+      "status": "draft",
+      "added": "2026-10-19",
+      "notify": false,
+      "name": {
+        "en": "Fake bank \"KYC expired\" message",
+        "hi": "नकली बैंक मैसेज: \"KYC खत्म हो गई\""
+      },
+      "they_say": {
+        "en": "\"Your bank KYC has expired. Your account will be blocked today. Update now: [link]\"",
+        "hi": "\"आपकी बैंक KYC खत्म हो गई है। आज आपका खाता बंद हो जाएगा। अभी अपडेट करें: [लिंक]\""
+      },
+      "they_ask": {
+        "en": "Open a link, enter your details or OTP, or install an app.",
+        "hi": "लिंक खोलें, अपनी जानकारी या OTP डालें, या कोई ऐप इंस्टॉल करें।"
+      },
+      "red_flag": {
+        "en": "Real bank texts come from registered names like VM-SBIINB, not mobile numbers. Banks never ask for your OTP or PIN.",
+        "hi": "असली बैंक मैसेज VM-SBIINB जैसे रजिस्टर्ड नाम से आते हैं, मोबाइल नंबर से नहीं। बैंक कभी OTP या PIN नहीं माँगते।"
+      },
+      "do": {
+        "en": "Don't tap the link. Open your bank's own app yourself, or visit the branch.",
+        "hi": "लिंक न खोलें। अपने बैंक का ऐप खुद खोलें, या ब्रांच जाएं।"
+      },
+      "sources": [
+        {
+          "name": "TRAI (press release)",
+          "url": "https://trai.gov.in/sites/default/files/PR_No.67of2024.pdf"
+        }
+      ]
+    },
+    {
+      "id": "electricity-bill",
+      "status": "draft",
+      "added": "2026-10-19",
+      "notify": true,
+      "name": {
+        "en": "Fake \"your electricity will be cut tonight\"",
+        "hi": "नकली मैसेज: \"आज रात बिजली कट जाएगी\""
+      },
+      "they_say": {
+        "en": "\"Your electricity will be cut tonight at 9:30 because your bill isn't updated. Call this officer.\"",
+        "hi": "\"आपका बिल अपडेट नहीं है, आज रात 9:30 बजे बिजली कट जाएगी। इस अफ़सर को फ़ोन करें।\""
+      },
+      "they_ask": {
+        "en": "Install an app (often a remote-control app or an APK) to \"update the bill\".",
+        "hi": "\"बिल अपडेट\" के लिए कोई ऐप इंस्टॉल करें (अक्सर रिमोट-कंट्रोल ऐप या APK फ़ाइल)।"
+      },
+      "red_flag": {
+        "en": "Electricity boards don't send cut-off warnings from mobile numbers or ask you to install apps.",
+        "hi": "बिजली विभाग मोबाइल नंबर से कटौती की चेतावनी नहीं भेजता और ऐप इंस्टॉल करने को नहीं कहता।"
+      },
+      "do": {
+        "en": "Ignore it. Check your bill only on the electricity board's official app or website.",
+        "hi": "इसे अनदेखा करें। अपना बिल सिर्फ़ बिजली विभाग के असली ऐप या वेबसाइट पर देखें।"
+      },
+      "sources": [
+        {
+          "name": "Free Press Journal",
+          "url": "https://freepressjournal.in/indore/fake-electricity-bill-message-costs-elderly-man-144-lakh-in-indore"
+        },
+        {
+          "name": "The Tribune",
+          "url": "https://www.tribuneindia.com/news/jalandhar/sr-citizen-loses-rs-1-2l-in-electricity-bill-scam-427428"
+        }
+      ]
+    },
+    {
+      "id": "reward-points",
+      "status": "draft",
+      "added": "2026-10-19",
+      "notify": false,
+      "name": {
+        "en": "Fake credit-card reward points",
+        "hi": "नकली क्रेडिट कार्ड रिवॉर्ड पॉइंट"
+      },
+      "they_say": {
+        "en": "\"Your credit card reward points expire today. Redeem them for cash now.\"",
+        "hi": "\"आपके क्रेडिट कार्ड के रिवॉर्ड पॉइंट आज खत्म हो जाएंगे। अभी कैश में बदलें।\""
+      },
+      "they_ask": {
+        "en": "Install an app or open a link and type in your card details.",
+        "hi": "कोई ऐप इंस्टॉल करें या लिंक खोलकर कार्ड की जानकारी डालें।"
+      },
+      "red_flag": {
+        "en": "Banks never send app files on WhatsApp. Points are redeemed only in the bank's own app.",
+        "hi": "बैंक कभी WhatsApp पर ऐप फ़ाइल नहीं भेजते। पॉइंट सिर्फ़ बैंक के अपने ऐप में मिलते हैं।"
+      },
+      "do": {
+        "en": "Don't install anything. Check your points in your bank's own app.",
+        "hi": "कुछ भी इंस्टॉल न करें। अपने पॉइंट बैंक के अपने ऐप में देखें।"
+      },
+      "sources": [
+        {
+          "name": "Deccan Chronicle",
+          "url": "https://www.deccanchronicle.com/southern-states/telangana/hyderabad-businessman-lost-rs-123-lakh-in-credit-card-reward-point-scam-1883368"
+        }
+      ]
+    },
+    {
+      "id": "customer-care",
+      "status": "draft",
+      "added": "2026-10-19",
+      "notify": false,
+      "name": {
+        "en": "Fake customer-care number",
+        "hi": "नकली कस्टमर-केयर नंबर"
+      },
+      "they_say": {
+        "en": "You searched online for a helpline. The \"agent\" says they'll fix your refund or problem.",
+        "hi": "आपने ऑनलाइन हेल्पलाइन खोजी। \"एजेंट\" कहता है कि वह आपका रिफ़ंड या समस्या ठीक कर देगा।"
+      },
+      "they_ask": {
+        "en": "Install AnyDesk or a screen-sharing app, share an OTP, or pay a small \"fee\".",
+        "hi": "AnyDesk या स्क्रीन-शेयर ऐप इंस्टॉल करें, OTP बताएं, या छोटी \"फ़ीस\" भरें।"
+      },
+      "red_flag": {
+        "en": "Real support never asks you to install a remote-control app or share an OTP.",
+        "hi": "असली कस्टमर केयर कभी रिमोट-कंट्रोल ऐप इंस्टॉल करने या OTP बताने को नहीं कहता।"
+      },
+      "do": {
+        "en": "Hang up. Use only the number printed on your card or shown inside the company's own app.",
+        "hi": "फ़ोन काट दें। सिर्फ़ अपने कार्ड पर छपा नंबर या कंपनी के अपने ऐप में दिया नंबर इस्तेमाल करें।"
+      },
+      "sources": [
+        {
+          "name": "Fact Crescendo",
+          "url": "https://english.factcrescendo.com/2025/11/03/fake-customer-care-number-scam/"
+        },
+        {
+          "name": "LiveLaw",
+          "url": "https://www.livelaw.in/amp/high-court/bombay-high-court/bombay-high-court-judge-duped-of-rs-6-lakhs-in-online-credit-card-fraud-525553"
+        }
+      ]
+    },
+    {
+      "id": "stock-tips",
+      "status": "draft",
+      "added": "2026-10-19",
+      "notify": true,
+      "name": {
+        "en": "Fake stock-tips group and trading app",
+        "hi": "नकली शेयर-टिप्स ग्रुप और ट्रेडिंग ऐप"
+      },
+      "they_say": {
+        "en": "\"Join our VIP stock group. SEBI registered. Guaranteed returns. Use our trading app.\"",
+        "hi": "\"हमारे VIP शेयर ग्रुप से जुड़ें। SEBI रजिस्टर्ड। पक्का मुनाफ़ा। हमारा ट्रेडिंग ऐप इस्तेमाल करें।\""
+      },
+      "they_ask": {
+        "en": "Invest through their app. When you try to withdraw, pay a \"tax\" or \"fee\" first.",
+        "hi": "उनके ऐप से पैसे लगाएं। निकालने पर पहले \"टैक्स\" या \"फ़ीस\" भरें।"
+      },
+      "red_flag": {
+        "en": "No one can guarantee returns. Having to pay before you can withdraw means it's a scam.",
+        "hi": "कोई भी पक्का मुनाफ़ा नहीं दे सकता। पैसे निकालने से पहले पैसे माँगना मतलब धोखा।"
+      },
+      "do": {
+        "en": "Invest only through a broker you already know. Check registrations on sebi.gov.in.",
+        "hi": "सिर्फ़ उसी ब्रोकर से निवेश करें जिसे आप पहले से जानते हैं। sebi.gov.in पर रजिस्ट्रेशन जाँचें।"
+      },
+      "sources": [
+        {
+          "name": "Free Press Journal",
+          "url": "https://www.freepressjournal.in/mumbai/mumbai-businessman-loses-343-crore-in-whatsapp-share-trading-scam-fake-apps-showed-44-crore-profit"
+        },
+        {
+          "name": "ThePrint",
+          "url": "https://theprint.in/india/cybercrime-saw-24-spike-in-2025-indians-lost-rs-22495-crore-mainly-in-investment-scams/2859930/"
+        }
+      ]
+    },
+    {
+      "id": "task-job",
+      "status": "draft",
+      "added": "2026-10-19",
+      "notify": false,
+      "name": {
+        "en": "Fake part-time job / online tasks",
+        "hi": "नकली पार्ट-टाइम जॉब / ऑनलाइन टास्क"
+      },
+      "they_say": {
+        "en": "\"Earn ₹200 per review or like, from home.\" They pay small amounts at first.",
+        "hi": "\"घर बैठे हर रिव्यू या लाइक पर ₹200 कमाएं।\" शुरू में छोटी रकम देते हैं।"
+      },
+      "they_ask": {
+        "en": "Pay for \"prepaid tasks\" in a Telegram group to earn more.",
+        "hi": "ज़्यादा कमाने के लिए Telegram ग्रुप में \"प्रीपेड टास्क\" के पैसे भरें।"
+      },
+      "red_flag": {
+        "en": "A real job never asks you to pay to earn.",
+        "hi": "असली नौकरी में कमाने के लिए पैसे नहीं भरने पड़ते।"
+      },
+      "do": {
+        "en": "Stop and don't pay anything more. Report on 1930.",
+        "hi": "रुक जाएं और आगे कोई पैसे न भरें। 1930 पर शिकायत करें।"
+      },
+      "sources": [
+        {
+          "name": "The Hans India",
+          "url": "https://www.thehansindia.com/news/cities/hyderabad/engineer-loses-rs-51-lakh-in-high-profile-telegram-job-scam-1018852"
+        }
+      ]
+    },
+    {
+      "id": "fake-apk-invite",
+      "status": "draft",
+      "added": "2026-10-19",
+      "notify": true,
+      "name": {
+        "en": "Fake wedding card, challan or bill as an app file (.apk)",
+        "hi": "शादी का कार्ड, चालान या बिल के नाम पर ऐप फ़ाइल (.apk)"
+      },
+      "they_say": {
+        "en": "A WhatsApp message with a file like \"Wedding_Card.apk\" or \"RTO_Challan.apk\", often from a known contact's hacked account.",
+        "hi": "WhatsApp पर \"Wedding_Card.apk\" या \"RTO_Challan.apk\" जैसी फ़ाइल, अक्सर किसी जान-पहचान वाले के हैक हुए अकाउंट से।"
+      },
+      "they_ask": {
+        "en": "Open and install the file.",
+        "hi": "फ़ाइल खोलकर इंस्टॉल करें।"
+      },
+      "red_flag": {
+        "en": "Real invitations are photos or PDFs. An .apk file installs an app that can read your OTPs.",
+        "hi": "असली निमंत्रण फ़ोटो या PDF होते हैं। .apk फ़ाइल एक ऐप इंस्टॉल करती है जो आपके OTP पढ़ सकता है।"
+      },
+      "do": {
+        "en": "Don't open it. Call the sender on their saved number to check.",
+        "hi": "इसे न खोलें। भेजने वाले को उनके सेव नंबर पर फ़ोन करके पूछें।"
+      },
+      "sources": [
+        {
+          "name": "Gujarat Samachar",
+          "url": "https://english.gujaratsamachar.com/news/ahmedabad/ahmedabad-woman-loses-Rs-262-lakh-after-opening-fake-wedding-invitation-apk-sent-from-acquaintances-whatsapp-42366994422"
+        }
+      ]
+    },
+    {
+      "id": "fake-family-voice",
+      "status": "draft",
+      "added": "2026-10-19",
+      "notify": true,
+      "name": {
+        "en": "Fake family member's voice",
+        "hi": "परिवार के सदस्य की नकली आवाज़"
+      },
+      "they_say": {
+        "en": "A voice that sounds exactly like your child or relative: \"I've had an accident, send money now, don't tell anyone.\"",
+        "hi": "बिल्कुल आपके बच्चे या रिश्तेदार जैसी आवाज़: \"मेरा एक्सीडेंट हो गया है, अभी पैसे भेजो, किसी को मत बताना।\""
+      },
+      "they_ask": {
+        "en": "Send money right away, often to someone else's account.",
+        "hi": "तुरंत पैसे भेजें, अक्सर किसी और के खाते में।"
+      },
+      "red_flag": {
+        "en": "AI can copy a voice from a few seconds of audio. Hurry plus secrecy is the sign.",
+        "hi": "AI कुछ सेकंड की आवाज़ से नकल कर सकता है। जल्दबाज़ी और राज़ रखने को कहना ही पहचान है।"
+      },
+      "do": {
+        "en": "Hang up and call them back on their saved number. Ask for your family word if you have one.",
+        "hi": "फ़ोन काटकर उन्हें उनके सेव नंबर पर वापस फ़ोन करें। परिवार का कोड-शब्द हो तो पूछें।"
+      },
+      "sources": [
+        {
+          "name": "The Pioneer",
+          "url": "https://dailypioneer.com/news/when-your-voice-is-no-longer-proof"
+        },
+        {
+          "name": "MediaNama",
+          "url": "https://www.medianama.com/2024/04/223-tamil-nadu-police-cybercrime-advisory-ai-voice-cloning/"
+        }
+      ]
+    }
+  ]
+}

@@ -36,22 +36,26 @@ body {
   line-height: 1.6;
 }
 
+/* Headlines: Anek ExtraBold, slightly condensed (D-032). */
 h1,
 h2,
-h3 {
+h3,
+.display {
   margin: 0 0 16px;
+  font-family: var(--font-display), var(--font-devanagari), sans-serif;
   font-weight: 800;
-  letter-spacing: -0.02em;
+  font-stretch: 90%;
+  letter-spacing: -0.01em;
 }
 
 h1 {
-  font-size: clamp(2.5rem, 7vw, 4.75rem);
-  line-height: 1.04;
+  font-size: clamp(2.9rem, 8vw, 5.5rem);
+  line-height: 0.98;
 }
 
 h2 {
-  font-size: clamp(1.9rem, 4.2vw, 3rem);
-  line-height: 1.1;
+  font-size: clamp(2.1rem, 4.8vw, 3.4rem);
+  line-height: 1.02;
 }
 
 h3 {

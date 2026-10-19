@@ -17,6 +17,9 @@ export function SiteHeader() {
               <Link href="/#how">{t.nav.how}</Link>
             </li>
             <li>
+              <Link href="/scams">{t.nav.scams}</Link>
+            </li>
+            <li>
               <Link href="/demo">{t.nav.demo}</Link>
             </li>
             <li>

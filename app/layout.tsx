@@ -1,20 +1,30 @@
 import type { Metadata } from "next";
-import { Noto_Sans, Noto_Sans_Devanagari } from "next/font/google";
+import { Anek_Devanagari, Anek_Latin, Noto_Sans } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { t } from "@/lib/content";
 
-// One family for all of Ruko's languages (docs/DESIGN_LANGUAGE.md Section 5).
+// Text: Noto Sans. Headlines: Anek, by the Indian foundry Ek Type (docs/DESIGN_LANGUAGE.md Section 5, D-032).
+// Both families cover all eight of Ruko's languages.
 const notoSans = Noto_Sans({
   subsets: ["latin"],
   weight: ["400", "600", "700", "800"],
   display: "swap",
 });
 
-const notoDevanagari = Noto_Sans_Devanagari({
+const anek = Anek_Latin({
+  subsets: ["latin"],
+  weight: "variable",
+  axes: ["wdth"],
+  display: "swap",
+  variable: "--font-display",
+});
+
+const anekDevanagari = Anek_Devanagari({
   subsets: ["devanagari"],
-  weight: ["800"],
+  weight: "variable",
+  axes: ["wdth"],
   display: "swap",
   variable: "--font-devanagari",
 });
@@ -33,7 +43,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${notoSans.className} ${notoDevanagari.variable}`}>
+      <body className={`${notoSans.className} ${anek.variable} ${anekDevanagari.variable}`}>
         <a href="#main" className="skip-link">
           Skip to content
         </a>

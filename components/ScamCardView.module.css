@@ -1,0 +1,42 @@
+/* Plain text with a rule on top: no box, no icon, no shadow (DESIGN_LANGUAGE 3.1, Monzo fraud page). */
+.card {
+  border-top: 3px solid var(--ink);
+  padding-top: 18px;
+  scroll-margin-top: 96px;
+}
+
+.card p {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+  line-height: 1.08;
+  margin-bottom: 12px;
+}
+
+.quote {
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.flag strong {
+  color: var(--danger);
+}
+
+.draft {
+  display: inline-block;
+  margin-bottom: 10px;
+  background: var(--caution-bg);
+  color: var(--caution-ink);
+}
+
+.meta {
+  font-size: 15px !important;
+  color: var(--ink-soft);
+}
+
+.share {
+  margin-top: 6px;
+}
