@@ -1,128 +1,239 @@
+/* Phones drawn like real Android screens (D-032). Frame radius 40 is the one "phone" radius (DESIGN_LANGUAGE 6). */
 .phone {
   position: relative;
   width: 280px;
   max-width: 100%;
-  aspect-ratio: 9 / 19;
-  border: 10px solid #0f1418;
+  aspect-ratio: 9 / 19.5;
+  border: 9px solid #101417;
   border-radius: 40px;
-  background: #0f1418;
+  background: #101417;
   overflow: hidden;
-  box-shadow: 0 24px 48px rgba(10, 30, 28, 0.28);
+  box-shadow: 0 30px 60px -20px rgba(10, 30, 28, 0.45);
 }
 
-.notch {
+.camera {
   position: absolute;
-  top: 8px;
+  top: 9px;
   left: 50%;
-  width: 72px;
-  height: 18px;
-  margin-left: -36px;
-  border-radius: 10px;
-  background: #0f1418;
-  z-index: 2;
+  width: 11px;
+  height: 11px;
+  margin-left: -5.5px;
+  border-radius: 50%;
+  background: #05080a;
+  z-index: 3;
 }
 
 .screen {
   height: 100%;
-  border-radius: 30px;
-  padding: 44px 20px 24px;
+  border-radius: 31px;
+  padding: 0 16px 18px;
   display: flex;
   flex-direction: column;
-  font-size: 15px;
-  line-height: 1.45;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: hidden;
 }
 
-/* 1. Incoming call */
+.screen p {
+  margin: 0;
+}
+
+/* Status bar */
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1b1f22;
+}
+
+.statusDark {
+  color: #ffffff;
+}
+
+.statusIcons {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.signal {
+  width: 13px;
+  height: 10px;
+  background: currentColor;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.battery {
+  width: 18px;
+  height: 9px;
+  border: 1.5px solid currentColor;
+  border-radius: 2px;
+  background: linear-gradient(90deg, currentColor 70%, transparent 70%);
+}
+
+.callChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #1e8e3e;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 1px 8px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 1. Dialer during a call */
 .callScreen {
-  background: #1e2a33;
+  background: #1b2227;
   color: #ffffff;
   text-align: center;
   align-items: center;
 }
 
-.callStatus {
-  font-size: 13px;
-  color: #b7c3c0;
+.callNumber {
+  margin-top: 26px !important;
+  font-size: 22px;
+  font-weight: 600;
 }
 
-.avatar {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: #3a4a55;
-  display: grid;
-  place-items: center;
-  font-size: 32px;
-  font-weight: 800;
-  margin: 12px 0;
-}
-
-.callName {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 2px;
-}
-
-.callSub {
-  font-size: 13px;
+.callMeta {
+  font-size: 12px;
   color: #f2b8b5;
+  margin-top: 2px !important;
+}
+
+.callTimer {
+  font-size: 13px;
+  color: #a9b6b3;
+  margin-top: 6px !important;
+  font-variant-numeric: tabular-nums;
 }
 
 .callQuote {
-  margin-top: 18px;
-  background: #2b3a45;
+  margin-top: 18px !important;
+  background: #263038;
   border-radius: 12px;
-  padding: 12px;
-  font-size: 14px;
+  padding: 10px 12px;
+  font-size: 13px;
   text-align: left;
 }
 
-.callButtons {
+.callGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px 6px;
   margin-top: auto;
+  width: 100%;
+  font-size: 10px;
+  color: #c9d3d0;
+}
+
+.callKey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.callKeyDot {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #2c363d;
 }
 
 .endCall {
-  display: block;
-  width: 60px;
-  height: 60px;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-top: 18px;
   border-radius: 50%;
-  background: #d9392f;
+  background: #d93025;
+  color: #ffffff;
+  transform: rotate(135deg);
 }
 
-/* 2. Bank app */
+.endCall svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* 2. Payment screen in a banking app (generic, not a real bank) */
 .bankScreen {
   background: #ffffff;
-  color: var(--ink);
+  color: #1b1f22;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.bankTitle {
-  font-weight: 800;
-  font-size: 18px;
-  margin-bottom: 18px;
+.bankScreen .status {
+  padding: 0 22px;
 }
 
-.bankLabel {
-  font-size: 14px;
-  color: var(--ink-soft);
+.bankBar {
+  background: #23408e;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 16px;
+  display: flex;
+  gap: 12px;
 }
 
-.bankField {
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 10px 12px;
-  margin-bottom: 10px;
+.bankBody {
+  padding: 22px 16px 0;
   display: flex;
   flex-direction: column;
-  font-size: 13px;
+  align-items: center;
+  text-align: center;
 }
 
-.bankField strong {
+.payee {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e3e8f6;
+  color: #23408e;
+  font-weight: 700;
+}
+
+.payeeName {
+  margin-top: 10px !important;
+  font-weight: 700;
   font-size: 16px;
 }
 
+.payeeId {
+  font-size: 12px;
+  color: #5f6b73;
+}
+
+.amount {
+  margin-top: 20px !important;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.remark {
+  font-size: 12px;
+  color: #5f6b73;
+  background: #f1f3f5;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-top: 6px !important;
+}
+
 .bankButton {
-  margin-top: auto;
-  background: #1f3fa8;
+  margin: auto 16px 0;
+  background: #23408e;
   color: #ffffff;
   border-radius: 6px;
   text-align: center;
@@ -130,26 +241,35 @@
   font-weight: 700;
 }
 
-/* 3. Ruko warning */
+/* 3. Ruko's warning */
 .warnScreen {
   background: var(--danger);
   color: #ffffff;
 }
 
+.warnBody {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 16px 4px 0;
+}
+
 .warnHeadline {
-  font-size: 23px;
-  line-height: 1.2;
+  font-family: var(--font-display), sans-serif;
+  font-size: 26px;
+  line-height: 1.08;
   font-weight: 800;
-  letter-spacing: -0.01em;
-  margin: 14px 0 10px;
+  letter-spacing: -0.02em;
+  margin: 14px 0 12px !important;
 }
 
 .warnReason {
   font-size: 14px;
+  margin-bottom: 10px !important;
 }
 
 .warnAdvice {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
 }
 

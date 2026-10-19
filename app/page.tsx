@@ -1,16 +1,20 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import { BankAppScreen, IncomingCallScreen, PhoneFrame, WarningScreen } from "@/components/Phone";
+import { ScamCardView } from "@/components/ScamCardView";
+import { visibleCards } from "@/lib/cards";
+import { t } from "@/lib/content";
 
 const timeline: { time: string; text: string; ruko?: boolean }[] = [
   { time: "0:00", text: "A call from “TRAI”: your SIM will be blocked because it was used for money laundering." },
   { time: "0:04", text: "You are put through to “Mumbai Police” on a WhatsApp video call. There is a uniform and an office behind him." },
   { time: "0:20", text: "“You are under digital arrest. Stay on the call. Do not tell your family.”" },
   { time: "0:41", text: "“To clear your name, move your savings to this RBI verification account.” You open your bank app." },
-  { time: "0:41", text: "Ruko stops the moment: a red warning, read aloud, with one button to call your son.", ruko: true },
+  { time: "0:41", text: "Ruko makes you pause: a red warning, read aloud, with one button to call your son.", ruko: true },
 ];
 
 export default function Home() {
+  const latest = visibleCards().slice(0, 3);
   return (
     <>
       {/* Hero: a big teal field (Wise), the product as the hero (Monzo) */}
@@ -73,13 +77,17 @@ export default function Home() {
       </section>
 
       {/* A real pattern, minute by minute */}
-      <section className="field field-white">
+      <section className="field">
         <div className={`container ${styles.split}`}>
           <div>
             <h2>A real pattern, minute by minute</h2>
             <p className="measure">
               Built from &ldquo;digital arrest&rdquo; cases reported in Indian news in 2025 and 2026. People were kept on
               calls for hours, even days, and moved their savings themselves.
+            </p>
+            <p className="measure">
+              In every case we found that was stopped in time, another person stepped in: a bank officer, the police or a
+              family member. That&rsquo;s the moment Ruko creates.
             </p>
           </div>
           <ol className={styles.timeline}>
@@ -93,31 +101,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why a person matters */}
-      <section className="field field-teal">
-        <div className={`container ${styles.facts}`}>
-          <div>
-            <p className={styles.bigNumber}>₹22,495 crore</p>
-            <p>
-              lost by Indians to cyber fraud in 2025, mostly to investment scams (Home Ministry data reported by{" "}
-              <a href="https://theprint.in/india/cybercrime-saw-24-spike-in-2025-indians-lost-rs-22495-crore-mainly-in-investment-scams/2859930/">
-                ThePrint
-              </a>
-              ).
-            </p>
+      {/* Scams going around (D-030): plain, sourced, shareable */}
+      <section className="field field-white" id="scams">
+        <div className="container">
+          <div className={styles.split}>
+            <h2>{t.scams.homeTitle}</h2>
+            <div>
+              <p className="measure">{t.scams.homeLead}</p>
+              <p className="note measure">
+                Indians lost &#8377;22,495 crore to cyber fraud in 2025 (Home Ministry data reported by{" "}
+                <a href="https://theprint.in/india/cybercrime-saw-24-spike-in-2025-indians-lost-rs-22495-crore-mainly-in-investment-scams/2859930/">
+                  ThePrint
+                </a>
+                ).
+              </p>
+            </div>
           </div>
-          <div>
-            <p className={styles.bigNumber}>Every one</p>
-            <p>
-              of the scams we found that was stopped in time was stopped because another person stepped in: a bank
-              officer, the police or a family member. That&rsquo;s the moment Ruko creates.
-            </p>
+          <div className={styles.scamGrid}>
+            {latest.map((card) => (
+              <ScamCardView key={card.id} card={card} />
+            ))}
           </div>
+          <Link href="/scams" className="button">
+            {t.scams.seeAll}
+          </Link>
         </div>
       </section>
 
       {/* Trust */}
-      <section className="field">
+      <section className="field field-white">
         <div className={`container ${styles.split}`}>
           <div>
             <h2>What Ruko never does</h2>

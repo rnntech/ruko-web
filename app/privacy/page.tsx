@@ -76,6 +76,10 @@ export default function PrivacyPage() {
             <li>Every check of calls, apps and messages happens on your phone.</li>
             <li>The name and number of the person you choose to call stay on your phone.</li>
             <li>Numbers you mark &ldquo;I know this caller&rdquo; are kept only as a scrambled code (a hash), not as the number.</li>
+            <li>
+              &ldquo;Scam of the week&rdquo; uses the scam alerts already inside the app. Sharing a scam on WhatsApp opens
+              WhatsApp&rsquo;s own share screen; Ruko doesn&rsquo;t see who you send it to.
+            </li>
           </ul>
           <h2 style={{ marginTop: 56 }}>During testing</h2>
           <p className="measure">
