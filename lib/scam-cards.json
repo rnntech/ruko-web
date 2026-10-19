@@ -8,6 +8,10 @@
       "status": "draft",
       "added": "2026-10-19",
       "notify": true,
+      "channels": [
+        "call",
+        "video_call"
+      ],
       "name": {
         "en": "Fake police / CBI \"digital arrest\"",
         "hi": "नकली पुलिस / सीबीआई \"डिजिटल अरेस्ट\""
@@ -44,6 +48,9 @@
       "status": "draft",
       "added": "2026-10-19",
       "notify": false,
+      "channels": [
+        "call"
+      ],
       "name": {
         "en": "Fake TRAI \"your SIM will be blocked\" call",
         "hi": "नकली TRAI कॉल: \"आपका सिम बंद होगा\""
@@ -76,6 +83,10 @@
       "status": "draft",
       "added": "2026-10-19",
       "notify": true,
+      "channels": [
+        "call",
+        "video_call"
+      ],
       "name": {
         "en": "Fake courier: \"drugs found in your parcel\"",
         "hi": "नकली कूरियर: \"आपके पार्सल में ड्रग्स मिले\""
@@ -108,6 +119,10 @@
       "status": "draft",
       "added": "2026-10-19",
       "notify": false,
+      "channels": [
+        "sms",
+        "whatsapp"
+      ],
       "name": {
         "en": "Fake bank \"KYC expired\" message",
         "hi": "नकली बैंक मैसेज: \"KYC खत्म हो गई\""
@@ -140,6 +155,10 @@
       "status": "draft",
       "added": "2026-10-19",
       "notify": true,
+      "channels": [
+        "sms",
+        "whatsapp"
+      ],
       "name": {
         "en": "Fake \"your electricity will be cut tonight\"",
         "hi": "नकली मैसेज: \"आज रात बिजली कट जाएगी\""
@@ -176,6 +195,9 @@
       "status": "draft",
       "added": "2026-10-19",
       "notify": false,
+      "channels": [
+        "sms"
+      ],
       "name": {
         "en": "Fake credit-card reward points",
         "hi": "नकली क्रेडिट कार्ड रिवॉर्ड पॉइंट"
@@ -208,6 +230,10 @@
       "status": "draft",
       "added": "2026-10-19",
       "notify": false,
+      "channels": [
+        "website",
+        "call"
+      ],
       "name": {
         "en": "Fake customer-care number",
         "hi": "नकली कस्टमर-केयर नंबर"
@@ -244,6 +270,10 @@
       "status": "draft",
       "added": "2026-10-19",
       "notify": true,
+      "channels": [
+        "whatsapp",
+        "social_media"
+      ],
       "name": {
         "en": "Fake stock-tips group and trading app",
         "hi": "नकली शेयर-टिप्स ग्रुप और ट्रेडिंग ऐप"
@@ -280,6 +310,10 @@
       "status": "draft",
       "added": "2026-10-19",
       "notify": false,
+      "channels": [
+        "whatsapp",
+        "telegram"
+      ],
       "name": {
         "en": "Fake part-time job / online tasks",
         "hi": "नकली पार्ट-टाइम जॉब / ऑनलाइन टास्क"
@@ -312,6 +346,10 @@
       "status": "draft",
       "added": "2026-10-19",
       "notify": true,
+      "channels": [
+        "whatsapp",
+        "app_file"
+      ],
       "name": {
         "en": "Fake wedding card, challan or bill as an app file (.apk)",
         "hi": "शादी का कार्ड, चालान या बिल के नाम पर ऐप फ़ाइल (.apk)"
@@ -344,6 +382,9 @@
       "status": "draft",
       "added": "2026-10-19",
       "notify": true,
+      "channels": [
+        "call"
+      ],
       "name": {
         "en": "Fake family member's voice",
         "hi": "परिवार के सदस्य की नकली आवाज़"

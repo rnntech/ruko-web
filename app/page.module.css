@@ -104,7 +104,7 @@
 .scamGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 40px;
+  gap: 24px;
   margin: 40px 0 40px;
 }
 

@@ -12,6 +12,7 @@
   --caution-bg: #fff1d6;
   --caution-ink: #6b4500;
   --danger: #b3261e;
+  --danger-bg: #fcebe9; /* "How to spot it" tint on scam tiles; danger text on it is 5.6:1 */
 
   /* Radius is semantic, never one value everywhere (docs/DESIGN_LANGUAGE.md Section 6). */
   --radius-button: 6px;

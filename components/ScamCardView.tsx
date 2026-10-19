@@ -1,45 +1,77 @@
+import Link from "next/link";
 import styles from "./ScamCardView.module.css";
-import { pretty, whatsappShareLink, type ScamCard } from "@/lib/cards";
+import { curly, pretty, whatsappShareLink, type ScamCard } from "@/lib/cards";
 import { t } from "@/lib/content";
 
 /**
- * One scam card as plain editorial text (like Monzo's fraud page: no icons, no coloured boxes).
- * [full] adds what they say, what to do, sources and the WhatsApp share link.
+ * One scam tile (D-036; references: Scamwatch, Monzo and Which? scam pages).
+ * Order: how it reaches you → what they say (as a speech bubble you'd recognise) → what they ask →
+ * how to spot it (red tint) → what to do (teal tint) → sources and share.
+ * [full] = the /scams page. The short version (home) links to the full card.
  */
 export function ScamCardView({ card, full = false }: { card: ScamCard; full?: boolean }) {
   return (
     <article className={styles.card} aria-labelledby={`scam-${card.id}`}>
-      {card.status !== "approved" && <span className={`tag ${styles.draft}`}>{t.scams.draft}</span>}
+      <div className={styles.meta}>
+        <ul className={styles.channels} aria-label={t.scams.channelsLabel}>
+          {(card.channels ?? []).map((c) => (
+            <li key={c} className="tag">
+              {t.scams.channels[c as keyof typeof t.scams.channels] ?? c}
+            </li>
+          ))}
+        </ul>
+        {card.status !== "approved" && <span className={`tag ${styles.draft}`}>{t.scams.draft}</span>}
+      </div>
+
       <h3 id={`scam-${card.id}`} className={styles.name}>
-        {card.name.en}
+        {curly(card.name.en)}
       </h3>
-      {full && <p className={styles.quote}>{card.they_say.en}</p>}
-      <p>
-        <strong>{t.scams.theyAsk}</strong> {card.they_ask.en}
-      </p>
-      <p className={styles.flag}>
-        <strong>{t.scams.redFlag}</strong> {card.red_flag.en}
-      </p>
+
+      <figure className={styles.says}>
+        <figcaption>{t.scams.theySay}</figcaption>
+        <blockquote>{curly(card.they_say.en.replace(/^"|"$/g, ""))}</blockquote>
+      </figure>
+
       {full && (
+        <p className={styles.ask}>
+          <strong>{t.scams.theyAsk}</strong> {curly(card.they_ask.en)}
+        </p>
+      )}
+
+      <div className={styles.flag}>
+        <p className={styles.label}>{t.scams.redFlag}</p>
+        <p>{curly(card.red_flag.en)}</p>
+      </div>
+
+      {full ? (
         <>
-          <p>
-            <strong>{t.scams.whatToDo}</strong> {card.do.en}
-          </p>
-          <p className={styles.meta}>
-            {t.scams.added} {pretty(card.added)} · {t.scams.source}{" "}
-            {card.sources.map((s, i) => (
-              <span key={s.url}>
-                {i > 0 && ", "}
-                <a href={s.url} rel="noopener noreferrer">
-                  {s.name}
-                </a>
-              </span>
-            ))}
-          </p>
-          <a className={`button ${styles.share}`} href={whatsappShareLink(card, `${t.siteUrl}/scams#${card.id}`)} rel="noopener noreferrer">
-            {t.scams.share}
-          </a>
+          <div className={styles.todo}>
+            <p className={styles.label}>{t.scams.whatToDo}</p>
+            <p>{curly(card.do.en)}</p>
+          </div>
+          <div className={styles.footer}>
+            <p className={styles.sources}>
+              {t.scams.added} {pretty(card.added)}
+              <br />
+              {t.scams.source}{" "}
+              {card.sources.map((s, i) => (
+                <span key={s.url}>
+                  {i > 0 && ", "}
+                  <a href={s.url} rel="noopener noreferrer">
+                    {s.name}
+                  </a>
+                </span>
+              ))}
+            </p>
+            <a className={styles.share} href={whatsappShareLink(card, `${t.siteUrl}/scams#${card.id}`)} rel="noopener noreferrer">
+              {t.scams.share}
+            </a>
+          </div>
         </>
+      ) : (
+        <Link href={`/scams#${card.id}`} className={styles.more}>
+          {t.scams.readMore}
+        </Link>
       )}
     </article>
   );

@@ -10,6 +10,7 @@ export type ScamCard = {
   status: "draft" | "approved" | "retired" | string;
   added: string;
   notify?: boolean;
+  channels?: string[];
   name: Text;
   they_say: Text;
   they_ask: Text;
@@ -25,6 +26,11 @@ export function visibleCards(): ScamCard[] {
   return (data.cards as ScamCard[])
     .filter((c) => c.status === "approved" || (showDrafts && c.status === "draft"))
     .sort((a, b) => b.added.localeCompare(a.added));
+}
+
+/** Card text uses plain quotes; show proper curly ones. */
+export function curly(text: string): string {
+  return text.replace(/"([^"]*)"/g, "“$1”").replace(/'/g, "’");
 }
 
 export function pretty(date: string): string {
