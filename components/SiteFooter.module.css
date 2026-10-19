@@ -1,0 +1,42 @@
+.footer {
+  background: var(--ink);
+  color: var(--surface);
+  padding: 64px 0 40px;
+}
+
+.footer a {
+  color: var(--mint-300);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 40px;
+}
+
+.helpTitle {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.small {
+  font-size: 0.95rem;
+  color: #c9d3d0;
+}
+
+@media (max-width: 760px) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

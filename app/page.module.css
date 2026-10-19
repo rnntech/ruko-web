@@ -1,21 +1,158 @@
+/* Hero */
 .hero {
-  background: var(--surface);
-  padding: 48px 0;
+  padding: 56px 0 96px;
 }
 
 .heroInner {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 40px;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 56px;
   align-items: center;
 }
 
-.measure {
-  max-width: 62ch;
+.heroText h1 {
+  margin-bottom: 24px;
 }
 
-@media (max-width: 760px) {
-  .heroInner {
+.heroPhone {
+  display: flex;
+  justify-content: center;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 28px;
+  margin-top: 32px;
+}
+
+/* Sections */
+.sectionTitle {
+  max-width: 22ch;
+  margin-bottom: 48px;
+}
+
+.moment {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.moment li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.moment > li > h3 {
+  margin-top: 28px;
+  margin-bottom: 8px;
+}
+
+.moment > li > p {
+  color: var(--ink-soft);
+  max-width: 34ch;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 56px;
+  align-items: start;
+}
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 3px solid var(--line);
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 16px;
+  padding: 14px 0 14px 20px;
+  font-size: 1.1rem;
+}
+
+.time {
+  font-weight: 800;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.rukoStep {
+  background: var(--danger);
+  color: #ffffff;
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+  margin-left: -3px;
+  border-left: 3px solid var(--danger);
+  font-weight: 700;
+}
+
+.rukoStep .time {
+  color: #ffffff;
+}
+
+/* Facts */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 56px;
+}
+
+.facts p {
+  color: var(--mint-100);
+  max-width: 44ch;
+}
+
+.bigNumber {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--surface) !important;
+  margin-bottom: 16px;
+}
+
+/* Languages */
+.devanagari {
+  font-family: var(--font-devanagari), sans-serif;
+  font-size: clamp(5rem, 16vw, 11rem);
+  line-height: 1;
+  font-weight: 800;
+  color: var(--teal-900);
+  margin: 0;
+}
+
+.closing {
+  max-width: 20ch;
+}
+
+@media (max-width: 900px) {
+  .heroInner,
+  .split,
+  .facts {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .moment {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 56px;
+  }
+
+  .moment li {
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroPhone {
+    justify-content: flex-start;
   }
 }

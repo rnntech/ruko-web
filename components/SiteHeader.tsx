@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./SiteHeader.module.css";
+import { LogoMark } from "./Logo";
 import { t } from "@/lib/content";
 
 export function SiteHeader() {
@@ -7,7 +8,8 @@ export function SiteHeader() {
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
         <Link href="/" className={styles.brand} aria-label="Ruko home">
-          Ruko
+          <LogoMark size={34} variant="reversed" />
+          <span>ruko</span>
         </Link>
         <nav aria-label="Main">
           <ul className={styles.nav}>
@@ -21,7 +23,9 @@ export function SiteHeader() {
               <Link href="/privacy">{t.nav.privacy}</Link>
             </li>
             <li>
-              <Link href="/install">{t.nav.install}</Link>
+              <Link href="/install" className={styles.cta}>
+                {t.nav.install}
+              </Link>
             </li>
           </ul>
         </nav>

@@ -1,0 +1,172 @@
+.phone {
+  position: relative;
+  width: 280px;
+  max-width: 100%;
+  aspect-ratio: 9 / 19;
+  border: 10px solid #0f1418;
+  border-radius: 40px;
+  background: #0f1418;
+  overflow: hidden;
+  box-shadow: 0 24px 48px rgba(10, 30, 28, 0.28);
+}
+
+.notch {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 72px;
+  height: 18px;
+  margin-left: -36px;
+  border-radius: 10px;
+  background: #0f1418;
+  z-index: 2;
+}
+
+.screen {
+  height: 100%;
+  border-radius: 30px;
+  padding: 44px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+/* 1. Incoming call */
+.callScreen {
+  background: #1e2a33;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+}
+
+.callStatus {
+  font-size: 13px;
+  color: #b7c3c0;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #3a4a55;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.callName {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.callSub {
+  font-size: 13px;
+  color: #f2b8b5;
+}
+
+.callQuote {
+  margin-top: 18px;
+  background: #2b3a45;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.callButtons {
+  margin-top: auto;
+}
+
+.endCall {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #d9392f;
+}
+
+/* 2. Bank app */
+.bankScreen {
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.bankTitle {
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.bankLabel {
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.bankField {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+.bankField strong {
+  font-size: 16px;
+}
+
+.bankButton {
+  margin-top: auto;
+  background: #1f3fa8;
+  color: #ffffff;
+  border-radius: 6px;
+  text-align: center;
+  padding: 12px;
+  font-weight: 700;
+}
+
+/* 3. Ruko warning */
+.warnScreen {
+  background: var(--danger);
+  color: #ffffff;
+}
+
+.warnHeadline {
+  font-size: 23px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 14px 0 10px;
+}
+
+.warnReason {
+  font-size: 14px;
+}
+
+.warnAdvice {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.warnButton {
+  margin-top: auto;
+  background: #ffffff;
+  color: var(--danger);
+  border-radius: 6px;
+  text-align: center;
+  padding: 13px 10px;
+  font-weight: 800;
+}
+
+.warnLinks {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: underline;
+  margin-top: 10px;
+}

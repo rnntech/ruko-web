@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
+import { Noto_Sans, Noto_Sans_Devanagari } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { t } from "@/lib/content";
 
-// Noto Sans: one family with matching fonts for all eight of Ruko's languages (docs/DESIGN.md Section 5.2).
+// One family for all of Ruko's languages (docs/DESIGN_LANGUAGE.md Section 5).
 const notoSans = Noto_Sans({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["400", "600", "700", "800"],
   display: "swap",
+});
+
+const notoDevanagari = Noto_Sans_Devanagari({
+  subsets: ["devanagari"],
+  weight: ["800"],
+  display: "swap",
+  variable: "--font-devanagari",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +33,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={notoSans.className}>
+      <body className={`${notoSans.className} ${notoDevanagari.variable}`}>
         <a href="#main" className="skip-link">
           Skip to content
         </a>

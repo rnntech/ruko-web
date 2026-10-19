@@ -1,6 +1,6 @@
 .header {
-  background: var(--surface);
-  border-bottom: 1px solid var(--line);
+  background: var(--teal-900);
+  color: var(--surface);
 }
 
 .inner {
@@ -9,34 +9,54 @@
   align-items: center;
   justify-content: space-between;
   gap: 8px 24px;
-  min-height: 64px;
+  min-height: 76px;
 }
 
 .brand {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--brand);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--surface);
   text-decoration: none;
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 20px;
+  align-items: center;
+  gap: 4px 24px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .nav a {
-  display: inline-block;
-  padding: 12px 0;
-  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  color: var(--mint-100);
   text-decoration: none;
+  font-weight: 600;
   font-size: 1rem;
 }
 
 .nav a:hover {
-  color: var(--brand);
+  color: var(--surface);
   text-decoration: underline;
+}
+
+.nav .cta {
+  background: var(--surface);
+  color: var(--teal-900);
+  border-radius: var(--radius-button);
+  padding: 0 18px;
+}
+
+.nav .cta:hover {
+  background: var(--mint-100);
+  color: var(--teal-900);
+  text-decoration: none;
 }
