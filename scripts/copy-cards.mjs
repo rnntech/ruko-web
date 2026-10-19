@@ -1,6 +1,7 @@
 // Copies cards/scam-cards.json (the only copy we edit, docs/CONTRACTS.md Section 5) into the website:
 //  - lib/scam-cards.json: every card, for the pages (drafts show only in `npm run dev`).
 //  - public/scam-cards.json: approved cards only, the public file phones can download later (D-031).
+//  - lib/sources.json: the trusted-source list (cards/sources.json, D-035) for the /scams page.
 // When deploying only web/ (e.g. Vercel), ../cards isn't there, so the copies already in web/ are used.
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -17,5 +18,6 @@ if (!existsSync(source)) {
   const approved = { ...file, cards: file.cards.filter((c) => c.status === "approved") };
   delete approved.note;
   writeFileSync(join(web, "public", "scam-cards.json"), JSON.stringify(approved, null, 2) + "\n");
-  console.log(`copy-cards: ${file.cards.length} cards (${approved.cards.length} approved)`);
+  writeFileSync(join(web, "lib", "sources.json"), readFileSync(join(web, "..", "cards", "sources.json"), "utf8"));
+  console.log(`copy-cards: ${file.cards.length} cards (${approved.cards.length} approved), sources list`);
 }

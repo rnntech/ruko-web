@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHead } from "@/components/PageHead";
 import { ScamCardView } from "@/components/ScamCardView";
-import { showDrafts, visibleCards } from "@/lib/cards";
+import { safetyPortals, showDrafts, trustedOutlets, visibleCards } from "@/lib/cards";
 import { t } from "@/lib/content";
 import styles from "./scams.module.css";
 
@@ -62,6 +62,26 @@ export default function ScamsPage() {
         <div className="container">
           <h2>{t.scams.sourcesTitle}</h2>
           <p className="measure">{t.scams.sourcesBody}</p>
+          <div className={styles.split}>
+            <div>
+              <h3>{t.scams.portalsTitle}</h3>
+              <ul className="rows">
+                {safetyPortals.map((p) => (
+                  <li key={p.domain}>
+                    <a href={p.url} rel="noopener noreferrer">
+                      {p.name}
+                    </a>
+                    <br />
+                    <span className="note">{p.use}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3>{t.scams.outletsTitle}</h3>
+              <p className="measure">{trustedOutlets.join(" · ")}</p>
+            </div>
+          </div>
         </div>
       </section>
     </>

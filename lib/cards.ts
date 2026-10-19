@@ -1,4 +1,5 @@
 import data from "./scam-cards.json";
+import sourceList from "./sources.json";
 
 /** Format: docs/CONTRACTS.md Section 5. Copied from cards/scam-cards.json by scripts/copy-cards.mjs. */
 export type Lang = "en" | "hi" | "bn" | "mr" | "te" | "ta" | "gu" | "kn";
@@ -49,3 +50,13 @@ export function whatsappShareLink(card: ScamCard, pageUrl: string): string {
   ].join("\n");
   return `https://wa.me/?text=${encodeURIComponent(text)}`;
 }
+
+/** Trusted sources (cards/sources.json, D-035). */
+export type TrustedSource = { name: string; domain: string; type: string; url?: string; public?: boolean; use?: string };
+const sources = sourceList.sources as TrustedSource[];
+
+/** Government and regulator portals people can visit themselves. */
+export const safetyPortals = sources.filter((s) => s.public && s.url);
+
+/** Newspapers, wire services, court reporters and fact-checkers we may cite. */
+export const trustedOutlets = sources.filter((s) => ["news", "wire", "court", "fact_check"].includes(s.type)).map((s) => s.name);

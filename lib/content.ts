@@ -44,7 +44,9 @@ export const en = {
       "Hang up, then call back on a number you already have. If you lost money, call 1930 at once.",
     ],
     sourcesTitle: "Where these come from",
-    sourcesBody: "Only credible sources: the government (PIB Fact Check, RBI, I4C and cybercrime.gov.in, CERT-In, DoT and Sanchar Saathi, TRAI), the police, courts, and established news outlets. Never forwards, social media posts or blogs. Each card links to its sources.",
+    sourcesBody: "Only credible sources: government safety portals, regulators, the police and courts, and established news outlets. Never forwards, social media posts or blogs. Each card links to its sources.",
+    portalsTitle: "Government safety portals you can use yourself",
+    outletsTitle: "News outlets and fact-checkers we cite",
   },
   footer: {
     helpline: "If you have lost money to a scam, call 1930 now or report it at cybercrime.gov.in. The sooner you report, the better the chance of stopping the money.",
