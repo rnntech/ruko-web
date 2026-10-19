@@ -1,0 +1,21 @@
+.hero {
+  background: var(--surface);
+  padding: 48px 0;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 40px;
+  align-items: center;
+}
+
+.measure {
+  max-width: 62ch;
+}
+
+@media (max-width: 760px) {
+  .heroInner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

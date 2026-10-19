@@ -1,0 +1,193 @@
+/* Ruko design tokens (docs/DESIGN.md Section 5). No purple, no gradients, red only for danger. */
+:root {
+  --ink: #1a1f24;
+  --ink-soft: #4a535c;
+  --surface: #ffffff;
+  --background: #f4f6f6;
+  --brand: #0b6e69;
+  --brand-dark: #075955;
+  --safe: #1e6b3a;
+  --caution-bg: #fff4e0;
+  --caution-ink: #6b4500;
+  --danger: #b3261e;
+  --line: #d9dfdf;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --max-width: 1040px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+a {
+  color: var(--brand);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--brand-dark);
+}
+
+:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section {
+  padding: 48px 0;
+  border-top: 1px solid var(--line);
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+  max-width: 62ch;
+}
+
+.button {
+  display: inline-block;
+  min-height: 56px;
+  padding: 14px 24px;
+  border-radius: var(--radius-sm);
+  background: var(--brand);
+  color: var(--surface);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover {
+  background: var(--brand-dark);
+  color: var(--surface);
+}
+
+.text-link {
+  display: inline-block;
+  min-height: 48px;
+  padding: 12px 0;
+  font-size: 1.05rem;
+}
+
+.note {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.label {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--caution-ink);
+  background: var(--caution-bg);
+  border-radius: var(--radius-sm);
+  padding: 2px 10px;
+  margin-bottom: 12px;
+}
+
+.steps {
+  padding-left: 1.4em;
+  max-width: 62ch;
+}
+
+.steps li {
+  margin-bottom: 14px;
+}
+
+.plain-list {
+  padding-left: 1.2em;
+  max-width: 62ch;
+}
+
+.plain-list li {
+  margin-bottom: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  background: var(--surface);
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+th {
+  font-weight: 600;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  background: var(--surface);
+  padding: 8px 12px;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  left: 8px;
+}

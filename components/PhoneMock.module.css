@@ -1,0 +1,65 @@
+.figure {
+  margin: 0;
+  max-width: 320px;
+  width: 100%;
+}
+
+.phone {
+  border: 10px solid var(--ink);
+  border-radius: 28px;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.screen {
+  background: var(--danger);
+  color: var(--surface);
+  padding: 32px 20px 20px;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 14px;
+}
+
+.reason {
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+
+.advice {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: block;
+  margin-top: auto;
+  background: var(--surface);
+  color: var(--danger);
+  font-weight: 700;
+  text-align: center;
+  border-radius: var(--radius-sm);
+  padding: 14px 12px;
+  font-size: 1.05rem;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  padding: 10px 0 0;
+  font-size: 0.95rem;
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin-top: 10px;
+}
