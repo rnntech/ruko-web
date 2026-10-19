@@ -34,6 +34,7 @@ body {
   color: var(--ink);
   font-size: 18px;
   line-height: 1.6;
+  letter-spacing: -0.005em;
 }
 
 /* Headlines: Archivo ExtraBold (D-033); Indian scripts fall back to Noto Sans Devanagari etc. */
