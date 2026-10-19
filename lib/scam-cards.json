@@ -344,36 +344,40 @@
     {
       "id": "fake-apk-invite",
       "status": "draft",
-      "added": "2026-10-19",
+      "added": "2026-10-20",
       "notify": true,
       "channels": [
         "whatsapp",
         "app_file"
       ],
       "name": {
-        "en": "Fake wedding card, challan or bill as an app file (.apk)",
-        "hi": "शादी का कार्ड, चालान या बिल के नाम पर ऐप फ़ाइल (.apk)"
+        "en": "Fake bank KYC, challan or wedding card sent as an app (APK)"
       },
       "they_say": {
-        "en": "A WhatsApp message with a file like \"Wedding_Card.apk\" or \"RTO_Challan.apk\", often from a known contact's hacked account.",
-        "hi": "WhatsApp पर \"Wedding_Card.apk\" या \"RTO_Challan.apk\" जैसी फ़ाइल, अक्सर किसी जान-पहचान वाले के हैक हुए अकाउंट से।"
+        "en": "\"Your account will be blocked tonight. Install our official update.\" Then a file like \"SBI KYC AADHAR UPDATE\" or \"Your Traffic RTO Challan\" marked APK. Sometimes it comes from a known contact whose WhatsApp was hacked."
       },
       "they_ask": {
         "en": "Open and install the file.",
         "hi": "फ़ाइल खोलकर इंस्टॉल करें।"
       },
       "red_flag": {
-        "en": "Real invitations are photos or PDFs. An .apk file installs an app that can read your OTPs.",
-        "hi": "असली निमंत्रण फ़ोटो या PDF होते हैं। .apk फ़ाइल एक ऐप इंस्टॉल करती है जो आपके OTP पढ़ सकता है।"
+        "en": "Banks, the RTO and the government never send apps on WhatsApp. If WhatsApp shows \"APK\" under a file, it is an app, not a document."
       },
       "do": {
-        "en": "Don't open it. Call the sender on their saved number to check.",
-        "hi": "इसे न खोलें। भेजने वाले को उनके सेव नंबर पर फ़ोन करके पूछें।"
+        "en": "Don't open or install it. Delete the chat. Call the sender on their saved number, or your bank on the number printed on your card."
       },
       "sources": [
         {
           "name": "Gujarat Samachar",
           "url": "https://english.gujaratsamachar.com/news/ahmedabad/ahmedabad-woman-loses-Rs-262-lakh-after-opening-fake-wedding-invitation-apk-sent-from-acquaintances-whatsapp-42366994422"
+        },
+        {
+          "name": "The Tribune",
+          "url": "https://www.tribuneindia.com/news/himachal/challan-scam-alert-fraudsters-use-whatsapp-apk-links-to-loot-money"
+        },
+        {
+          "name": "News On AIR",
+          "url": "https://www.newsonair.gov.in/nagaland-police-issues-alert-on-malicious-pm-kisan-yojana-apk-file-circulating-across-state"
         }
       ]
     },
