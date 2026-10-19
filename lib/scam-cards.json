@@ -419,6 +419,42 @@
           "url": "https://www.medianama.com/2024/04/223-tamil-nadu-police-cybercrime-advisory-ai-voice-cloning/"
         }
       ]
+    },
+    {
+      "id": "advance-fee",
+      "status": "draft",
+      "added": "2026-10-20",
+      "notify": false,
+      "channels": [
+        "sms",
+        "whatsapp",
+        "call"
+      ],
+      "name": {
+        "en": "Fake prize, loan, job or scheme that asks for a fee first"
+      },
+      "they_say": {
+        "en": "\"You've won Rs 25 lakh.\" \"Your loan is approved.\" \"You're selected for the job.\" \"Register for the government scheme.\""
+      },
+      "they_ask": {
+        "en": "Pay a registration, processing or claim fee first."
+      },
+      "red_flag": {
+        "en": "Real prizes, loans, jobs and government schemes never ask you to pay before you receive money."
+      },
+      "do": {
+        "en": "Don't pay anything. Block the number. Check schemes only on .gov.in sites. Report on 1930."
+      },
+      "sources": [
+        {
+          "name": "News On AIR",
+          "url": "https://www.newsonair.gov.in/pib-fact-check-unit-warns-of-scam-fraudsters-charging-rs-8000-for-pm-kusum-yojana-registration"
+        },
+        {
+          "name": "The Tribune",
+          "url": "https://www.tribuneindia.com/news/science-technology/from-whatsapp-to-telegram-how-fraudsters-are-still-conning-indian-users-508985/amp"
+        }
+      ]
     }
   ]
 }
