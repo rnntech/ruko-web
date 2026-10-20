@@ -19,10 +19,10 @@ export const en = {
     install: "Get the app",
     spot: "Spot the scam",
   },
-  /** Home: "Check a message", the everyday use (growth hook 3, D-049). */
+  /** Home: "Check a message", the backup to the automatic checks (growth hook 3, D-049; placed after them, D-051). */
   check: {
-    title: "Got a strange message? Forward it to Ruko.",
-    lead: "You don't have to wait for a scam call. Any SMS or WhatsApp message that worries you, Ruko checks in a second, on your phone.",
+    title: "Not sure about a message? Show it to Ruko.",
+    lead: "Ruko checks new messages on its own. For anything else, like a message a relative passed on or one you opened before Ruko saw it, show it to Ruko. It checks in a second, on your phone.",
     steps: [
       "Long-press the message, tap Share, and choose Ruko. Or share a screenshot of it.",
       "Ruko checks it right there. Nothing is sent anywhere.",

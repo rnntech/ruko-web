@@ -26,8 +26,9 @@ export default function Home() {
               The <span className="highlight">pause</span> scammers don&rsquo;t want you to take.
             </h1>
             <p className="lead">
-              Scammers rush you to pay, share an OTP, install an app or tap a link. Ruko notices the risky moment on your
-              Android phone and stops you with a clear warning, in your language.
+              <strong>Ruko checks before you even wonder.</strong> It looks at every new SMS and WhatsApp message, and
+              notices when a stranger on a call rushes you to pay, share an OTP or tap a link. Then it stops you with a
+              clear warning, in your language.
             </p>
             <div className={styles.actions}>
               <Link href="/demo" className="button button-light">
@@ -41,30 +42,6 @@ export default function Home() {
           {/* The app in a phone: four real screens, sliding like setup (D-048) */}
           <div className={styles.heroPhone}>
             <PhoneTour scamCount={visibleCards().length} />
-          </div>
-        </div>
-      </section>
-
-      {/* Everyday use: check any message (growth hook 3, D-049) */}
-      <section className="field field-mint">
-        <div className={`container ${styles.split}`}>
-          <div>
-            <h2 className={styles.checkTitle}>{t.check.title}</h2>
-            <p className="lead">{t.check.lead}</p>
-          </div>
-          <div>
-            <ol className={styles.checkSteps}>
-              {t.check.steps.map((s) => (
-                <li key={s}>{s}</li>
-              ))}
-            </ol>
-            <div className={styles.testCallout}>
-              <p className={styles.testTitle}>{t.check.testTitle}</p>
-              <p>{t.check.testBody}</p>
-              <Link href="/spot-the-scam" className="button">
-                {t.check.testLink}
-              </Link>
-            </div>
           </div>
         </div>
       </section>
@@ -122,6 +99,30 @@ export default function Home() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* The backup to the automatic checks: show Ruko any message (growth hook 3, D-049; after them, D-051) */}
+      <section className="field field-mint">
+        <div className={`container ${styles.split}`}>
+          <div>
+            <h2 className={styles.checkTitle}>{t.check.title}</h2>
+            <p className="lead">{t.check.lead}</p>
+          </div>
+          <div>
+            <ol className={styles.checkSteps}>
+              {t.check.steps.map((s) => (
+                <li key={s}>{s}</li>
+              ))}
+            </ol>
+            <div className={styles.testCallout}>
+              <p className={styles.testTitle}>{t.check.testTitle}</p>
+              <p>{t.check.testBody}</p>
+              <Link href="/spot-the-scam" className="button">
+                {t.check.testLink}
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
