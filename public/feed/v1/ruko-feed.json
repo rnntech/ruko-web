@@ -1,0 +1,161 @@
+{
+ "format": 1,
+ "sequence": 1,
+ "published": "2026-10-20T09:22:32.171Z",
+ "cards": [],
+ "detection": {
+  "phrases": [],
+  "patterns": [],
+  "brands": [],
+  "officialDomains": [],
+  "tunnels": [],
+  "freeHosting": []
+ },
+ "practice": [
+  {
+   "id": "debit-reply",
+   "label": "scam",
+   "channel": "whatsapp",
+   "sender": "+91 98765 01234",
+   "senderNote": "Not in your contacts",
+   "text": "Dear customer, Rs 48,500 has been debited from your account XX4521 to UPI ID rk.traders@ybl. If this transaction was not done by you, reply NO to block it.",
+   "clue": "Banks never ask you to reply YES or NO on WhatsApp. Don't reply: open your bank's own app and check.",
+   "source": {
+    "name": "Free Press Journal (Hyderabad Police, Oct 2026)",
+    "url": "https://www.freepressjournal.in/tech/replying-no-on-whatsapp-could-empty-your-bank-account-hyderabad-police-warns"
+   }
+  },
+  {
+   "id": "debit-real",
+   "label": "real",
+   "channel": "sms",
+   "sender": "JD-SBIUPI-S",
+   "text": "Dear UPI user A/C X4521 debited by 48500.00 on date 20Oct26 trf to RK TRADERS Refno 429187365512. If not u? call 1800111109. -SBI",
+   "clue": "Real. It comes by SMS from the bank's sender name, and tells you to call the bank's helpline, not to reply."
+  },
+  {
+   "id": "credit-mistake",
+   "label": "scam",
+   "channel": "sms",
+   "sender": "+91 70112 23344",
+   "text": "Rs 5,000.00 credited to your A/c XX4521 by UPI from SURESH K. Avl Bal Rs 12,340.50",
+   "context": "A minute later a stranger calls: “I sent you 5,000 by mistake. Please send it back.”",
+   "clue": "A bank alert never comes from a mobile number. Check your balance in your bank's app before sending anything back: usually no money ever arrived.",
+   "source": {
+    "name": "Free Press Journal (Indore, Rs 70,000 lost)",
+    "url": "https://www.freepressjournal.in/indore/70000-gone-in-15-minutes-indore-man-falls-for-fake-bank-credit-sms-scam"
+   }
+  },
+  {
+   "id": "credit-real",
+   "label": "real",
+   "channel": "sms",
+   "sender": "AX-HDFCBK-S",
+   "text": "Update! INR 5,000.00 credited to HDFC Bank A/c XX4521 on 20-10-26 by VPA suresh.k@okicici (UPI Ref No 429187365512).",
+   "clue": "Real. A credit alert from the bank's sender name. Even so, if someone calls saying they sent money by mistake, check your bank app first."
+  },
+  {
+   "id": "challan-lookalike",
+   "label": "scam",
+   "channel": "sms",
+   "sender": "+91 81234 56789",
+   "text": "Traffic challan: your vehicle MH12AB1234 has a pending fine of Rs 500 for over-speeding. Pay before 22-10-26 to avoid court: https://echallan.pasvahan.icu",
+   "clue": "Read the link slowly: “pasvahan”, not “parivahan”, and it doesn't end in .gov.in. Real challans are on echallan.parivahan.gov.in.",
+   "source": {
+    "name": "The Tribune (fake e-challan messages)",
+    "url": "https://www.tribuneindia.com/news/haryana/cyber-fraudsters-sending-fake-e-challan-messages-to-dupe-residents/amp"
+   }
+  },
+  {
+   "id": "challan-real",
+   "label": "real",
+   "channel": "sms",
+   "sender": "VM-ECHALN-G",
+   "text": "A challan of Rs 500 has been issued to vehicle MH12AB1234 for over-speeding. Details and payment: https://echallan.parivahan.gov.in",
+   "clue": "Real. A government sender name, and the link ends in .gov.in. Safest of all: type echallan.parivahan.gov.in yourself."
+  },
+  {
+   "id": "dak-seva",
+   "label": "scam",
+   "channel": "whatsapp",
+   "sender": "+91 90000 12345",
+   "senderNote": "Profile name: India Post",
+   "text": "Congratulations! You are selected for Dak Seva Gifts. Answer 4 short questions to win up to Rs 10,000: https://indiapost-dakseva.top",
+   "clue": "India Post runs no gift or lucky-draw scheme and doesn't message you on WhatsApp. Anyone can call themselves “India Post” in a profile name.",
+   "source": {
+    "name": "News On AIR (PIB Fact Check, Sept 2026)",
+    "url": "https://newsonair.gov.in/pib-fact-check-debunks-fake-dak-seva-gifts-scheme-message/"
+   }
+  },
+  {
+   "id": "post-real",
+   "label": "real",
+   "channel": "sms",
+   "sender": "VM-IPOSTO-G",
+   "text": "Article EZ123456789IN booked to you is out for delivery today. Track it at https://www.indiapost.gov.in",
+   "clue": "Real. A delivery update from India Post's sender name, pointing to indiapost.gov.in, and it asks for nothing."
+  },
+  {
+   "id": "bank-call-mobile",
+   "label": "scam",
+   "channel": "call",
+   "sender": "+91 98110 22334",
+   "text": "“Hello, this is SBI's fraud department. A payment of Rs 75,000 is pending on your card. I'm sending an OTP to cancel it, please read it out.”",
+   "clue": "Banks are now required to call from numbers starting 1600. “The bank” calling from an ordinary mobile number is a red flag, and no bank ever asks for an OTP.",
+   "source": {
+    "name": "IANS (TRAI orders 1600-series for banks)",
+    "url": "https://ianslive.in/trai-orders-mandatory-adoption-of-1600-series-numbers-by-banks-financial-services-insurance-firms--20251119152705"
+   }
+  },
+  {
+   "id": "bank-call-1600",
+   "label": "real",
+   "channel": "call",
+   "sender": "1601 23 4567",
+   "text": "“Good afternoon, this is a courtesy call from your bank about your new card. Your card is active. You don't need to share any details.”",
+   "clue": "Real. Banks call from 1600-series numbers, and a genuine call never asks you for an OTP, PIN or card number."
+  },
+  {
+   "id": "nephew-new-number",
+   "label": "scam",
+   "channel": "whatsapp",
+   "sender": "+91 97654 32109",
+   "senderNote": "Profile photo: your nephew",
+   "text": "Mausi, it's Rahul. My phone fell in the water, this is my friend's number. Please send 15,000 urgently for the hostel fee, I'll return it tomorrow. Don't tell mummy please.",
+   "clue": "Call him back on the number you have saved. Scammers copy profile photos, and AI can even copy a voice.",
+   "source": {
+    "name": "Scroll (AI voice-clone family scams)",
+    "url": "https://scroll.in/article/1066442/family-member-in-distress-or-an-ai-voice-clone-the-rise-of-a-disturbing-new-cyber-crime-scam"
+   }
+  },
+  {
+   "id": "kyc-real",
+   "label": "real",
+   "channel": "sms",
+   "sender": "JD-SBIBNK-S",
+   "text": "Dear Customer, periodic KYC update for your A/c XX4521 is due. Please visit your home branch or update it in the YONO SBI app. Ignore if already done. -SBI",
+   "clue": "Real. Banks do send KYC reminders, but from their sender name, with no link, sending you to the branch or their own app."
+  },
+  {
+   "id": "kyc-pdf",
+   "label": "scam",
+   "channel": "whatsapp",
+   "sender": "+91 89012 34567",
+   "senderNote": "Profile photo: SBI logo",
+   "text": "📄 SBI_KYC_Form.pdf\nDear customer, your KYC is pending. Fill this form today to avoid account freeze.",
+   "clue": "Banks never send KYC forms on WhatsApp. A bank logo as the profile photo proves nothing: anyone can upload one.",
+   "source": {
+    "name": "Moneylife (WhatsApp KYC message fraud)",
+    "url": "https://www.moneylife.in/article/fraud-alert-whatsapp-hacking-via-bank-kyc-message/77152.html"
+   }
+  },
+  {
+   "id": "block-sms-real",
+   "label": "real",
+   "channel": "sms",
+   "sender": "VM-HDFCBK-S",
+   "text": "Rs.25000 debited from HDFC Bank A/c XX4521 on 20-10-26 to VPA rk.traders@ybl. Not you? Call 18002586161 or SMS BLOCK UPI to 7308080808",
+   "clue": "Real, and the hardest one. It's from the bank's sender name, and SMS BLOCK goes to the bank's published number. Replying to a stranger on WhatsApp is different."
+  }
+ ]
+}
