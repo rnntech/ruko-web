@@ -78,7 +78,7 @@ export default function PrivacyPage() {
             <li>Numbers you mark &ldquo;I know this caller&rdquo; are kept only as a scrambled code (a hash), not as the number.</li>
             <li>
               Screenshots you check are read on your phone by Google&rsquo;s on-device text reader (through Google Play
-              services) and are never stored or sent by Ruko. The testing version of Ruko has no internet permission at all.
+              services) and are never stored or sent by Ruko. Ruko uses the internet for one thing only: downloading the latest list of scams going around. It never sends anything about you.
             </li>
             <li>
               &ldquo;Scam of the week&rdquo; uses the scam alerts already inside the app. Sharing a scam on WhatsApp opens
