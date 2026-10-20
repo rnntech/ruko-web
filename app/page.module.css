@@ -14,45 +14,16 @@
   margin-bottom: 24px;
 }
 
-/* The scene sits straight on the teal (D-048). RukoBot turns white like the logo, with teal eyes; the
-   light backdrop, floor and shadows become teal tones. Overrides the drawing's own colours by CSS. */
+.heroScene {
+  background: var(--paper);
+  border-radius: 12px;
+  padding: 12px 12px 4px;
+}
+
 .heroScene svg {
   display: block;
   width: 100%;
   height: auto;
-  overflow: visible;
-}
-
-.heroScene :global(.g-body) [fill="#0A4D49"] {
-  fill: var(--surface);
-}
-
-.heroScene :global(.g-body) [stroke="#0A4D49"] {
-  stroke: var(--surface);
-}
-
-.heroScene :global(.g-bar) {
-  fill: var(--teal-900);
-}
-
-.heroScene :global(.g-eye) {
-  stroke: var(--teal-900);
-}
-
-.heroScene :global(.rs-scene) > circle[fill="#DDF2EA"] {
-  fill: var(--teal-700);
-}
-
-.heroScene :global(.rs-scene) > line {
-  stroke: var(--teal-700);
-}
-
-.heroScene :global(.rs-scene) > ellipse {
-  fill: #083b38;
-}
-
-.heroScene :global(.h-buzz) {
-  stroke: var(--mint-300);
 }
 
 .actions {
@@ -176,6 +147,6 @@
   }
 
   .heroScene {
-    margin: 0 -8px;
+    padding: 8px 8px 2px;
   }
 }
