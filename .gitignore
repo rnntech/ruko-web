@@ -38,6 +38,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# Share pictures of draft scam cards: never published (scripts/share_images.py, D-049)
-/public/share/draft/
