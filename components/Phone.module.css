@@ -290,3 +290,60 @@
   text-decoration: underline;
   margin-top: 10px;
 }
+
+/* Welcome (the app's first setup screen, D-048) */
+.welcomeScreen {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.welcomeHead {
+  background: var(--teal-900);
+  color: #ffffff;
+  margin: 0 -16px;
+  padding: 0 22px 20px;
+}
+
+.welcomeBrand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 18px;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  font-size: 19px;
+}
+
+.welcomeTitle {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.welcomeScene {
+  margin: 18px -16px 12px;
+}
+
+.welcomeScene svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.welcomeBody {
+  font-size: 14px;
+  line-height: 1.55;
+  padding: 0 6px;
+}
+
+.welcomeButton {
+  margin-top: auto;
+  background: var(--teal-700);
+  color: #ffffff;
+  border-radius: 6px;
+  text-align: center;
+  padding: 13px 10px;
+  font-weight: 700;
+}

@@ -158,6 +158,8 @@ const SCENE = `<style>.g-upR { transform-origin: 44px 27px; transform-box: view-
         </g>
       </svg>`;
 
-export function RukoScene({ className }: { className?: string }) {
-  return <div className={className} dangerouslySetInnerHTML={{ __html: SCENE }} />;
+/** [viewBox] crops the 640×400 drawing; the default matches the app's Welcome screen. */
+export function RukoScene({ className, viewBox }: { className?: string; viewBox?: string }) {
+  const html = viewBox ? SCENE.replace('viewBox="20 50 600 330"', `viewBox="${viewBox}"`) : SCENE;
+  return <div className={className} dangerouslySetInnerHTML={{ __html: html }} />;
 }

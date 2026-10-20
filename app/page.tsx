@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
-import { BankAppScreen, IncomingCallScreen, PhoneFrame, WarningScreen } from "@/components/Phone";
-import { RukoScene } from "@/components/RukoScene";
+import { BankAppScreen, IncomingCallScreen, PhoneFrame, WarningScreen, WelcomeScreen } from "@/components/Phone";
 import { ScamCardView } from "@/components/ScamCardView";
 import { visibleCards } from "@/lib/cards";
 import { t } from "@/lib/content";
@@ -38,8 +37,12 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          {/* RukoBot stops a grandmother's scam, then both smile (D-048) */}
-          <RukoScene className={styles.heroScene} />
+          {/* The app's welcome screen: RukoBot stops a grandmother's scam, then both smile (D-048) */}
+          <div className={styles.heroPhone}>
+            <PhoneFrame label="Mock-up: Ruko's welcome screen. RukoBot tells a grandmother to stop when a scam warning appears on her phone, then both smile" width={330}>
+              <WelcomeScreen />
+            </PhoneFrame>
+          </div>
         </div>
       </section>
 
