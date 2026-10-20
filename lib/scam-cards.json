@@ -455,6 +455,72 @@
           "url": "https://www.tribuneindia.com/news/science-technology/from-whatsapp-to-telegram-how-fraudsters-are-still-conning-indian-users-508985/amp"
         }
       ]
+    },
+    {
+      "id": "fake-debit-reply",
+      "status": "draft",
+      "added": "2026-10-20",
+      "notify": false,
+      "channels": [
+        "whatsapp",
+        "sms"
+      ],
+      "name": {
+        "en": "Fake “money debited” alert that asks you to reply NO"
+      },
+      "they_say": {
+        "en": "“Rs 48,500 has been debited from your account. If this wasn’t you, reply NO to block it.”"
+      },
+      "they_ask": {
+        "en": "Reply YES or NO, or call their number to “block” or “reverse” the payment."
+      },
+      "red_flag": {
+        "en": "Banks never ask you to reply YES or NO on WhatsApp. Real debit alerts come by SMS from the bank’s name (like JD-SBIUPI) and tell you to call the number on your card."
+      },
+      "do": {
+        "en": "Don’t reply. Open your bank’s own app to check. Block the number. If money is gone, call 1930."
+      },
+      "sources": [
+        {
+          "name": "Free Press Journal",
+          "url": "https://www.freepressjournal.in/tech/replying-no-on-whatsapp-could-empty-your-bank-account-hyderabad-police-warns"
+        },
+        {
+          "name": "Gujarat Samachar",
+          "url": "https://english.gujaratsamachar.com/news/national/dont-reply-no-to-fake-bank-debit-alerts-on-whatsapp-a-single-message-can-drain-your-account-97673140251"
+        }
+      ]
+    },
+    {
+      "id": "fake-credit-sms",
+      "status": "draft",
+      "added": "2026-10-20",
+      "notify": false,
+      "channels": [
+        "sms",
+        "call"
+      ],
+      "name": {
+        "en": "Fake “money credited” SMS, then “I sent it by mistake”"
+      },
+      "they_say": {
+        "en": "“Rs 5,000 credited to your A/c…” Then a call: “I sent you money by mistake, please send it back.”"
+      },
+      "they_ask": {
+        "en": "Send the “extra” money back, often more than once."
+      },
+      "red_flag": {
+        "en": "The “bank” SMS comes from an ordinary mobile number. Real alerts come from the bank’s sender name, and the money never shows in your bank app."
+      },
+      "do": {
+        "en": "Check your balance in your bank’s own app. Don’t send anything back. If someone did pay you by mistake, they can ask their bank to reverse it."
+      },
+      "sources": [
+        {
+          "name": "Free Press Journal",
+          "url": "https://www.freepressjournal.in/indore/70000-gone-in-15-minutes-indore-man-falls-for-fake-bank-credit-sms-scam"
+        }
+      ]
     }
   ]
 }

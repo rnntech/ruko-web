@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./ScamCardView.module.css";
-import { curly, pretty, unquote, whatsappShareLink, type ScamCard } from "@/lib/cards";
+import { curly, pretty, shareImagePath, shareImageText, unquote, whatsappShareLink, type ScamCard } from "@/lib/cards";
+import { ShareCardButton } from "./ShareCardButton";
 import { t } from "@/lib/content";
 
 /**
@@ -63,9 +64,14 @@ export function ScamCardView({ card, full = false }: { card: ScamCard; full?: bo
                 </span>
               ))}
             </p>
-            <a className={styles.share} href={whatsappShareLink(card, `${t.siteUrl}/scams#${card.id}`)} rel="noopener noreferrer">
-              {t.scams.share}
-            </a>
+            <ShareCardButton
+              className={styles.share}
+              label={t.scams.share}
+              href={whatsappShareLink(card, `${t.siteUrl}/scams/${card.id}`)}
+              imagePath={shareImagePath(card)}
+              fileName={`ruko-${card.id}.png`}
+              text={shareImageText(card, `${t.siteUrl}/scams/${card.id}`)}
+            />
           </div>
         </>
       ) : (

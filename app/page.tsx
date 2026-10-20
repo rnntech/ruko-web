@@ -45,6 +45,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Everyday use: check any message (growth hook 3, D-049) */}
+      <section className="field field-mint">
+        <div className={`container ${styles.split}`}>
+          <div>
+            <h2 className={styles.checkTitle}>{t.check.title}</h2>
+            <p className="lead">{t.check.lead}</p>
+          </div>
+          <div>
+            <ol className={styles.checkSteps}>
+              {t.check.steps.map((s) => (
+                <li key={s}>{s}</li>
+              ))}
+            </ol>
+            <div className={styles.testCallout}>
+              <p className={styles.testTitle}>{t.check.testTitle}</p>
+              <p>{t.check.testBody}</p>
+              <Link href="/spot-the-scam" className="button">
+                {t.check.testLink}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* The moment, in three phones */}
       <section className="field" id="how">
         <div className="container">

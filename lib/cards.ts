@@ -47,6 +47,16 @@ export function pretty(date: string): string {
 }
 
 /** A wa.me link that opens WhatsApp's own share screen with the card as plain text. Ruko sees nothing. */
+/** The card's WhatsApp picture (scripts/share_images.py). Drafts' pictures stay on this computer. */
+export function shareImagePath(card: ScamCard): string {
+  return card.status === "approved" ? `/share/${card.id}.png` : `/share/draft/${card.id}.png`;
+}
+
+/** The short text that goes with the picture. */
+export function shareImageText(card: ScamCard, pageUrl: string): string {
+  return `Scam going around: ${card.name.en}. ${card.red_flag.en} Ruko catches this. Get it for your family: ${pageUrl}`;
+}
+
 export function whatsappShareLink(card: ScamCard, pageUrl: string): string {
   const text = [
     `Scam going around: ${card.name.en}`,
