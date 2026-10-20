@@ -5,8 +5,8 @@
 
 .heroInner {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
-  gap: 56px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr);
+  gap: 48px;
   align-items: center;
 }
 
@@ -14,9 +14,16 @@
   margin-bottom: 24px;
 }
 
-.heroPhone {
-  display: flex;
-  justify-content: center;
+.heroScene {
+  background: var(--paper);
+  border-radius: 12px;
+  padding: 12px 12px 4px;
+}
+
+.heroScene svg {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .actions {
@@ -139,7 +146,7 @@
     text-align: center;
   }
 
-  .heroPhone {
-    justify-content: flex-start;
+  .heroScene {
+    padding: 8px 8px 2px;
   }
 }
