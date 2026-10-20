@@ -1,11 +1,15 @@
-/* Phones drawn like real Android screens (D-032). Frame radius 40 is the one "phone" radius (DESIGN_LANGUAGE 6). */
+/* Phones drawn like real Android screens (D-032), in the proportions of a Pixel 10: body 72 x 152.8 mm, and a
+   bezel of 4.1% of the width so the screen inside is the Pixel's 20:9. PhoneFrame scales bezel and corners
+   with its width. */
 .phone {
+  --bezel: 11.5px;
+  --radius: 40px;
   position: relative;
   width: 280px;
   max-width: 100%;
-  aspect-ratio: 9 / 19.5;
-  border: 9px solid #101417;
-  border-radius: 40px;
+  aspect-ratio: 72 / 152.8;
+  border: var(--bezel) solid #101417;
+  border-radius: var(--radius);
   background: #101417;
   overflow: hidden;
   box-shadow: 0 30px 60px -20px rgba(10, 30, 28, 0.45);
@@ -25,7 +29,7 @@
 
 .screen {
   height: 100%;
-  border-radius: 31px;
+  border-radius: calc(var(--radius) - var(--bezel));
   padding: 0 16px 18px;
   display: flex;
   flex-direction: column;

@@ -9,7 +9,16 @@ import { RukoScene } from "./RukoScene";
  */
 export function PhoneFrame({ children, label, width }: { children: React.ReactNode; label: string; width?: number }) {
   return (
-    <div className={styles.phone} role="img" aria-label={label} style={width ? { width } : undefined}>
+    <div
+      className={styles.phone}
+      role="img"
+      aria-label={label}
+      style={
+        width
+          ? ({ width, "--bezel": `${(width * 0.041).toFixed(1)}px`, "--radius": `${Math.round(width / 7)}px` } as React.CSSProperties)
+          : undefined
+      }
+    >
       <div className={styles.camera} aria-hidden="true" />
       {children}
     </div>
