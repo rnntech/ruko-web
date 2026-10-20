@@ -1,5 +1,6 @@
 import styles from "./Phone.module.css";
 import { LogoMark } from "./Logo";
+import { LockArt } from "./LockArt";
 import { RukoScene } from "./RukoScene";
 
 /**
@@ -48,14 +49,92 @@ export function WelcomeScreen() {
           <LogoMark size={22} variant="reversed" />
           <span>ruko</span>
         </div>
-        <p className={styles.welcomeTitle}>The pause scammers don&rsquo;t want you to take</p>
+        <p className={styles.welcomeTitle}>Meet Ruko</p>
       </div>
       <RukoScene className={styles.welcomeScene} viewBox="36 56 576 318" />
+      <div className={styles.welcomeBody}>
+        <p>Ruko steps in when:</p>
+        <ul className={styles.welcomeList}>
+          <li>a stranger keeps you on a call and you open your bank or UPI app</li>
+          <li>a message has a fraudulent link or an app file</li>
+        </ul>
+        <p>It shows a warning and reads it aloud, so you pause before you pay.</p>
+      </div>
+      <span className={styles.welcomeButton}>Continue</span>
+    </div>
+  );
+}
+
+/** The app's teal header: status bar, logo (with a back arrow on inner screens), an optional thin progress bar, the title. */
+export function AppHeader({ title, progress, sub, back = false }: { title: string; progress?: number; sub?: string; back?: boolean }) {
+  return (
+    <div className={styles.welcomeHead}>
+      <StatusBar dark />
+      <div className={styles.welcomeBrand}>
+        {back && (
+          <svg className={styles.backArrow} viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19 12H6M11 6l-6 6 6 6" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        )}
+        <LogoMark size={22} variant="reversed" />
+        <span>ruko</span>
+      </div>
+      {progress !== undefined && (
+        <span className={styles.setupProgress} aria-hidden="true">
+          <span style={{ width: `${progress}%` }} />
+        </span>
+      )}
+      <p className={styles.welcomeTitle}>{title}</p>
+      {sub && <p className={styles.homeSub}>{sub}</p>}
+    </div>
+  );
+}
+
+/** Setup step 2 (D-048): "Nothing leaves your phone", with the lock. */
+export function PrivacyScreen() {
+  return (
+    <div className={`${styles.screen} ${styles.welcomeScreen}`}>
+      <AppHeader title="Nothing leaves your phone" progress={14} />
+      <LockArt className={styles.lockArt} />
       <p className={styles.welcomeBody}>
-        Scammers rush you to pay, share an OTP, install an app or tap a link. Ruko stops you with a warning and reads
-        it aloud.
+        Ruko checks calls and messages right here, on your phone. It never listens to your calls, and never sends
+        your messages or contacts anywhere.
       </p>
       <span className={styles.welcomeButton}>Continue</span>
+    </div>
+  );
+}
+
+/** Home with protection on; Ruko's own "protecting you" notification drops in from the top. */
+export function HomeOnScreen({ scamCount }: { scamCount: number }) {
+  return (
+    <div className={`${styles.screen} ${styles.welcomeScreen} ${styles.homeScreen}`}>
+      <AppHeader title="Protection is on" sub="Helper: Arjun" />
+      <div className={styles.homeCard}>
+        <div className={styles.homeRow}>
+          <span>
+            <b>Scams going around</b>
+            {scamCount} scams to know about. Share them with family.
+          </span>
+          <i aria-hidden="true">&rsaquo;</i>
+        </div>
+        <div className={styles.homeRow}>
+          <span>
+            <b>Check a message</b>
+            Paste a message, or choose a screenshot
+          </span>
+          <i aria-hidden="true">&rsaquo;</i>
+        </div>
+      </div>
+      <span className={styles.homeSettings}>Settings</span>
+      <div className={styles.homeNotif} aria-hidden="true">
+        <LogoMark size={18} />
+        <span>
+          <b>Ruko</b> &middot; now
+          <br />
+          Ruko is protecting you
+        </span>
+      </div>
     </div>
   );
 }

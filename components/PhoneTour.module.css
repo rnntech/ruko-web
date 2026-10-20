@@ -1,0 +1,115 @@
+.tour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 330px;
+  max-width: 100%;
+}
+
+/* The four screens side by side; the track slides to the active one. */
+.track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.45s cubic-bezier(0.3, 0.7, 0.2, 1);
+}
+
+.slot {
+  flex: 0 0 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: calc(var(--radius) - var(--bezel));
+}
+
+/* Progress under the phone: one segment per screen, plus pause. Tap targets are 32px tall. */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 0 6px;
+}
+
+.segment {
+  flex: 1;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.track2 {
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.22);
+  overflow: hidden;
+}
+
+.fill,
+.fillDone,
+.fillActive {
+  display: block;
+  height: 100%;
+  background: var(--mint-300);
+  transform-origin: left center;
+}
+
+.fill {
+  transform: scaleX(0);
+}
+
+.fillDone {
+  transform: scaleX(1);
+}
+
+.fillActive {
+  animation-name: fill;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+.segment:focus-visible,
+.pause:focus-visible {
+  outline: 2px solid var(--mint-300);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.pause {
+  flex: 0 0 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  background: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.pause svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    transition: none;
+  }
+
+  .fillActive {
+    animation: none;
+    transform: scaleX(1);
+  }
+}
