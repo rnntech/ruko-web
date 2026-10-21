@@ -8,7 +8,7 @@ import styles from "./scams.module.css";
 export const metadata: Metadata = {
   title: "Scams going around in India",
   description:
-    "Scams reported recently by the police, government and news outlets, checked by a person, with what to do. Share them with your family on WhatsApp.",
+    "Scams reported recently by the police, government and news outlets, updated weekly from official sources, with what to do from official advice. Share them with your family on WhatsApp.",
 };
 
 export default function ScamsPage() {
