@@ -26,7 +26,7 @@ export default function Home() {
               The <span className="highlight">pause</span> scammers don&rsquo;t want you to take.
             </h1>
             <p className="lead">
-              <strong>Ruko checks before you even wonder.</strong> It looks at every new SMS and WhatsApp message, and
+              <strong>Ruko checks before you even wonder.</strong> It looks at every new message in SMS, WhatsApp, Telegram, Instagram, Messenger, Truecaller and SMS Organizer, and
               notices when a stranger on a call rushes you to pay, share an OTP or tap a link. Then it stops you with a
               clear warning, in your language.
             </p>

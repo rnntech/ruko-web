@@ -16,7 +16,7 @@ const permissions: { name: string; sees: string; why: string }[] = [
   {
     name: "Notification access (optional)",
     sees: "Short previews of your notifications",
-    why: "To spot WhatsApp calls from unknown numbers, bank texts during a risky call, and scam messages. Checked on your phone only",
+    why: "To spot WhatsApp calls from unknown numbers, bank texts during a risky call, and scam messages in SMS, WhatsApp, Telegram, Instagram, Messenger, Truecaller and SMS Organizer. Checked on your phone only",
   },
 ];
 
