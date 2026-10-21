@@ -204,7 +204,7 @@ export function WarningScreen({
         <p className={styles.warnAdvice}>
           {isMessage
             ? "Do not open the file. Call the sender on their saved number."
-            : "Police, CBI and banks never ask for money on a call. Hang up."}
+            : "Whoever they say they are, never pay, share an OTP or install anything because a caller told you to. Hang up."}
         </p>
         <span className={styles.warnButton}>{isMessage ? "Got it" : helperName ? `Call ${helperName}` : "Call 1930"}</span>
         {!isMessage && (
