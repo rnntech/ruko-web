@@ -78,26 +78,38 @@ export default function PrivacyPage() {
             <li>Numbers you mark &ldquo;I know this caller&rdquo; are kept only as a scrambled code (a hash), not as the number.</li>
             <li>
               Screenshots you check are read on your phone by Google&rsquo;s on-device text reader (through Google Play
-              services) and are never stored or sent by Ruko. Ruko uses the internet for one thing only: downloading the latest list of scams going around. It never sends anything about you.
+              services) and are never stored or sent by Ruko.
+            </li>
+            <li>
+              Ruko uses the internet to download the latest list of scams going around. In &ldquo;Just me&rdquo; and
+              &ldquo;Ask me first&rdquo;, that is all: it never sends anything about you.
             </li>
             <li>
               &ldquo;Scam of the week&rdquo; uses the scam alerts already inside the app. Sharing a scam on WhatsApp opens
               WhatsApp&rsquo;s own share screen; Ruko doesn&rsquo;t see who you send it to.
             </li>
           </ul>
+          <h2 style={{ marginTop: 56 }}>Only if you choose &ldquo;Tell them automatically&rdquo;</h2>
+          <p className="measure">
+            In this mode, when Ruko warns you, it rings the phone of the person you chose so they can call you. To do that,
+            Ruko&rsquo;s server receives: a random ID for you and for them (no name, email or phone number), which kind of
+            warning it was (for example &ldquo;long call with a stranger&rdquo;), a score, and the time. The other phone gets
+            a push message through Google&rsquo;s Firebase. Never your calls, messages, contacts or numbers. Your helper
+            sees only &ldquo;Please call you now&rdquo;, plus the kind of warning if you turned on &ldquo;Also tell them
+            why&rdquo;. Either of you can disconnect at any time in Settings.
+          </p>
           <h2 style={{ marginTop: 56 }}>Deleting your data</h2>
           <p className="measure">
             Everything Ruko keeps is on your phone: your settings, the person you chose to call, scrambled codes of numbers
             you trust, and a small test log of warnings (no names, numbers or messages). <strong>Uninstalling Ruko deletes
-            all of it.</strong> To clear only the test log, open Ruko → Settings → Setup check. When Ruko starts using a
-            server for helper alerts, this page will explain how to delete anything kept there, and you&rsquo;ll be able to
-            do it from the app.
+            all of it.</strong> To clear only the test log, open Ruko → Settings → Setup check. If you used &ldquo;Tell them
+            automatically&rdquo;, &ldquo;Disconnect&rdquo; in Settings ends the link at once; the server then keeps only the
+            random IDs and alert times, with nothing that names you, and they will be deleted on request.
           </p>
           <h2 style={{ marginTop: 56 }}>During testing</h2>
           <p className="measure">
-            The testing version keeps everything on your phone and sends nothing about you to any server. To remove
-            everything, uninstall Ruko. If we later add a feature that sends anything (for example, alerting the person
-            you chose), this page will say exactly what is sent before you can turn it on.
+            The testing version keeps everything on your phone and sends nothing about you to any server, unless you turn
+            on &ldquo;Tell them automatically&rdquo; (above). To remove everything, uninstall Ruko.
           </p>
         </div>
       </section>
