@@ -68,7 +68,8 @@
           "name": "ETV Bharat",
           "url": "https://www.etvbharat.com/en/bharat/sc-expresses-grave-concern-over-digital-arrests-scams-issues-notice-to-centre-and-cbi-enn25101702554"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "trai-sim-block",
@@ -127,7 +128,8 @@
           "name": "ThePrint",
           "url": "https://theprint.in/india/delhi-police-prevents-potential-losses-of-rs-1-53-crore-in-five-digital-arrest-scams/3075336/"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "courier-parcel",
@@ -187,7 +189,8 @@
           "name": "Deccan Herald",
           "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fmangaluru-woman-duped-of-rs-39-lakh-in-parcel-scam-3215597"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "kyc-update",
@@ -247,7 +250,8 @@
           "name": "TRAI (press release)",
           "url": "https://trai.gov.in/sites/default/files/PR_No.67of2024.pdf"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "electricity-bill",
@@ -311,7 +315,8 @@
           "name": "The Tribune",
           "url": "https://www.tribuneindia.com/news/jalandhar/sr-citizen-loses-rs-1-2l-in-electricity-bill-scam-427428"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "reward-points",
@@ -370,7 +375,8 @@
           "name": "Deccan Chronicle",
           "url": "https://www.deccanchronicle.com/southern-states/telangana/hyderabad-businessman-lost-rs-123-lakh-in-credit-card-reward-point-scam-1883368"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "customer-care",
@@ -434,7 +440,8 @@
           "name": "LiveLaw",
           "url": "https://www.livelaw.in/amp/high-court/bombay-high-court/bombay-high-court-judge-duped-of-rs-6-lakhs-in-online-credit-card-fraud-525553"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "stock-tips",
@@ -502,7 +509,8 @@
           "name": "ThePrint",
           "url": "https://theprint.in/india/cybercrime-saw-24-spike-in-2025-indians-lost-rs-22495-crore-mainly-in-investment-scams/2859930/"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "task-job",
@@ -570,7 +578,8 @@
           "name": "The Hans India",
           "url": "https://www.thehansindia.com/news/cities/hyderabad/engineer-loses-rs-51-lakh-in-high-profile-telegram-job-scam-1018852"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "fake-apk-invite",
@@ -638,7 +647,8 @@
           "name": "News On AIR",
           "url": "https://www.newsonair.gov.in/nagaland-police-issues-alert-on-malicious-pm-kisan-yojana-apk-file-circulating-across-state"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "fake-family-voice",
@@ -701,7 +711,8 @@
           "name": "MediaNama",
           "url": "https://www.medianama.com/2024/04/223-tamil-nadu-police-cybercrime-advisory-ai-voice-cloning/"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "advance-fee",
@@ -766,7 +777,8 @@
           "name": "The Tribune",
           "url": "https://www.tribuneindia.com/news/science-technology/from-whatsapp-to-telegram-how-fraudsters-are-still-conning-indian-users-508985/amp"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "fake-debit-reply",
@@ -834,7 +846,8 @@
           "name": "Gujarat Samachar",
           "url": "https://english.gujaratsamachar.com/news/national/dont-reply-no-to-fake-bank-debit-alerts-on-whatsapp-a-single-message-can-drain-your-account-97673140251"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "fake-credit-sms",
@@ -894,7 +907,8 @@
           "name": "Free Press Journal",
           "url": "https://www.freepressjournal.in/indore/70000-gone-in-15-minutes-indore-man-falls-for-fake-bank-credit-sms-scam"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "india-post-delivery",
@@ -958,7 +972,8 @@
           "name": "Business Standard",
           "url": "https://www.business-standard.com/india-news/new-india-post-scam-targets-citizens-what-is-it-and-how-to-be-safe-124091700490_1.html"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "e-challan",
@@ -1023,7 +1038,8 @@
           "name": "BOOM",
           "url": "https://www.boomlive.in/decode/scamcheck/fake-rto-e-challan-message-on-whatsapp-a-growing-apk-scam-29919"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "tax-refund",
@@ -1087,7 +1103,8 @@
           "name": "Fact Crescendo (PIB Fact Check)",
           "url": "https://factcrescendo.com/factcheckincome-tax-refund-sms/"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "govt-scheme",
@@ -1151,7 +1168,8 @@
           "name": "Fact Crescendo",
           "url": "https://english.factcrescendo.com/2022/08/25/government-of-india-is-not-giving-free-laptops-to-all-indian-students/amp"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "loan-app",
@@ -1217,7 +1235,8 @@
           "name": "Business Standard",
           "url": "https://www.business-standard.com/finance/personal-finance/lending-app-offering-quick-loan-could-be-a-scam-how-to-stay-safe-125080700727_1.html"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "gift-parcel",
@@ -1282,7 +1301,8 @@
           "name": "Free Press Journal (Mumbai, 2026)",
           "url": "https://www.freepressjournal.in/amp/mumbai/mumbai-cyber-fraud-39-year-old-bhandup-homemaker-duped-of-625-lakh-in-instagram-gift-parcel-scam-case-registered"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "whatsapp-takeover",
@@ -1347,7 +1367,8 @@
           "name": "Free Press Journal (Mumbai cyber police)",
           "url": "https://www.freepressjournal.in/mumbai/mumbai-cyber-police-issue-alert-against-whatsapp-hacking-loan-app-blackmail-scams-urge-citizens-to-stay-vigilant-and-report-frauds"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "marketplace",
@@ -1416,7 +1437,8 @@
           "name": "RBI: BE(A)WARE booklet on fraud methods",
           "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=53372"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "qr-receive-money",
@@ -1485,7 +1507,8 @@
           "name": "Business Standard (UPI collect requests end, 2025)",
           "url": "https://www.business-standard.com/finance/personal-finance/upi-collect-requests-to-end-from-october-here-s-how-it-changes-payments-125081500767_1.html"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "sextortion",
@@ -1550,7 +1573,8 @@
           "name": "BOOM",
           "url": "https://www.boomlive.in/decode/whatsapp-video-call-scam-from-unknown-number-kashmir-man-sextortion-21900"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "esim-swap",
@@ -1619,7 +1643,8 @@
           "name": "RBI: BE(A)WARE booklet on fraud methods",
           "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=53372"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "insurance-bonus",
@@ -1675,7 +1700,8 @@
           "name": "IRDAI public notice: spurious calls and fake offers",
           "url": "https://irdai.gov.in/documents/37343/1358307/Spurious+Phone+Calls+and+Fictitious+_+Fraudulent+Offers_PUBLIC+NOTICE.pdf/88457f78-650d-010c-4f7c-43557ec4daac?version=2.1&t=1662752931535"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "booking-fraud",
@@ -1737,7 +1763,8 @@
           "name": "All India Radio",
           "url": "https://www.newsonair.gov.in/i4c-issues-alert-on-online-booking-frauds-targeting-pilgrims-and-tourists-warns-against-fake-websites-and-ads/"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "fake-shop",
@@ -1801,7 +1828,8 @@
           "name": "Business Standard (festive shopping scams)",
           "url": "https://www.business-standard.com/industry/news/deepfakes-to-social-media-online-shopping-scams-spike-this-festive-season-124111900337_1.html"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "mule-account",
@@ -1870,7 +1898,8 @@
           "name": "Free Press Journal (Maharashtra Cyber)",
           "url": "https://www.freepressjournal.in/mumbai/maharashtra-cyber-police-warn-of-mule-account-scams-urge-citizens-to-be-cautious-of-easy-money-offers"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "overseas-job",
@@ -1931,7 +1960,8 @@
           "name": "Business Standard (6,700 rescued)",
           "url": "https://www.business-standard.com/immigration/over-6-700-indians-rescued-from-fake-job-rackets-in-southeast-asia-centre-125121200152_1.html"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "bank-call-otp",
@@ -1995,7 +2025,8 @@
           "name": "Business Standard (RBI warns of fraud in its name)",
           "url": "https://www.business-standard.com/india-news/rbi-asks-public-to-be-cautious-against-fraudulent-activities-in-its-name-124082901101_1.html"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "fake-donation",
@@ -2055,7 +2086,8 @@
           "name": "PIB (official PM CARES details)",
           "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1608851"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "aeps-fingerprint",
@@ -2122,7 +2154,8 @@
           "name": "BOOM",
           "url": "https://www.boomlive.in/decode/cloned-fingerprints-scam-the-story-of-aadhaar-enabled-payment-system-22944"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "atm-skimming",
@@ -2185,7 +2218,8 @@
           "name": "RBI: BE(A)WARE booklet on fraud methods",
           "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=53372"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "juice-jacking",
@@ -2244,7 +2278,8 @@
           "name": "RBI: BE(A)WARE booklet on fraud methods",
           "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=53372"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "money-doubling",
@@ -2306,7 +2341,8 @@
           "name": "RBI: BE(A)WARE booklet on fraud methods",
           "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=53372"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "call-merge",
@@ -2373,7 +2409,8 @@
           "name": "Free Press Journal (Mumbai cyber police)",
           "url": "https://www.freepressjournal.in/mumbai/dont-merge-calls-dont-share-otps-cyber-police-warn-of-rising-insurance-and-call-merging-scams"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "census-officer",
@@ -2438,7 +2475,8 @@
           "name": "Deccan Chronicle (Delhi, 2026)",
           "url": "https://www.deccanchronicle.com/nation/delhi-officials-warn-of-scammers-using-fake-census-forms-to-steal-personal-data-1958174"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "gas-disconnection",
@@ -2504,7 +2542,8 @@
           "name": "Business Standard (gas connection scam)",
           "url": "https://www.business-standard.com/finance/personal-finance/46-people-duped-of-rs-26-lakh-in-gas-connection-scam-how-it-unfolded-124112000259_1.html"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "epfo-pf",
@@ -2574,7 +2613,8 @@
           "name": "EPFO KYC page",
           "url": "https://www.epfindia.gov.in/site_en/index.php/kyc"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "rental-scam",
@@ -2643,7 +2683,8 @@
           "name": "The Hans India (Bengaluru, AI images)",
           "url": "https://www.thehansindia.com/karnataka/online-rental-scam-fraudsters-use-ai-images-to-cheat-house-hunters-in-city-1049929"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "pension-life-certificate",
@@ -2708,7 +2749,8 @@
           "name": "Business Standard (fake pension portal, 2022)",
           "url": "https://www.business-standard.com/article/current-affairs/another-website-of-govt-meant-for-pensioners-hacked-complaint-registered-122120601294_1.html"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "scratch-card-post",
@@ -2772,7 +2814,8 @@
           "name": "Deccan Chronicle (Naaptol scratch cards, 2022)",
           "url": "https://www.deccanchronicle.com/nation/crime/151022/woman-loses-27-lakh-in-scratch-card-racket.html"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "relative-abroad",
@@ -2832,7 +2875,8 @@
           "name": "The Tribune (Haryana Police advisory)",
           "url": "https://www.tribuneindia.com/news/haryana/to-prevent-cyber-frauds-haryana-police-issue-advisory-436387"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "screen-sharing",
@@ -2892,7 +2936,8 @@
           "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
           "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "fake-friend-profile",
@@ -2952,7 +2997,8 @@
           "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
           "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "credit-card-call",
@@ -3011,7 +3057,8 @@
           "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
           "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "fake-agent-documents",
@@ -3070,7 +3117,8 @@
           "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
           "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "betting-app",
@@ -3127,7 +3175,8 @@
           "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
           "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "fake-recovery-agent",
@@ -3182,7 +3231,8 @@
           "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
           "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
         }
-      ]
+      ],
+      "tone": "urgent"
     },
     {
       "id": "public-wifi",
@@ -3237,7 +3287,8 @@
           "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
           "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
         }
-      ]
+      ],
+      "tone": "calm"
     },
     {
       "id": "payment-spoofing",
@@ -3292,7 +3343,8 @@
           "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
           "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
         }
-      ]
+      ],
+      "tone": "calm"
     }
   ]
 }
