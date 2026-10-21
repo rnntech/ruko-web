@@ -3,44 +3,220 @@
   "updated": "2026-10-19",
   "note": "Trusted sources for scam cards (D-035, docs/CONTRACTS.md Section 5a). A card may only cite a link whose host is one of these domains or ends with '.<domain>'. The scam-update agent reads only these. Add a source only after checking it is a government body, regulator, court reporter, wire service, established news outlet or IFCN fact-checker. Never social media posts, forwards or blogs.",
   "sources": [
-    { "name": "Any Indian government site (ministries, police, courts)", "domain": "gov.in", "type": "government" },
-    { "name": "Any Indian government site (NIC-hosted)", "domain": "nic.in", "type": "government" },
-    { "name": "National Cyber Crime Reporting Portal (I4C, Home Ministry)", "domain": "cybercrime.gov.in", "type": "government", "url": "https://cybercrime.gov.in", "public": true, "use": "Report a scam online, or call 1930" },
-    { "name": "Indian Cybercrime Coordination Centre (I4C)", "domain": "i4c.mha.gov.in", "type": "government", "url": "https://i4c.mha.gov.in", "public": true, "use": "Cybercrime alerts from the Home Ministry" },
-    { "name": "Sanchar Saathi and Chakshu (Department of Telecommunications)", "domain": "sancharsaathi.gov.in", "type": "government", "url": "https://sancharsaathi.gov.in", "public": true, "use": "Report fraud calls and messages (Chakshu), check connections in your name" },
-    { "name": "PIB Fact Check", "domain": "pib.gov.in", "type": "government", "url": "https://factcheck.pib.gov.in", "public": true, "use": "Checks fake government messages and notices" },
-    { "name": "Reserve Bank of India (incl. RBI Kehta Hai)", "domain": "rbi.org.in", "type": "regulator", "url": "https://rbikehtahai.rbi.org.in", "public": true, "use": "Banking and UPI safety advice" },
-    { "name": "CERT-In", "domain": "cert-in.org.in", "type": "government", "url": "https://www.cert-in.org.in", "public": true, "use": "Cyber security advisories" },
-    { "name": "TRAI", "domain": "trai.gov.in", "type": "regulator", "url": "https://www.trai.gov.in", "public": true, "use": "Telecom rules and fake TRAI call warnings" },
-    { "name": "SEBI", "domain": "sebi.gov.in", "type": "regulator", "url": "https://www.sebi.gov.in", "public": true, "use": "Investment and stock-tip scam warnings" },
-    { "name": "NPCI", "domain": "npci.org.in", "type": "regulator", "url": "https://www.npci.org.in", "public": true, "use": "UPI safety" },
-    { "name": "Stay Safe Online (MeitY, ISEA)", "domain": "staysafeonline.in", "type": "government", "url": "https://www.staysafeonline.in", "public": true, "use": "Plain-language online safety guides" },
-
-    { "name": "Press Trust of India (PTI)", "domain": "ptinews.com", "type": "wire" },
-    { "name": "The Hindu", "domain": "thehindu.com", "type": "news" },
-    { "name": "The Indian Express", "domain": "indianexpress.com", "type": "news" },
-    { "name": "The Times of India", "domain": "timesofindia.indiatimes.com", "type": "news" },
-    { "name": "The Economic Times", "domain": "economictimes.indiatimes.com", "type": "news" },
-    { "name": "Hindustan Times", "domain": "hindustantimes.com", "type": "news" },
-    { "name": "NDTV", "domain": "ndtv.com", "type": "news" },
-    { "name": "The Tribune", "domain": "tribuneindia.com", "type": "news" },
-    { "name": "Deccan Herald", "domain": "deccanherald.com", "type": "news" },
-    { "name": "ThePrint", "domain": "theprint.in", "type": "news" },
-    { "name": "Mint", "domain": "livemint.com", "type": "news" },
-    { "name": "Business Standard", "domain": "business-standard.com", "type": "news" },
-    { "name": "Deccan Chronicle", "domain": "deccanchronicle.com", "type": "news" },
-    { "name": "Free Press Journal", "domain": "freepressjournal.in", "type": "news" },
-    { "name": "The Hans India", "domain": "thehansindia.com", "type": "news" },
-    { "name": "Gujarat Samachar", "domain": "gujaratsamachar.com", "type": "news" },
-    { "name": "The Pioneer", "domain": "dailypioneer.com", "type": "news" },
-    { "name": "ETV Bharat", "domain": "etvbharat.com", "type": "news" },
-    { "name": "MediaNama", "domain": "medianama.com", "type": "news" },
-
-    { "name": "LiveLaw", "domain": "livelaw.in", "type": "court" },
-    { "name": "Bar & Bench", "domain": "barandbench.com", "type": "court" },
-
-    { "name": "BOOM", "domain": "boomlive.in", "type": "fact_check" },
-    { "name": "Alt News", "domain": "altnews.in", "type": "fact_check" },
-    { "name": "Fact Crescendo", "domain": "factcrescendo.com", "type": "fact_check" }
+    {
+      "name": "Any Indian government site (ministries, police, courts)",
+      "domain": "gov.in",
+      "type": "government"
+    },
+    {
+      "name": "Any Indian government site (NIC-hosted)",
+      "domain": "nic.in",
+      "type": "government"
+    },
+    {
+      "name": "National Cyber Crime Reporting Portal (I4C, Home Ministry)",
+      "domain": "cybercrime.gov.in",
+      "type": "government",
+      "url": "https://cybercrime.gov.in",
+      "public": true,
+      "use": "Report a scam online, or call 1930"
+    },
+    {
+      "name": "Indian Cybercrime Coordination Centre (I4C)",
+      "domain": "i4c.mha.gov.in",
+      "type": "government",
+      "url": "https://i4c.mha.gov.in",
+      "public": true,
+      "use": "Cybercrime alerts from the Home Ministry"
+    },
+    {
+      "name": "Sanchar Saathi and Chakshu (Department of Telecommunications)",
+      "domain": "sancharsaathi.gov.in",
+      "type": "government",
+      "url": "https://sancharsaathi.gov.in",
+      "public": true,
+      "use": "Report fraud calls and messages (Chakshu), check connections in your name"
+    },
+    {
+      "name": "PIB Fact Check",
+      "domain": "pib.gov.in",
+      "type": "government",
+      "url": "https://factcheck.pib.gov.in",
+      "public": true,
+      "use": "Checks fake government messages and notices"
+    },
+    {
+      "name": "Reserve Bank of India (incl. RBI Kehta Hai)",
+      "domain": "rbi.org.in",
+      "type": "regulator",
+      "url": "https://rbikehtahai.rbi.org.in",
+      "public": true,
+      "use": "Banking and UPI safety advice"
+    },
+    {
+      "name": "CERT-In",
+      "domain": "cert-in.org.in",
+      "type": "government",
+      "url": "https://www.cert-in.org.in",
+      "public": true,
+      "use": "Cyber security advisories"
+    },
+    {
+      "name": "TRAI",
+      "domain": "trai.gov.in",
+      "type": "regulator",
+      "url": "https://www.trai.gov.in",
+      "public": true,
+      "use": "Telecom rules and fake TRAI call warnings"
+    },
+    {
+      "name": "SEBI",
+      "domain": "sebi.gov.in",
+      "type": "regulator",
+      "url": "https://www.sebi.gov.in",
+      "public": true,
+      "use": "Investment and stock-tip scam warnings"
+    },
+    {
+      "name": "NPCI",
+      "domain": "npci.org.in",
+      "type": "regulator",
+      "url": "https://www.npci.org.in",
+      "public": true,
+      "use": "UPI safety"
+    },
+    {
+      "name": "Stay Safe Online (MeitY, ISEA)",
+      "domain": "staysafeonline.in",
+      "type": "government",
+      "url": "https://www.staysafeonline.in",
+      "public": true,
+      "use": "Plain-language online safety guides"
+    },
+    {
+      "name": "Press Trust of India (PTI)",
+      "domain": "ptinews.com",
+      "type": "wire"
+    },
+    {
+      "name": "The Hindu",
+      "domain": "thehindu.com",
+      "type": "news"
+    },
+    {
+      "name": "The Indian Express",
+      "domain": "indianexpress.com",
+      "type": "news"
+    },
+    {
+      "name": "The Times of India",
+      "domain": "timesofindia.indiatimes.com",
+      "type": "news"
+    },
+    {
+      "name": "The Economic Times",
+      "domain": "economictimes.indiatimes.com",
+      "type": "news"
+    },
+    {
+      "name": "Hindustan Times",
+      "domain": "hindustantimes.com",
+      "type": "news"
+    },
+    {
+      "name": "NDTV",
+      "domain": "ndtv.com",
+      "type": "news"
+    },
+    {
+      "name": "The Tribune",
+      "domain": "tribuneindia.com",
+      "type": "news"
+    },
+    {
+      "name": "Deccan Herald",
+      "domain": "deccanherald.com",
+      "type": "news"
+    },
+    {
+      "name": "ThePrint",
+      "domain": "theprint.in",
+      "type": "news"
+    },
+    {
+      "name": "Mint",
+      "domain": "livemint.com",
+      "type": "news"
+    },
+    {
+      "name": "Business Standard",
+      "domain": "business-standard.com",
+      "type": "news"
+    },
+    {
+      "name": "Deccan Chronicle",
+      "domain": "deccanchronicle.com",
+      "type": "news"
+    },
+    {
+      "name": "Free Press Journal",
+      "domain": "freepressjournal.in",
+      "type": "news"
+    },
+    {
+      "name": "The Hans India",
+      "domain": "thehansindia.com",
+      "type": "news"
+    },
+    {
+      "name": "Gujarat Samachar",
+      "domain": "gujaratsamachar.com",
+      "type": "news"
+    },
+    {
+      "name": "The Pioneer",
+      "domain": "dailypioneer.com",
+      "type": "news"
+    },
+    {
+      "name": "ETV Bharat",
+      "domain": "etvbharat.com",
+      "type": "news"
+    },
+    {
+      "name": "MediaNama",
+      "domain": "medianama.com",
+      "type": "news"
+    },
+    {
+      "name": "LiveLaw",
+      "domain": "livelaw.in",
+      "type": "court"
+    },
+    {
+      "name": "Bar & Bench",
+      "domain": "barandbench.com",
+      "type": "court"
+    },
+    {
+      "name": "BOOM",
+      "domain": "boomlive.in",
+      "type": "fact_check"
+    },
+    {
+      "name": "Alt News",
+      "domain": "altnews.in",
+      "type": "fact_check"
+    },
+    {
+      "name": "Fact Crescendo",
+      "domain": "factcrescendo.com",
+      "type": "fact_check"
+    },
+    {
+      "name": "HP Gas (HPCL), a government oil company: its own site (impersonated organisation, D-071)",
+      "domain": "hindustanpetroleum.com",
+      "type": "official"
+    }
   ]
 }

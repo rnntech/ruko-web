@@ -1,5 +1,2049 @@
 {
   "version": 2,
   "updated": "2026-10-21",
-  "cards": []
+  "cards": [
+    {
+      "id": "digital-arrest",
+      "status": "approved",
+      "added": "2026-10-19",
+      "notify": true,
+      "channels": [
+        "call",
+        "video_call"
+      ],
+      "name": {
+        "en": "Fake police / CBI \"digital arrest\"",
+        "hi": "नकली पुलिस / सीबीआई \"डिजिटल अरेस्ट\""
+      },
+      "they_say": {
+        "en": "\"This is the police / CBI. Your Aadhaar is linked to money laundering. You are under digital arrest.\"",
+        "hi": "\"मैं पुलिस / सीबीआई से बोल रहा हूँ। आपका आधार मनी लॉन्ड्रिंग में जुड़ा है। आप डिजिटल अरेस्ट में हैं।\""
+      },
+      "they_ask": {
+        "en": "Stay on the video call, tell no one, and send money \"for verification\" or \"bail\".",
+        "hi": "वीडियो कॉल पर बने रहें, किसी को न बताएं, और \"जाँच\" या \"ज़मानत\" के लिए पैसे भेजें।"
+      },
+      "red_flag": {
+        "en": "There is no \"digital arrest\" in Indian law. Police never arrest anyone on a call or ask for money.",
+        "hi": "भारत के कानून में \"डिजिटल अरेस्ट\" जैसा कुछ नहीं है। पुलिस कभी फ़ोन पर गिरफ़्तार नहीं करती और पैसे नहीं माँगती।"
+      },
+      "do": {
+        "en": "Never join a video call for any “investigation” or “arrest”: there is no such thing. Hang up and report it on 1930 or cybercrime.gov.in.",
+        "hi": "फ़ोन काट दें। किसी भरोसेमंद व्यक्ति को फ़ोन करें। 1930 या cybercrime.gov.in पर शिकायत करें।"
+      },
+      "sources": [
+        {
+          "name": "CERT-In: Cyber Security Handbook (2025)",
+          "url": "https://www.cert-in.org.in/PDF/Mahila_Suraksha_Booklet25.pdf"
+        },
+        {
+          "name": "PIB / I4C (MHA): alert on 'digital arrest' and blackmail calls; report on 1930",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020570"
+        },
+        {
+          "name": "The Tribune",
+          "url": "https://www.tribuneindia.com/news/india/will-deal-with-iron-hand-top-court-on-rs-3000-cr-extortion-via-digital-arrests/amp"
+        },
+        {
+          "name": "ETV Bharat",
+          "url": "https://www.etvbharat.com/en/bharat/sc-expresses-grave-concern-over-digital-arrests-scams-issues-notice-to-centre-and-cbi-enn25101702554"
+        }
+      ]
+    },
+    {
+      "id": "trai-sim-block",
+      "status": "approved",
+      "added": "2026-10-19",
+      "notify": false,
+      "channels": [
+        "call"
+      ],
+      "name": {
+        "en": "Fake TRAI \"your SIM will be blocked\" call",
+        "hi": "नकली TRAI कॉल: \"आपका सिम बंद होगा\""
+      },
+      "they_say": {
+        "en": "\"This is TRAI. Your SIM will be blocked in 2 hours because it was misused. Press 9 to talk to an officer.\"",
+        "hi": "\"मैं TRAI से हूँ। आपका सिम ग़लत काम में इस्तेमाल हुआ है, 2 घंटे में बंद हो जाएगा। अफ़सर से बात करने के लिए 9 दबाएं।\""
+      },
+      "they_ask": {
+        "en": "Talk to an \"officer\", who then hands you to fake police asking for money.",
+        "hi": "\"अफ़सर\" से बात करें, जो फिर आपको नकली पुलिस से जोड़ता है जो पैसे माँगती है।"
+      },
+      "red_flag": {
+        "en": "TRAI does not call people to block SIMs.",
+        "hi": "TRAI किसी को सिम बंद करने के लिए फ़ोन नहीं करता।"
+      },
+      "do": {
+        "en": "DoT and TRAI don’t call to disconnect your number. Hang up and report the call on Chakshu at sancharsaathi.gov.in, or on 1930 if you lost money.",
+        "hi": "फ़ोन काट दें। चिंता हो तो सरकार की संचार साथी वेबसाइट पर अपना नंबर जाँचें। 1930 पर शिकायत करें।"
+      },
+      "sources": [
+        {
+          "name": "PIB / DoT: fake calls threatening to disconnect your mobile",
+          "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2020557&reg=48&lang=2"
+        },
+        {
+          "name": "ThePrint",
+          "url": "https://theprint.in/india/delhi-police-prevents-potential-losses-of-rs-1-53-crore-in-five-digital-arrest-scams/3075336/"
+        }
+      ]
+    },
+    {
+      "id": "courier-parcel",
+      "status": "approved",
+      "added": "2026-10-19",
+      "notify": true,
+      "channels": [
+        "call",
+        "video_call"
+      ],
+      "name": {
+        "en": "Fake courier: \"drugs found in your parcel\"",
+        "hi": "नकली कूरियर: \"आपके पार्सल में ड्रग्स मिले\""
+      },
+      "they_say": {
+        "en": "\"FedEx / DHL here. A parcel in your name has drugs and fake passports. Customs has seized it.\"",
+        "hi": "\"FedEx / DHL से बोल रहे हैं। आपके नाम के पार्सल में ड्रग्स और नकली पासपोर्ट मिले हैं। कस्टम ने ज़ब्त कर लिया है।\""
+      },
+      "they_ask": {
+        "en": "Talk to \"Mumbai police\", then pay to \"clear your name\".",
+        "hi": "\"मुंबई पुलिस\" से बात करें, फिर \"नाम साफ़ करने\" के लिए पैसे दें।"
+      },
+      "red_flag": {
+        "en": "Courier companies don't connect you to the police, and police don't take money on calls.",
+        "hi": "कूरियर कंपनियाँ आपको पुलिस से नहीं जोड़तीं, और पुलिस फ़ोन पर पैसे नहीं लेती।"
+      },
+      "do": {
+        "en": "Hang up. No agency settles a “parcel” case by phone or asks for money. Report it on 1930 or cybercrime.gov.in.",
+        "hi": "फ़ोन काट दें। पैसे न दें। 1930 पर शिकायत करें।"
+      },
+      "sources": [
+        {
+          "name": "PIB / I4C (MHA): alert on 'digital arrest' and blackmail calls; report on 1930",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020570"
+        },
+        {
+          "name": "Deccan Herald",
+          "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fmangaluru-woman-duped-of-rs-39-lakh-in-parcel-scam-3215597"
+        }
+      ]
+    },
+    {
+      "id": "kyc-update",
+      "status": "approved",
+      "added": "2026-10-19",
+      "notify": false,
+      "channels": [
+        "sms",
+        "whatsapp"
+      ],
+      "name": {
+        "en": "Fake bank \"KYC expired\" message",
+        "hi": "नकली बैंक मैसेज: \"KYC खत्म हो गई\""
+      },
+      "they_say": {
+        "en": "\"Your bank KYC has expired. Your account will be blocked today. Update now: [link]\"",
+        "hi": "\"आपकी बैंक KYC खत्म हो गई है। आज आपका खाता बंद हो जाएगा। अभी अपडेट करें: [लिंक]\""
+      },
+      "they_ask": {
+        "en": "Open a link, enter your details or OTP, or install an app.",
+        "hi": "लिंक खोलें, अपनी जानकारी या OTP डालें, या कोई ऐप इंस्टॉल करें।"
+      },
+      "red_flag": {
+        "en": "Real bank texts come from registered names like VM-SBIINB, not mobile numbers. Banks never ask for your OTP or PIN.",
+        "hi": "असली बैंक मैसेज VM-SBIINB जैसे रजिस्टर्ड नाम से आते हैं, मोबाइल नंबर से नहीं। बैंक कभी OTP या PIN नहीं माँगते।"
+      },
+      "do": {
+        "en": "Don’t tap the link. Go to your bank’s own app or website yourself, or visit the branch.",
+        "hi": "लिंक न खोलें। अपने बैंक का ऐप खुद खोलें, या ब्रांच जाएं।"
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "TRAI (press release)",
+          "url": "https://trai.gov.in/sites/default/files/PR_No.67of2024.pdf"
+        }
+      ]
+    },
+    {
+      "id": "electricity-bill",
+      "status": "approved",
+      "added": "2026-10-19",
+      "notify": true,
+      "channels": [
+        "sms",
+        "whatsapp"
+      ],
+      "name": {
+        "en": "Fake \"your electricity will be cut tonight\"",
+        "hi": "नकली मैसेज: \"आज रात बिजली कट जाएगी\""
+      },
+      "they_say": {
+        "en": "\"Your electricity will be cut tonight at 9:30 because your bill isn't updated. Call this officer.\"",
+        "hi": "\"आपका बिल अपडेट नहीं है, आज रात 9:30 बजे बिजली कट जाएगी। इस अफ़सर को फ़ोन करें।\""
+      },
+      "they_ask": {
+        "en": "Install an app (often a remote-control app or an APK) to \"update the bill\".",
+        "hi": "\"बिल अपडेट\" के लिए कोई ऐप इंस्टॉल करें (अक्सर रिमोट-कंट्रोल ऐप या APK फ़ाइल)।"
+      },
+      "red_flag": {
+        "en": "Electricity boards don't send cut-off warnings from mobile numbers or ask you to install apps.",
+        "hi": "बिजली विभाग मोबाइल नंबर से कटौती की चेतावनी नहीं भेजता और ऐप इंस्टॉल करने को नहीं कहता।"
+      },
+      "do": {
+        "en": "Don’t tap the link or call the number. Check your bill only on the electricity company’s own app or website.",
+        "hi": "इसे अनदेखा करें। अपना बिल सिर्फ़ बिजली विभाग के असली ऐप या वेबसाइट पर देखें।"
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "Free Press Journal",
+          "url": "https://freepressjournal.in/indore/fake-electricity-bill-message-costs-elderly-man-144-lakh-in-indore"
+        },
+        {
+          "name": "The Tribune",
+          "url": "https://www.tribuneindia.com/news/jalandhar/sr-citizen-loses-rs-1-2l-in-electricity-bill-scam-427428"
+        }
+      ]
+    },
+    {
+      "id": "reward-points",
+      "status": "approved",
+      "added": "2026-10-19",
+      "notify": false,
+      "channels": [
+        "sms"
+      ],
+      "name": {
+        "en": "Fake credit-card reward points",
+        "hi": "नकली क्रेडिट कार्ड रिवॉर्ड पॉइंट"
+      },
+      "they_say": {
+        "en": "\"Your credit card reward points expire today. Redeem them for cash now.\"",
+        "hi": "\"आपके क्रेडिट कार्ड के रिवॉर्ड पॉइंट आज खत्म हो जाएंगे। अभी कैश में बदलें।\""
+      },
+      "they_ask": {
+        "en": "Install an app or open a link and type in your card details.",
+        "hi": "कोई ऐप इंस्टॉल करें या लिंक खोलकर कार्ड की जानकारी डालें।"
+      },
+      "red_flag": {
+        "en": "Banks never send app files on WhatsApp. Points are redeemed only in the bank's own app.",
+        "hi": "बैंक कभी WhatsApp पर ऐप फ़ाइल नहीं भेजते। पॉइंट सिर्फ़ बैंक के अपने ऐप में मिलते हैं।"
+      },
+      "do": {
+        "en": "Never install an app from a link in a message. Check your points only in your bank’s own app.",
+        "hi": "कुछ भी इंस्टॉल न करें। अपने पॉइंट बैंक के अपने ऐप में देखें।"
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "Deccan Chronicle",
+          "url": "https://www.deccanchronicle.com/southern-states/telangana/hyderabad-businessman-lost-rs-123-lakh-in-credit-card-reward-point-scam-1883368"
+        }
+      ]
+    },
+    {
+      "id": "customer-care",
+      "status": "approved",
+      "added": "2026-10-19",
+      "notify": false,
+      "channels": [
+        "website",
+        "call"
+      ],
+      "name": {
+        "en": "Fake customer-care number",
+        "hi": "नकली कस्टमर-केयर नंबर"
+      },
+      "they_say": {
+        "en": "You searched online for a helpline. The \"agent\" says they'll fix your refund or problem.",
+        "hi": "आपने ऑनलाइन हेल्पलाइन खोजी। \"एजेंट\" कहता है कि वह आपका रिफ़ंड या समस्या ठीक कर देगा।"
+      },
+      "they_ask": {
+        "en": "Install AnyDesk or a screen-sharing app, share an OTP, or pay a small \"fee\".",
+        "hi": "AnyDesk या स्क्रीन-शेयर ऐप इंस्टॉल करें, OTP बताएं, या छोटी \"फ़ीस\" भरें।"
+      },
+      "red_flag": {
+        "en": "Real support never asks you to install a remote-control app or share an OTP.",
+        "hi": "असली कस्टमर केयर कभी रिमोट-कंट्रोल ऐप इंस्टॉल करने या OTP बताने को नहीं कहता।"
+      },
+      "do": {
+        "en": "Take the number only from the company’s official website or app, never from search results. Real customer-care numbers are never mobile numbers.",
+        "hi": "फ़ोन काट दें। सिर्फ़ अपने कार्ड पर छपा नंबर या कंपनी के अपने ऐप में दिया नंबर इस्तेमाल करें।"
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "Fact Crescendo",
+          "url": "https://english.factcrescendo.com/2025/11/03/fake-customer-care-number-scam/"
+        },
+        {
+          "name": "LiveLaw",
+          "url": "https://www.livelaw.in/amp/high-court/bombay-high-court/bombay-high-court-judge-duped-of-rs-6-lakhs-in-online-credit-card-fraud-525553"
+        }
+      ]
+    },
+    {
+      "id": "stock-tips",
+      "status": "approved",
+      "added": "2026-10-19",
+      "notify": true,
+      "channels": [
+        "whatsapp",
+        "social_media"
+      ],
+      "name": {
+        "en": "Fake stock-tips group and trading app",
+        "hi": "नकली शेयर-टिप्स ग्रुप और ट्रेडिंग ऐप"
+      },
+      "they_say": {
+        "en": "\"Join our VIP stock group. SEBI registered. Guaranteed returns. Use our trading app.\"",
+        "hi": "\"हमारे VIP शेयर ग्रुप से जुड़ें। SEBI रजिस्टर्ड। पक्का मुनाफ़ा। हमारा ट्रेडिंग ऐप इस्तेमाल करें।\""
+      },
+      "they_ask": {
+        "en": "Invest through their app. When you try to withdraw, pay a \"tax\" or \"fee\" first.",
+        "hi": "उनके ऐप से पैसे लगाएं। निकालने पर पहले \"टैक्स\" या \"फ़ीस\" भरें।"
+      },
+      "red_flag": {
+        "en": "No one can guarantee returns. Having to pay before you can withdraw means it's a scam.",
+        "hi": "कोई भी पक्का मुनाफ़ा नहीं दे सकता। पैसे निकालने से पहले पैसे माँगना मतलब धोखा।"
+      },
+      "do": {
+        "en": "Don’t trust stock tips on WhatsApp or Telegram. Use only apps listed under “Registered Mobile Trading Apps” on SEBI’s investor website.",
+        "hi": "सिर्फ़ उसी ब्रोकर से निवेश करें जिसे आप पहले से जानते हैं। sebi.gov.in पर रजिस्ट्रेशन जाँचें।"
+      },
+      "sources": [
+        {
+          "name": "SEBI: beware of fake trading app scams",
+          "url": "https://investor.sebi.gov.in/pdf/Fake%20trading%20app%20scam%20Landscape.pdf"
+        },
+        {
+          "name": "SEBI: caution on frauds through social media (PR 22/2025)",
+          "url": "https://www.sebi.gov.in/sebi_data/attachdocs/may-2025/1746621138080.pdf"
+        },
+        {
+          "name": "Free Press Journal",
+          "url": "https://www.freepressjournal.in/mumbai/mumbai-businessman-loses-343-crore-in-whatsapp-share-trading-scam-fake-apps-showed-44-crore-profit"
+        },
+        {
+          "name": "ThePrint",
+          "url": "https://theprint.in/india/cybercrime-saw-24-spike-in-2025-indians-lost-rs-22495-crore-mainly-in-investment-scams/2859930/"
+        }
+      ]
+    },
+    {
+      "id": "task-job",
+      "status": "approved",
+      "added": "2026-10-19",
+      "notify": false,
+      "channels": [
+        "whatsapp",
+        "telegram"
+      ],
+      "name": {
+        "en": "Fake part-time job / online tasks",
+        "hi": "नकली पार्ट-टाइम जॉब / ऑनलाइन टास्क"
+      },
+      "they_say": {
+        "en": "\"Earn ₹200 per review or like, from home.\" They pay small amounts at first.",
+        "hi": "\"घर बैठे हर रिव्यू या लाइक पर ₹200 कमाएं।\" शुरू में छोटी रकम देते हैं।"
+      },
+      "they_ask": {
+        "en": "Pay for \"prepaid tasks\" in a Telegram group to earn more.",
+        "hi": "ज़्यादा कमाने के लिए Telegram ग्रुप में \"प्रीपेड टास्क\" के पैसे भरें।"
+      },
+      "red_flag": {
+        "en": "A real job never asks you to pay to earn.",
+        "hi": "असली नौकरी में कमाने के लिए पैसे नहीं भरने पड़ते।"
+      },
+      "do": {
+        "en": "A real job never asks you to pay. Stop paying and report it on 1930 or cybercrime.gov.in.",
+        "hi": "रुक जाएं और आगे कोई पैसे न भरें। 1930 पर शिकायत करें।"
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        },
+        {
+          "name": "PIB / I4C (MHA): alert on 'digital arrest' and blackmail calls; report on 1930",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020570"
+        },
+        {
+          "name": "The Hans India",
+          "url": "https://www.thehansindia.com/news/cities/hyderabad/engineer-loses-rs-51-lakh-in-high-profile-telegram-job-scam-1018852"
+        }
+      ]
+    },
+    {
+      "id": "fake-apk-invite",
+      "status": "approved",
+      "added": "2026-10-20",
+      "notify": true,
+      "channels": [
+        "whatsapp",
+        "app_file"
+      ],
+      "name": {
+        "en": "Fake bank KYC, challan or wedding card sent as an app (APK)"
+      },
+      "they_say": {
+        "en": "\"Your account will be blocked tonight. Install our official update.\" Then a file like \"SBI KYC AADHAR UPDATE\" or \"Your Traffic RTO Challan\" marked APK. Sometimes it comes from a known contact whose WhatsApp was hacked."
+      },
+      "they_ask": {
+        "en": "Open and install the file.",
+        "hi": "फ़ाइल खोलकर इंस्टॉल करें।"
+      },
+      "red_flag": {
+        "en": "Banks, the RTO and the government never send apps on WhatsApp. If WhatsApp shows \"APK\" under a file, it is an app, not a document."
+      },
+      "do": {
+        "en": "Don’t open or install the file: never install apps sent in a message, even from people you know. Call the sender on their saved number."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "Gujarat Samachar",
+          "url": "https://english.gujaratsamachar.com/news/ahmedabad/ahmedabad-woman-loses-Rs-262-lakh-after-opening-fake-wedding-invitation-apk-sent-from-acquaintances-whatsapp-42366994422"
+        },
+        {
+          "name": "The Tribune",
+          "url": "https://www.tribuneindia.com/news/himachal/challan-scam-alert-fraudsters-use-whatsapp-apk-links-to-loot-money"
+        },
+        {
+          "name": "News On AIR",
+          "url": "https://www.newsonair.gov.in/nagaland-police-issues-alert-on-malicious-pm-kisan-yojana-apk-file-circulating-across-state"
+        }
+      ]
+    },
+    {
+      "id": "fake-family-voice",
+      "status": "approved",
+      "added": "2026-10-19",
+      "notify": true,
+      "channels": [
+        "call"
+      ],
+      "name": {
+        "en": "Fake family member's voice",
+        "hi": "परिवार के सदस्य की नकली आवाज़"
+      },
+      "they_say": {
+        "en": "A voice that sounds exactly like your child or relative: \"I've had an accident, send money now, don't tell anyone.\"",
+        "hi": "बिल्कुल आपके बच्चे या रिश्तेदार जैसी आवाज़: \"मेरा एक्सीडेंट हो गया है, अभी पैसे भेजो, किसी को मत बताना।\""
+      },
+      "they_ask": {
+        "en": "Send money right away, often to someone else's account.",
+        "hi": "तुरंत पैसे भेजें, अक्सर किसी और के खाते में।"
+      },
+      "red_flag": {
+        "en": "AI can copy a voice from a few seconds of audio. Hurry plus secrecy is the sign.",
+        "hi": "AI कुछ सेकंड की आवाज़ से नकल कर सकता है। जल्दबाज़ी और राज़ रखने को कहना ही पहचान है।"
+      },
+      "do": {
+        "en": "Before you pay, hang up and call them back on the number you already have, or meet them.",
+        "hi": "फ़ोन काटकर उन्हें उनके सेव नंबर पर वापस फ़ोन करें। परिवार का कोड-शब्द हो तो पूछें।"
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "The Pioneer",
+          "url": "https://dailypioneer.com/news/when-your-voice-is-no-longer-proof"
+        },
+        {
+          "name": "MediaNama",
+          "url": "https://www.medianama.com/2024/04/223-tamil-nadu-police-cybercrime-advisory-ai-voice-cloning/"
+        }
+      ]
+    },
+    {
+      "id": "advance-fee",
+      "status": "approved",
+      "added": "2026-10-20",
+      "notify": false,
+      "channels": [
+        "sms",
+        "whatsapp",
+        "call"
+      ],
+      "name": {
+        "en": "Fake prize, loan, job or scheme that asks for a fee first"
+      },
+      "they_say": {
+        "en": "\"You've won Rs 25 lakh.\" \"Your loan is approved.\" \"You're selected for the job.\" \"Register for the government scheme.\""
+      },
+      "they_ask": {
+        "en": "Pay a registration, processing or claim fee first."
+      },
+      "red_flag": {
+        "en": "Real prizes, loans, jobs and government schemes never ask you to pay before you receive money."
+      },
+      "do": {
+        "en": "Don’t pay any fee to receive a prize, loan or scheme money: nobody gives free money. Check schemes only on .gov.in sites."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "News On AIR",
+          "url": "https://www.newsonair.gov.in/pib-fact-check-unit-warns-of-scam-fraudsters-charging-rs-8000-for-pm-kusum-yojana-registration"
+        },
+        {
+          "name": "The Tribune",
+          "url": "https://www.tribuneindia.com/news/science-technology/from-whatsapp-to-telegram-how-fraudsters-are-still-conning-indian-users-508985/amp"
+        }
+      ]
+    },
+    {
+      "id": "fake-debit-reply",
+      "status": "approved",
+      "added": "2026-10-20",
+      "notify": false,
+      "channels": [
+        "whatsapp",
+        "sms"
+      ],
+      "name": {
+        "en": "Fake “money debited” alert that asks you to reply NO"
+      },
+      "they_say": {
+        "en": "“Rs 48,500 has been debited from your account. If this wasn’t you, reply NO to block it.”"
+      },
+      "they_ask": {
+        "en": "Reply YES or NO, or call their number to “block” or “reverse” the payment."
+      },
+      "red_flag": {
+        "en": "Banks never ask you to reply YES or NO on WhatsApp. Real debit alerts come by SMS from the bank’s name (like JD-SBIUPI) and tell you to call the number on your card."
+      },
+      "do": {
+        "en": "Don’t reply or call back. Check your account in your bank’s own app. If money is gone, call 1930."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "PIB / I4C (MHA): alert on 'digital arrest' and blackmail calls; report on 1930",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020570"
+        },
+        {
+          "name": "Free Press Journal",
+          "url": "https://www.freepressjournal.in/tech/replying-no-on-whatsapp-could-empty-your-bank-account-hyderabad-police-warns"
+        },
+        {
+          "name": "Gujarat Samachar",
+          "url": "https://english.gujaratsamachar.com/news/national/dont-reply-no-to-fake-bank-debit-alerts-on-whatsapp-a-single-message-can-drain-your-account-97673140251"
+        }
+      ]
+    },
+    {
+      "id": "fake-credit-sms",
+      "status": "approved",
+      "added": "2026-10-20",
+      "notify": false,
+      "channels": [
+        "sms",
+        "call"
+      ],
+      "name": {
+        "en": "Fake “money credited” SMS, then “I sent it by mistake”"
+      },
+      "they_say": {
+        "en": "“Rs 5,000 credited to your A/c…” Then a call: “I sent you money by mistake, please send it back.”"
+      },
+      "they_ask": {
+        "en": "Send the “extra” money back, often more than once."
+      },
+      "red_flag": {
+        "en": "The “bank” SMS comes from an ordinary mobile number. Real alerts come from the bank’s sender name, and the money never shows in your bank app."
+      },
+      "do": {
+        "en": "Check your account in your bank’s own app before you believe any “credited” message, and don’t send money back."
+      },
+      "sources": [
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        },
+        {
+          "name": "Free Press Journal",
+          "url": "https://www.freepressjournal.in/indore/70000-gone-in-15-minutes-indore-man-falls-for-fake-bank-credit-sms-scam"
+        }
+      ]
+    },
+    {
+      "id": "india-post-delivery",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "sms",
+        "whatsapp"
+      ],
+      "name": {
+        "en": "Fake India Post “parcel stuck, update your address”"
+      },
+      "they_say": {
+        "en": "“India Post: your package is at the warehouse. Delivery failed due to incomplete address. Update it within 48 hours at this link, or it will be returned.”"
+      },
+      "they_ask": {
+        "en": "Open a link, type your address and card details, and pay a small “redelivery fee”."
+      },
+      "red_flag": {
+        "en": "India Post never sends links to update your address. The link is not indiapost.gov.in, it only looks like it."
+      },
+      "do": {
+        "en": "Don’t open the link. If you are expecting a parcel, track it yourself on indiapost.gov.in or the India Post app."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "All India Radio (PIB Fact Check, Jan 2026)",
+          "url": "https://www.newsonair.gov.in/govt-debunks-sms-from-india-post-asking-people-to-update-their-address"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/india-news/new-india-post-scam-targets-citizens-what-is-it-and-how-to-be-safe-124091700490_1.html"
+        }
+      ]
+    },
+    {
+      "id": "e-challan",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "sms",
+        "whatsapp",
+        "app_file"
+      ],
+      "name": {
+        "en": "Fake traffic e-challan with a payment link or app"
+      },
+      "they_say": {
+        "en": "“Your challan for vehicle PB08… is Rs 500. Pay online at this link, or contact the RTO.” Sometimes an app file named “e-Challan” or “mParivahan”."
+      },
+      "they_ask": {
+        "en": "Pay through a link that copies the Parivahan site, or install an app."
+      },
+      "red_flag": {
+        "en": "Real challans are checked and paid only on echallan.parivahan.gov.in. A link ending in .in, .com or .xyz instead of .gov.in is fake, and a challan never comes as an app."
+      },
+      "do": {
+        "en": "Don’t open the link. Check challans only on echallan.parivahan.gov.in or its official app; they never ask for your OTP."
+      },
+      "sources": [
+        {
+          "name": "eChallan portal (MoRTH): warning on fake sites and apps",
+          "url": "https://echallan.parivahan.gov.in/"
+        },
+        {
+          "name": "Business Standard (PIB warning, 2026)",
+          "url": "https://www.business-standard.com/india-news/fake-traffic-challan-scam-pib-warning-whatsapp-sms-links-126071000400_1.html"
+        },
+        {
+          "name": "BOOM",
+          "url": "https://www.boomlive.in/decode/scamcheck/fake-rto-e-challan-message-on-whatsapp-a-growing-apk-scam-29919"
+        }
+      ]
+    },
+    {
+      "id": "tax-refund",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "sms",
+        "whatsapp"
+      ],
+      "name": {
+        "en": "Fake income-tax refund “approved”"
+      },
+      "they_say": {
+        "en": "“You have been approved an income tax refund of Rs 15,490. Verify your account number, or update your bank details at this link.”"
+      },
+      "they_ask": {
+        "en": "Open a short link and type bank details, card number or OTP."
+      },
+      "red_flag": {
+        "en": "The Income Tax Department never sends refund links. Refunds go straight to the account already in your tax return."
+      },
+      "do": {
+        "en": "Don’t tap the link: the department never asks for your PIN or passwords by message. Check your refund by logging in yourself at incometax.gov.in."
+      },
+      "sources": [
+        {
+          "name": "PIB / Income Tax Department: phishing advisory",
+          "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=136117&reg=48&lang=2"
+        },
+        {
+          "name": "BOOM",
+          "url": "https://www.boomlive.in/received-it-refund-message-watch-out-it-could-be-fake"
+        },
+        {
+          "name": "Fact Crescendo (PIB Fact Check)",
+          "url": "https://factcrescendo.com/factcheckincome-tax-refund-sms/"
+        }
+      ]
+    },
+    {
+      "id": "govt-scheme",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "whatsapp",
+        "social_media"
+      ],
+      "name": {
+        "en": "Fake government “free” scheme: laptop, recharge or cash"
+      },
+      "they_say": {
+        "en": "“Under the PM Free Mobile Recharge / Free Laptop Scheme, everyone gets ₹239 recharge (or a laptop, or ₹46,715). Click the link and register before the last date. Share with 10 groups.”"
+      },
+      "they_ask": {
+        "en": "Fill in a form with Aadhaar, bank or phone details, or pay a small “registration” fee."
+      },
+      "red_flag": {
+        "en": "Real schemes are announced on .gov.in sites, not in forwards with a deadline and a strange link. PIB Fact Check has called these fake many times."
+      },
+      "do": {
+        "en": "Don’t reply to messages promising government money. Check any scheme on the ministry’s own website or with PIB Fact Check."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "All India Radio (PIB Fact Check, 2026)",
+          "url": "https://newsonair.gov.in/government-debunks-fake-whatsapp-message-claiming-free-laptops-under-national-student-laptop-scheme/"
+        },
+        {
+          "name": "Fact Crescendo",
+          "url": "https://english.factcrescendo.com/2022/08/25/government-of-india-is-not-giving-free-laptops-to-all-indian-students/amp"
+        }
+      ]
+    },
+    {
+      "id": "loan-app",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "sms",
+        "whatsapp",
+        "app_file",
+        "website"
+      ],
+      "name": {
+        "en": "Instant loan app: fees first, then threats"
+      },
+      "they_say": {
+        "en": "“Pre-approved loan of ₹3 lakh, no documents.” After you install the app: “Your loan has expired. Pay today or we will message your family and contacts.”"
+      },
+      "they_ask": {
+        "en": "Pay a “processing fee” first, or repay far more than you borrowed, to personal UPI IDs."
+      },
+      "red_flag": {
+        "en": "Real lenders take any fee out of the loan, and are listed with RBI. Apps that read your contacts and threaten to shame you are illegal."
+      },
+      "do": {
+        "en": "Never pay a fee before a loan: real lenders deduct it from the loan. If you are being threatened, report it at cybercrime.gov.in or 1930, and on RBI’s Sachet portal."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "PIB (RBI caution on unauthorised lending apps)",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1749169"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/finance/personal-finance/lending-app-offering-quick-loan-could-be-a-scam-how-to-stay-safe-125080700727_1.html"
+        }
+      ]
+    },
+    {
+      "id": "gift-parcel",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "whatsapp",
+        "social_media",
+        "call"
+      ],
+      "name": {
+        "en": "Online friend’s “gift parcel” stuck at customs"
+      },
+      "they_say": {
+        "en": "A new friend from Instagram, Facebook or a matrimony site promises gifts from abroad. Then “Customs / Skyshield Cargo”: “Your parcel has arrived. Pay ₹40,000 clearance charges to release it.”"
+      },
+      "they_ask": {
+        "en": "Pay customs, clearance or “anti-money-laundering” fees, again and again."
+      },
+      "red_flag": {
+        "en": "Customs never asks you to pay into a personal account or UPI ID. A stranger you met online sending costly gifts is the trap."
+      },
+      "do": {
+        "en": "Don’t pay any customs, shipping or handling fee to receive a gift or prize. Stop talking to them and report it on 1930."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "PIB / I4C (MHA): alert on 'digital arrest' and blackmail calls; report on 1930",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020570"
+        },
+        {
+          "name": "Free Press Journal (Mumbai, 2026)",
+          "url": "https://www.freepressjournal.in/amp/mumbai/mumbai-cyber-fraud-39-year-old-bhandup-homemaker-duped-of-625-lakh-in-instagram-gift-parcel-scam-case-registered"
+        }
+      ]
+    },
+    {
+      "id": "whatsapp-takeover",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "whatsapp",
+        "sms",
+        "call"
+      ],
+      "name": {
+        "en": "“I sent you a code by mistake”: WhatsApp account takeover"
+      },
+      "they_say": {
+        "en": "“Hi, sorry, I sent a 6-digit code to you by mistake, can you send it to me? It’s urgent.” Or a call: “Dial *21* and this number to fix your network.” Then your contacts get: “I’m in trouble, please send ₹10,000, I’ll return it tomorrow.”"
+      },
+      "they_ask": {
+        "en": "Share the 6-digit code you just got, or dial a code. Your friends are then asked for money from your account."
+      },
+      "red_flag": {
+        "en": "That code is the key to your WhatsApp. Nobody sends a code “by mistake”. A friend asking for money by text should always be called first."
+      },
+      "do": {
+        "en": "Never share a code you receive, even with friends. Turn on two-step verification. If a friend asks for money, call them on their usual number first."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "Business Standard (Kolkata Police)",
+          "url": "https://www.business-standard.com/amp/india-news/kolkata-police-issued-warning-about-whatsapp-hacking-says-not-to-share-otp-123072500362_1.html"
+        },
+        {
+          "name": "Free Press Journal (Mumbai cyber police)",
+          "url": "https://www.freepressjournal.in/mumbai/mumbai-cyber-police-issue-alert-against-whatsapp-hacking-loan-app-blackmail-scams-urge-citizens-to-stay-vigilant-and-report-frauds"
+        }
+      ]
+    },
+    {
+      "id": "marketplace",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "call",
+        "whatsapp",
+        "website"
+      ],
+      "name": {
+        "en": "Fake buyer or seller on OLX: the “Army officer”"
+      },
+      "they_say": {
+        "en": "“I am in the Army, posted elsewhere, so I’m selling my scooter cheap.” Or as a buyer: “I’ll pay full price, I’m sending ₹1 to test.” Then: “I sent ₹13,500 by mistake, send back the extra.”"
+      },
+      "they_ask": {
+        "en": "Pay “Army cargo” or delivery fees, scan a QR code, or send back an “extra” payment."
+      },
+      "red_flag": {
+        "en": "Army officers don’t sell through OLX with cargo fees. You never scan a QR code or enter a PIN to receive money."
+      },
+      "do": {
+        "en": "You never need to enter a PIN or scan a code to receive money. Check any payment in your own bank app."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "Free Press Journal (scooter buyer, Mumbai)",
+          "url": "https://www.freepressjournal.in/mumbai/25-yr-old-wanting-to-buy-a-scooter-from-armyman-loses-rs-72k-in-olx-fraud"
+        },
+        {
+          "name": "Free Press Journal (QR codes from fake Army officer)",
+          "url": "https://www.freepressjournal.in/mumbai/trader-loses-rs-50000-on-scanning-qr-codes-sent-by-a-man-posing-as-army-officer"
+        },
+        {
+          "name": "RBI: BE(A)WARE booklet on fraud methods",
+          "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=53372"
+        }
+      ]
+    },
+    {
+      "id": "qr-receive-money",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "whatsapp",
+        "call",
+        "sms"
+      ],
+      "name": {
+        "en": "“Scan this QR / enter your PIN to receive money”"
+      },
+      "they_say": {
+        "en": "“I’m sending your payment. Scan this QR code and enter your UPI PIN to receive it.” Earlier versions used a UPI “collect request” that looked like money coming in."
+      },
+      "they_ask": {
+        "en": "Scan a QR code or approve a request and type your UPI PIN."
+      },
+      "red_flag": {
+        "en": "You never need your PIN or a QR scan to RECEIVE money. A PIN always means money is leaving your account."
+      },
+      "do": {
+        "en": "Never scan a QR code or enter your PIN to receive money or a cashback: your PIN is only for paying. (UPI ended person-to-person collect requests in October 2025; the QR version continues.)"
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        },
+        {
+          "name": "RBI: BE(A)WARE booklet on fraud methods",
+          "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=53372"
+        },
+        {
+          "name": "Business Standard (UPI collect requests end, 2025)",
+          "url": "https://www.business-standard.com/finance/personal-finance/upi-collect-requests-to-end-from-october-here-s-how-it-changes-payments-125081500767_1.html"
+        }
+      ]
+    },
+    {
+      "id": "sextortion",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "video_call",
+        "whatsapp",
+        "social_media"
+      ],
+      "name": {
+        "en": "Video call from a stranger, then blackmail"
+      },
+      "they_say": {
+        "en": "A video call from an unknown number shows an obscene video and records your face. Then: “Pay or this video goes to your family.” Later a fake “police officer” or “YouTube official” asks for more to “delete the case”."
+      },
+      "they_ask": {
+        "en": "Pay to stop the video being shared, again and again."
+      },
+      "red_flag": {
+        "en": "Paying never ends it. Calls like this are recorded on purpose to blackmail you."
+      },
+      "do": {
+        "en": "Avoid video calls from unknown numbers. If you are threatened, don’t pay, keep screenshots, and report at cybercrime.gov.in or 1930. You are the victim, not the guilty one."
+      },
+      "sources": [
+        {
+          "name": "CERT-In: Cyber Security Handbook (2025)",
+          "url": "https://www.cert-in.org.in/PDF/Mahila_Suraksha_Booklet25.pdf"
+        },
+        {
+          "name": "Free Press Journal (CERT-In advisory)",
+          "url": "https://www.freepressjournal.in/mumbai/cert-in-issues-advisory-on-sextortion-urges-citizens-to-guard-against-online-blackmail-and-extortion"
+        },
+        {
+          "name": "BOOM",
+          "url": "https://www.boomlive.in/decode/whatsapp-video-call-scam-from-unknown-number-kashmir-man-sextortion-21900"
+        }
+      ]
+    },
+    {
+      "id": "esim-swap",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "call",
+        "sms",
+        "whatsapp"
+      ],
+      "name": {
+        "en": "Fake “upgrade your SIM to eSIM / 5G” call"
+      },
+      "they_say": {
+        "en": "“I’m from Jio / Airtel. Upgrade to eSIM (or 5G) for free. You’ll get an SMS, just tell me the code or click the link.”"
+      },
+      "they_ask": {
+        "en": "Share the code or click the link, which moves your number to their phone. Then all your bank OTPs go to them."
+      },
+      "red_flag": {
+        "en": "Your operator never needs your OTP or a link sent on WhatsApp to change your SIM. If your phone suddenly shows no network, act at once."
+      },
+      "do": {
+        "en": "Never share SIM details or codes with callers. If your phone has no signal for a long time, call your operator at once to check no duplicate SIM was issued."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "Free Press Journal (Maharashtra Cyber, 2026)",
+          "url": "https://www.freepressjournal.in/tech/alert-mumbaikars-esim-hijacking-scam-is-on-the-rise-heres-how-cybercriminals-are-draining-bank-accounts"
+        },
+        {
+          "name": "BOOM",
+          "url": "https://www.boomlive.in/decode/scamcheck/sim-swap-esim-scams-how-scammers-can-steal-your-phone-number-29455"
+        },
+        {
+          "name": "RBI: BE(A)WARE booklet on fraud methods",
+          "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=53372"
+        }
+      ]
+    },
+    {
+      "id": "insurance-bonus",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "call",
+        "sms"
+      ],
+      "name": {
+        "en": "Fake insurance “bonus” or policy refund call"
+      },
+      "they_say": {
+        "en": "“I’m calling from IRDAI. ₹4 lakh bonus is pending on your old policy” or “Your policy money was transferred to someone else; pay a fee to get it back.”"
+      },
+      "they_ask": {
+        "en": "Pay a fee, tax or deposit to release the money, or buy a new policy to “unlock” it."
+      },
+      "red_flag": {
+        "en": "IRDAI never calls people, never announces bonuses, and never sells policies. Real insurers don’t ask for fees to pay you."
+      },
+      "do": {
+        "en": "Hang up. Check your policy only with your insurer’s number from the policy papers or official website."
+      },
+      "sources": [
+        {
+          "name": "IRDAI public notice: spurious calls and fake offers",
+          "url": "https://irdai.gov.in/documents/37343/1358307/Spurious+Phone+Calls+and+Fictitious+_+Fraudulent+Offers_PUBLIC+NOTICE.pdf/88457f78-650d-010c-4f7c-43557ec4daac?version=2.1&t=1662752931535"
+        }
+      ]
+    },
+    {
+      "id": "booking-fraud",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "website",
+        "social_media",
+        "whatsapp",
+        "call"
+      ],
+      "name": {
+        "en": "Fake hotel, pilgrimage or helicopter booking"
+      },
+      "they_say": {
+        "en": "An ad or website: “Kedarnath helicopter tickets / Somnath guest house / Char Dham package. Book now, limited seats.” Payment by UPI to a person, then no ticket and the number stops working."
+      },
+      "they_ask": {
+        "en": "Pay an advance by UPI or QR code to a personal account."
+      },
+      "red_flag": {
+        "en": "Helicopter and temple bookings are sold only on official sites (for Kedarnath: heliyatra.irctc.co.in). “Sponsored” search results and Facebook pages can be fake."
+      },
+      "do": {
+        "en": "Book only on the official site or a trusted agent. Don’t pay advances to personal UPI IDs."
+      },
+      "sources": [
+        {
+          "name": "PIB (I4C alert on fake booking sites)",
+          "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2122832"
+        },
+        {
+          "name": "All India Radio",
+          "url": "https://www.newsonair.gov.in/i4c-issues-alert-on-online-booking-frauds-targeting-pilgrims-and-tourists-warns-against-fake-websites-and-ads/"
+        }
+      ]
+    },
+    {
+      "id": "fake-shop",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "website",
+        "social_media"
+      ],
+      "name": {
+        "en": "Fake shopping site or Instagram seller"
+      },
+      "they_say": {
+        "en": "“Branded shoes / iPhone at 90% off, today only.” A site that looks like Flipkart or Amazon, or an Instagram page that takes UPI payment."
+      },
+      "they_ask": {
+        "en": "Pay in advance by UPI or card. Nothing arrives, or a cheap fake does."
+      },
+      "red_flag": {
+        "en": "Huge discounts on branded goods, payment only by UPI to a person, and no cash on delivery."
+      },
+      "do": {
+        "en": "Buy only from known apps and sites, and check the web address carefully. Don’t pay unknown sellers before you get the product."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        },
+        {
+          "name": "Business Standard (festive shopping scams)",
+          "url": "https://www.business-standard.com/industry/news/deepfakes-to-social-media-online-shopping-scams-spike-this-festive-season-124111900337_1.html"
+        }
+      ]
+    },
+    {
+      "id": "mule-account",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "whatsapp",
+        "telegram",
+        "social_media"
+      ],
+      "name": {
+        "en": "“Earn commission: rent out your bank account”"
+      },
+      "they_say": {
+        "en": "“Earn 3–5% commission at home. Just let us use your bank account, or open a new one for us. Money comes in, you send it on.”"
+      },
+      "they_ask": {
+        "en": "Hand over your account, debit card, SIM or login, or pass on money you receive."
+      },
+      "red_flag": {
+        "en": "This money is stolen from scam victims. Your account gets frozen and you can be arrested, even if you only got a small commission."
+      },
+      "do": {
+        "en": "Never let anyone use your bank account to receive or send money for a fee. Report such offers on 1930."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "PIB / I4C (MHA): alert on 'digital arrest' and blackmail calls; report on 1930",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020570"
+        },
+        {
+          "name": "PIB (I4C alert on mule accounts)",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2069000&reg=3&lang=2"
+        },
+        {
+          "name": "Free Press Journal (Maharashtra Cyber)",
+          "url": "https://www.freepressjournal.in/mumbai/maharashtra-cyber-police-warn-of-mule-account-scams-urge-citizens-to-be-cautious-of-easy-money-offers"
+        }
+      ]
+    },
+    {
+      "id": "overseas-job",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "whatsapp",
+        "social_media",
+        "call"
+      ],
+      "name": {
+        "en": "Overseas job in Thailand, Cambodia or Laos that traps you"
+      },
+      "they_say": {
+        "en": "“Data entry / customer support job in Thailand, ₹1 lakh a month, free flight and hotel. Simple typing test.”"
+      },
+      "they_ask": {
+        "en": "Travel on a tourist visa through an agent. You are then forced to work in a scam centre."
+      },
+      "red_flag": {
+        "en": "Real overseas jobs come with a signed contract and a work visa, through MEA-registered agents. Never a tourist visa."
+      },
+      "do": {
+        "en": "Go only through authorised recruiting agents, and check the employer’s background before you go."
+      },
+      "sources": [
+        {
+          "name": "All India Radio (MEA advisory)",
+          "url": "https://newsonair.gov.in/mea-issues-advisory-for-indian-nationals-travelling-to-cambodia-for-employment/"
+        },
+        {
+          "name": "Business Standard (6,700 rescued)",
+          "url": "https://www.business-standard.com/immigration/over-6-700-indians-rescued-from-fake-job-rackets-in-southeast-asia-centre-125121200152_1.html"
+        }
+      ]
+    },
+    {
+      "id": "bank-call-otp",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "call",
+        "sms"
+      ],
+      "name": {
+        "en": "Call from “the bank”: card blocked, tell the OTP"
+      },
+      "they_say": {
+        "en": "“I’m from SBI / RBI. A suspicious ₹48,000 transaction is on your card. To block it, tell me the OTP you just got.” Or a free credit-limit increase or lifetime-free card."
+      },
+      "they_ask": {
+        "en": "Read out an OTP, CVV, card number or PIN."
+      },
+      "red_flag": {
+        "en": "No bank or RBI official ever asks for an OTP, PIN or CVV. Banks now call from numbers starting 1600."
+      },
+      "do": {
+        "en": "Banks never ask for your OTP, PIN or CVV. Hang up and call the number on the back of your card."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "RBI: BE(A)WARE booklet on fraud methods",
+          "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=53372"
+        },
+        {
+          "name": "Business Standard (RBI warns of fraud in its name)",
+          "url": "https://www.business-standard.com/india-news/rbi-asks-public-to-be-cautious-against-fraudulent-activities-in-its-name-124082901101_1.html"
+        }
+      ]
+    },
+    {
+      "id": "fake-donation",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "whatsapp",
+        "social_media"
+      ],
+      "name": {
+        "en": "Fake donation appeal after a disaster"
+      },
+      "they_say": {
+        "en": "“Donate to PM CARES / flood relief. UPI: pmcare@sbi.” A lookalike UPI ID or a QR code for a personal account."
+      },
+      "they_ask": {
+        "en": "Pay a donation to a fake UPI ID."
+      },
+      "red_flag": {
+        "en": "The UPI ID is almost right but not quite (pmcare instead of pmcares). Real relief funds are listed on .gov.in sites."
+      },
+      "do": {
+        "en": "Donate only through the official website of the fund, never from a forwarded UPI ID or QR code."
+      },
+      "sources": [
+        {
+          "name": "Business Standard (Delhi Police, 2020)",
+          "url": "https://www.business-standard.com/article/current-affairs/delhi-police-detects-fake-upi-id-created-to-cheat-pm-cares-donors-blocked-120033000123_1.html"
+        },
+        {
+          "name": "PIB (official PM CARES details)",
+          "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1608851"
+        }
+      ]
+    },
+    {
+      "id": "aeps-fingerprint",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "website"
+      ],
+      "name": {
+        "en": "Money withdrawn with a copied fingerprint (AePS)"
+      },
+      "they_say": {
+        "en": "No message at all. Fingerprints copied from property papers or a fake “biometric update” are used at a cash point to withdraw money through Aadhaar."
+      },
+      "they_ask": {
+        "en": "Nothing. Money disappears from an Aadhaar-linked account."
+      },
+      "red_flag": {
+        "en": "Withdrawals you didn’t make, at a micro-ATM or bank mitra."
+      },
+      "do": {
+        "en": "Lock your biometrics on uidai.gov.in (unlock only when you need them). If money goes missing, report it at once on 1930."
+      },
+      "sources": [
+        {
+          "name": "PIB / UIDAI: lock your biometrics at uidai.gov.in",
+          "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=173667&reg=48&lang=2"
+        },
+        {
+          "name": "PIB / I4C (MHA): alert on 'digital arrest' and blackmail calls; report on 1930",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020570"
+        },
+        {
+          "name": "PIB (biometric cloning frauds)",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2039647"
+        },
+        {
+          "name": "BOOM",
+          "url": "https://www.boomlive.in/decode/cloned-fingerprints-scam-the-story-of-aadhaar-enabled-payment-system-22944"
+        }
+      ]
+    },
+    {
+      "id": "atm-skimming",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "website"
+      ],
+      "name": {
+        "en": "Card skimming at ATMs and shops"
+      },
+      "they_say": {
+        "en": "No message. A hidden device on an ATM copies your card, and a camera records your PIN."
+      },
+      "they_ask": {
+        "en": "Nothing. Your card is copied and used elsewhere."
+      },
+      "red_flag": {
+        "en": "A loose or bulky card slot, a strange keypad cover, or someone “helping” you at the ATM."
+      },
+      "do": {
+        "en": "Check the ATM’s card slot and keypad for extra devices and cover the keypad when you type your PIN. At shops and restaurants, never let your card out of your sight."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        },
+        {
+          "name": "RBI: BE(A)WARE booklet on fraud methods",
+          "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=53372"
+        }
+      ]
+    },
+    {
+      "id": "juice-jacking",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "website"
+      ],
+      "name": {
+        "en": "Public phone-charging points that steal data"
+      },
+      "they_say": {
+        "en": "No message. A free USB charging point at a station or airport can copy data or install malware."
+      },
+      "they_ask": {
+        "en": "Plug your phone into a public USB port."
+      },
+      "red_flag": {
+        "en": "A USB cable or port you don’t own."
+      },
+      "do": {
+        "en": "Avoid public charging ports and cables: carry your own charger."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "RBI: BE(A)WARE booklet on fraud methods",
+          "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=53372"
+        }
+      ]
+    },
+    {
+      "id": "money-doubling",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "whatsapp",
+        "telegram",
+        "social_media",
+        "call"
+      ],
+      "name": {
+        "en": "Money-doubling chain or MLM scheme"
+      },
+      "they_say": {
+        "en": "“Invest ₹10,000, get ₹20,000 in 30 days. Add 3 friends and earn more.” Often with early payouts to build trust."
+      },
+      "they_ask": {
+        "en": "Invest money and bring in friends and relatives."
+      },
+      "red_flag": {
+        "en": "Guaranteed, fast, high returns, and earnings that depend on recruiting others. Early payouts come from newer members’ money."
+      },
+      "do": {
+        "en": "Very high returns, or money for adding members, are signs of fraud. Don’t invest, and report such schemes to the police."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "RBI: BE(A)WARE booklet on fraud methods",
+          "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=53372"
+        }
+      ]
+    },
+    {
+      "id": "call-merge",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "call"
+      ],
+      "name": {
+        "en": "“Please merge the call with my friend”"
+      },
+      "they_say": {
+        "en": "A stranger says they got your number from a friend and asks you to merge the call with another number. That other line is your bank’s OTP call."
+      },
+      "they_ask": {
+        "en": "Merge the calls, so the scammer hears the OTP your bank reads out."
+      },
+      "red_flag": {
+        "en": "Nobody genuine needs you to merge calls. An OTP call you didn’t ask for means someone is trying to pay with your account."
+      },
+      "do": {
+        "en": "Never merge or answer calls from unknown people, and never share an OTP you didn’t ask for. Tell your bank and call 1930."
+      },
+      "sources": [
+        {
+          "name": "CERT-In: Cyber Security Handbook (2025)",
+          "url": "https://www.cert-in.org.in/PDF/Mahila_Suraksha_Booklet25.pdf"
+        },
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "Business Standard (NPCI warning, 2025)",
+          "url": "https://www.business-standard.com/finance/personal-finance/npci-warns-against-call-merging-scam-how-to-remain-protected-125022000847_1.html"
+        },
+        {
+          "name": "Free Press Journal (Mumbai cyber police)",
+          "url": "https://www.freepressjournal.in/mumbai/dont-merge-calls-dont-share-otps-cyber-police-warn-of-rising-insurance-and-call-merging-scams"
+        }
+      ]
+    },
+    {
+      "id": "census-officer",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "call",
+        "sms",
+        "whatsapp"
+      ],
+      "name": {
+        "en": "Fake census or voter-list officer"
+      },
+      "they_say": {
+        "en": "“I’m from the Census / election office. We need to verify your family details. You’ll get an OTP, please tell me.” Or a “census verification” link or app."
+      },
+      "they_ask": {
+        "en": "Share Aadhaar, bank details or an OTP, pay a fee, or install a screen-sharing app."
+      },
+      "red_flag": {
+        "en": "Census and election officials never ask for OTPs, PINs, bank details or money, by phone or link. Real enumerators carry ID with a QR code."
+      },
+      "do": {
+        "en": "Official census messages come only from senders with “RGICEN” in the name. Don’t reply to others or share any OTP."
+      },
+      "sources": [
+        {
+          "name": "PIB: Census 2027, official messages carry 'RGICEN'",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2257024"
+        },
+        {
+          "name": "The Hans India (Hyderabad cyber police, 2026)",
+          "url": "https://www.thehansindia.com/news/cities/hyderabad/beware-of-fake-census-links-warn-cyber-cops-1083969"
+        },
+        {
+          "name": "Deccan Chronicle (Delhi, 2026)",
+          "url": "https://www.deccanchronicle.com/nation/delhi-officials-warn-of-scammers-using-fake-census-forms-to-steal-personal-data-1958174"
+        }
+      ]
+    },
+    {
+      "id": "gas-disconnection",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "sms",
+        "whatsapp",
+        "app_file",
+        "call"
+      ],
+      "name": {
+        "en": "Fake gas company: “connection will be cut tonight”"
+      },
+      "they_say": {
+        "en": "“Dear customer, your gas connection will be disconnected tonight at 9:30 pm as last month’s bill is not updated. Call this officer.” Then an app to “update the bill” or a ₹10 “verification” payment."
+      },
+      "they_ask": {
+        "en": "Install an app or pay a small amount by card, which hands over your phone or card."
+      },
+      "red_flag": {
+        "en": "Gas companies don’t threaten same-night disconnection by SMS or WhatsApp, and never send apps. MGL and others say they never ask for OTPs or bank details."
+      },
+      "do": {
+        "en": "Don’t call the number or install anything from a message. Gas KYC is done with your distributor, free of cost."
+      },
+      "sources": [
+        {
+          "name": "HP Gas (HPCL): FAQ on KYC",
+          "url": "https://www.hindustanpetroleum.com/pages/faq"
+        },
+        {
+          "name": "Free Press Journal (MGL fake APK scam)",
+          "url": "https://www.freepressjournal.in/mumbai/cyber-fraudsters-impersonating-mgl-officials-dupe-mumbai-residents-of-lakhs-by-threatening-gas-disconnection-through-fake-apk-links"
+        },
+        {
+          "name": "Business Standard (gas connection scam)",
+          "url": "https://www.business-standard.com/finance/personal-finance/46-people-duped-of-rs-26-lakh-in-gas-connection-scam-how-it-unfolded-124112000259_1.html"
+        }
+      ]
+    },
+    {
+      "id": "epfo-pf",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "sms",
+        "whatsapp",
+        "call",
+        "website"
+      ],
+      "name": {
+        "en": "Fake EPFO: “update KYC to withdraw your PF”"
+      },
+      "they_say": {
+        "en": "“Your PF account is frozen. Update KYC at this link to withdraw.” Or an “EPFO agent” offering faster PF claims for a processing fee."
+      },
+      "they_ask": {
+        "en": "Share UAN, Aadhaar, OTP or bank details, or pay a fee."
+      },
+      "red_flag": {
+        "en": "EPFO never asks for these by call, SMS or WhatsApp and has no agents. The only site is epfindia.gov.in."
+      },
+      "do": {
+        "en": "EPFO services are free on its official website and the UMANG app. Don’t use agents, and never share your UAN password or OTP."
+      },
+      "sources": [
+        {
+          "name": "PIB / EPFO: use official EPFO portals, free of cost",
+          "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2136592&reg=48&lang=2"
+        },
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "Business Standard (EPFO warning, 2026)",
+          "url": "https://www.business-standard.com/finance/personal-finance/pf-fraud-alert-epfo-warns-of-fake-links-targeting-your-uan-money-126081100800_1.html"
+        },
+        {
+          "name": "EPFO KYC page",
+          "url": "https://www.epfindia.gov.in/site_en/index.php/kyc"
+        }
+      ]
+    },
+    {
+      "id": "rental-scam",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "website",
+        "social_media",
+        "whatsapp"
+      ],
+      "name": {
+        "en": "Fake flat or PG for rent: pay to block it"
+      },
+      "they_say": {
+        "en": "“Lovely 2BHK, very low rent. I’m out of town, pay ₹10,000 token to block it before others take it.” Sometimes AI photos, or a “visitor pass” fee before viewing."
+      },
+      "they_ask": {
+        "en": "Pay an advance, deposit or visit fee by UPI before seeing the place."
+      },
+      "red_flag": {
+        "en": "The owner can’t meet, refuses a visit, and rushes you to pay. Photos look too perfect."
+      },
+      "do": {
+        "en": "Don’t pay a token or advance to someone you haven’t met, for a flat you haven’t seen."
+      },
+      "sources": [
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        },
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "Free Press Journal (Mumbai cyber police)",
+          "url": "https://www.freepressjournal.in/mumbai/mumbai-news-cyber-police-issue-alert-on-online-rental-scam-citizens-warned-against-fake-property-listings"
+        },
+        {
+          "name": "The Hans India (Bengaluru, AI images)",
+          "url": "https://www.thehansindia.com/karnataka/online-rental-scam-fraudsters-use-ai-images-to-cheat-house-hunters-in-city-1049929"
+        }
+      ]
+    },
+    {
+      "id": "pension-life-certificate",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "call",
+        "sms",
+        "website"
+      ],
+      "name": {
+        "en": "Fake life certificate site or call for pensioners"
+      },
+      "they_say": {
+        "en": "“Your pension will stop. Submit your life certificate here for ₹199.” A site like jeevanpraman.online, or a caller asking for the OTP you just got."
+      },
+      "they_ask": {
+        "en": "Pay a fee, fill in your details on a copy site, or read out an OTP."
+      },
+      "red_flag": {
+        "en": "The only official site is jeevanpramaan.gov.in, and it is free. Nobody needs your OTP over the phone."
+      },
+      "do": {
+        "en": "Give your life certificate at your bank or post office, or ask the postman to do it at home (Jeevan Pramaan). Never share the OTP."
+      },
+      "sources": [
+        {
+          "name": "PIB / India Post: Jeevan Pramaan life certificate at the post office or doorstep",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2068065"
+        },
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "Business Standard (fake pension portal, 2022)",
+          "url": "https://www.business-standard.com/article/current-affairs/another-website-of-govt-meant-for-pensioners-hacked-complaint-registered-122120601294_1.html"
+        }
+      ]
+    },
+    {
+      "id": "scratch-card-post",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "call",
+        "website"
+      ],
+      "name": {
+        "en": "Scratch card by post: “You won a car from Meesho / Naaptol”"
+      },
+      "they_say": {
+        "en": "A letter arrives by post with a scratch card in a shopping site’s name. It shows a car or ₹15 lakh prize. The helpline then says: “Pay registration, GST and insurance first.”"
+      },
+      "they_ask": {
+        "en": "Pay fees and “taxes” again and again, and send ID copies."
+      },
+      "red_flag": {
+        "en": "You never pay to receive a real prize. Shopping sites don’t run lucky draws by post."
+      },
+      "do": {
+        "en": "Don’t call the number or pay any fee to claim a prize: nobody gives free money."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "Deccan Herald (Bengaluru, 2024)",
+          "url": "https://www.deccanherald.com/india/karnataka/bengaluru/45-year-old-woman-loses-over-rs-18-lakhs-in-scratch-card-scam-in-bengaluru-3018855"
+        },
+        {
+          "name": "Deccan Chronicle (Naaptol scratch cards, 2022)",
+          "url": "https://www.deccanchronicle.com/nation/crime/151022/woman-loses-27-lakh-in-scratch-card-racket.html"
+        }
+      ]
+    },
+    {
+      "id": "relative-abroad",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "call",
+        "whatsapp"
+      ],
+      "name": {
+        "en": "“Your nephew in Canada is in trouble, send money now”"
+      },
+      "they_say": {
+        "en": "A WhatsApp call from a foreign number: “Your nephew had a fight here. He will be deported unless we pay the fine today. Don’t tell his parents.” A crying “relative” comes on the line."
+      },
+      "they_ask": {
+        "en": "Send money urgently to an account or UPI ID."
+      },
+      "red_flag": {
+        "en": "Urgency, secrecy and a voice you can’t quite check. Scammers pick families with children studying abroad."
+      },
+      "do": {
+        "en": "Before you pay, call them or their family on a number you already have."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "The Tribune (Haryana Police advisory)",
+          "url": "https://www.tribuneindia.com/news/haryana/to-prevent-cyber-frauds-haryana-police-issue-advisory-436387"
+        }
+      ]
+    },
+    {
+      "id": "screen-sharing",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": true,
+      "channels": [
+        "call",
+        "app_file"
+      ],
+      "name": {
+        "en": "“Install this app so I can fix it” (screen sharing)"
+      },
+      "they_say": {
+        "en": "I’m from your bank’s support team. Install AnyDesk or this app and read me the code, and I’ll fix your problem."
+      },
+      "they_ask": {
+        "en": "To install a screen-sharing app and share its code."
+      },
+      "red_flag": {
+        "en": "A stranger wants to see or control your phone’s screen."
+      },
+      "do": {
+        "en": "Never install a screen-sharing app because a caller asks, and never share its code. Install one only when the company’s official toll-free number tells you to, and remove it afterwards."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        }
+      ]
+    },
+    {
+      "id": "fake-friend-profile",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "social_media",
+        "whatsapp"
+      ],
+      "name": {
+        "en": "A friend’s new profile or email asks for money"
+      },
+      "they_say": {
+        "en": "It’s me. I’m in hospital, please send ₹10,000 to this account, I’ll return it tomorrow."
+      },
+      "they_ask": {
+        "en": "Money to a new account or UPI ID."
+      },
+      "red_flag": {
+        "en": "A new profile or email of someone you know, an emergency, and an account you haven’t seen before."
+      },
+      "do": {
+        "en": "Before you pay, call or meet the person on the number you already have. Don’t accept friend requests from people you have never met."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        }
+      ]
+    },
+    {
+      "id": "credit-card-call",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": true,
+      "channels": [
+        "call"
+      ],
+      "name": {
+        "en": "Credit card call: fee waiver, activation or higher limit"
+      },
+      "they_say": {
+        "en": "Your card’s annual fee can be waived, or your limit raised, or your new card needs activation. Just tell me the OTP."
+      },
+      "they_ask": {
+        "en": "Your card details and the OTP."
+      },
+      "red_flag": {
+        "en": "A caller asking for your card number, CVV or OTP."
+      },
+      "do": {
+        "en": "Banks never ask for your OTP or card details on a call. Hang up and call the number on the back of your card. If you shared anything, block your card at once."
+      },
+      "sources": [
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        },
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        }
+      ]
+    },
+    {
+      "id": "fake-agent-documents",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "call"
+      ],
+      "name": {
+        "en": "A “bank agent” collects your documents or a cheque"
+      },
+      "they_say": {
+        "en": "I’m from the bank. Give me copies of your Aadhaar and PAN and a signed cheque for your loan or FD overdraft."
+      },
+      "they_ask": {
+        "en": "ID copies, signed forms or cheques."
+      },
+      "red_flag": {
+        "en": "Someone collecting documents or cheques outside the bank."
+      },
+      "do": {
+        "en": "Give documents and cheques only at your bank branch or to its authorised staff. Strangers can take loans in your name with them."
+      },
+      "sources": [
+        {
+          "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+        },
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        }
+      ]
+    },
+    {
+      "id": "betting-app",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "social_media",
+        "sms",
+        "website"
+      ],
+      "name": {
+        "en": "Betting or gaming app with a “welcome bonus”"
+      },
+      "they_say": {
+        "en": "Recharge ₹5,000 and get ₹5,000 bonus. Win big every day!"
+      },
+      "they_ask": {
+        "en": "Money for recharges, then “fees” to withdraw."
+      },
+      "red_flag": {
+        "en": "Bonus money for a first deposit, and you can’t take your winnings out."
+      },
+      "do": {
+        "en": "Don’t pay on unknown betting or gaming sites and apps. If you paid, call your bank to block your card or UPI, and report it at cybercrime.gov.in."
+      },
+      "sources": [
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        }
+      ]
+    },
+    {
+      "id": "fake-recovery-agent",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "call"
+      ],
+      "name": {
+        "en": "Fake loan recovery agent"
+      },
+      "they_say": {
+        "en": "You have unpaid dues. Pay me now in cash or we will take action."
+      },
+      "they_ask": {
+        "en": "Cash, or money to a personal account."
+      },
+      "red_flag": {
+        "en": "No recovery notice, no authorisation letter, and pressure to pay cash."
+      },
+      "do": {
+        "en": "Ask for the recovery notice, the bank’s authorisation letter and the agent’s ID card, and check with your branch before paying. Never pay cash without a proper receipt."
+      },
+      "sources": [
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        }
+      ]
+    },
+    {
+      "id": "public-wifi",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "website"
+      ],
+      "name": {
+        "en": "Banking on public Wi-Fi"
+      },
+      "they_say": {
+        "en": "No message. Free Wi-Fi at a mall, station or café."
+      },
+      "they_ask": {
+        "en": "Nothing. Someone on the same network can read what you type."
+      },
+      "red_flag": {
+        "en": "Paying or logging in to your bank on free public Wi-Fi."
+      },
+      "do": {
+        "en": "Don’t use public Wi-Fi for banking or payments. Use your mobile data or a secured Wi-Fi network."
+      },
+      "sources": [
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        }
+      ]
+    },
+    {
+      "id": "payment-spoofing",
+      "status": "approved",
+      "added": "2026-10-21",
+      "notify": false,
+      "channels": [
+        "app_file"
+      ],
+      "name": {
+        "en": "Fake payment screen (for shopkeepers)"
+      },
+      "they_say": {
+        "en": "Payment done, see my screen."
+      },
+      "they_ask": {
+        "en": "That you hand over the goods before the money reaches you."
+      },
+      "red_flag": {
+        "en": "A “paid” screen, but no money in your own account or app."
+      },
+      "do": {
+        "en": "Hand over goods only after the money shows in your own bank account or app."
+      },
+      "sources": [
+        {
+          "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+          "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+        }
+      ]
+    }
+  ]
 }
