@@ -48,6 +48,12 @@ export default function InstallPage() {
             </li>
           </ol>
           <p className="note">A one-minute video of these steps will be added here.</p>
+          <h2 style={{ marginTop: 48 }}>Reviewers: see the family member&rsquo;s side</h2>
+          <p>
+            With one phone you can still see what the helper gets. In Ruko, choose <em>Help someone you love</em>, type the
+            demo code <strong>000000</strong> and tap <em>Connect</em>, then lock the phone. Five seconds later it rings with a
+            demo alert, exactly as a helper&rsquo;s phone does. Nothing is sent anywhere.
+          </p>
         </div>
       </section>
     </>
