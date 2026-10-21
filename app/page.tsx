@@ -49,7 +49,7 @@ export default function Home() {
       {/* The moment, in three phones */}
       <section className="field" id="how">
         <div className="container">
-          <h2 className={styles.sectionTitle}>Scams follow the same three steps. Ruko steps in at the third.</h2>
+          <h2 className={styles.sectionTitle}>Three steps. Ruko stops the third.</h2>
           <ol className={styles.moment}>
             <li>
               <PhoneFrame label="Mock-up: an ongoing call with an unknown number, 41 minutes long">
@@ -191,8 +191,8 @@ export default function Home() {
 
       {/* Closing */}
       <section className="field field-teal">
-        <div className="container">
-          <h2 className={styles.closing}>Set it up once. It waits quietly until the moment it matters.</h2>
+        <div className={`container ${styles.closingInner}`}>
+          <h2 className={styles.closing}>Set it up once. It waits until it matters.</h2>
           <div className={styles.actions}>
             <Link href="/install" className="button button-light">
               Get the testing version

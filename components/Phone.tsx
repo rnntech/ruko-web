@@ -12,6 +12,7 @@ export function PhoneFrame({ children, label, width }: { children: React.ReactNo
   return (
     <div
       className={styles.phone}
+      data-ui /* the app's own screens: their borders, shadows and small text are the app's (taste-skill) */
       role="img"
       aria-label={label}
       style={

@@ -52,6 +52,7 @@ export function PhoneTour({ scamCount }: { scamCount: number }) {
   return (
     <div
       className={styles.tour}
+      data-ui
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onFocus={(e) => setFocused(e.target.matches(":focus-visible"))}

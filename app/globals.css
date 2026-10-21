@@ -201,12 +201,11 @@ a {
   margin: 0;
   padding: 0;
   max-width: 760px;
-  border-top: 2px solid var(--ink);
 }
 
+/* Separated by space, not lines (taste-skill house rules). */
 .rows li {
-  padding: 18px 0;
-  border-bottom: 1px solid var(--line);
+  padding: 12px 0;
   font-size: 1.15rem;
 }
 

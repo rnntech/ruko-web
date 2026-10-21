@@ -59,7 +59,7 @@
 }
 
 .checkTitle {
-  max-width: 16ch;
+  max-width: 14ch;
   margin-bottom: 20px;
 }
 
@@ -153,7 +153,17 @@
 }
 
 .closing {
-  max-width: 20ch;
+  max-width: 17ch;
+  margin: 0;
+}
+
+/* The heading on the left, the two actions closing the right side (no half-empty band). */
+.closingInner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px 56px;
 }
 
 @media (max-width: 900px) {

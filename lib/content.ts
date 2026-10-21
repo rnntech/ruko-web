@@ -21,8 +21,8 @@ export const en = {
   },
   /** Home: "Check a message", the backup to the automatic checks (growth hook 3, D-049; placed after them, D-051). */
   check: {
-    title: "Not sure about a message? Show it to Ruko.",
-    lead: "Ruko checks new messages on its own. For anything else, like a message a relative passed on or one you opened before Ruko saw it, show it to Ruko. It checks in a second, on your phone.",
+    title: "Not sure about a message?",
+    lead: "Show it to Ruko. It checks new messages on its own, so this is for anything else: a message a relative passed on, or one you opened before Ruko saw it. The check takes a second, on your phone.",
     steps: [
       "Long-press the message, tap Share, and choose Ruko. Or share a screenshot of it.",
       "Ruko checks it right there. Nothing is sent anywhere.",

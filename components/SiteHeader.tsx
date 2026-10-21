@@ -13,7 +13,7 @@ export function SiteHeader() {
         </Link>
         <nav aria-label="Main">
           <ul className={styles.nav}>
-            <li>
+            <li className={styles.secondary}>
               <Link href="/#how">{t.nav.how}</Link>
             </li>
             <li>
@@ -22,10 +22,10 @@ export function SiteHeader() {
             <li>
               <Link href="/spot-the-scam">{t.nav.spot}</Link>
             </li>
-            <li>
+            <li className={styles.secondary}>
               <Link href="/demo">{t.nav.demo}</Link>
             </li>
-            <li>
+            <li className={styles.secondary}>
               <Link href="/privacy">{t.nav.privacy}</Link>
             </li>
             <li>

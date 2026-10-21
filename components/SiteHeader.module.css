@@ -56,6 +56,14 @@
   padding: 0 18px;
 }
 
+/* Phones: the wordmark, two links and the action, not three rows of links. How it works, the warning and
+   privacy are one tap away on the page itself and in the footer. */
+@media (max-width: 640px) {
+  .nav .secondary {
+    display: none;
+  }
+}
+
 .nav .cta:hover {
   background: var(--mint-100);
   color: var(--teal-900);
