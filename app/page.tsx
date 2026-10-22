@@ -169,8 +169,10 @@ export default function Home() {
           <div>
             <h2>Ruko means &ldquo;stop&rdquo;</h2>
             <p className="measure">
-              Scam calls come in every language, so Ruko is built for eight: English first, then Hindi, Bengali, Marathi,
-              Telugu, Tamil, Gujarati and Kannada. Each one is written or checked by a native speaker before it ships.
+              Scam calls come in every language, so Ruko speaks six: English, Hindi, Tamil, Telugu, Malayalam and
+              Kannada. The Indian languages are in beta. Every line is written from its meaning, never translated word
+              for word, using the words the police and banks use, and checked against how the news says it. A native
+              speaker&rsquo;s check takes the beta label off.
             </p>
           </div>
         </div>
