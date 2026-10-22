@@ -14,7 +14,7 @@ const permissions: { name: string; sees: string; why: string }[] = [
   { name: "Display over other apps", sees: "Nothing", why: "To show the red warning on top of other apps" },
   { name: "Notifications", sees: "Nothing", why: "To show “Ruko is protecting you” and tell you if protection is off" },
   {
-    name: "Notification access (optional)",
+    name: "Notification access",
     sees: "Short previews of your notifications",
     why: "To spot WhatsApp calls from unknown numbers, bank texts during a risky call, and scam messages in SMS, WhatsApp, Telegram, Instagram, Messenger, Truecaller and SMS Organizer. Checked on your phone only",
   },
