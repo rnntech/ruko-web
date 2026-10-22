@@ -129,45 +129,14 @@
   margin: 40px 0 40px;
 }
 
-/* A section's text beside the app's real screen */
-.withScreen {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 340px);
-  gap: 80px;
-  align-items: center;
-}
-
-.screenFirst {
-  grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
-}
-
-.screen,
-.shareShot {
-  margin: 0;
-}
-
-.screen img,
-.shareShot img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius-card);
-}
-
-.screen figcaption,
-.shareShot figcaption {
-  margin-top: 12px;
-  font-size: 16px;
-  color: var(--ink-soft);
-}
-
-/* Scams going around: the heading beside the shared picture, then one scam per row */
+/* Scams going around: the heading, then one scam per row */
 .scamsHead {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
-  gap: 80px;
-  align-items: center;
   margin-bottom: 64px;
+}
+
+/* Nothing beside the heading now, so its lines can use the full width */
+.scamsHead p {
+  max-width: none;
 }
 
 .scamList {
@@ -262,30 +231,13 @@
   .heroInner,
   .split,
   .scamGrid,
-  .withScreen,
-  .screenFirst,
-  .scamsHead,
   .scamRow {
     grid-template-columns: minmax(0, 1fr);
-  }
-
-  .withScreen,
-  .scamsHead {
-    gap: 40px;
   }
 
   .scamRow {
     gap: 16px;
     padding: 20px;
-  }
-
-  .screen {
-    max-width: 300px;
-  }
-
-  /* On one column the picture follows the text, so its caption never sits above a heading */
-  .screenFirst .screen {
-    order: 2;
   }
 
   .heroPhone {

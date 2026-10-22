@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import { PhoneTour } from "@/components/PhoneTour";
-import Image from "next/image";
 import { curly, unquote, visibleCards } from "@/lib/cards";
 import { t } from "@/lib/content";
 
@@ -89,13 +88,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* The backup to the automatic checks: show Ruko any message (growth hook 3, D-049; after them, D-051).
-          Beside it, the app's real result screen (taste skill: show the product's own interface). */}
+      {/* The backup to the automatic checks: show Ruko any message (growth hook 3, D-049; after them, D-051). */}
       <section className="field field-mint">
-        <div className={`container ${styles.withScreen}`}>
+        <div className={`container ${styles.split}`}>
           <div>
             <h2 className={styles.checkTitle}>{t.check.title}</h2>
             <p className="lead">{t.check.lead}</p>
+          </div>
+          <div>
             <ol className={styles.checkSteps}>
               {t.check.steps.map((s) => (
                 <li key={s}>{s}</li>
@@ -109,27 +109,17 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <figure className={styles.screen}>
-            <Image
-              src="/app-screens/check-result.png"
-              width={786}
-              height={1702}
-              sizes="(max-width: 900px) 80vw, 340px"
-              alt="Ruko's Check a message screen. A pasted message about an electricity bill with an app file is marked: This looks like a scam."
-            />
-            <figcaption>Check a message, in the app</figcaption>
-          </figure>
         </div>
       </section>
 
-      {/* Scams going around (D-030): one scam per row, with what the family group receives beside the heading */}
+      {/* Scams going around (D-030): one scam per row */}
       <section className="field field-white" id="scams">
         <div className="container">
           <div className={styles.scamsHead}>
             <div>
               <h2>{t.scams.homeTitle}</h2>
               <p className="lead">{t.scams.homeLead}</p>
-              <p className="note measure">
+              <p className="note">
                 Indians lost &#8377;22,495 crore to cyber fraud in 2025 (Home Ministry data reported by{" "}
                 <a href="https://theprint.in/india/cybercrime-saw-24-spike-in-2025-indians-lost-rs-22495-crore-mainly-in-investment-scams/2859930/">
                   ThePrint
@@ -137,16 +127,6 @@ export default function Home() {
                 ).
               </p>
             </div>
-            <figure className={styles.shareShot}>
-              <Image
-                src="/app-screens/share-card.png"
-                width={1080}
-                height={1080}
-                sizes="(max-width: 900px) 90vw, 420px"
-                alt="The picture Ruko shares to WhatsApp: Fake police or CBI digital arrest, what they say, and how to spot it."
-              />
-              <figcaption>What lands in the family group</figcaption>
-            </figure>
           </div>
           <div className={styles.scamList}>
             {latest.map((card) => (
@@ -176,33 +156,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust: the promise next to the app's own "Nothing leaves your phone" screen (mirrored layout) */}
+      {/* Trust */}
       <section className="field field-white">
-        <div className={`container ${styles.withScreen} ${styles.screenFirst}`}>
-          <figure className={styles.screen}>
-            <Image
-              src="/app-screens/privacy.png"
-              width={786}
-              height={1702}
-              sizes="(max-width: 900px) 80vw, 340px"
-              alt="Ruko's setup screen: Nothing leaves your phone. Ruko checks calls and messages right here, on your phone."
-            />
-            <figcaption>The promise, as Ruko shows it in setup</figcaption>
-          </figure>
+        <div className={`container ${styles.split}`}>
           <div>
             <h2>What Ruko never does</h2>
-            <p className="lead">It asks for strong permissions, so here is the promise in plain words.</p>
-            <ul className="rows">
-              <li>Listen to or record your calls.</li>
-              <li>Store or send your messages. Checks happen on your phone.</li>
-              <li>Block your calls or payments. It only warns you.</li>
-              <li>Ask for your SMS, call history, microphone or location.</li>
-              <li>Tell anyone about your calls, unless you choose someone to call.</li>
-            </ul>
+            <p className="measure">It asks for strong permissions, so here is the promise in plain words.</p>
             <Link href="/privacy" className="text-link">
               See exactly what Ruko can see
             </Link>
           </div>
+          <ul className="rows">
+            <li>Listen to or record your calls.</li>
+            <li>Store or send your messages. Checks happen on your phone.</li>
+            <li>Block your calls or payments. It only warns you.</li>
+            <li>Ask for your SMS, call history, microphone or location.</li>
+            <li>Tell anyone about your calls, unless you choose someone to call.</li>
+          </ul>
         </div>
       </section>
 
