@@ -13,6 +13,9 @@ import { t } from "@/lib/content";
 export function ScamCardView({ card, full = false }: { card: ScamCard; full?: boolean }) {
   return (
     <article className={styles.card} aria-labelledby={`scam-${card.id}`}>
+      <h3 id={`scam-${card.id}`} className={styles.name}>
+        {curly(card.name.en)}
+      </h3>
       <div className={styles.meta}>
         <ul className={styles.channels} aria-label={t.scams.channelsLabel}>
           {(card.channels ?? []).map((c) => (
@@ -24,9 +27,6 @@ export function ScamCardView({ card, full = false }: { card: ScamCard; full?: bo
         {card.status !== "approved" && <span className={`tag ${styles.draft}`}>{t.scams.draft}</span>}
       </div>
 
-      <h3 id={`scam-${card.id}`} className={styles.name}>
-        {curly(card.name.en)}
-      </h3>
 
       <figure className={styles.says}>
         <figcaption>{t.scams.theySay}</figcaption>

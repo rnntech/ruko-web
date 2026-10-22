@@ -129,6 +129,111 @@
   margin: 40px 0 40px;
 }
 
+/* A section's text beside the app's real screen */
+.withScreen {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 340px);
+  gap: 80px;
+  align-items: center;
+}
+
+.screenFirst {
+  grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+}
+
+.screen,
+.shareShot {
+  margin: 0;
+}
+
+.screen img,
+.shareShot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+}
+
+.screen figcaption,
+.shareShot figcaption {
+  margin-top: 12px;
+  font-size: 16px;
+  color: var(--ink-soft);
+}
+
+/* Scams going around: the heading beside the shared picture, then one scam per row */
+.scamsHead {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.scamList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.scamRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 20px 32px;
+  align-items: start;
+  background: var(--paper);
+  border-radius: var(--radius-card);
+  padding: 28px;
+}
+
+/* The title and how the scam arrives run the full width, so a long name stays on one or two lines */
+.scamRow > div:first-child {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 24px;
+}
+
+.scamName {
+  font-size: clamp(1.45rem, 2vw, 1.75rem);
+  line-height: 1.1;
+  margin: 0 0 8px;
+}
+
+.scamChannels {
+  color: var(--ink-soft);
+  font-size: 16px;
+  margin: 0;
+}
+
+.scamSays {
+  margin: 0;
+  background: var(--surface);
+  border-radius: 4px 16px 16px 16px;
+  padding: 14px 16px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.scamFlag {
+  background: var(--danger-bg);
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+.scamFlag p {
+  margin: 0;
+}
+
+.scamFlagLabel {
+  color: var(--danger);
+  font-weight: 700;
+  margin-bottom: 2px !important;
+}
+
 /* Languages */
 .devanagari {
   font-family: var(--font-devanagari), sans-serif;
@@ -156,8 +261,31 @@
 @media (max-width: 900px) {
   .heroInner,
   .split,
-  .scamGrid {
+  .scamGrid,
+  .withScreen,
+  .screenFirst,
+  .scamsHead,
+  .scamRow {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .withScreen,
+  .scamsHead {
+    gap: 40px;
+  }
+
+  .scamRow {
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .screen {
+    max-width: 300px;
+  }
+
+  /* On one column the picture follows the text, so its caption never sits above a heading */
+  .screenFirst .screen {
+    order: 2;
   }
 
   .heroPhone {

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import { PhoneTour } from "@/components/PhoneTour";
-import { ScamCardView } from "@/components/ScamCardView";
-import { visibleCards } from "@/lib/cards";
+import Image from "next/image";
+import { curly, unquote, visibleCards } from "@/lib/cards";
 import { t } from "@/lib/content";
 
 const timeline: { time: string; text: string; ruko?: boolean }[] = [
@@ -89,14 +89,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* The backup to the automatic checks: show Ruko any message (growth hook 3, D-049; after them, D-051) */}
+      {/* The backup to the automatic checks: show Ruko any message (growth hook 3, D-049; after them, D-051).
+          Beside it, the app's real result screen (taste skill: show the product's own interface). */}
       <section className="field field-mint">
-        <div className={`container ${styles.split}`}>
+        <div className={`container ${styles.withScreen}`}>
           <div>
             <h2 className={styles.checkTitle}>{t.check.title}</h2>
             <p className="lead">{t.check.lead}</p>
-          </div>
-          <div>
             <ol className={styles.checkSteps}>
               {t.check.steps.map((s) => (
                 <li key={s}>{s}</li>
@@ -110,16 +109,26 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          <figure className={styles.screen}>
+            <Image
+              src="/app-screens/check-result.png"
+              width={786}
+              height={1702}
+              sizes="(max-width: 900px) 80vw, 340px"
+              alt="Ruko's Check a message screen. A pasted message about an electricity bill with an app file is marked: This looks like a scam."
+            />
+            <figcaption>Check a message, in the app</figcaption>
+          </figure>
         </div>
       </section>
 
-      {/* Scams going around (D-030): plain, sourced, shareable */}
+      {/* Scams going around (D-030): one scam per row, with what the family group receives beside the heading */}
       <section className="field field-white" id="scams">
         <div className="container">
-          <div className={styles.split}>
-            <h2>{t.scams.homeTitle}</h2>
+          <div className={styles.scamsHead}>
             <div>
-              <p className="measure">{t.scams.homeLead}</p>
+              <h2>{t.scams.homeTitle}</h2>
+              <p className="lead">{t.scams.homeLead}</p>
               <p className="note measure">
                 Indians lost &#8377;22,495 crore to cyber fraud in 2025 (Home Ministry data reported by{" "}
                 <a href="https://theprint.in/india/cybercrime-saw-24-spike-in-2025-indians-lost-rs-22495-crore-mainly-in-investment-scams/2859930/">
@@ -128,10 +137,37 @@ export default function Home() {
                 ).
               </p>
             </div>
+            <figure className={styles.shareShot}>
+              <Image
+                src="/app-screens/share-card.png"
+                width={1080}
+                height={1080}
+                sizes="(max-width: 900px) 90vw, 420px"
+                alt="The picture Ruko shares to WhatsApp: Fake police or CBI digital arrest, what they say, and how to spot it."
+              />
+              <figcaption>What lands in the family group</figcaption>
+            </figure>
           </div>
-          <div className={styles.scamGrid}>
+          <div className={styles.scamList}>
             {latest.map((card) => (
-              <ScamCardView key={card.id} card={card} />
+              <article key={card.id} className={styles.scamRow} aria-labelledby={`home-${card.id}`}>
+                <div>
+                  <h3 id={`home-${card.id}`} className={styles.scamName}>
+                    {curly(card.name.en)}
+                  </h3>
+                  <p className={styles.scamChannels}>
+                    {(card.channels ?? []).map((c) => t.scams.channels[c as keyof typeof t.scams.channels] ?? c).join(" · ")}
+                  </p>
+                  <Link href={`/scams#${card.id}`} className="text-link">
+                    {t.scams.readMore}
+                  </Link>
+                </div>
+                <blockquote className={styles.scamSays}>{curly(unquote(card.they_say.en))}</blockquote>
+                <div className={styles.scamFlag}>
+                  <p className={styles.scamFlagLabel}>{t.scams.redFlag}</p>
+                  <p>{curly(card.red_flag.en)}</p>
+                </div>
+              </article>
             ))}
           </div>
           <Link href="/scams" className="button">
@@ -140,23 +176,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust */}
+      {/* Trust: the promise next to the app's own "Nothing leaves your phone" screen (mirrored layout) */}
       <section className="field field-white">
-        <div className={`container ${styles.split}`}>
+        <div className={`container ${styles.withScreen} ${styles.screenFirst}`}>
+          <figure className={styles.screen}>
+            <Image
+              src="/app-screens/privacy.png"
+              width={786}
+              height={1702}
+              sizes="(max-width: 900px) 80vw, 340px"
+              alt="Ruko's setup screen: Nothing leaves your phone. Ruko checks calls and messages right here, on your phone."
+            />
+            <figcaption>The promise, as Ruko shows it in setup</figcaption>
+          </figure>
           <div>
             <h2>What Ruko never does</h2>
-            <p className="measure">It asks for strong permissions, so here is the promise in plain words.</p>
+            <p className="lead">It asks for strong permissions, so here is the promise in plain words.</p>
+            <ul className="rows">
+              <li>Listen to or record your calls.</li>
+              <li>Store or send your messages. Checks happen on your phone.</li>
+              <li>Block your calls or payments. It only warns you.</li>
+              <li>Ask for your SMS, call history, microphone or location.</li>
+              <li>Tell anyone about your calls, unless you choose someone to call.</li>
+            </ul>
             <Link href="/privacy" className="text-link">
               See exactly what Ruko can see
             </Link>
           </div>
-          <ul className="rows">
-            <li>Listen to or record your calls.</li>
-            <li>Store or send your messages. Checks happen on your phone.</li>
-            <li>Block your calls or payments. It only warns you.</li>
-            <li>Ask for your SMS, call history, microphone or location.</li>
-            <li>Tell anyone about your calls, unless you choose someone to call.</li>
-          </ul>
         </div>
       </section>
 

@@ -7,7 +7,6 @@
 }
 
 .group {
-  border: 1px solid var(--line);
   border-radius: var(--radius-card);
   background: var(--surface);
   padding: 16px 20px;

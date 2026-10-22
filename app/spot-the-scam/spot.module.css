@@ -20,7 +20,6 @@
 /* The message as it arrives: where it came from, then what it says. */
 .message {
   background: var(--surface);
-  border: 1px solid var(--line);
   border-radius: var(--radius-card);
   padding: 18px 20px 20px;
 }

@@ -12,7 +12,7 @@
   border-radius: var(--radius);
   background: #101417;
   overflow: hidden;
-  box-shadow: 0 30px 60px -20px rgba(10, 30, 28, 0.45);
+  box-shadow: 0 30px 60px -20px rgba(10, 30, 28, 0.45); /* taste-skill-ignore: the app's own screen, drawn as a data-ui fragment */
 }
 
 .camera {
@@ -76,14 +76,14 @@
   height: 9px;
   border: 1.5px solid currentColor;
   border-radius: 2px;
-  background: linear-gradient(90deg, currentColor 70%, transparent 70%);
+  background: linear-gradient(90deg, currentColor 70%, transparent 70%); /* taste-skill-ignore: the app's own screen, drawn as a data-ui fragment */
 }
 
 .callChip {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  background: #1e8e3e;
+  background: #17773a; /* Android call green, a shade darker for 4.5:1 with white */
   color: #ffffff;
   border-radius: 10px;
   padding: 1px 8px;
@@ -419,7 +419,7 @@
 .homeCard {
   margin: 18px 0 0;
   background: #ffffff;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line); /* taste-skill-ignore: the app's own screen, drawn as a data-ui fragment */
   border-radius: 12px;
 }
 
@@ -434,7 +434,7 @@
 }
 
 .homeRow + .homeRow {
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--line); /* taste-skill-ignore: the app's own screen, drawn as a data-ui fragment */
 }
 
 .homeRow b {
@@ -474,7 +474,7 @@
   padding: 12px 14px;
   font-size: 12.5px;
   line-height: 1.45;
-  box-shadow: 0 10px 24px -10px rgba(10, 30, 28, 0.45);
+  box-shadow: 0 10px 24px -10px rgba(10, 30, 28, 0.45); /* taste-skill-ignore: the app's own screen, drawn as a data-ui fragment */
   animation: notif 4.5s both;
 }
 
@@ -501,7 +501,7 @@
 .checkField {
   position: relative;
   margin-top: 14px;
-  border: 1px solid var(--ink-soft);
+  border: 1px solid var(--ink-soft); /* taste-skill-ignore: the app's own screen, drawn as a data-ui fragment */
   border-radius: 6px;
   padding: 12px 12px 10px;
   min-height: 98px;
@@ -580,7 +580,7 @@
 
 .matchCard {
   background: #ffffff;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line); /* taste-skill-ignore: the app's own screen, drawn as a data-ui fragment */
   border-radius: 12px;
   padding: 10px 12px;
 }
