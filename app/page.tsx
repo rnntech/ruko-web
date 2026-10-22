@@ -59,7 +59,6 @@ export default function Home() {
             <source src="/video/ruko-explainer.mp4" type="video/mp4" />
             <track kind="captions" src="/video/ruko-explainer.en.vtt" srcLang="en" label="English" default />
           </video>
-          <p className="note">Every phone screen in the film is from the real Android app.</p>
         </div>
       </section>
 
