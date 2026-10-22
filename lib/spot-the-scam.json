@@ -1,5 +1,5 @@
 {
-  "note": "Spot-the-scam test (D-049). Examples modelled on real messages and on scams reported in the past year; numbers, names and links are made up or published examples. Every 'sms'/'whatsapp' item is checked against Ruko's real rules by SpotTheScamTest in the engine: scams must be caught, real ones must pass. 'call' items are scenarios, not messages.",
+  "note": "Spot-the-scam test (D-049, D-097). One hard scam question per approved card (52), plus genuine look-alikes; each round shows 4 scams and 4 real ones at random. Scams are modelled on the card's real cases (source = the card's first source); numbers, names and links are made up. Every 'sms'/'whatsapp' item is checked against Ruko's real rules by SpotTheScamTest: real ones must pass; scams must be caught unless marked rukoMayMiss (hard ones Ruko's wording rules miss, shown with a note). 'call' and 'situation' items are scenarios, not messages.",
   "items": [
     {
       "id": "debit-reply",
@@ -9,7 +9,11 @@
       "senderNote": "Not in your contacts",
       "text": "Dear customer, Rs 48,500 has been debited from your account XX4521 to UPI ID rk.traders@ybl. If this transaction was not done by you, reply NO to block it.",
       "clue": "Banks never ask you to reply YES or NO on WhatsApp. Don't reply: open your bank's own app and check.",
-      "source": { "name": "Free Press Journal (Hyderabad Police, Oct 2026)", "url": "https://www.freepressjournal.in/tech/replying-no-on-whatsapp-could-empty-your-bank-account-hyderabad-police-warns" }
+      "source": {
+        "name": "Free Press Journal (Hyderabad Police, Oct 2026)",
+        "url": "https://www.freepressjournal.in/tech/replying-no-on-whatsapp-could-empty-your-bank-account-hyderabad-police-warns"
+      },
+      "card": "fake-debit-reply"
     },
     {
       "id": "debit-real",
@@ -27,7 +31,11 @@
       "text": "Rs 5,000.00 credited to your A/c XX4521 by UPI from SURESH K. Avl Bal Rs 12,340.50",
       "context": "A minute later a stranger calls: “I sent you 5,000 by mistake. Please send it back.”",
       "clue": "A bank alert never comes from a mobile number. Check your balance in your bank's app before sending anything back: usually no money ever arrived.",
-      "source": { "name": "Free Press Journal (Indore, Rs 70,000 lost)", "url": "https://www.freepressjournal.in/indore/70000-gone-in-15-minutes-indore-man-falls-for-fake-bank-credit-sms-scam" }
+      "source": {
+        "name": "Free Press Journal (Indore, Rs 70,000 lost)",
+        "url": "https://www.freepressjournal.in/indore/70000-gone-in-15-minutes-indore-man-falls-for-fake-bank-credit-sms-scam"
+      },
+      "card": "fake-credit-sms"
     },
     {
       "id": "credit-real",
@@ -44,7 +52,11 @@
       "sender": "+91 81234 56789",
       "text": "Traffic challan: your vehicle MH12AB1234 has a pending fine of Rs 500 for over-speeding. Pay before 22-10-26 to avoid court: https://echallan.pasvahan.icu",
       "clue": "Read the link slowly: “pasvahan”, not “parivahan”, and it doesn't end in .gov.in. Real challans are on echallan.parivahan.gov.in.",
-      "source": { "name": "The Tribune (fake e-challan messages)", "url": "https://www.tribuneindia.com/news/haryana/cyber-fraudsters-sending-fake-e-challan-messages-to-dupe-residents/amp" }
+      "source": {
+        "name": "The Tribune (fake e-challan messages)",
+        "url": "https://www.tribuneindia.com/news/haryana/cyber-fraudsters-sending-fake-e-challan-messages-to-dupe-residents/amp"
+      },
+      "card": "e-challan"
     },
     {
       "id": "challan-real",
@@ -62,7 +74,11 @@
       "senderNote": "Profile name: India Post",
       "text": "Congratulations! You are selected for Dak Seva Gifts. Answer 4 short questions to win up to Rs 10,000: https://indiapost-dakseva.top",
       "clue": "India Post runs no gift or lucky-draw scheme and doesn't message you on WhatsApp. Anyone can call themselves “India Post” in a profile name.",
-      "source": { "name": "News On AIR (PIB Fact Check, Sept 2026)", "url": "https://newsonair.gov.in/pib-fact-check-debunks-fake-dak-seva-gifts-scheme-message/" }
+      "source": {
+        "name": "News On AIR (PIB Fact Check, Sept 2026)",
+        "url": "https://newsonair.gov.in/pib-fact-check-debunks-fake-dak-seva-gifts-scheme-message/"
+      },
+      "card": "govt-scheme"
     },
     {
       "id": "post-real",
@@ -79,7 +95,11 @@
       "sender": "+91 98110 22334",
       "text": "“Hello, this is SBI's fraud department. A payment of Rs 75,000 is pending on your card. I'm sending an OTP to cancel it, please read it out.”",
       "clue": "Banks are now required to call from numbers starting 1600. “The bank” calling from an ordinary mobile number is a red flag, and no bank ever asks for an OTP.",
-      "source": { "name": "IANS (TRAI orders 1600-series for banks)", "url": "https://ianslive.in/trai-orders-mandatory-adoption-of-1600-series-numbers-by-banks-financial-services-insurance-firms--20251119152705" }
+      "source": {
+        "name": "IANS (TRAI orders 1600-series for banks)",
+        "url": "https://ianslive.in/trai-orders-mandatory-adoption-of-1600-series-numbers-by-banks-financial-services-insurance-firms--20251119152705"
+      },
+      "card": "bank-call-otp"
     },
     {
       "id": "bank-call-1600",
@@ -97,7 +117,11 @@
       "senderNote": "Profile photo: your nephew",
       "text": "Mausi, it's Rahul. My phone fell in the water, this is my friend's number. Please send 15,000 urgently for the hostel fee, I'll return it tomorrow. Don't tell mummy please.",
       "clue": "Call him back on the number you have saved. Scammers copy profile photos, and AI can even copy a voice.",
-      "source": { "name": "Scroll (AI voice-clone family scams)", "url": "https://scroll.in/article/1066442/family-member-in-distress-or-an-ai-voice-clone-the-rise-of-a-disturbing-new-cyber-crime-scam" }
+      "source": {
+        "name": "Scroll (AI voice-clone family scams)",
+        "url": "https://scroll.in/article/1066442/family-member-in-distress-or-an-ai-voice-clone-the-rise-of-a-disturbing-new-cyber-crime-scam"
+      },
+      "card": "fake-friend-profile"
     },
     {
       "id": "kyc-real",
@@ -115,7 +139,11 @@
       "senderNote": "Profile photo: SBI logo",
       "text": "📄 SBI_KYC_Form.pdf\nDear customer, your KYC is pending. Fill this form today to avoid account freeze.",
       "clue": "Banks never send KYC forms on WhatsApp. A bank logo as the profile photo proves nothing: anyone can upload one.",
-      "source": { "name": "Moneylife (WhatsApp KYC message fraud)", "url": "https://www.moneylife.in/article/fraud-alert-whatsapp-hacking-via-bank-kyc-message/77152.html" }
+      "source": {
+        "name": "Moneylife (WhatsApp KYC message fraud)",
+        "url": "https://www.moneylife.in/article/fraud-alert-whatsapp-hacking-via-bank-kyc-message/77152.html"
+      },
+      "card": "fake-apk-invite"
     },
     {
       "id": "block-sms-real",
@@ -124,6 +152,793 @@
       "sender": "VM-HDFCBK-S",
       "text": "Rs.25000 debited from HDFC Bank A/c XX4521 on 20-10-26 to VPA rk.traders@ybl. Not you? Call 18002586161 or SMS BLOCK UPI to 7308080808",
       "clue": "Real, and the hardest one. It's from the bank's sender name, and SMS BLOCK goes to the bank's published number. Replying to a stranger on WhatsApp is different."
+    },
+    {
+      "id": "digital-arrest",
+      "card": "digital-arrest",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 87001 45522",
+      "senderNote": "Video call. A police station is behind him.",
+      "text": "“Good afternoon, madam. I am Inspector Rakesh Sharma, Mumbai Cyber Cell. A SIM card in your Aadhaar name was used in a money-laundering case. Please stay on this video call while we record your statement. The matter is confidential, so do not discuss it with your family.”",
+      "clue": "There is no “digital arrest” in Indian law. Police never question or arrest anyone on a video call, never ask you to keep it secret, and never ask for money. Hang up and call 1930.",
+      "source": {
+        "name": "CERT-In: Cyber Security Handbook (2025)",
+        "url": "https://www.cert-in.org.in/PDF/Mahila_Suraksha_Booklet25.pdf"
+      }
+    },
+    {
+      "id": "trai-sim-block",
+      "card": "trai-sim-block",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 22 4012 7788",
+      "text": "“This is an automated message from the Telecom Department. Your mobile number will be suspended within 2 hours because of illegal activity reported against your Aadhaar. Press 9 to speak to our officer.”",
+      "clue": "DoT and TRAI never call to disconnect a number. A recorded voice telling you to “press 9” puts you through to a scammer. Hang up and report it on Chakshu at sancharsaathi.gov.in.",
+      "source": {
+        "name": "PIB / DoT: fake calls threatening to disconnect your mobile",
+        "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2020557&reg=48&lang=2"
+      }
+    },
+    {
+      "id": "courier-parcel",
+      "card": "courier-parcel",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 11 6911 4430",
+      "senderNote": "Caller ID shows: FedEx",
+      "text": "“Hello, I'm calling from FedEx International. A parcel booked with your Aadhaar from Mumbai to Taiwan has been held by customs. It contains 5 passports and 140 grams of drugs. I'm connecting you to the Mumbai Narcotics officer to record your statement.”",
+      "clue": "Courier companies don't put you through to the police, and no agency settles a case by phone. The name on the screen can be faked. Hang up and call 1930.",
+      "source": {
+        "name": "PIB / I4C (MHA): alert on 'digital arrest' and blackmail calls; report on 1930",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020570"
+      }
+    },
+    {
+      "id": "kyc-update",
+      "card": "kyc-update",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 74280 61195",
+      "text": "Dear SBI customer, as per RBI guidelines your KYC must be re-verified by 25-10-2026 to continue YONO services. It takes 2 minutes: https://sbi-rekyc.in/verify . Ignore if already done.",
+      "clue": "“Ignore if already done” makes it sound calm, but it comes from a mobile number and the link isn't the bank's own site. Banks send KYC reminders with no link, from their sender name.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "electricity-bill",
+      "card": "electricity-bill",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 93210 47786",
+      "text": "Dear Consumer, your electricity connection will be disconnected tonight at 9:30 PM as your previous month bill was not updated. Please contact our electricity officer immediately on 87981 20445. Thank you.",
+      "clue": "Electricity companies don't send same-night cut-off warnings from mobile numbers. The “officer” will ask you to install an app. Check your bill only on the company's own app or website.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "reward-points",
+      "card": "reward-points",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 99003 18842",
+      "text": "HDFC Bank: 7,450 reward points on your credit card (worth Rs 7,450) expire tonight. Redeem them to your account in one step: https://hdfc-rewardz.co/redeem",
+      "clue": "Points that “expire tonight”, a link that isn't the bank's site, and a mobile number as the sender. Check your points only in your bank's own app.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "customer-care",
+      "card": "customer-care",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 98316 72045",
+      "senderNote": "You found this number in a Google search for a refund helpline.",
+      "text": "“Thank you for calling, ma'am. I'll process your refund right now. Please install the ‘Quick Support’ app from Play Store so I can guide you, and tell me the 9-digit code it shows.”",
+      "clue": "Real support never asks you to install a screen-sharing app or read out a code. Search results can show fake helplines: take the number only from the company's own app or website.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "stock-tips",
+      "card": "stock-tips",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+44 7700 900412",
+      "senderNote": "Added you to the group “Goldman Wealth Club 87”",
+      "text": "Good morning! Yesterday our SEBI-registered research team's 3 picks gained 11%. Members trade through our institutional app for IPO allocation and steady 30% monthly returns. Reply YES to get the app link.",
+      "clue": "Nobody can promise steady returns, and a “SEBI-registered” claim in a WhatsApp group means nothing. These apps let you see profits but make you pay a “tax” to withdraw.",
+      "source": {
+        "name": "SEBI: beware of fake trading app scams",
+        "url": "https://investor.sebi.gov.in/pdf/Fake%20trading%20app%20scam%20Landscape.pdf"
+      },
+      "rukoMayMiss": true
+    },
+    {
+      "id": "task-job",
+      "card": "task-job",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 63019 88724",
+      "senderNote": "Profile name: Priya | HR",
+      "text": "Hi, I'm Priya from Zenith Digital. We have part-time work: like YouTube videos and earn Rs 50 per like, Rs 1,500 to 4,000 a day, paid daily to your UPI. It takes only 15 minutes. Shall I share the details?",
+      "clue": "They pay small amounts at first, then ask you to pay for “prepaid tasks” to earn more. A real job never asks you to pay.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "fake-family-voice",
+      "card": "fake-family-voice",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 79062 11473",
+      "senderNote": "The voice sounds exactly like your son.",
+      "text": "“Papa, it's me. I've had an accident and my phone broke. The police here will let me go if we pay 50,000 now. Please send it to this officer's number, I'll explain later. Don't tell Mummy, she'll panic.”",
+      "clue": "AI can copy a voice from a few seconds of audio. Hurry plus “don't tell anyone” is the sign. Hang up and call your son on the number you already have.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "advance-fee",
+      "card": "advance-fee",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 88604 21987",
+      "text": "Your personal loan of Rs 2,00,000 at 9% interest is approved by Bajaj Finserv. Only Rs 1,999 file charges are payable before disbursal. Pay to finserv.loans@ybl and share the screenshot on this number.",
+      "clue": "Real lenders take any charges out of the loan amount. Paying a fee to a UPI ID before you get the money is the scam.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "india-post-delivery",
+      "card": "india-post-delivery",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 72900 33118",
+      "text": "IndiaPost: Your package has arrived at the warehouse but could not be delivered due to incomplete address information. Please update your address within 48 hours: https://indiapost.gov.in-track.top/IN",
+      "clue": "Read the link to the end: it starts with “indiapost.gov.in” but the site is “in-track.top”. India Post never sends links to update your address.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "tax-refund",
+      "card": "tax-refund",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 89286 50731",
+      "text": "Income Tax Dept: You are eligible for a refund of Rs 15,490.00 for AY 2026-27. Your bank account number appears incorrect. Please verify it at https://incometax-refund.org.in to receive it within 24 hours.",
+      "clue": "Refunds go straight to the bank account in your tax return, and the department never sends refund links. The only site is incometax.gov.in.",
+      "source": {
+        "name": "PIB / Income Tax Department: phishing advisory",
+        "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=136117&reg=48&lang=2"
+      }
+    },
+    {
+      "id": "loan-app",
+      "card": "loan-app",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 76540 98112",
+      "text": "Pre-approved instant loan of Rs 3,00,000 for you. No documents, no CIBIL check, money in 10 minutes. Download Rupee Fast: https://bit.ly/rupeefast-loan",
+      "clue": "Loan apps sent by SMS often read your contacts and later threaten to shame you. Borrow only from banks and lenders listed with RBI.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "gift-parcel",
+      "card": "gift-parcel",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 98185 66402",
+      "senderNote": "Profile name: Skyshield Cargo Delhi",
+      "text": "Dear Madam, a parcel from Mr. Daniel Brown (UK) is held at Delhi customs. It contains gold jewellery, an iPhone and GBP 25,000 cash. Clearance charges of Rs 38,500 must be paid today, or it will be sent back.",
+      "clue": "The “friend” from social media and the “cargo company” are the same gang. Customs never asks you to pay a personal account or UPI ID. Don't pay any fee to receive a gift.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "whatsapp-takeover",
+      "card": "whatsapp-takeover",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "Meena Aunty",
+      "senderNote": "Saved contact",
+      "text": "Hi dear, sorry to disturb. I sent a 6-digit code to your number by mistake while logging in. Can you please forward it to me? It's a bit urgent.",
+      "clue": "That code is the key to your own WhatsApp, and Meena Aunty's account has probably been taken over. Never share a code you receive, even with people you know. Call her instead.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "rukoMayMiss": true
+    },
+    {
+      "id": "marketplace",
+      "card": "marketplace",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 70154 22981",
+      "senderNote": "Seller of a scooter on OLX",
+      "text": "Sir, I am in the Army, transferred to Pune, so I'm selling my Activa (2022) for only 28,000. It will come by Army cargo. Pay 4,500 cargo charges first, the rest on delivery.",
+      "clue": "Army officers don't sell vehicles through OLX with “cargo charges”. Never pay before you've seen the vehicle and its papers.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "qr-receive-money",
+      "card": "qr-receive-money",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 91678 33240",
+      "senderNote": "Buyer for your fridge",
+      "text": "Done ma'am, I'm paying the full 12,000. I've sent you a QR code for the payment. Just scan it in Google Pay and enter your UPI PIN to receive the money.",
+      "clue": "You never need to scan a QR code or enter your PIN to receive money. Your PIN is only for paying: entering it sends money out.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "sextortion",
+      "card": "sextortion",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 63542 90017",
+      "senderNote": "Profile name: Cyber Crime Inspector",
+      "text": "This is Inspector Vikram Rathore, Cyber Crime Branch. A complaint about your obscene video call has been filed. To close the case without an FIR and remove the video from YouTube, pay the settlement of Rs 51,000 today.",
+      "clue": "The “inspector” is the same blackmailer. Police never settle cases for money on WhatsApp. Don't pay, keep screenshots and report at cybercrime.gov.in or 1930. You are the victim, not the guilty one.",
+      "source": {
+        "name": "CERT-In: Cyber Security Handbook (2025)",
+        "url": "https://www.cert-in.org.in/PDF/Mahila_Suraksha_Booklet25.pdf"
+      }
+    },
+    {
+      "id": "esim-swap",
+      "card": "esim-swap",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 70004 51263",
+      "senderNote": "Says he's from Jio customer care.",
+      "text": "“Sir, your SIM is eligible for a free eSIM upgrade for better 5G speed. You'll get an SMS with a code now. Please read it to me so I can activate it, it only takes 5 minutes.”",
+      "clue": "That code moves your number to the scammer's phone, and then your bank OTPs go to them. Your operator never needs a code from you on a call.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "insurance-bonus",
+      "card": "insurance-bonus",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 11 4152 9930",
+      "text": "“I'm calling from IRDAI, the insurance regulator. Your old LIC policy has a pending bonus of Rs 4,62,000. To release it, you only need to pay the GST of Rs 18,400 first, which will be refunded with the bonus.”",
+      "clue": "IRDAI never calls people or announces bonuses, and no insurer asks for a fee to pay you. Check with your insurer on the number in your policy papers.",
+      "source": {
+        "name": "IRDAI public notice: spurious calls and fake offers",
+        "url": "https://irdai.gov.in/documents/37343/1358307/Spurious+Phone+Calls+and+Fictitious+_+Fraudulent+Offers_PUBLIC+NOTICE.pdf/88457f78-650d-010c-4f7c-43557ec4daac?version=2.1&t=1662752931535"
+      }
+    },
+    {
+      "id": "booking-fraud",
+      "card": "booking-fraud",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 81789 04412",
+      "senderNote": "From a “Kedarnath Heli Booking” page on Facebook",
+      "text": "Namaste ji. Phata to Kedarnath helicopter, 2 seats are available on 28 Oct. Fare Rs 6,980 per person. Send Rs 13,960 to kedarheli.irctc@okaxis and the tickets will be emailed within 1 hour.",
+      "clue": "Kedarnath helicopter tickets are sold only on heliyatra.irctc.co.in. A UPI ID with “irctc” in it is just a name anyone can choose.",
+      "source": {
+        "name": "PIB (I4C alert on fake booking sites)",
+        "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2122832"
+      },
+      "rukoMayMiss": true
+    },
+    {
+      "id": "fake-shop",
+      "card": "fake-shop",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 90231 77845",
+      "senderNote": "Instagram shop “shoemart.official”",
+      "text": "Diwali clearance: Nike Air Jordan at Rs 1,499 (MRP 14,999). Only 6 pairs left in your size! Prepaid orders only, pay by UPI and we ship today.",
+      "clue": "90% off branded goods, prepaid only and no cash on delivery: nothing arrives, or a cheap fake does. Buy only from known apps and sites.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "rukoMayMiss": true
+    },
+    {
+      "id": "mule-account",
+      "card": "mule-account",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 60009 33521",
+      "senderNote": "Profile name: Ritu | Wipro HR",
+      "text": "Work from home: just receive payments from our clients in your bank account and transfer them to our company account. Earn 3% commission on every transaction, Rs 2,000 to 5,000 a day. Interested?",
+      "clue": "That money is stolen from scam victims. Your account gets frozen and you can be arrested, even for a small commission. Never let anyone use your account.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "rukoMayMiss": true
+    },
+    {
+      "id": "overseas-job",
+      "card": "overseas-job",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+66 81 234 5678",
+      "senderNote": "A Thai number",
+      "text": "Greetings from Bangkok! Customer support job (English typing), salary Rs 1,10,000 a month plus free flight, hotel and food. Just a simple typing test. Visa on arrival, we arrange everything. Join by 5 Nov.",
+      "clue": "Real overseas jobs come with a signed contract and a work visa through registered agents, never a tourist visa. People taken this way are forced to work in scam centres.",
+      "source": {
+        "name": "All India Radio (MEA advisory)",
+        "url": "https://newsonair.gov.in/mea-issues-advisory-for-indian-nationals-travelling-to-cambodia-for-employment/"
+      },
+      "rukoMayMiss": true
+    },
+    {
+      "id": "fake-donation",
+      "card": "fake-donation",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 98402 76611",
+      "senderNote": "Forwarded many times",
+      "text": "Kerala floods: help families who lost everything. Donate to the CM Relief Fund through UPI cmdrf.kerala@sbi or scan the QR. Every rupee counts.",
+      "clue": "Lookalike UPI IDs in forwards collect “donations” for scammers. Donate only through the fund's official website.",
+      "source": {
+        "name": "Business Standard (Delhi Police, 2020)",
+        "url": "https://www.business-standard.com/article/current-affairs/delhi-police-detects-fake-upi-id-created-to-cheat-pm-cares-donors-blocked-120033000123_1.html"
+      }
+    },
+    {
+      "id": "aeps-fingerprint",
+      "card": "aeps-fingerprint",
+      "label": "scam",
+      "channel": "situation",
+      "sender": "At your door",
+      "text": "A man in a uniform says: “Aadhaar biometric update camp. Just put your thumb on this machine to update your records, it's free.” He has no ID card and no letter.",
+      "clue": "Copied fingerprints are used to withdraw money through Aadhaar at cash points. Lock your biometrics on uidai.gov.in and give your fingerprint only at an official centre.",
+      "source": {
+        "name": "PIB / UIDAI: lock your biometrics at uidai.gov.in",
+        "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=173667&reg=48&lang=2"
+      }
+    },
+    {
+      "id": "atm-skimming",
+      "card": "atm-skimming",
+      "label": "scam",
+      "channel": "situation",
+      "sender": "At the ATM",
+      "text": "The card slot looks a little bulky and loose. A friendly man behind you says: “It's always like that, push hard. Let me help you.”",
+      "clue": "A loose or bulky slot can hide a card copier, and a “helper” can watch your PIN. Use another ATM, and cover the keypad when you type your PIN.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "juice-jacking",
+      "card": "juice-jacking",
+      "label": "scam",
+      "channel": "situation",
+      "sender": "At the railway station",
+      "text": "Your phone is at 5%. There's a free charging kiosk with USB cables already attached, and a sign saying “Free mobile charging”.",
+      "clue": "A USB cable or port you don't own can copy data or install harmful software. Carry your own charger and plug it into a normal power socket.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "money-doubling",
+      "card": "money-doubling",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 85272 10093",
+      "senderNote": "Profile name: Laxmi Growth Club",
+      "text": "Deposit Rs 10,000 today and get Rs 20,000 back in 30 days. Add 3 members and earn Rs 1,000 for each. Sunita ji from your area got Rs 40,000 last month, ask her!",
+      "clue": "Money that doubles fast and pays you for adding members is a chain scheme. The first people are paid with newer members' money, then it collapses.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "rukoMayMiss": true
+    },
+    {
+      "id": "call-merge",
+      "card": "call-merge",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 96503 22179",
+      "text": "“Hello aunty, I got your number from Neha, I'm organising the society puja. Another committee member is calling you right now, please merge the call so we can all talk together.”",
+      "clue": "The “other caller” is your bank's OTP call, and merging lets the scammer hear the code. Nobody genuine needs you to merge calls.",
+      "source": {
+        "name": "CERT-In: Cyber Security Handbook (2025)",
+        "url": "https://www.cert-in.org.in/PDF/Mahila_Suraksha_Booklet25.pdf"
+      }
+    },
+    {
+      "id": "census-officer",
+      "card": "census-officer",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 75683 21094",
+      "text": "Census 2027: Dear citizen, house listing for your family is pending. Verify your household details to avoid a penalty: https://censusindia-verify.in",
+      "clue": "Official census messages come only from senders with “RGICEN” in the name, and there is no penalty to pay. Census staff carry ID with a QR code.",
+      "source": {
+        "name": "PIB: Census 2027, official messages carry 'RGICEN'",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2257024"
+      }
+    },
+    {
+      "id": "gas-disconnection",
+      "card": "gas-disconnection",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 84319 06627",
+      "senderNote": "Profile name: Indane Gas Service",
+      "text": "Dear customer, your gas connection will be disconnected today at 9:30 PM because your KYC is not updated. Please contact our officer immediately on this number.",
+      "clue": "Anyone can name their WhatsApp “Indane Gas Service”. Gas KYC is done free with your distributor, and gas companies never threaten same-day cut-offs.",
+      "source": {
+        "name": "HP Gas (HPCL): FAQ on KYC",
+        "url": "https://www.hindustanpetroleum.com/pages/faq"
+      }
+    },
+    {
+      "id": "epfo-pf",
+      "card": "epfo-pf",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 87563 12908",
+      "text": "EPFO: Your PF withdrawal of Rs 1,84,300 is on hold because your KYC is incomplete. Update UAN and bank details at https://epfo-claim.online to receive it in 3 days.",
+      "clue": "EPFO's only website is epfindia.gov.in, and it never asks for KYC by SMS. Use the official site or the UMANG app, free of cost.",
+      "source": {
+        "name": "PIB / EPFO: use official EPFO portals, free of cost",
+        "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2136592&reg=48&lang=2"
+      }
+    },
+    {
+      "id": "rental-scam",
+      "card": "rental-scam",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 97734 50118",
+      "senderNote": "Replied to your enquiry on a rental website",
+      "text": "Hello, the 2BHK in Koramangala is still available at Rs 14,000 rent. I'm posted in Dubai so I can't show it myself. Pay Rs 10,000 token and I'll courier the keys today. Many people are asking.",
+      "clue": "An owner who can't meet, can't show the flat and rushes you to pay. Never pay a token for a place you haven't seen.",
+      "source": {
+        "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+      }
+    },
+    {
+      "id": "pension-life-certificate",
+      "card": "pension-life-certificate",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 89205 77310",
+      "text": "Dear Pensioner, your pension will be stopped from next month as your life certificate is not submitted. Submit it online in 5 minutes for Rs 199 at https://jeevanpraman.online",
+      "clue": "The only official site is jeevanpramaan.gov.in, and it's free. You can also give your life certificate at the bank or post office, or the postman can do it at home.",
+      "source": {
+        "name": "PIB / India Post: Jeevan Pramaan life certificate at the post office or doorstep",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2068065"
+      }
+    },
+    {
+      "id": "scratch-card-post",
+      "card": "scratch-card-post",
+      "label": "scam",
+      "channel": "situation",
+      "sender": "A letter by post",
+      "text": "An envelope from “Meesho Lucky Draw” has a scratch card inside. You scratch it: “1st prize: Tata Nexon or Rs 14,80,000”. The helpline says to pay Rs 8,500 registration and GST to claim it.",
+      "clue": "Shopping sites don't run lucky draws by post, and you never pay to receive a real prize. The fees never stop.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "relative-abroad",
+      "card": "relative-abroad",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+1 647 555 0199",
+      "senderNote": "WhatsApp call from Canada",
+      "text": "“Uncle, this is Officer Brian from Toronto police. Your nephew Aman was in a fight and will be deported tonight unless the fine of 2,500 dollars is paid. He's crying, I'll put him on. Please don't tell his parents yet.”",
+      "clue": "Urgency, secrecy and a voice you can't quite check. Before you pay, call your nephew or his parents on a number you already have.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "screen-sharing",
+      "card": "screen-sharing",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 99581 30476",
+      "senderNote": "Says he's from your bank's support team.",
+      "text": "“Ma'am, to fix the problem with your net banking I'll guide you on screen. Please install AnyDesk from Play Store and read me the 9-digit number it shows.”",
+      "clue": "With that number he can see and control your phone, including your bank app. Never install a screen-sharing app because a caller asks.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "credit-card-call",
+      "card": "credit-card-call",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 90182 65473",
+      "text": "“Congratulations sir, your SBI card's annual fee of Rs 4,999 can be waived for life today. I've sent a verification code to your mobile, please read it out to confirm.”",
+      "clue": "That “verification code” approves a payment from your card. Banks never ask for an OTP or card details on a call. Hang up and call the number on the back of your card.",
+      "source": {
+        "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+      }
+    },
+    {
+      "id": "fake-agent-documents",
+      "card": "fake-agent-documents",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 98113 40926",
+      "senderNote": "Says he's from your bank's loan department.",
+      "text": "“Madam, your pre-approved FD overdraft is ready. I'll come home tomorrow to collect copies of your Aadhaar and PAN and one signed blank cheque, so you don't have to visit the branch.”",
+      "clue": "With your ID copies and a signed cheque, strangers can take loans in your name. Give documents only at your branch.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "betting-app",
+      "card": "betting-app",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 72083 51904",
+      "text": "Welcome bonus! Recharge Rs 5,000 and get Rs 5,000 FREE. Play Teen Patti and Aviator, win up to Rs 50,000 daily, instant withdrawal: https://win777.club",
+      "clue": "A bonus for your first deposit, and then your winnings can't be taken out without more “fees”. Don't pay on unknown betting apps.",
+      "source": {
+        "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+      }
+    },
+    {
+      "id": "fake-recovery-agent",
+      "card": "fake-recovery-agent",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 88270 41365",
+      "text": "“I'm calling from the recovery department of your bank. You have Rs 38,000 overdue on your loan. Pay me today in cash or to this UPI, otherwise our team will come to your house and tell your neighbours.”",
+      "clue": "Ask for the recovery notice, the bank's authorisation letter and the agent's ID, and check with your branch. Never pay cash or a personal UPI ID.",
+      "source": {
+        "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+      }
+    },
+    {
+      "id": "public-wifi",
+      "card": "public-wifi",
+      "label": "scam",
+      "channel": "situation",
+      "sender": "At the airport",
+      "text": "A free Wi-Fi called “Airport_Free_WiFi” needs no password. You need to pay your electricity bill urgently through your bank app.",
+      "clue": "On free public Wi-Fi, someone on the same network can see what you type. Use your mobile data for banking and payments.",
+      "source": {
+        "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+      }
+    },
+    {
+      "id": "payment-spoofing",
+      "card": "payment-spoofing",
+      "label": "scam",
+      "channel": "situation",
+      "sender": "Selling your old fridge",
+      "text": "The buyer shows you his phone: a Google Pay screen saying “₹12,000 paid successfully”, and starts loading the fridge into his tempo.",
+      "clue": "A screen can be faked. Hand over the goods only after the money shows in your own bank account or app.",
+      "source": {
+        "name": "RBI: Raju and the Forty Thieves, 40 frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/Raju%20and%20the%20Forty%20Thieves_HQ.pdf"
+      }
+    },
+    {
+      "id": "otp-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "VM-HDFCBK-S",
+      "text": "OTP for txn of INR 2,350.00 at AMAZON on HDFC Bank card XX8812 is 482910. Valid for 10 mins. Do not share this OTP with anyone. -HDFC Bank",
+      "clue": "Real. It's from the bank's sender name, and it's an OTP for a payment you made yourself. The only rule: never read it out to anyone."
+    },
+    {
+      "id": "gas-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "VM-INDANE-S",
+      "text": "Your Indane refill booking no. 1187465 for consumer no. 734512 is confirmed. Cash memo amount Rs 853.50. Delivery in 2-3 days.",
+      "clue": "Real. A booking confirmation from Indane's sender name. It asks for nothing."
+    },
+    {
+      "id": "bill-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "AD-MSEDCL-S",
+      "text": "Dear Consumer, your electricity bill for Oct-26 of Rs 1,240 is generated. Due date 05-11-26. Pay on the MSEDCL app or www.mahadiscom.in. Ignore if paid.",
+      "clue": "Real. A normal bill from the company's sender name, with a due date weeks away and its own website. No threat, no “officer” to call."
+    },
+    {
+      "id": "pf-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "VM-EPFOHO-G",
+      "text": "Dear member, Rs 12,600 has been credited to your PF account for Sep-26 by your employer. Check your passbook on the UMANG app or epfindia.gov.in.",
+      "clue": "Real. From EPFO's sender name, pointing to its own website and app, asking for nothing."
+    },
+    {
+      "id": "refund-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "JD-ITDEPT-G",
+      "text": "Refund of Rs 15,490 for AY 2026-27 has been credited to your bank account XX4521. -Income Tax Department",
+      "clue": "Real. A real refund just arrives in your account: no link, nothing to verify."
+    },
+    {
+      "id": "esim-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "VM-AIRTEL-S",
+      "text": "We have received your eSIM request. If you did NOT ask for this, call 121 immediately. Never share the eSIM QR code or OTP with anyone.",
+      "clue": "Real. Your operator warns you about a request and tells you to call its own helpline. It doesn't ask for any code."
+    },
+    {
+      "id": "bank-alert-call",
+      "label": "real",
+      "channel": "call",
+      "sender": "1600 12 3456",
+      "text": "“Hello, this is HDFC Bank. We noticed a payment of Rs 49,000 on your card at an online store. If you made it, no action is needed. If not, please block the card in the HDFC app or call the number on the back of your card. We will never ask for your OTP.”",
+      "clue": "Real. Banks call from numbers starting 1600, and a real call sends you to the bank's own app or helpline. It never asks for an OTP."
+    },
+    {
+      "id": "food-real",
+      "label": "real",
+      "channel": "whatsapp",
+      "sender": "Swiggy",
+      "senderNote": "Verified business (green tick)",
+      "text": "Your order from Meghana Foods is on its way! Arriving in 18 mins. Track it: swiggy.com/track",
+      "clue": "Real. A verified business with a green tick, about an order you placed, linking to its own website."
+    },
+    {
+      "id": "son-real",
+      "label": "real",
+      "channel": "whatsapp",
+      "sender": "Arjun (son)",
+      "senderNote": "Saved contact",
+      "text": "Ma, I reached Bengaluru safely. Will call you after the meeting, around 7.",
+      "clue": "Real. A saved contact, a normal update, and nothing asked of you."
+    },
+    {
+      "id": "pension-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "VM-SBIPEN-S",
+      "text": "Your pension for Oct 2026 of Rs 32,450 has been credited to A/c XX9031. -SBI",
+      "clue": "Real. A credit alert from the bank's sender name. Even so, you can check it in your passbook or bank app."
+    },
+    {
+      "id": "census-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "VM-RGICEN-G",
+      "text": "Census 2027: House listing in your area runs from 1 to 30 Nov. Enumerators carry an ID card with a QR code. No OTP or payment is ever needed.",
+      "clue": "Real. Official census messages come from senders with “RGICEN” in the name, and they tell you what officials will never ask for."
+    },
+    {
+      "id": "gaskyc-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "VM-HPGAS-S",
+      "text": "Dear customer, eKYC for your HP Gas connection can be done free at your distributor or in the HP Pay app. Ignore if done.",
+      "clue": "Real. From HP Gas's sender name, free, at your distributor or in the company's own app, with no deadline threat."
+    },
+    {
+      "id": "jeevan-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "VM-JPRMAN-G",
+      "text": "Digital Life Certificate submitted successfully. Pramaan ID 3F7A2X91. -Jeevan Pramaan",
+      "clue": "Real. A confirmation after you gave your life certificate, from the official sender name. It asks for nothing."
+    },
+    {
+      "id": "courier-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "VM-BLUDRT-S",
+      "text": "Your Blue Dart shipment 75421690311 is out for delivery today. Track it at bluedart.com",
+      "clue": "Real. A delivery update from the courier's sender name, pointing to its own website, asking for nothing."
+    },
+    {
+      "id": "fastag-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "AX-ICICIT-S",
+      "text": "Rs 135.00 deducted from your FASTag for MH12AB1234 at Khed Shivapur plaza. Avl bal Rs 865.00. -ICICI Bank",
+      "clue": "Real. A toll deduction from the bank's sender name, for a trip you made."
+    },
+    {
+      "id": "amazon-otp-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "AD-AMAZON-S",
+      "text": "384920 is your Amazon OTP. Do not share it with anyone.",
+      "clue": "Real, if you just logged in or paid on Amazon yourself. If you didn't, someone is trying to use your account: still never share it."
+    },
+    {
+      "id": "delivery-call-real",
+      "label": "real",
+      "channel": "call",
+      "sender": "+91 98451 22076",
+      "senderNote": "A mobile number you don't know",
+      "text": "“Hello madam, I'm the Amazon delivery person, I'm at your building gate. Should I bring the parcel up to the 3rd floor?”",
+      "clue": "Real. Not every unknown caller is a scammer: he asks for nothing but directions. It would turn into a scam only if he asked for an OTP or money."
+    },
+    {
+      "id": "niece-real",
+      "label": "real",
+      "channel": "whatsapp",
+      "sender": "Neha (niece)",
+      "senderNote": "Saved contact",
+      "text": "Mausi, sending the photos from Diwali. Can you send me the rasmalai recipe when you're free?",
+      "clue": "Real. A saved contact chatting, with nothing urgent and no money asked."
+    },
+    {
+      "id": "upi-credit-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "JD-PAYTMB-S",
+      "text": "You have received Rs 2,000 from RAJESH KUMAR in your Paytm UPI. UPI Ref 614523987711.",
+      "clue": "Real. Money received needs no PIN and no QR scan. The alert comes from the bank's sender name."
+    },
+    {
+      "id": "lic-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "VM-LICIND-S",
+      "text": "Premium of Rs 18,260 for policy 912345678 is due on 28-10-26. Pay at licindia.in or the LIC app. Ignore if paid.",
+      "clue": "Real. A premium reminder from LIC's sender name, sending you to its own website and app."
+    },
+    {
+      "id": "dot-real",
+      "label": "real",
+      "channel": "sms",
+      "sender": "VM-DOTGOV-G",
+      "text": "Check how many mobile connections are issued in your name on sancharsaathi.gov.in. DoT never calls to disconnect numbers.",
+      "clue": "Real. A government sender name, a .gov.in website, and it tells you what DoT will never do."
     }
   ]
 }

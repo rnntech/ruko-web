@@ -13,13 +13,17 @@ import styles from "./spot.module.css";
 type Item = {
   id: string;
   label: "scam" | "real";
-  channel: "sms" | "whatsapp" | "call";
+  channel: "sms" | "whatsapp" | "call" | "situation";
   sender: string;
   senderNote?: string;
   text: string;
   context?: string;
   clue: string;
   source?: { name: string; url: string };
+  /** The scam card this question belongs to (D-097: one per card). */
+  card?: string;
+  /** A hard scam Ruko's message rules don't catch (D-097): the answer says so. */
+  rukoMayMiss?: boolean;
 };
 
 const ITEMS = data.items as Item[];
@@ -102,7 +106,7 @@ export function SpotTheScam() {
         {s.progress(at + 1, round.length)}
       </p>
 
-      <div className={`${styles.message} ${item.channel === "call" ? styles.call : ""}`}>
+      <div className={`${styles.message} ${item.channel === "call" || item.channel === "situation" ? styles.call : ""}`}>
         <p className={styles.channel}>
           {s.channels[item.channel]}
         </p>
@@ -127,6 +131,7 @@ export function SpotTheScam() {
             {right ? s.right : s.wrong} {item.label === "scam" ? s.isScam : s.isReal}
           </p>
           <p>{item.clue}</p>
+          {item.label === "scam" && item.rukoMayMiss && <p>{s.mayMiss}</p>}
           {item.source && (
             <p className={styles.source}>
               {s.reportedBy}{" "}
