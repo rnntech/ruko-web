@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import styles from "./PhoneTour.module.css";
-import { CheckMessageScreen } from "./CheckMessageScreen";
-import { HomeOnScreen, PhoneFrame, PrivacyScreen, WelcomeScreen } from "./Phone";
+import { HomeOnScreen, PhoneFrame, PrivacyScreen, WarningScreen, WelcomeScreen } from "./Phone";
 
 /**
  * The hero phone (D-048): plays through four real Ruko screens, sliding like setup. The bar under the phone
@@ -15,7 +14,7 @@ import { HomeOnScreen, PhoneFrame, PrivacyScreen, WelcomeScreen } from "./Phone"
 const SLIDES = [
   { name: "Welcome", ms: 5000 },
   { name: "Nothing leaves your phone", ms: 4200 },
-  { name: "Check a message", ms: 6500 },
+  { name: "Pause. This call looks like a scam.", ms: 6000 },
   { name: "Protection is on", ms: 4500 },
 ];
 
@@ -45,7 +44,7 @@ export function PhoneTour({ scamCount }: { scamCount: number }) {
   const screens = [
     <WelcomeScreen key="w" />,
     <PrivacyScreen key="p" />,
-    <CheckMessageScreen key="c" />,
+    <WarningScreen key="c" kind="call" helperName="Arjun" />,
     <HomeOnScreen key="h" scamCount={scamCount} />,
   ];
 
@@ -60,7 +59,7 @@ export function PhoneTour({ scamCount }: { scamCount: number }) {
     >
       <PhoneFrame
         width={330}
-        label="Mock-up of the Ruko app, playing through four screens: Meet Ruko, Nothing leaves your phone, checking a scam text message, and Home with protection on"
+        label="Mock-up of the Ruko app, playing through four screens: Meet Ruko, Nothing leaves your phone, the red warning during a scam call, and Home with protection on"
       >
         <div className={styles.track} style={{ transform: `translateX(-${index * 100}%)` }}>
           {screens.map((screen, i) => (
