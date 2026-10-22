@@ -10,7 +10,11 @@ const permissions: { name: string; sees: string; why: string }[] = [
   { name: "Caller ID & spam app", sees: "The number of incoming calls", why: "To tell a saved contact from a stranger" },
   { name: "Phone", sees: "Whether a call is on, and for how long", why: "To notice very long calls and the minutes after a call" },
   { name: "Contacts", sees: "Whether a caller is saved in your contacts", why: "Saved contacts never trigger a warning" },
-  { name: "Usage access", sees: "Which app is open, only during calls with unknown numbers", why: "To notice when your bank or payment app opens" },
+  {
+    name: "Usage access",
+    sees: "Which app is open, only during calls with unknown numbers, and for 30 minutes after a scam app file arrives",
+    why: "To notice when your bank or payment app opens during a call, and when someone starts installing an app file Ruko warned about",
+  },
   { name: "Display over other apps", sees: "Nothing", why: "To show the red warning on top of other apps" },
   { name: "Notifications", sees: "Nothing", why: "To show “Ruko is protecting you” and tell you if protection is off" },
   {
