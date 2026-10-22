@@ -255,44 +255,69 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 16px 4px 0;
+  padding: 18px 6px 0;
 }
 
 .warnHeadline {
   font-family: var(--font-display), sans-serif;
-  font-size: 26px;
+  font-size: 27px;
   line-height: 1.08;
   font-weight: 800;
   letter-spacing: -0.02em;
-  margin: 14px 0 12px !important;
+  margin: 22px 0 14px !important;
 }
 
-.warnReason {
+.warnReason,
+.warnFamily {
   font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 10px !important;
+}
+
+.warnFamily {
+  font-size: 13px;
+}
+
+.warnFrom {
+  font-size: 13.5px;
+  line-height: 1.45;
+  font-weight: 700;
+  margin-bottom: 8px !important;
+}
+
+.warnQuote {
+  font-size: 13.5px;
+  line-height: 1.45;
+  font-style: italic;
   margin-bottom: 10px !important;
 }
 
 .warnAdvice {
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 1.45;
   font-weight: 700;
+  margin-bottom: 10px !important;
 }
 
+/* The app puts the button right under the text, then the other actions as stacked underlined links. */
 .warnButton {
-  margin-top: auto;
+  margin-top: 6px;
   background: #ffffff;
   color: var(--danger);
   border-radius: 6px;
   text-align: center;
-  padding: 13px 10px;
-  font-weight: 800;
+  padding: 12px 10px;
+  font-weight: 700;
+  font-size: 15px;
 }
 
-.warnLinks {
+.warnLink {
   display: block;
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 600;
   text-decoration: underline;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 /* Welcome (the app's first setup screen, D-048) */

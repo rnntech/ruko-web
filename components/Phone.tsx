@@ -181,6 +181,7 @@ export function BankAppScreen() {
   );
 }
 
+/** Ruko's red warning, worded and laid out like the app's (strings from res/values/strings.xml: warning_*, reason_r1). */
 export function WarningScreen({
   kind = "call",
   helperName = null,
@@ -193,25 +194,28 @@ export function WarningScreen({
     <div className={`${styles.screen} ${styles.warnScreen}`}>
       <StatusBar dark call={!isMessage} />
       <div className={styles.warnBody}>
-        <LogoMark size={48} variant="warning" />
-        <p className={styles.warnHeadline}>
-          {isMessage ? "Pause. This message looks like a scam." : "Pause. This call looks like a scam."}
-        </p>
-        <p className={styles.warnReason}>
-          {isMessage
-            ? "It has an app file pretending to be a wedding card."
-            : "A stranger has kept you on the phone for 41 minutes, and you just opened your bank app."}
-        </p>
-        <p className={styles.warnAdvice}>
-          {isMessage
-            ? "Do not open the file. Call the sender on their saved number."
-            : "Whoever they say they are, never pay, share an OTP or install anything because a caller told you to. Hang up."}
-        </p>
-        <span className={styles.warnButton}>{isMessage ? "Got it" : helperName ? `Call ${helperName}` : "Call 1930"}</span>
-        {!isMessage && (
-          <span className={styles.warnLinks}>
-            {helperName ? "Call 1930 · " : ""}I know this caller · Continue in 30s
-          </span>
+        <LogoMark size={44} variant="warning" />
+        {isMessage ? (
+          <>
+            <p className={styles.warnHeadline}>Pause. This message looks like a scam.</p>
+            <p className={styles.warnFrom}>From +91 99999 00000 on WhatsApp, Oct 21, 3:16 PM</p>
+            <p className={styles.warnQuote}>&ldquo;Aapka bijli connection aaj raat 9:30 baje kat jayega&hellip;&rdquo;</p>
+            <p className={styles.warnAdvice}>Don&rsquo;t reply, tap links or open files in it.</p>
+            <span className={styles.warnButton}>Got it</span>
+            <span className={styles.warnLink}>Lost money? Call 1930</span>
+            <span className={styles.warnLink}>Report this message on Chakshu</span>
+          </>
+        ) : (
+          <>
+            <p className={styles.warnHeadline}>Pause. This call looks like a scam.</p>
+            <p className={styles.warnReason}>You opened a payment or bank app.</p>
+            <p className={styles.warnAdvice}>Hang up. Never pay, share a code or install an app for a caller.</p>
+            <p className={styles.warnFamily}>Says they&rsquo;re family? Ask your family word.</p>
+            <span className={styles.warnButton}>{helperName ? `Call ${helperName}` : "Call 1930 (cyber crime helpline)"}</span>
+            {helperName && <span className={styles.warnLink}>Call 1930 (cyber crime helpline)</span>}
+            <span className={styles.warnLink}>Report this number on Chakshu</span>
+            <span className={styles.warnLink}>You can continue in 30 seconds</span>
+          </>
         )}
       </div>
     </div>
