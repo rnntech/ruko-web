@@ -48,7 +48,7 @@ export default function Home() {
       {/* How it works: the explainer film (D-086; no autoplay, DESIGN.md) */}
       <section className="field" id="how">
         <div className="container">
-          <h2 className={styles.sectionTitle}>How Ruko works, in 95 seconds.</h2>
+          <h2 className={styles.sectionTitle}>How Ruko works</h2>
           <video
             className={styles.film}
             controls
