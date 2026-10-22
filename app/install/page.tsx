@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import { PageHead } from "@/components/PageHead";
 
 export const metadata: Metadata = {
-  title: "Get the Ruko testing version",
-  description: "How to install the Ruko testing version on an Android phone.",
+  title: "Get the Ruko app",
+  description: "How to install Ruko on an Android phone.",
 };
 
 export default function InstallPage() {
   return (
     <>
       <PageHead
-        title="Get the testing version"
+        title="Get the app"
         lead="Ruko is in testing with a small group of families, on Android phones only. It isn't on the Play Store yet, so installing it takes a few extra taps. If you're testing with us, we'll set it up with you."
       />
       <section className="field">

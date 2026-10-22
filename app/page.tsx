@@ -29,11 +29,11 @@ export default function Home() {
               clear warning, in your language.
             </p>
             <div className={styles.actions}>
-              <Link href="/demo" className="button button-light">
-                See the warning
+              <Link href="/install" className="button button-light">
+                Get the app
               </Link>
-              <Link href="/install" className="text-link">
-                Get the testing version
+              <Link href="/demo" className="text-link">
+                See the warning
               </Link>
             </div>
           </div>
@@ -200,7 +200,7 @@ export default function Home() {
           <h2 className={styles.closing}>Set it up once. It waits until it matters.</h2>
           <div className={styles.actions}>
             <Link href="/install" className="button button-light">
-              Get the testing version
+              Get the app
             </Link>
             <Link href="/demo" className="text-link">
               See the warning first
