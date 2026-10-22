@@ -5,7 +5,7 @@
 export const en = {
   siteName: "Ruko",
   /** Used in WhatsApp share text. Change when the site is deployed. */
-  siteUrl: "https://ruko.vercel.app",
+  siteUrl: "https://getruko.vercel.app",
   /** The "Ruko scam alerts" WhatsApp Channel (D-031). Empty until the owner creates it; the button is hidden until then. */
   whatsappChannelUrl: "",
   tagline: "The pause scammers don't want you to take.",
