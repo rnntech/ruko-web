@@ -251,6 +251,14 @@
   color: #ffffff;
 }
 
+.warnCalm {
+  background: var(--teal-700);
+}
+
+.warnCalm .warnButton {
+  color: var(--teal-700);
+}
+
 .warnBody {
   display: flex;
   flex-direction: column;

@@ -44,7 +44,7 @@ export function PhoneTour({ scamCount }: { scamCount: number }) {
   const screens = [
     <WelcomeScreen key="w" />,
     <PrivacyScreen key="p" />,
-    <WarningScreen key="c" kind="call" helperName="Arjun" />,
+    <WarningScreen key="c" situation="bank" helperName="Arjun" />,
     <HomeOnScreen key="h" scamCount={scamCount} />,
   ];
 

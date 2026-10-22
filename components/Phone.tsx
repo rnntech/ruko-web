@@ -181,36 +181,68 @@ export function BankAppScreen() {
   );
 }
 
-/** Ruko's red warning, worded and laid out like the app's (strings from res/values/strings.xml: warning_*, reason_r1). */
+export type WarnSituation = "bank" | "otp" | "screen" | "message" | "calm";
+
+/**
+ * Ruko's warning, worded and laid out like the app's (android WarningOverlay.kt; strings warning_*, reason_r1..r3).
+ * Calls: R1 bank or UPI app, R3 a code arrives, R2 screen sharing ("Stop. This is a scam."). Messages: red, or calm
+ * for a known trick (teal). "Call [helper]" is the big button whenever a helper is chosen (D-066); in "Tell them
+ * automatically" a line says their phone is ringing (D-053).
+ */
 export function WarningScreen({
-  kind = "call",
+  situation = "bank",
   helperName = null,
+  helperRinging = false,
+  quote = "Aapka bijli connection aaj raat 9:30 baje kat jayega…",
 }: {
-  kind?: "call" | "message";
+  situation?: WarnSituation;
   helperName?: string | null;
+  helperRinging?: boolean;
+  quote?: string;
 }) {
-  const isMessage = kind === "message";
+  const isMessage = situation === "message" || situation === "calm";
+  const calm = situation === "calm";
+  const call = {
+    bank: { head: "Pause. This call looks like a scam.", reason: "You opened a payment or bank app.", advice: "Hang up. Never pay, share a code or install an app for a caller." },
+    otp: { head: "Pause. This call looks like a scam.", reason: "A code or bank message just arrived.", advice: "Don’t share this code or OTP with anyone. Hang up." },
+    screen: {
+      head: "Stop. This is a scam.",
+      reason: "You opened a screen-sharing app during a call with an unknown number. It lets them see and control your phone.",
+      advice: "Close this app and hang up. Never let a caller see or control your phone.",
+    },
+  };
+  const c = isMessage ? null : call[situation as "bank" | "otp" | "screen"];
   return (
-    <div className={`${styles.screen} ${styles.warnScreen}`}>
+    <div className={`${styles.screen} ${styles.warnScreen} ${calm ? styles.warnCalm : ""}`}>
       <StatusBar dark call={!isMessage} />
       <div className={styles.warnBody}>
-        <LogoMark size={44} variant="warning" />
+        <LogoMark size={44} variant={calm ? "reversed" : "warning"} />
         {isMessage ? (
           <>
-            <p className={styles.warnHeadline}>Pause. This message looks like a scam.</p>
+            <p className={styles.warnHeadline}>{calm ? "You’re safe. Nothing has happened." : "Pause. This message looks like a scam."}</p>
             <p className={styles.warnFrom}>From +91 99999 00000 on WhatsApp, Oct 21, 3:16 PM</p>
-            <p className={styles.warnQuote}>&ldquo;Aapka bijli connection aaj raat 9:30 baje kat jayega&hellip;&rdquo;</p>
-            <p className={styles.warnAdvice}>Don&rsquo;t reply, tap links or open files in it.</p>
-            <span className={styles.warnButton}>Got it</span>
-            <span className={styles.warnLink}>Lost money? Call 1930</span>
+            <p className={styles.warnQuote}>&ldquo;{quote}&rdquo;</p>
+            <p className={styles.warnAdvice}>
+              {calm ? "This message is a known trick. Don’t reply, don’t tap the link, don’t call the number." : "Don’t reply, tap links or open files in it."}
+            </p>
+            <span className={styles.warnButton}>{calm ? "OK, I’ll ignore it" : "Got it"}</span>
+            {!calm && <span className={styles.warnLink}>Lost money? Call 1930</span>}
             <span className={styles.warnLink}>Report this message on Chakshu</span>
           </>
         ) : (
           <>
-            <p className={styles.warnHeadline}>Pause. This call looks like a scam.</p>
-            <p className={styles.warnReason}>You opened a payment or bank app.</p>
-            <p className={styles.warnAdvice}>Hang up. Never pay, share a code or install an app for a caller.</p>
-            <p className={styles.warnFamily}>Says they&rsquo;re family? Ask your family word.</p>
+            <p className={styles.warnHeadline}>{c!.head}</p>
+            <p className={styles.warnReason}>{c!.reason}</p>
+            {helperName && helperRinging && <p className={styles.warnAdvice}>{helperName}&rsquo;s phone is ringing.</p>}
+            <p className={styles.warnAdvice}>{c!.advice}</p>
+            {situation === "screen" ? (
+              <>
+                <p className={styles.warnFamily}>They ask you to: To install a screen-sharing app and share its code.</p>
+                <p className={styles.warnFamily}>Red flag: A stranger wants to see or control your phone&rsquo;s screen.</p>
+              </>
+            ) : (
+              <p className={styles.warnFamily}>Says they&rsquo;re family? Ask your family word.</p>
+            )}
             <span className={styles.warnButton}>{helperName ? `Call ${helperName}` : "Call 1930 (cyber crime helpline)"}</span>
             {helperName && <span className={styles.warnLink}>Call 1930 (cyber crime helpline)</span>}
             <span className={styles.warnLink}>Report this number on Chakshu</span>
