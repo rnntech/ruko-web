@@ -5,22 +5,6 @@ import { ScamCardView } from "@/components/ScamCardView";
 import { visibleCards } from "@/lib/cards";
 import { t } from "@/lib/content";
 
-// The film's script, one paragraph per beat (from video/parts_head.js BEATS), for people who would rather read.
-const transcript: string[] = [
-  "It starts with a call, a message or a website. Police. CBI. Your bank.",
-  "They work on fear and stress: an arrest, a blocked account, a son in trouble.",
-  "The people losing the most are digitally vulnerable elders. They pay on their own phones, answer every call, and are often alone when it rings.",
-  "In 2025, senior citizens reported over a lakh financial frauds: four thousand crore rupees, nearly five times more per case.",
-  "In fifty real cases, digital arrests did the most damage, then fake trading apps.",
-  "A warning alone was not enough. Every scam stopped in time was stopped by another person.",
-  "So we built Ruko. It never listens to your calls.",
-  "It waits for the risky moment in a call with a stranger: a bank app opens, an OTP arrives, or a screen-sharing app starts. Ruko steps in at once: “Pause. This looks like a scam.” And it says it aloud.",
-  "If you choose, Ruko also brings in someone you trust. Their phone rings at the same moment, so they can call you back.",
-  "It checks messages too: fake links, app files, and senders pretending to be your bank. Urgent scams show red. The rest, a calm “you’re safe”.",
-  "In English, Hindi, Tamil, Telugu, Malayalam and Kannada. And nothing leaves your phone.",
-  "Ruko. Another person, at the right moment. Built for family safety.",
-];
-
 const timeline: { time: string; text: string; ruko?: boolean }[] = [
   { time: "0:00", text: "A call from “TRAI”: your SIM will be blocked because it was used for money laundering." },
   { time: "0:04", text: "You are put through to “Mumbai Police” on a WhatsApp video call. There is a uniform and an office behind him." },
@@ -74,14 +58,8 @@ export default function Home() {
             aria-label="Ruko explainer film"
           >
             <source src="/video/ruko-explainer.mp4" type="video/mp4" />
-            <track kind="captions" src="/video/ruko-explainer.en.vtt" srcLang="en" label="English" />
+            <track kind="captions" src="/video/ruko-explainer.en.vtt" srcLang="en" label="English" default />
           </video>
-          <details className={styles.transcript}>
-            <summary>Read the script</summary>
-            {transcript.map((para, i) => (
-              <p key={i}>{para}</p>
-            ))}
-          </details>
           <p className="note">Every phone screen in the film is from the real Android app.</p>
         </div>
       </section>

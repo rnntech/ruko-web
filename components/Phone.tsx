@@ -54,12 +54,13 @@ export function WelcomeScreen() {
       </div>
       <RukoScene className={styles.welcomeScene} viewBox="36 56 576 318" />
       <div className={styles.welcomeBody}>
-        <p>Ruko steps in when:</p>
+        <p>Ruko steps in when a stranger on a call gets you to:</p>
         <ul className={styles.welcomeList}>
-          <li>a stranger keeps you on a call and you open your bank or UPI app</li>
-          <li>a message has a fraudulent link or an app file</li>
+          <li>open your bank or UPI app</li>
+          <li>share an OTP</li>
+          <li>share your screen</li>
         </ul>
-        <p>It shows a warning and reads it aloud, so you pause before you pay.</p>
+        <p>It also checks messages for scam links and app files. You see a warning, hear it aloud, and pause before you pay.</p>
       </div>
       <span className={styles.welcomeButton}>Continue</span>
     </div>
