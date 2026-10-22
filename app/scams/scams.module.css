@@ -15,3 +15,86 @@
     gap: 80px;
   }
 }
+
+/* "Scams 7–12 of 52" above the cards */
+.count {
+  margin: 0 0 20px;
+  color: var(--ink-soft);
+}
+
+/* Page links: big targets for older readers (48px+), the current page filled */
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 16px;
+  margin-top: 48px;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.number,
+.current {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: var(--radius-button);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.number {
+  background: var(--mint-100);
+  color: var(--teal-900);
+}
+
+.number:hover {
+  background: var(--mint-300);
+}
+
+.current {
+  background: var(--teal-700);
+  color: var(--surface);
+}
+
+.step,
+.stepOff {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.step {
+  color: var(--teal-700);
+}
+
+.stepOff {
+  color: var(--line);
+}
+
+@media (max-width: 520px) {
+  /* Previous and Next on one line under the numbers */
+  .pager {
+    gap: 12px;
+  }
+  .numbers {
+    order: -1;
+    width: 100%;
+  }
+}
+

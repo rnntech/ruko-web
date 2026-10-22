@@ -75,7 +75,7 @@ export function ScamCardView({ card, full = false }: { card: ScamCard; full?: bo
           </div>
         </>
       ) : (
-        <Link href={`/scams#${card.id}`} className={styles.more}>
+        <Link href={`/scams/${card.id}`} className={styles.more}>
           {t.scams.readMore}
         </Link>
       )}

@@ -138,7 +138,7 @@ export default function Home() {
                   <p className={styles.scamChannels}>
                     {(card.channels ?? []).map((c) => t.scams.channels[c as keyof typeof t.scams.channels] ?? c).join(" · ")}
                   </p>
-                  <Link href={`/scams#${card.id}`} className="text-link">
+                  <Link href={`/scams/${card.id}`} className="text-link">
                     {t.scams.readMore}
                   </Link>
                 </div>
