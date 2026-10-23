@@ -35,7 +35,7 @@ export function ReviewerDownload() {
   return (
     <details className={styles.reviewer}>
       <summary className={styles.reviewerSummary}>
-        Reviewer download <span className={styles.reviewerHint}>(with Play Protect off)</span>
+        Reviewer download <span className={styles.reviewerHint}>(only if you can turn off Play Protect temporarily)</span>
       </summary>
 
       <h3 className={styles.reviewerHeading}>1. Turn off Play Protect</h3>
