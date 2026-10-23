@@ -20,7 +20,7 @@ export function SiteFooter() {
           </span>
           <p className={styles.small}>{t.footer.built}</p>
           <p className={styles.small}>
-            <Link href="/privacy">Privacy</Link> · <Link href="/install">Get the app</Link> ·{" "}
+            <Link href="/privacy">Privacy</Link> · <Link href="/install#download">Get the app</Link> ·{" "}
             <Link href="/concept/bank">Concept: a family check inside your bank</Link>
           </p>
         </div>

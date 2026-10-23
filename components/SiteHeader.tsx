@@ -29,7 +29,7 @@ export function SiteHeader() {
               <Link href="/privacy">{t.nav.privacy}</Link>
             </li>
             <li>
-              <Link href="/install" className={styles.cta}>
+              <Link href="/install#download" className={styles.cta}>
                 {t.nav.install}
               </Link>
             </li>

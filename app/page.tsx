@@ -29,7 +29,7 @@ export default function Home() {
               clear warning, in your language.
             </p>
             <div className={styles.actions}>
-              <Link href="/install" className="button button-light">
+              <Link href="/install#download" className="button button-light">
                 Get the app
               </Link>
               <Link href="/demo" className="text-link">
@@ -198,7 +198,7 @@ export default function Home() {
         <div className={`container ${styles.closingInner}`}>
           <h2 className={styles.closing}>Set it up once. It waits until it matters.</h2>
           <div className={styles.actions}>
-            <Link href="/install" className="button button-light">
+            <Link href="/install#download" className="button button-light">
               Get the app
             </Link>
             <Link href="/demo" className="text-link">

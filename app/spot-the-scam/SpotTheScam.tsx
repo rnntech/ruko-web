@@ -90,7 +90,7 @@ export function SpotTheScam() {
           </button>
         </div>
         <p className={styles.cta}>
-          {s.cta} <Link href="/install">{s.ctaLink}</Link>
+          {s.cta} <Link href="/install#download">{s.ctaLink}</Link>
         </p>
       </div>
     );

@@ -1,4 +1,8 @@
 /* Get Ruko (D-101): a note for reviewers, two options side by side (stacked on phones), then full vs Lite. */
+.downloadAnchor {
+  scroll-margin-top: 24px;
+}
+
 .reviewerNote {
   margin-bottom: 32px;
   padding: 20px 24px;

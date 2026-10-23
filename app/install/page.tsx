@@ -77,7 +77,8 @@ export default function InstallPage() {
         lead="Ruko is in testing with a small group of families, on Android phones only. There are two versions: the full app, and Ruko Lite."
       />
       <section className="field">
-        <div className="container">
+        {/* "Get the app" links land here (/install#download): the note, then the two downloads. */}
+        <div id="download" className={`container ${styles.downloadAnchor}`}>
           {/* Reviewers first see why the full app needs Play Protect off (owner, 24 Oct). */}
           <aside className={styles.reviewerNote} aria-label="Reviewers, please note">
             <p className={styles.reviewerNoteTitle}>Reviewers, please note</p>
