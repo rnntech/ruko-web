@@ -25,8 +25,8 @@ export default function InstallPage() {
           <aside className={styles.reviewerNote} aria-label="Reviewers, please note">
             <p className={styles.reviewerNoteTitle}>Reviewers, please note</p>
             <p>
-              The full app reads your message notifications (only on your phone, nothing is sent), and it isn&rsquo;t on
-              the Play Store yet. So to install it you&rsquo;ll need to turn off Play Protect for a moment. If you&rsquo;d
+              The full app reads your message notifications only on your phone, and your messages are never sent
+              anywhere: a complete local guarantee. It isn&rsquo;t on the Play Store yet. So to install it you&rsquo;ll need to turn off Play Protect for a moment. If you&rsquo;d
               rather not, choose Ruko Lite.
             </p>
           </aside>
