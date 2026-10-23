@@ -147,6 +147,11 @@ a {
   font-weight: 700;
   font-size: 1.1rem;
   text-decoration: none;
+  /* Same look on <button> as on links: no browser border or system font. */
+  border: 0;
+  font-family: inherit;
+  line-height: inherit;
+  cursor: pointer;
 }
 
 .button:hover {
