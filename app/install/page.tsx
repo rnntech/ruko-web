@@ -28,17 +28,17 @@ const COMPARE: { what: string; full: Cell; lite: Cell }[] = [
   {
     what: "WhatsApp calls",
     full: { has: "yes", note: "Knows who is calling" },
-    lite: { has: "yes", note: "Asks “Is this someone you know?”" },
+    lite: { has: "yes", note: "Asks if you know them" },
   },
   { what: "An OTP arriving during a call", full: { has: "yes" }, lite: { has: "no" } },
   {
     what: "Scam SMS and WhatsApp messages, warned as they arrive",
-    full: { has: "yes", note: "Checked against the latest scams" },
-    lite: { has: "no", note: "Show it a message yourself" },
+    full: { has: "yes", note: "Checked for new scams" },
+    lite: { has: "no", note: "You can show it a message" },
   },
   {
     what: "App files sent in messages",
-    full: { has: "yes", note: "Warned on arrival and before installing" },
+    full: { has: "yes", note: "Warned before you install" },
     lite: { has: "no" },
   },
   { what: "Links checked before they open", full: { has: "yes" }, lite: { has: "yes" } },

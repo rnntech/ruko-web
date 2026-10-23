@@ -41,7 +41,8 @@
 .compare td {
   padding: 18px 24px;
   border-bottom: 1px solid var(--line);
-  vertical-align: middle;
+  vertical-align: top;
+  line-height: 26px;
 }
 
 .compare tbody tr:last-child > * {
@@ -57,11 +58,11 @@
 }
 
 .compare thead th:first-child {
-  width: 40%;
+  width: 36%;
 }
 
 .compare thead th + th {
-  width: 30%;
+  width: 32%;
 }
 
 .compare th[scope="row"] {
