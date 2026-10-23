@@ -288,3 +288,8 @@
     padding: 24px;
   }
 }
+
+/* The download inside the unlocked panel: space before step 3. */
+.reviewer a.download {
+  margin: 4px 0 16px;
+}

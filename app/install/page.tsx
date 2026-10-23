@@ -17,7 +17,7 @@ type Cell = { has: "yes" | "no" | "info"; note?: string };
 const COMPARE: { what: string; full: Cell; lite: Cell }[] = [
   {
     what: "How to get it",
-    full: { has: "info", note: "Reviewer code, and Play Protect off for a moment" },
+    full: { has: "info", note: "Coming to the Play Store (reviewers: a code from the team)" },
     lite: { has: "info", note: "Download from this page" },
   },
   {
@@ -77,24 +77,8 @@ export default function InstallPage() {
         lead="Ruko is in testing with a small group of families, on Android phones only. There are two versions: the full app, and Ruko Lite."
       />
       <section className="field">
-        {/* "Get the app" links land here (/install#download): the note, then the two downloads. */}
-        <div id="download" className={`container ${styles.downloadAnchor}`}>
-          {/* Reviewers first see why the full app needs Play Protect off (owner, 24 Oct). */}
-          <aside className={styles.reviewerNote} aria-label="Reviewers, please note">
-            <p className={styles.reviewerNoteTitle}>Reviewers, please note</p>
-            <p>
-              The full app reads your message notifications only on your phone; your message text never leaves it. It
-              isn&rsquo;t on the Play Store yet, so to install it you&rsquo;ll need to turn off Play Protect for a moment,
-              then turn it back on. On our three test phones, Play Protect didn&rsquo;t flag it. If you&rsquo;d
-              rather not, choose Ruko Lite.
-            </p>
-            <p className={styles.reviewerNoteWarn}>
-              No bank, police officer or genuine app will ever ask you to turn off Play Protect. This step is only for
-              reviewers testing Ruko.
-            </p>
-          </aside>
-        </div>
-        <div className={`container ${styles.options}`}>
+        {/* "Get the app" links land here (/install#download). The reviewers' note shows only after a valid code. */}
+        <div id="download" className={`container ${styles.options} ${styles.downloadAnchor}`}>
           {/* ---- Ruko (full): the video and the reviewer download ---- */}
           <article className={styles.option} aria-labelledby="full-title">
             <div className={styles.optionHead}>
