@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHead } from "@/components/PageHead";
 import styles from "./install.module.css";
+import { FullFilm } from "./FullFilm";
 import { ReviewerDownload } from "./ReviewerDownload";
 
 export const metadata: Metadata = {
@@ -89,16 +90,7 @@ export default function InstallPage() {
             </div>
             <div className={styles.optionBody}>
               <ReviewerDownload />
-              <video
-                className={styles.film}
-                controls
-                preload="metadata"
-                playsInline
-                poster="/video/ruko-full-otp-poster.jpg"
-                aria-label="Ruko full app: an OTP during a scam call, the helper's phone ringing, and a fake power-cut message flagged"
-              >
-                <source src="/video/ruko-full-otp.mp4" type="video/mp4" />
-              </video>
+              <FullFilm />
             </div>
           </article>
 
