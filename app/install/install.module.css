@@ -1,0 +1,56 @@
+/* Get Ruko (D-101): two options side by side, stacked on phones. */
+.options {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  background: var(--surface);
+  border-radius: var(--radius-card);
+}
+
+.optionTitle {
+  margin: 0;
+}
+
+.optionLead {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.download {
+  align-self: flex-start;
+}
+
+.film {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+  background: var(--teal-900);
+}
+
+.blocked {
+  margin: 0;
+  padding: 16px;
+  border-radius: var(--radius-card);
+  background: var(--caution-bg);
+  color: var(--caution-ink);
+}
+
+@media (max-width: 900px) {
+  .options {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .option {
+    padding: 24px;
+  }
+}
