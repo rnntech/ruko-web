@@ -26,8 +26,9 @@ export default function InstallPage() {
             <p className={styles.reviewerNoteTitle}>Reviewers, please note</p>
             <p>
               The full app reads your message notifications only on your phone, and your messages are never sent
-              anywhere: a complete local guarantee. It isn&rsquo;t on the Play Store yet. So to install it you&rsquo;ll need to turn off Play Protect for a moment. If you&rsquo;d
-              rather not, choose Ruko Lite.
+              anywhere: a complete local guarantee. It isn&rsquo;t on the Play Store yet. So to install it you&rsquo;ll need to turn off Play Protect for a moment, then turn it back
+              on: when we did, Play Protect&rsquo;s scan found nothing harmful in Ruko. If you&rsquo;d rather not, choose Ruko
+              Lite.
             </p>
           </aside>
         </div>
