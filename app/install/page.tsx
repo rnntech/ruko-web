@@ -32,7 +32,7 @@ const COMPARE: { what: string; full: Cell; lite: Cell }[] = [
   },
   { what: "An OTP arriving during a call", full: { has: "yes" }, lite: { has: "no" } },
   {
-    what: "Scam SMS and WhatsApp messages, warned as they arrive",
+    what: "Scam messages on SMS, WhatsApp, Telegram, Instagram and Messenger, warned as they arrive",
     full: { has: "yes", note: "Checked for new scams" },
     lite: { has: "no", note: "You can show it a message" },
   },
@@ -85,7 +85,7 @@ export default function InstallPage() {
               <h2 id="full-title" className={styles.optionTitle}>
                 Ruko (full app)
               </h2>
-              <p className={styles.optionLead}>Everything in Lite, plus warnings for scam SMS and WhatsApp messages and for OTPs during a call.</p>
+              <p className={styles.optionLead}>Everything in Lite, plus warnings for scam messages on SMS, WhatsApp, Telegram, Instagram and Messenger, and for OTPs during a call.</p>
             </div>
             <div className={styles.optionBody}>
               <ReviewerDownload />
