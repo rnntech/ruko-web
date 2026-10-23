@@ -3,13 +3,17 @@
 import { useState } from "react";
 import styles from "./install.module.css";
 
+type Steps = { off: string[]; install: string; on: string };
+
 /**
- * "Reviewers, download here" (D-101): a drop-down, closed by default, where a code from the owner unlocks the full app.
- * Kept small and below the public options: elders are never asked to turn off Play Protect (scammers say exactly that).
+ * "Reviewer download" (D-101, D-103): a closed drop-down under the full-app card. It asks only for the reviewer code;
+ * the Play Protect steps and the download come from the server after a valid code, so the page itself never tells an
+ * elder to turn off Play Protect (scammers say exactly that).
  */
 export function ReviewerDownload() {
   const [code, setCode] = useState("");
   const [state, setState] = useState<"idle" | "checking" | "wrong" | "error">("idle");
+  const [unlocked, setUnlocked] = useState<{ url: string; steps: Steps } | null>(null);
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -21,9 +25,9 @@ export function ReviewerDownload() {
         body: JSON.stringify({ code }),
       });
       const data = await res.json();
-      if (data.ok && data.url) {
+      if (data.ok && data.url && data.steps) {
+        setUnlocked({ url: data.url, steps: data.steps });
         setState("idle");
-        window.location.href = data.url;
       } else {
         setState(res.status === 403 ? "wrong" : "error");
       }
@@ -38,52 +42,47 @@ export function ReviewerDownload() {
         Reviewer download <span className={styles.reviewerHint}>(only if you can turn off Play Protect temporarily)</span>
       </summary>
 
-      <h3 className={styles.reviewerHeading}>1. Turn off Play Protect</h3>
-      <ol className={styles.reviewerSteps}>
-        <li>Open the <strong>Play Store</strong> app.</li>
-        <li>Tap your <strong>profile picture</strong> at the top right.</li>
-        <li>
-          Tap <strong>Play Protect</strong>, then the <strong>⚙ settings</strong> icon at the top right.
-        </li>
-        <li>
-          Turn off <strong>Scan apps with Play Protect</strong> and confirm. (Android doesn&rsquo;t allow this during a
-          phone call.)
-        </li>
-      </ol>
-
-      <h3 className={styles.reviewerHeading}>2. Download and install</h3>
-      <form className={styles.codeForm} onSubmit={submit}>
-        <label className={styles.codeLabel} htmlFor="reviewer-code">
-          Reviewer code
-        </label>
-        <div className={styles.codeRow}>
-          <input
-            id="reviewer-code"
-            className={styles.codeInput}
-            value={code}
-            onChange={(e) => setCode(e.target.value)}
-            autoComplete="off"
-            autoCapitalize="characters"
-            spellCheck={false}
-            required
-          />
-          <button type="submit" className="button" disabled={state === "checking"}>
-            Download
-          </button>
+      {!unlocked ? (
+        <form className={styles.codeForm} onSubmit={submit}>
+          <p className={styles.reviewerText}>Enter the code from the Ruko team to see the install steps and the download.</p>
+          <label className={styles.codeLabel} htmlFor="reviewer-code">
+            Reviewer code
+          </label>
+          <div className={styles.codeRow}>
+            <input
+              id="reviewer-code"
+              className={styles.codeInput}
+              value={code}
+              onChange={(e) => setCode(e.target.value)}
+              autoComplete="off"
+              autoCapitalize="characters"
+              spellCheck={false}
+              required
+            />
+            <button type="submit" className="button" disabled={state === "checking"}>
+              Continue
+            </button>
+          </div>
+          {state === "wrong" && <p className={styles.codeError}>That code isn&rsquo;t right. Check it with the Ruko team.</p>}
+          {state === "error" && <p className={styles.codeError}>Couldn&rsquo;t check the code just now. Try again.</p>}
+        </form>
+      ) : (
+        <div aria-live="polite">
+          <h3 className={styles.reviewerHeading}>1. Turn off Play Protect</h3>
+          <ol className={styles.reviewerSteps}>
+            {unlocked.steps.off.map((step) => (
+              <li key={step}>{step}</li>
+            ))}
+          </ol>
+          <h3 className={styles.reviewerHeading}>2. Download and install</h3>
+          <p className={styles.reviewerText}>{unlocked.steps.install}</p>
+          <a className={`button ${styles.download}`} href={unlocked.url} download>
+            Download the full app
+          </a>
+          <h3 className={styles.reviewerHeading}>3. Turn Play Protect back on</h3>
+          <p className={styles.reviewerText}>{unlocked.steps.on}</p>
         </div>
-        {state === "wrong" && <p className={styles.codeError}>That code isn&rsquo;t right. Check it with the Ruko team.</p>}
-        {state === "error" && <p className={styles.codeError}>Couldn&rsquo;t check the code just now. Try again.</p>}
-      </form>
-      <p className={styles.reviewerText}>
-        Open the downloaded file and tap <strong>Install</strong> (allow your browser to install apps if asked).
-      </p>
-
-      <h3 className={styles.reviewerHeading}>3. Turn Play Protect back on</h3>
-      <p className={styles.reviewerText}>
-        Same place: Play Store → profile picture → Play Protect → ⚙ → turn <strong>Scan apps with Play Protect</strong> back
-        on. Ruko keeps working.
-      </p>
-      <p className="note">Ruko will never ask anyone else to turn off Play Protect.</p>
+      )}
     </details>
   );
 }

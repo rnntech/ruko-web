@@ -3,7 +3,7 @@
   margin-bottom: 32px;
   padding: 20px 24px;
   border-radius: var(--radius-card);
-  background: var(--danger-bg);
+  background: var(--caution-bg);
   color: var(--ink);
 }
 
@@ -14,7 +14,13 @@
 .reviewerNote .reviewerNoteTitle {
   margin-bottom: 6px;
   font-weight: 700;
-  color: var(--danger);
+  color: var(--caution-ink);
+}
+
+.reviewerNote .reviewerNoteWarn {
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--caution-ink);
 }
 
 .compareTitle {

@@ -25,10 +25,14 @@ export default function InstallPage() {
           <aside className={styles.reviewerNote} aria-label="Reviewers, please note">
             <p className={styles.reviewerNoteTitle}>Reviewers, please note</p>
             <p>
-              The full app reads your message notifications only on your phone, and your messages are never sent
-              anywhere: a complete local guarantee. It isn&rsquo;t on the Play Store yet. So to install it you&rsquo;ll need to turn off Play Protect for a moment, then turn it back
-              on: when we did, Play Protect&rsquo;s scan found nothing harmful in Ruko. If you&rsquo;d rather not, choose Ruko
-              Lite.
+              The full app reads your message notifications only on your phone; your message text never leaves it. It
+              isn&rsquo;t on the Play Store yet, so to install it you&rsquo;ll need to turn off Play Protect for a moment,
+              then turn it back on. On our three test phones, Play Protect didn&rsquo;t flag it (24 Oct). If you&rsquo;d
+              rather not, choose Ruko Lite.
+            </p>
+            <p className={styles.reviewerNoteWarn}>
+              No bank, police officer or genuine app will ever ask you to turn off Play Protect. This step is only for
+              reviewers testing Ruko.
             </p>
           </aside>
         </div>
@@ -62,7 +66,7 @@ export default function InstallPage() {
               <li>Warns if you open a bank or payment app, or a screen-sharing app, during a stranger&rsquo;s call.</li>
               <li>On WhatsApp calls, asks &ldquo;Is this someone you know?&rdquo;</li>
               <li>Checks links before they open, and any message you show it.</li>
-              <li>Can call someone you trust from the warning. Six languages, read aloud.</li>
+              <li>Can call someone you trust from the warning. Six languages (beta), read aloud.</li>
             </ul>
             <a className={`button ${styles.download}`} href="/download/ruko-lite.apk" download>
               Download Ruko Lite
@@ -120,7 +124,7 @@ export default function InstallPage() {
                   <td>✓</td>
                 </tr>
                 <tr>
-                  <th scope="row">Calls someone you trust; six languages, read aloud</th>
+                  <th scope="row">Calls someone you trust; six languages (beta), read aloud</th>
                   <td>✓</td>
                   <td>✓</td>
                 </tr>
