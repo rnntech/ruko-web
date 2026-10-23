@@ -74,13 +74,9 @@ export function ReviewerDownload() {
         {state === "wrong" && <p className={styles.codeError}>That code isn&rsquo;t right. Check it with the Ruko team.</p>}
         {state === "error" && <p className={styles.codeError}>Couldn&rsquo;t check the code just now. Try again.</p>}
       </form>
-      <ol className={styles.reviewerSteps}>
-        <li>Open the downloaded file and tap <strong>Install</strong> (allow your browser to install apps if asked).</li>
-        <li>
-          If Ruko&rsquo;s <em>Notification access</em> step says &ldquo;Restricted setting&rdquo;: <em>Settings → Apps → Ruko</em>{" "}
-          → <em>⋮</em> → <strong>Allow restricted settings</strong>.
-        </li>
-      </ol>
+      <p className={styles.reviewerText}>
+        Open the downloaded file and tap <strong>Install</strong> (allow your browser to install apps if asked).
+      </p>
 
       <h3 className={styles.reviewerHeading}>3. Turn Play Protect back on</h3>
       <p className={styles.reviewerText}>
