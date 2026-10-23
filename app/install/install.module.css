@@ -37,14 +37,6 @@
   background: var(--teal-900);
 }
 
-.blocked {
-  margin: 0;
-  padding: 16px;
-  border-radius: var(--radius-card);
-  background: var(--caution-bg);
-  color: var(--caution-ink);
-}
-
 /* Reviewers only (D-101): a closed drop-down below the public options. */
 .reviewer {
   border-radius: var(--radius-card);

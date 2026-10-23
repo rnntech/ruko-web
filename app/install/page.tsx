@@ -55,10 +55,6 @@ export default function InstallPage() {
             >
               <source src="/video/ruko-full-otp.mp4" type="video/mp4" />
             </video>
-            <p className={styles.blocked}>
-              The full app is ready, but Android&rsquo;s Play Protect blocks installing it from a website. It&rsquo;s
-              coming to the Play Store.
-            </p>
             <ReviewerDownload />
           </article>
         </div>
