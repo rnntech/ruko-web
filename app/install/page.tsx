@@ -96,39 +96,47 @@ export default function InstallPage() {
         <div className={`container ${styles.options}`}>
           {/* ---- Ruko (full): the video and the reviewer download ---- */}
           <article className={styles.option} aria-labelledby="full-title">
-            <h2 id="full-title" className={styles.optionTitle}>
-              Ruko (full app)
-            </h2>
-            <p className={styles.optionLead}>Everything in Lite, plus warnings for scam SMS and WhatsApp messages and for OTPs during a call.</p>
-            <video
-              className={styles.film}
-              controls
-              preload="metadata"
-              playsInline
-              poster="/video/ruko-full-otp-poster.jpg"
-              aria-label="Ruko full app: an OTP during a scam call, the helper's phone ringing, and a fake power-cut message flagged"
-            >
-              <source src="/video/ruko-full-otp.mp4" type="video/mp4" />
-            </video>
-            <ReviewerDownload />
+            <div className={styles.optionHead}>
+              <h2 id="full-title" className={styles.optionTitle}>
+                Ruko (full app)
+              </h2>
+              <p className={styles.optionLead}>Everything in Lite, plus warnings for scam SMS and WhatsApp messages and for OTPs during a call.</p>
+            </div>
+            <div className={styles.optionBody}>
+              <ReviewerDownload />
+              <video
+                className={styles.film}
+                controls
+                preload="metadata"
+                playsInline
+                poster="/video/ruko-full-otp-poster.jpg"
+                aria-label="Ruko full app: an OTP during a scam call, the helper's phone ringing, and a fake power-cut message flagged"
+              >
+                <source src="/video/ruko-full-otp.mp4" type="video/mp4" />
+              </video>
+            </div>
           </article>
 
           {/* ---- Ruko Lite: the download ---- */}
           <article className={styles.option} aria-labelledby="lite-title">
-            <h2 id="lite-title" className={styles.optionTitle}>
-              Ruko Lite
-            </h2>
-            <p className={styles.optionLead}>Warns you during calls with strangers, and checks links before they open.</p>
-            <ul className="rows">
-              <li>Warns if you open a bank or payment app, or a screen-sharing app, during a stranger&rsquo;s call.</li>
-              <li>On WhatsApp calls, asks &ldquo;Is this someone you know?&rdquo;</li>
-              <li>Checks links before they open, and any message you show it.</li>
-              <li>Can call someone you trust from the warning. Six languages (beta), read aloud.</li>
-            </ul>
-            <a className={`button ${styles.download}`} href="/download/ruko-lite.apk" download>
-              Download Ruko Lite
-            </a>
-            <p className="note">Android phones only · about 13 MB · testing version</p>
+            <div className={styles.optionHead}>
+              <h2 id="lite-title" className={styles.optionTitle}>
+                Ruko Lite
+              </h2>
+              <p className={styles.optionLead}>Warns you during calls with strangers, and checks links before they open.</p>
+            </div>
+            <div className={styles.optionBody}>
+              <a className={`button ${styles.download}`} href="/download/ruko-lite.apk" download>
+                Download Ruko Lite
+              </a>
+              <p className="note">Android phones only · about 13 MB · testing version</p>
+              <ul className="rows">
+                <li>Warns if you open a bank or payment app, or a screen-sharing app, during a stranger&rsquo;s call.</li>
+                <li>On WhatsApp calls, asks &ldquo;Is this someone you know?&rdquo;</li>
+                <li>Checks links before they open, and any message you show it.</li>
+                <li>Can call someone you trust from the warning. Six languages (beta), read aloud.</li>
+              </ul>
+            </div>
           </article>
         </div>
 

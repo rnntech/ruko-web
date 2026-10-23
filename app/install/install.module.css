@@ -171,13 +171,22 @@
   align-items: start;
 }
 
+/* Each card spans two shared rows (title block, then the rest), so the two download buttons line up. */
 .option {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
   gap: 16px;
   padding: 32px;
   background: var(--surface);
   border-radius: var(--radius-card);
+}
+
+.optionHead,
+.optionBody {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .optionTitle {
@@ -187,8 +196,11 @@
 .optionLead {
   margin: 0;
   font-size: 1.15rem;
+  line-height: 1.5;
   color: var(--ink);
 }
+
+
 
 .download {
   align-self: flex-start;
