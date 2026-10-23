@@ -1,4 +1,32 @@
-/* Get Ruko (D-101): two options side by side, stacked on phones. */
+/* Get Ruko (D-101): a note for reviewers, two options side by side (stacked on phones), then full vs Lite. */
+.reviewerNote {
+  margin-bottom: 32px;
+  padding: 20px 24px;
+  border-radius: var(--radius-card);
+  background: var(--danger-bg);
+  color: var(--ink);
+}
+
+.reviewerNote p {
+  margin: 0;
+  max-width: 70ch;
+}
+
+.reviewerNote .reviewerNoteTitle {
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: var(--danger);
+}
+
+.compareTitle {
+  margin-top: 64px;
+}
+
+.compare th[scope="row"] {
+  font-weight: 600;
+  text-align: left;
+}
+
 .options {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
