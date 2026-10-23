@@ -12,6 +12,63 @@ export const metadata: Metadata = {
  * Get Ruko (D-101): Ruko Lite is the download (it installs from a website); the full app is shown in a short video,
  * because Google Play Protect blocks installing it from a website (IS1, IS2) until it is on the Play Store.
  */
+type Cell = { has: "yes" | "no" | "info"; note?: string };
+
+const COMPARE: { what: string; full: Cell; lite: Cell }[] = [
+  {
+    what: "How to get it",
+    full: { has: "info", note: "Reviewer code, and Play Protect off for a moment" },
+    lite: { has: "info", note: "Download from this page" },
+  },
+  {
+    what: "Stranger calls: bank or payment app opened, screen sharing, very long calls",
+    full: { has: "yes" },
+    lite: { has: "yes" },
+  },
+  {
+    what: "WhatsApp calls",
+    full: { has: "yes", note: "Knows who is calling" },
+    lite: { has: "yes", note: "Asks “Is this someone you know?”" },
+  },
+  { what: "An OTP arriving during a call", full: { has: "yes" }, lite: { has: "no" } },
+  {
+    what: "Scam SMS and WhatsApp messages, warned as they arrive",
+    full: { has: "yes", note: "Checked against the latest scams" },
+    lite: { has: "no", note: "Show it a message yourself" },
+  },
+  {
+    what: "App files sent in messages",
+    full: { has: "yes", note: "Warned on arrival and before installing" },
+    lite: { has: "no" },
+  },
+  { what: "Links checked before they open", full: { has: "yes" }, lite: { has: "yes" } },
+  { what: "Calls someone you trust; six languages (beta), read aloud", full: { has: "yes" }, lite: { has: "yes" } },
+  {
+    what: "Reads message notifications",
+    full: { has: "info", note: "Yes, on your phone only" },
+    lite: { has: "info", note: "No" },
+  },
+];
+
+/** A table cell: a filled tick, a plain "Not included", or just the words. */
+function Mark({ cell }: { cell: Cell }) {
+  if (cell.has === "info") return <span className={styles.cellNote}>{cell.note}</span>;
+  return (
+    <span className={cell.has === "yes" ? styles.mark : styles.markStack}>
+      {cell.has === "yes" ? (
+        <span className={styles.yes} aria-label="Yes" role="img">
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+            <path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </span>
+      ) : (
+        <span className={styles.no}>Not included</span>
+      )}
+      {cell.note && <span className={cell.has === "yes" ? styles.cellNote : styles.cellNoteSoft}>{cell.note}</span>}
+    </span>
+  );
+}
+
 export default function InstallPage() {
   return (
     <>
@@ -78,64 +135,28 @@ export default function InstallPage() {
         {/* ---- Full vs Lite ---- */}
         <div className="container">
           <h2 className={styles.compareTitle}>Ruko (full) and Ruko Lite</h2>
-          <div className="table-wrap">
-            <table className={styles.compare}>
-              <thead>
-                <tr>
-                  <th scope="col">What it does</th>
-                  <th scope="col">Ruko (full)</th>
-                  <th scope="col">Ruko Lite</th>
+          <table className={styles.compare}>
+            <thead>
+              <tr>
+                <th scope="col">What it does</th>
+                <th scope="col">Ruko (full)</th>
+                <th scope="col">Ruko Lite</th>
+              </tr>
+            </thead>
+            <tbody>
+              {COMPARE.map((row) => (
+                <tr key={row.what}>
+                  <th scope="row">{row.what}</th>
+                  <td data-label="Ruko (full)">
+                    <Mark cell={row.full} />
+                  </td>
+                  <td data-label="Ruko Lite">
+                    <Mark cell={row.lite} />
+                  </td>
                 </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">How to get it</th>
-                  <td>Reviewer code, and Play Protect off for a moment</td>
-                  <td>Download from this page</td>
-                </tr>
-                <tr>
-                  <th scope="row">Stranger calls: bank or payment app opened, screen sharing, very long calls</th>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <th scope="row">WhatsApp calls</th>
-                  <td>✓ Knows who is calling</td>
-                  <td>Asks &ldquo;Is this someone you know?&rdquo;</td>
-                </tr>
-                <tr>
-                  <th scope="row">An OTP arriving during a call</th>
-                  <td>✓</td>
-                  <td>–</td>
-                </tr>
-                <tr>
-                  <th scope="row">Scam SMS and WhatsApp messages, warned as they arrive</th>
-                  <td>✓ Checked against the latest scams</td>
-                  <td>– (show it a message yourself)</td>
-                </tr>
-                <tr>
-                  <th scope="row">App files sent in messages</th>
-                  <td>✓ Warned on arrival and before installing</td>
-                  <td>–</td>
-                </tr>
-                <tr>
-                  <th scope="row">Links checked before they open</th>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <th scope="row">Calls someone you trust; six languages (beta), read aloud</th>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <th scope="row">Reads message notifications</th>
-                  <td>Yes, on your phone only</td>
-                  <td>No</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
 

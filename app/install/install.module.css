@@ -27,9 +27,140 @@
   margin-top: 64px;
 }
 
+/* Full vs Lite: one card, one hairline between rows, filled ticks (overrides the global table rules). */
+.compare {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  background: var(--surface);
+  font-size: 1.05rem;
+}
+
+.compare th,
+.compare td {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+
+.compare tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.compare thead th {
+  background: var(--mint-100);
+  border-bottom: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--teal-900);
+}
+
+.compare thead th:first-child {
+  width: 40%;
+}
+
+.compare thead th + th {
+  width: 30%;
+}
+
 .compare th[scope="row"] {
   font-weight: 600;
-  text-align: left;
+  color: var(--ink);
+}
+
+.mark {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.yes {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--teal-700);
+  color: var(--surface);
+}
+
+.no {
+  flex: none;
+  padding-top: 1px;
+  color: var(--ink-soft);
+}
+
+.cellNote {
+  color: var(--ink);
+}
+
+.cellNoteSoft {
+  color: var(--ink-soft);
+}
+
+.markStack {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Phones: each row becomes a block, the feature on top and the two versions side by side under it. */
+@media (max-width: 640px) {
+  .compare,
+  .compare tbody {
+    display: block;
+  }
+
+  .compare thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .compare tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .compare tbody tr:last-child {
+    border-bottom: 0;
+  }
+
+  .compare th,
+  .compare td {
+    border-bottom: 0;
+    padding: 6px 18px 16px;
+  }
+
+  .compare th[scope="row"] {
+    grid-column: 1 / -1;
+    padding-top: 18px;
+    padding-bottom: 8px;
+  }
+
+  .compare td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--teal-700);
+  }
+
+  .compare td + td {
+    border-left: 1px solid var(--line);
+  }
+
+  .mark {
+    flex-direction: column;
+    gap: 6px;
+  }
 }
 
 .options {
