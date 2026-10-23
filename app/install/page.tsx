@@ -85,7 +85,7 @@ export default function InstallPage() {
             <p>
               The full app reads your message notifications only on your phone; your message text never leaves it. It
               isn&rsquo;t on the Play Store yet, so to install it you&rsquo;ll need to turn off Play Protect for a moment,
-              then turn it back on. On our three test phones, Play Protect didn&rsquo;t flag it (24 Oct). If you&rsquo;d
+              then turn it back on. On our three test phones, Play Protect didn&rsquo;t flag it. If you&rsquo;d
               rather not, choose Ruko Lite.
             </p>
             <p className={styles.reviewerNoteWarn}>
