@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHead } from "@/components/PageHead";
 import styles from "./install.module.css";
+import { ReviewerDownload } from "./ReviewerDownload";
 
 export const metadata: Metadata = {
   title: "Get the Ruko app",
@@ -58,6 +59,7 @@ export default function InstallPage() {
               The full app is ready, but Android&rsquo;s Play Protect blocks installing it from a website. It&rsquo;s
               coming to the Play Store.
             </p>
+            <ReviewerDownload />
           </article>
         </div>
       </section>

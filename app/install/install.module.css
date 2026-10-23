@@ -45,6 +45,88 @@
   color: var(--caution-ink);
 }
 
+/* Reviewers only (D-101): a closed drop-down below the public options. */
+.reviewer {
+  border-radius: var(--radius-card);
+  background: var(--paper);
+}
+
+.reviewerSummary {
+  min-height: 48px;
+  padding: 14px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--teal-700);
+}
+
+.reviewerHint {
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+.reviewer[open] {
+  padding-bottom: 16px;
+}
+
+.reviewer > :not(summary) {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.reviewerHeading {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.reviewerSteps {
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding-left: 36px;
+}
+
+.reviewerSteps li + li {
+  margin-top: 4px;
+}
+
+.reviewerText {
+  margin-top: 0;
+}
+
+.codeForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.codeLabel {
+  font-weight: 600;
+}
+
+.codeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.codeInput {
+  flex: 1 1 160px;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-button);
+  font: inherit;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  background: var(--surface);
+}
+
+.codeError {
+  margin: 0;
+  color: var(--danger);
+}
+
 @media (max-width: 900px) {
   .options {
     grid-template-columns: minmax(0, 1fr);
