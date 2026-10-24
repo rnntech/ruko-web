@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 const permissions: { name: string; sees: string; why: string }[] = [
   { name: "Caller ID & spam app", sees: "The number of incoming calls", why: "To tell a saved contact from a stranger" },
-  { name: "Phone", sees: "Whether a call is on, and for how long", why: "To notice very long calls and the minutes after a call" },
-  { name: "Contacts", sees: "Whether a caller is saved in your contacts", why: "Saved contacts never trigger a warning" },
+  { name: "Phone", sees: "Whether a call is on, and for how long", why: "To notice the minutes after a call, and very long calls if you turn that on" },
+  { name: "Contacts", sees: "Whether a caller is saved in your contacts", why: "Calls from saved contacts never trigger a warning" },
   {
     name: "Usage access",
     sees: "Which app is open, only during calls with unknown numbers, and for 30 minutes after a scam app file arrives",
@@ -18,7 +18,7 @@ const permissions: { name: string; sees: string; why: string }[] = [
   { name: "Display over other apps", sees: "Nothing", why: "To show the red warning on top of other apps" },
   { name: "Notifications", sees: "Nothing", why: "To show “Ruko is protecting you” and tell you if protection is off" },
   {
-    name: "Notification access",
+    name: "Notification access (full app only)",
     sees: "Short previews of your notifications",
     why: "To spot WhatsApp calls from unknown numbers, bank texts during a risky call, and scam messages in SMS, WhatsApp, Telegram, Instagram, Messenger, Truecaller and SMS Organizer. Checked on your phone only",
   },
@@ -86,7 +86,8 @@ export default function PrivacyPage() {
             </li>
             <li>
               Ruko uses the internet to download the latest list of scams going around. In &ldquo;Just me&rdquo; and
-              &ldquo;Ask me first&rdquo;, that is all: it never sends anything about you.
+              &ldquo;Ask me first&rdquo;, that is all, unless you turn on &ldquo;Also check websites online&rdquo; (only
+              the website&rsquo;s name goes to Google) or &ldquo;Tell [your helper] about very long calls&rdquo;.
             </li>
             <li>
               &ldquo;Scam of the week&rdquo; uses the scam alerts already inside the app. Sharing a scam on WhatsApp opens
@@ -100,7 +101,8 @@ export default function PrivacyPage() {
             warning it was (for example &ldquo;long call with a stranger&rdquo;), a score, and the time. The other phone gets
             a push message through Google&rsquo;s Firebase. Never your calls, messages, contacts or numbers. Your helper
             sees only &ldquo;Please call you now&rdquo;, plus the kind of warning if you turned on &ldquo;Also tell them
-            why&rdquo;. Either of you can disconnect at any time in Settings.
+            why&rdquo;. Either of you can disconnect at any time in Settings. The long-call alert, if you turn it on,
+            works the same way in any mode.
           </p>
           <h2 style={{ marginTop: 56 }}>Deleting your data</h2>
           <p className="measure">

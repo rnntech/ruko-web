@@ -70,7 +70,7 @@ export const en = {
   },
   scams: {
     title: "Scams going around",
-    lead: "Scams reported recently by the police, the government and news outlets. A person checks every one before it appears here. Send them to your family before a scammer calls them.",
+    lead: "Scams reported recently by the police, the government and news outlets. Each one comes from the police, a government body or an established news outlet, and its “What to do” comes from official advice. Send them to your family before a scammer calls them.",
     homeTitle: "Scams going around now",
     homeLead: "Short, checked and sourced. Read one, then send it to the family group.",
     seeAll: "See all scams",

@@ -51,7 +51,7 @@ export default function KeepRunningPage() {
     <>
       <PageHead
         title="Keep Ruko running"
-        lead="Some phones close apps in the background to save battery. If that happens, Ruko can’t warn you. These settings take a minute and keep it on. Ruko itself uses very little battery: it only checks which app is open during calls with unknown numbers."
+        lead="Some phones close apps in the background to save battery. If that happens, Ruko can’t warn you. These settings take a minute and keep it on. Ruko itself uses very little battery: it checks each message as it arrives (full app), and which app is open during calls with unknown numbers."
       />
       <section className="field">
         <div className="container">

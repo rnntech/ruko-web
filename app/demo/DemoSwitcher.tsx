@@ -6,13 +6,13 @@ import styles from "./demo.module.css";
 
 type Mode = "just-me" | "ask-first" | "auto";
 
-// The moments the full app acts on, as it words them: calls (R1, R3, R2), messages (red, calm, and during a
-// stranger's call, D-092), a scam link before it opens (D-090) and an app file as it installs (R8, D-093).
+// The moments the full app acts on, as it words them: calls (R1, R3, R2), messages (red, calm, and an app file while
+// a stranger is on the line, D-109), a scam link before it opens (D-090) and an app file as it installs (R8, D-093).
 const SITUATIONS: { id: WarnSituation; label: string }[] = [
   { id: "bank", label: "A stranger keeps me on a call, and I open my bank or UPI app" },
   { id: "otp", label: "During the call, an OTP or bank code arrives" },
   { id: "screen", label: "The caller gets me to open a screen-sharing app" },
-  { id: "message-call", label: "During a stranger’s call, a WhatsApp message says my electricity will be cut" },
+  { id: "message-call", label: "During a stranger’s call, the caller sends me an app file on WhatsApp" },
   { id: "install", label: "A WhatsApp message sends me an app file, and I try to install it" },
   { id: "link", label: "I tap a link in a message that pretends to be my bank" },
   { id: "message", label: "A WhatsApp message says my electricity will be cut tonight" },
@@ -29,7 +29,7 @@ const MODES: { id: Mode; title: string; body: string }[] = [
 export function DemoSwitcher() {
   const [situation, setSituation] = useState<WarnSituation>("bank");
   const [mode, setMode] = useState<Mode>("just-me");
-  // A message on its own, or a link, never involves anyone; during a stranger's call it does (D-092).
+  // A message on its own never involves anyone; a fake link or app file while a stranger is on the line does (D-109).
   const alone = situation === "message" || situation === "calm" || situation === "link";
   const isMessage = situation === "message" || situation === "calm" || situation === "message-call";
   const helperName = !alone && mode !== "just-me" ? "Arjun" : null;
@@ -58,7 +58,10 @@ export function DemoSwitcher() {
             </label>
           ))}
           {alone && (
-            <p className="note">A message or link on its own never involves anyone else. During a call with a stranger, it does.</p>
+            <p className="note">
+              A scam message on its own never involves anyone else. A fake link or app file while a stranger is on the
+              line does, and so does opening the scam link or installing the app file later.
+            </p>
           )}
         </fieldset>
 
@@ -68,9 +71,9 @@ export function DemoSwitcher() {
           &ldquo;You&rsquo;re safe&rdquo;.
         </p>
         <p className="note measure">
-          Two more, as notifications rather than warnings: if a stranger keeps you on a call for over 45 minutes, your
-          helper is told; and if a saved contact sends a scam-like message, Ruko suggests calling them on their usual
-          number first, since their phone may be hacked.
+          One more, if you turn it on in Settings: when a number you haven&rsquo;t saved keeps you on a call for 45
+          minutes or more, your helper gets a calm alert, with no warning on your screen. Fake links and app files are
+          flagged from anyone, even a saved contact, because accounts get hacked.
         </p>
       </div>
 
@@ -82,7 +85,13 @@ export function DemoSwitcher() {
           situation={situation}
           helperName={helperName}
           helperRinging={mode === "auto"}
-          quote={situation === "calm" ? "Congratulations! Your number has won \u20b925 lakh in the KBC lucky draw\u2026" : undefined}
+          quote={
+            situation === "calm"
+              ? "Congratulations! Your number has won \u20b925 lakh in the KBC lucky draw\u2026"
+              : situation === "message-call"
+                ? "MSEB_Bill_Update.apk"
+                : undefined
+          }
         />
       </PhoneFrame>
     </div>

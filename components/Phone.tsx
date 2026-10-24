@@ -186,9 +186,9 @@ export type WarnSituation = "bank" | "otp" | "screen" | "message" | "calm" | "me
 /**
  * Ruko's warning, worded and laid out like the app's (android WarningOverlay.kt; strings warning_*, reason_r1..r3).
  * Calls: R1 bank or UPI app, R3 a code arrives, R2 screen sharing ("Stop. This is a scam."). Messages: red, or calm
- * for a known trick (teal); a scam message during a stranger's call brings the helper in too (D-092). A scam link
- * before it opens (link checker, D-090; strings link_*), and an app file from a warned message as it installs (R8,
- * D-093; 09e). "Call [helper]" is the big button whenever a helper is chosen (D-066); in "Tell them automatically" a
+ * for a known trick (teal); a fake link or app file while a stranger is on the line brings the helper in too (D-109).
+ * A scam link before it opens (link checker, D-090; strings link_*), and an app file from a warned message as it
+ * installs (R8, D-093; 09e). "Call [helper]" is the big button whenever a helper is chosen (D-066); in "Tell them automatically" a
  * line says their phone is ringing (D-053).
  */
 export function WarningScreen({
