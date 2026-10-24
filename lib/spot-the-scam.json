@@ -1,5 +1,5 @@
 {
-  "note": "Spot-the-scam test (D-049, D-097). One hard scam question per approved card (52), plus genuine look-alikes; each round shows 4 scams and 4 real ones at random. Scams are modelled on the card's real cases (source = the card's first source); numbers, names and links are made up. Every 'sms'/'whatsapp' item is checked against Ruko's real rules by SpotTheScamTest: real ones must pass; scams must be caught unless marked rukoMayMiss (hard ones Ruko's wording rules miss, shown with a note). 'call' and 'situation' items are scenarios, not messages.",
+  "note": "Spot-the-scam test (D-049, D-097). One hard scam question per approved card (52), plus genuine look-alikes; each round shows 4 scams and 4 real ones at random, with at least one 'trap' question (D-107: 'sender' = real words from the wrong sender, 'moment' = a real message at the wrong moment; 'during' = the call it arrives in, checked against the call rules). Scams are modelled on the card's real cases (source = the card's first source); numbers, names and links are made up. Every 'sms'/'whatsapp' item is checked against Ruko's real rules by SpotTheScamTest: real ones must pass; scams must be caught unless marked rukoMayMiss (hard ones Ruko's wording rules miss, shown with a note). 'call' and 'situation' items are scenarios, not messages.",
   "items": [
     {
       "id": "debit-reply",
@@ -939,6 +939,193 @@
       "sender": "VM-DOTGOV-G",
       "text": "Check how many mobile connections are issued in your name on sancharsaathi.gov.in. DoT never calls to disconnect numbers.",
       "clue": "Real. A government sender name, a .gov.in website, and it tells you what DoT will never do."
+    },
+    {
+      "id": "ws-debit",
+      "label": "scam",
+      "channel": "sms",
+      "trap": "sender",
+      "sender": "+91 70214 88356",
+      "senderNote": "Not in your contacts",
+      "text": "Dear UPI user A/C X4521 debited by 48500.00 on date 20Oct26 trf to RK TRADERS Refno 429187365512. If not u? call 9123456780. -SBI",
+      "clue": "Scam. The words are copied from a real SBI alert, but it came from a mobile number, and the \"helpline\" is a mobile number too. Banks text from a sender name like JD-SBIUPI-S. Check in your bank's own app; the real helpline is on the back of your card.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "card": "fake-debit-reply"
+    },
+    {
+      "id": "ws-bill",
+      "label": "scam",
+      "channel": "sms",
+      "trap": "sender",
+      "sender": "+91 93245 61870",
+      "senderNote": "Not in your contacts",
+      "text": "Dear Consumer, your electricity bill for Oct-26 of Rs 1,240 is generated. Due date 05-11-26. Pay on the MSEDCL app or www.mahadiscom-pay.in. Ignore if paid.",
+      "clue": "Scam. Word for word the real bill text, but from a mobile number, and the website has an extra \"-pay\". The real bill comes from the company's sender name (like AD-MSEDCL-S). Pay only in the company's own app.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "card": "electricity-bill"
+    },
+    {
+      "id": "ws-refund",
+      "label": "scam",
+      "channel": "whatsapp",
+      "trap": "sender",
+      "sender": "+91 81470 23956",
+      "senderNote": "Not in your contacts",
+      "text": "Refund of Rs 15,490 for AY 2026-27 has been approved for your bank account XX4521. -Income Tax Department. Confirm your account at incometax-refund.in to receive it.",
+      "clue": "Scam. It copies the tax department's real refund text, but the department doesn't message on WhatsApp, and a real refund just arrives: there is nothing to confirm. Check only on incometax.gov.in, typed in yourself.",
+      "source": {
+        "name": "PIB / Income Tax Department: phishing advisory",
+        "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=136117&reg=48&lang=2"
+      },
+      "card": "tax-refund"
+    },
+    {
+      "id": "ws-challan",
+      "label": "scam",
+      "channel": "sms",
+      "trap": "sender",
+      "sender": "+91 62031 74598",
+      "senderNote": "Not in your contacts",
+      "text": "A challan of Rs 500 has been issued to vehicle MH12AB1234 for over-speeding. Details and payment: https://echallan-parivahan.in",
+      "clue": "Scam. The same words as a real e-challan, but from a mobile number, and the link is echallan-parivahan.in, not echallan.parivahan.gov.in. Type the .gov.in address yourself.",
+      "source": {
+        "name": "eChallan portal (MoRTH): warning on fake sites and apps",
+        "url": "https://echallan.parivahan.gov.in/"
+      },
+      "card": "e-challan"
+    },
+    {
+      "id": "ws-post",
+      "label": "scam",
+      "channel": "sms",
+      "trap": "sender",
+      "sender": "+91 79823 10456",
+      "senderNote": "Not in your contacts",
+      "text": "Article EZ123456789IN booked to you is out for delivery today. Track it at https://www.indiapost-track.in",
+      "clue": "Scam. A copy of India Post's real delivery text, but from a mobile number, with a link that doesn't end in indiapost.gov.in. India Post texts from its sender name; track only on indiapost.gov.in.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "card": "india-post-delivery"
+    },
+    {
+      "id": "mo-bank-otp",
+      "label": "scam",
+      "channel": "sms",
+      "trap": "moment",
+      "during": "stranger-call",
+      "sender": "VM-HDFCBK-S",
+      "context": "You're on a call with an unknown number. He says he's from HDFC Bank's fraud team and needs this code to block a payment.",
+      "text": "OTP for txn of INR 49,999.00 at FLIPKART on HDFC Bank card XX8812 is 731552. Valid for 10 mins. Do not share this OTP with anyone. -HDFC Bank",
+      "clue": "Scam. The SMS is real, and that's the trap: the caller is making the payment, and your code finishes it. Read it: it's for a Rs 49,999 purchase you didn't make. Hang up and call the number on your card.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "card": "bank-call-otp"
+    },
+    {
+      "id": "mo-aadhaar-otp",
+      "label": "scam",
+      "channel": "sms",
+      "trap": "moment",
+      "during": "stranger-call",
+      "sender": "VM-UIDAI-G",
+      "context": "You're on a video call from an unknown number with a man in police uniform. He says you're under \"digital arrest\" and must read out this code to prove who you are.",
+      "text": "OTP for Aadhaar XXXX1234 is 284519 (valid for 10 mins). Do not share it with anyone. -UIDAI",
+      "clue": "Scam. The code really is from UIDAI, but no police officer arrests anyone on a video call or needs your OTP. Hang up, then call 1930 or a family member.",
+      "source": {
+        "name": "CERT-In: Cyber Security Handbook (2025)",
+        "url": "https://www.cert-in.org.in/PDF/Mahila_Suraksha_Booklet25.pdf"
+      },
+      "card": "digital-arrest"
+    },
+    {
+      "id": "mo-whatsapp-code",
+      "label": "scam",
+      "channel": "sms",
+      "trap": "moment",
+      "during": "stranger-call",
+      "sender": "JM-WHTSAP-S",
+      "context": "An unknown number calls: he says he sent you a code by mistake and asks you to read it back to him.",
+      "text": "Your WhatsApp code: 482-913. Don't share this code with others.",
+      "clue": "Scam. The code is real, sent because he's trying to log in to your WhatsApp on his phone. Reading it out hands him your account and your chats. Never read out a code to anyone who calls.",
+      "source": {
+        "name": "ETV Bharat: Rajasthan Police advisory on WhatsApp takeover through fake QR codes (21 Oct 2026)",
+        "url": "https://www.etvbharat.com/hi/state/account-hacked-with-fake-qr-code-rajasthan-police-issued-advisory-for-cyber-safety-rjs26102106080"
+      },
+      "card": "whatsapp-takeover",
+      "rukoMayMiss": true
+    },
+    {
+      "id": "mo-kyc-otp",
+      "label": "scam",
+      "channel": "sms",
+      "trap": "moment",
+      "during": "stranger-call",
+      "sender": "JD-SBIBNK-S",
+      "context": "An unknown number says he's from SBI: your KYC runs out today, and he'll update it on the call if you tell him the code that's coming.",
+      "text": "OTP 905114 to register a new device for SBI YONO. If this was not you, call 1800 1234. Do not share this OTP with anyone.",
+      "clue": "Scam. A real SBI code, but for adding his phone to your bank app. Banks never update KYC over a call, and never need your OTP. Hang up and visit your branch.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "card": "kyc-update"
+    },
+    {
+      "id": "safe-otp-son",
+      "label": "real",
+      "channel": "sms",
+      "trap": "moment",
+      "during": "contact-call",
+      "sender": "VM-HDFCBK-S",
+      "context": "You're on a call with Arjun (son), a saved contact, while you pay your electricity bill yourself in your bank's app.",
+      "text": "OTP for txn of INR 1,240.00 at MSEDCL on HDFC Bank card XX8812 is 640218. Valid for 10 mins. Do not share this OTP with anyone. -HDFC Bank",
+      "clue": "Real. A code for a payment you're making yourself, for the right amount, while you chat with your son. Nobody asked you for it: type it into your app."
+    },
+    {
+      "id": "safe-credit-daughter",
+      "label": "real",
+      "channel": "sms",
+      "trap": "moment",
+      "during": "contact-call",
+      "sender": "JD-PAYTMB-S",
+      "context": "Your daughter Kavya, a saved contact, is on the phone: she says she has just sent you money for Diwali.",
+      "text": "You have received Rs 5,000 from KAVYA SHARMA in your Paytm UPI. UPI Ref 615872094321.",
+      "clue": "Real. Money from someone you know, arriving while she tells you about it. Receiving money needs nothing from you: no PIN, no code, no QR scan."
+    },
+    {
+      "id": "safe-otp-self",
+      "label": "real",
+      "channel": "sms",
+      "trap": "moment",
+      "sender": "VM-ICICIB-S",
+      "context": "No call. You've just tapped Pay for your gas cylinder in the Indane app.",
+      "text": "OTP 507391 for INR 1,103.00 at INDANE on ICICI Bank card XX3307. Do not share it with anyone.",
+      "clue": "Real. A code for a payment you started a moment ago, for the amount you expected. Type it into the app; never read it out to anyone."
+    },
+    {
+      "id": "photo-new-number",
+      "label": "scam",
+      "channel": "whatsapp",
+      "trap": "sender",
+      "sender": "+91 98201 44732",
+      "senderNote": "Not in your contacts · The profile photo is Arjun's",
+      "text": "Ma, this is my new number, my old phone fell in water. Please send ₹18,000 to my friend's UPI, I'll explain tonight. Don't tell Papa.",
+      "clue": "Scam. The photo is your son's, but the number isn't: anyone can copy a photo from his profile. Call Arjun on the number you already have before you send anything.",
+      "source": {
+        "name": "The Tribune: fraudsters use the Chandigarh mayor's display picture on WhatsApp to ask for money",
+        "url": "https://www.tribuneindia.com/news/chandigarh/fraudsters-use-chandigarh-mayors-display-picture-to-extract-money-on-whatsapp-435915"
+      },
+      "card": "fake-family-voice"
     }
   ]
 }

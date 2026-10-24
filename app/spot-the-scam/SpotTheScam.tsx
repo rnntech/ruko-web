@@ -24,6 +24,10 @@ type Item = {
   card?: string;
   /** A hard scam Ruko's message rules don't catch (D-097): the answer says so. */
   rukoMayMiss?: boolean;
+  /** D-107: real words from the wrong sender, or a real message at the wrong moment. Every round has one. */
+  trap?: "sender" | "moment";
+  /** D-107: the call the message arrives in (checked against the call rules). A "moment" question shows `context` above the message. */
+  during?: "stranger-call" | "contact-call";
 };
 
 const ITEMS = data.items as Item[];
@@ -39,9 +43,14 @@ function shuffle<T>(list: T[]): T[] {
   return a;
 }
 
+/** 4 scams and 4 real ones; if none of them is a trap question (D-107), one random trap swaps in for its side. */
 function pickRound(): Item[] {
   const scams = shuffle(ITEMS.filter((i) => i.label === "scam")).slice(0, PER_SIDE);
   const real = shuffle(ITEMS.filter((i) => i.label === "real")).slice(0, PER_SIDE);
+  if (![...scams, ...real].some((i) => i.trap)) {
+    const trap = shuffle(ITEMS.filter((i) => i.trap))[0];
+    if (trap) (trap.label === "scam" ? scams : real)[0] = trap;
+  }
   return shuffle([...scams, ...real]);
 }
 
@@ -107,13 +116,14 @@ export function SpotTheScam() {
       </p>
 
       <div className={`${styles.message} ${item.channel === "call" || item.channel === "situation" ? styles.call : ""}`}>
+        {item.trap === "moment" && item.context && <p className={styles.moment}>{item.context}</p>}
         <p className={styles.channel}>
           {s.channels[item.channel]}
         </p>
         <p className={styles.sender}>{item.sender}</p>
         {item.senderNote && <p className={styles.senderNote}>{item.senderNote}</p>}
         <p className={styles.bubble}>{item.text}</p>
-        {item.context && <p className={styles.context}>{item.context}</p>}
+        {item.context && item.trap !== "moment" && <p className={styles.context}>{item.context}</p>}
       </div>
 
       {!answered ? (

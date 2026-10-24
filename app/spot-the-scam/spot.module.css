@@ -65,6 +65,16 @@
   color: var(--ink-soft);
 }
 
+/* D-107: what is happening when the message arrives (a call), above the message. */
+.moment {
+  margin: -2px 0 14px !important;
+  padding: 10px 14px;
+  border-radius: var(--radius-tag);
+  background: var(--caution-bg);
+  color: var(--caution-ink);
+  font-weight: 600;
+}
+
 .call {
   background: #1b2227;
   border-color: #1b2227;
