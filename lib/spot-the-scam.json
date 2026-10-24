@@ -1126,6 +1126,131 @@
         "url": "https://www.tribuneindia.com/news/chandigarh/fraudsters-use-chandigarh-mayors-display-picture-to-extract-money-on-whatsapp-435915"
       },
       "card": "fake-family-voice"
+    },
+    {
+      "id": "copy-debit",
+      "label": "scam",
+      "channel": "sms",
+      "trap": "sender",
+      "sender": "+91 70214 88356",
+      "senderNote": "Not in your contacts",
+      "text": "Dear UPI user A/C X4521 debited by 48500.00 on date 20Oct26 trf to RK TRADERS Refno 429187365512. If not u? call 1800111109. -SBI",
+      "clue": "Scam: treat it as fake. Every word, even the helpline, is SBI's real text, but banks never send alerts from a mobile number. These copies are sent to scare you, and a \"bank\" call often follows. Don't reply or call back; check in your own bank app.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "card": "fake-debit-reply"
+    },
+    {
+      "id": "copy-bill",
+      "label": "scam",
+      "channel": "sms",
+      "trap": "sender",
+      "sender": "+91 93245 61870",
+      "senderNote": "Not in your contacts",
+      "text": "Dear Consumer, your electricity bill for Oct-26 of Rs 1,240 is generated. Due date 05-11-26. Pay on the MSEDCL app or www.mahadiscom.in. Ignore if paid.",
+      "clue": "Scam: treat it as fake. The words and the website are the company's real ones, but the company texts from its sender name (like AD-MSEDCL-S), not a mobile number. The next message or call usually says your power will be cut. Pay only in the company's own app.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "card": "electricity-bill",
+      "rukoMayMiss": true
+    },
+    {
+      "id": "copy-post",
+      "label": "scam",
+      "channel": "sms",
+      "trap": "sender",
+      "sender": "+91 79823 10456",
+      "senderNote": "Not in your contacts",
+      "text": "Article EZ123456789IN booked to you is out for delivery today. Track it at https://www.indiapost.gov.in",
+      "clue": "Scam: treat it as fake. A word-for-word copy of India Post's text, with the real link, but from a mobile number. India Post texts from its sender name. Expect a follow-up about a \"failed delivery\" and a small fee: don't pay it.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "card": "india-post-delivery",
+      "rukoMayMiss": true
+    },
+    {
+      "id": "opener-wrong-number",
+      "label": "scam",
+      "channel": "whatsapp",
+      "trap": "sender",
+      "sender": "+91 88264 51907",
+      "senderNote": "Not in your contacts",
+      "text": "Hi, is this Mrs Sharma? Sorry, wrong number 🙂 You seem kind. Where are you from?",
+      "clue": "Scam, though it doesn't look like one yet. A \"wrong number\" that keeps chatting is how investment and task scams start: in a few days come the \"stock tips\" or the \"easy job\". Don't reply to strangers who keep the chat going.",
+      "source": {
+        "name": "SEBI: Validated UPI Handles and SEBI Check (PR 64/2025)",
+        "url": "https://www.sebi.gov.in/media-and-notifications/press-releases/oct-2025/sebi-rolls-out-validated-upi-handles-and-sebi-check-for-secure-investor-payments_97020.html"
+      },
+      "card": "stock-tips",
+      "rukoMayMiss": true
+    },
+    {
+      "id": "opener-new-number",
+      "label": "scam",
+      "channel": "whatsapp",
+      "trap": "sender",
+      "sender": "+91 98201 44732",
+      "senderNote": "Not in your contacts · The profile photo is Arjun's",
+      "text": "Hi Ma, this is my new number. My old phone broke. Save this one, I'll message you later.",
+      "clue": "Scam, though nothing is asked yet. \"New number, save this one\" is the fake-family opener: the money request comes next. Call Arjun on the number you already have and ask him.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "card": "fake-family-voice",
+      "rukoMayMiss": true
+    },
+    {
+      "id": "opener-office",
+      "label": "scam",
+      "channel": "whatsapp",
+      "trap": "sender",
+      "sender": "+91 90046 23185",
+      "senderNote": "Not in your contacts",
+      "text": "Namaste aunty, I'm Rohit from Arjun's office. He gave me your number. Can I call you in 5 minutes? It's about Arjun.",
+      "clue": "Scam, though it sounds polite. A stranger who \"knows your son\" and wants to call about him is setting up a story (an accident, the police, a fine). Call Arjun first on the number you have.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      },
+      "card": "fake-family-voice",
+      "rukoMayMiss": true
+    },
+    {
+      "id": "unknown-plumber",
+      "label": "real",
+      "channel": "whatsapp",
+      "trap": "sender",
+      "sender": "+91 97300 18264",
+      "senderNote": "Not in your contacts",
+      "text": "Hello madam, I'm Ramesh, the plumber your building secretary sent. I'll come at 4 pm to fix the bathroom tap.",
+      "clue": "Real. A stranger's number, but he asks for nothing: no money, no code, no link. If in doubt, check with your secretary. An unknown number by itself isn't a scam."
+    },
+    {
+      "id": "unknown-clinic",
+      "label": "real",
+      "channel": "whatsapp",
+      "trap": "sender",
+      "sender": "+91 98192 60437",
+      "senderNote": "Not in your contacts",
+      "text": "Reminder from Dr Mehta's clinic: your appointment is tomorrow at 11 am. Please call the clinic if you need to change it.",
+      "clue": "Real. A reminder from the receptionist's phone, for an appointment you made, asking for nothing. It would turn into a scam only if it asked for a payment, a code or a link to \"confirm\"."
+    },
+    {
+      "id": "unknown-niece-friend",
+      "label": "real",
+      "channel": "whatsapp",
+      "trap": "sender",
+      "sender": "+91 81089 72356",
+      "senderNote": "Not in your contacts",
+      "text": "Hi aunty, Riya here, Neha's friend. Sending the photo from Neha's birthday 😊",
+      "clue": "Real. A friend of the family sharing a photo, with no link to tap and nothing to pay. Unknown numbers are fine until they ask for money, a code, or an app."
     }
   ]
 }
