@@ -1,7 +1,8 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import { PhoneTour } from "@/components/PhoneTour";
-import { curly, unquote, visibleCards } from "@/lib/cards";
+import { curly, unquote } from "@/lib/cards";
+import { liveCards } from "@/lib/liveFeed";
 import { t } from "@/lib/content";
 
 const timeline: { time: string; text: string; ruko?: boolean }[] = [
@@ -12,8 +13,12 @@ const timeline: { time: string; text: string; ruko?: boolean }[] = [
   { time: "0:41", text: "Ruko makes you pause: a red warning, read aloud, with one button to call your son.", ruko: true },
 ];
 
-export default function Home() {
-  const latest = visibleCards().slice(0, 3);
+/** Rebuilt on the server at most hourly, so new cards from the live feed show up (D-106). */
+export const revalidate = 3600;
+
+export default async function Home() {
+  const all = await liveCards();
+  const latest = all.slice(0, 3);
   return (
     <>
       {/* Hero: a big teal field (Wise), the product as the hero (Monzo) */}
@@ -39,7 +44,7 @@ export default function Home() {
           </div>
           {/* The app in a phone: four real screens, sliding like setup (D-048) */}
           <div className={styles.heroPhone}>
-            <PhoneTour scamCount={visibleCards().length} />
+            <PhoneTour scamCount={all.length} />
           </div>
         </div>
       </section>

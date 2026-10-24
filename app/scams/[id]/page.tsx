@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { PageHead } from "@/components/PageHead";
 import { ScamCardView } from "@/components/ScamCardView";
 import { curly, shareImagePath, visibleCards } from "@/lib/cards";
+import { liveCards } from "@/lib/liveFeed";
 import { t } from "@/lib/content";
 
 /**
@@ -14,11 +15,14 @@ export function generateStaticParams() {
   return visibleCards().map((c) => ({ id: c.id }));
 }
 
+/** A card the live feed adds (D-106) gets its page on request; all pages refresh at most hourly. */
+export const revalidate = 3600;
+
 type Props = { params: Promise<{ id: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
-  const card = visibleCards().find((c) => c.id === id);
+  const card = (await liveCards()).find((c) => c.id === id);
   if (!card) return {};
   const title = `Scam going around: ${curly(card.name.en)}`;
   const image = { url: `${t.siteUrl}${shareImagePath(card)}`, width: 1080, height: 1080 };
@@ -32,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ScamCardPage({ params }: Props) {
   const { id } = await params;
-  const card = visibleCards().find((c) => c.id === id);
+  const card = (await liveCards()).find((c) => c.id === id);
   if (!card) notFound();
   return (
     <>

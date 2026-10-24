@@ -1,24 +1,26 @@
 import Link from "next/link";
 import { PageHead } from "@/components/PageHead";
 import { ScamCardView } from "@/components/ScamCardView";
-import { safetyPortals, showDrafts, trustedOutlets, visibleCards } from "@/lib/cards";
+import { type ScamCard, safetyPortals, showDrafts, trustedOutlets } from "@/lib/cards";
+import { liveCards } from "@/lib/liveFeed";
 import { t } from "@/lib/content";
 import styles from "./scams.module.css";
 
 /** Six scams per page (owner, 23 Oct): 52 approved cards make 9 pages. */
 export const PER_PAGE = 6;
 
-export function pageCount(): number {
-  return Math.max(1, Math.ceil(visibleCards().length / PER_PAGE));
+export function pageCount(cards: ScamCard[]): number {
+  return Math.max(1, Math.ceil(cards.length / PER_PAGE));
 }
 
 export function pageHref(page: number): string {
   return page <= 1 ? "/scams" : `/scams/page/${page}`;
 }
 
-export function ScamsPageBody({ page }: { page: number }) {
-  const all = visibleCards();
-  const pages = pageCount();
+/** The cards come from the live feed (D-106), so a new card appears without a redeploy. */
+export async function ScamsPageBody({ page }: { page: number }) {
+  const all = await liveCards();
+  const pages = pageCount(all);
   const cards = all.slice((page - 1) * PER_PAGE, page * PER_PAGE);
   const first = (page - 1) * PER_PAGE + 1;
   return (

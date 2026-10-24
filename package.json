@@ -10,7 +10,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "feed": "node scripts/build-feed.mjs"
+    "feed": "node scripts/build-feed.mjs",
+    "publish-feed": "node scripts/publish-feed.mjs"
   },
   "dependencies": {
     "react": "19.0.0-rc-66855b96-20241106",

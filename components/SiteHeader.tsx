@@ -11,7 +11,11 @@ export function SiteHeader() {
           <LogoMark size={34} variant="reversed" />
           <span>ruko</span>
         </Link>
-        <nav aria-label="Main">
+        {/* Phones: the action sits on the logo row (the copy in the menu is hidden there), so the header is two rows. */}
+        <Link href="/install#download" className={`${styles.cta} ${styles.ctaPhone}`}>
+          {t.nav.install}
+        </Link>
+        <nav aria-label="Main" className={styles.menu}>
           <ul className={styles.nav}>
             <li className={styles.secondary}>
               <Link href="/#how">{t.nav.how}</Link>
@@ -28,7 +32,7 @@ export function SiteHeader() {
             <li className={styles.secondary}>
               <Link href="/privacy">{t.nav.privacy}</Link>
             </li>
-            <li>
+            <li className={styles.ctaItem}>
               <Link href="/install#download" className={styles.cta}>
                 {t.nav.install}
               </Link>

@@ -49,6 +49,7 @@
   text-decoration: underline;
 }
 
+.cta,
 .nav .cta {
   background: var(--surface);
   color: var(--teal-900);
@@ -56,14 +57,35 @@
   padding: 0 18px;
 }
 
+.ctaPhone {
+  display: none;
+}
+
 /* Phones: the wordmark, two links and the action, not three rows of links. How it works, the warning and
    privacy are one tap away on the page itself and in the footer. */
 @media (max-width: 640px) {
-  .nav .secondary {
+  .nav .secondary,
+  .nav .ctaItem {
     display: none;
+  }
+
+  /* Row 1: the wordmark and the action; row 2: the two links. */
+  .ctaPhone {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 14px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+  }
+
+  .menu {
+    flex-basis: 100%;
   }
 }
 
+.cta:hover,
 .nav .cta:hover {
   background: var(--mint-100);
   color: var(--teal-900);

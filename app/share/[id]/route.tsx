@@ -1,7 +1,8 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
-import { curly, unquote, visibleCards } from "@/lib/cards";
+import { curly, unquote } from "@/lib/cards";
+import { liveCards } from "@/lib/liveFeed";
 import { t } from "@/lib/content";
 
 /**
@@ -42,7 +43,7 @@ const font = (file: string) => readFile(join(process.cwd(), "assets", "fonts", f
 
 export async function GET(_req: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const card = visibleCards().find((c) => c.id === id);
+  const card = (await liveCards()).find((c) => c.id === id);
   if (!card) return new Response("Not found", { status: 404 });
 
   const [archivo, lexend, lexendSemi] = await Promise.all([

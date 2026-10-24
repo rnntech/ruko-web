@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { visibleCards } from "@/lib/cards";
+import { liveCards } from "@/lib/liveFeed";
 import { ScamsPageBody, pageCount } from "../../ScamsPageBody";
 
-/** Pages 2 and up (page 1 is /scams). */
+/** Pages 2 and up (page 1 is /scams). Built for the built-in cards; a page the live feed adds is made on request. */
 export function generateStaticParams() {
-  return Array.from({ length: pageCount() - 1 }, (_, i) => ({ n: String(i + 2) }));
+  return Array.from({ length: pageCount(visibleCards()) - 1 }, (_, i) => ({ n: String(i + 2) }));
 }
 
-export const dynamicParams = false;
+export const revalidate = 3600;
 
 export async function generateMetadata({ params }: { params: Promise<{ n: string }> }): Promise<Metadata> {
   const { n } = await params;
@@ -17,6 +19,6 @@ export async function generateMetadata({ params }: { params: Promise<{ n: string
 export default async function ScamsPageN({ params }: { params: Promise<{ n: string }> }) {
   const { n } = await params;
   const page = Number(n);
-  if (!Number.isInteger(page) || page < 2 || page > pageCount()) notFound();
+  if (!Number.isInteger(page) || page < 2 || page > pageCount(await liveCards())) notFound();
   return <ScamsPageBody page={page} />;
 }
