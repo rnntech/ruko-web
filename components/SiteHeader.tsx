@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./SiteHeader.module.css";
+import { HeaderPhoneCta } from "./HeaderPhoneCta";
 import { LogoMark } from "./Logo";
 import { t } from "@/lib/content";
 
@@ -12,9 +13,7 @@ export function SiteHeader() {
           <span>ruko</span>
         </Link>
         {/* Phones: the action sits on the logo row (the copy in the menu is hidden there), so the header is two rows. */}
-        <Link href="/install#download" className={`${styles.cta} ${styles.ctaPhone}`}>
-          {t.nav.install}
-        </Link>
+        <HeaderPhoneCta />
         <nav aria-label="Main" className={styles.menu}>
           <ul className={styles.nav}>
             <li className={styles.secondary}>
