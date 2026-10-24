@@ -41,3 +41,6 @@ next-env.d.ts
 
 # Reviewer-only downloads at a random path (D-101): never in git
 /public/r/
+# APKs live in Supabase Storage (D-112, npm run publish-apks): never in git
+/public/download/
+*.apk

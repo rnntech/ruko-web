@@ -4,6 +4,7 @@ import { timingSafeEqual } from "node:crypto";
  * Reviewer download of the full app (D-101, D-103). The full app can't be installed from a website while Play Protect
  * is on (IS1, IS2), so it isn't offered to the public: reviewers get a code from the owner. The code and the file's
  * random path live only in the environment (REVIEWER_CODE, REVIEWER_APK_PATH: web/.env.local, Vercel project settings).
+ * Since D-112 the path is the full app's Supabase Storage link, kept by `npm run publish-apks`.
  * The reviewers' note and the Play Protect steps are sent only after a valid code, so the public page never mentions
  * turning Play Protect off (independent review and owner, 24 Oct: that is the line scammers use).
  */
