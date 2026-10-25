@@ -1,7 +1,7 @@
 {
  "format": 1,
- "sequence": 10,
- "published": "2026-10-24T09:23:04.401Z",
+ "sequence": 11,
+ "published": "2026-10-25T07:31:42.582Z",
  "cards": [
   {
    "id": "digital-arrest",
@@ -317,7 +317,7 @@
      "url": "https://www.tribuneindia.com/news/jalandhar/sr-citizen-loses-rs-1-2l-in-electricity-bill-scam-427428"
     }
    ],
-   "tone": "urgent"
+   "tone": "calm"
   },
   {
    "id": "reward-points",
@@ -857,7 +857,7 @@
      "url": "https://english.gujaratsamachar.com/news/national/dont-reply-no-to-fake-bank-debit-alerts-on-whatsapp-a-single-message-can-drain-your-account-97673140251"
     }
    ],
-   "tone": "urgent"
+   "tone": "calm"
   },
   {
    "id": "fake-credit-sms",
@@ -1593,7 +1593,7 @@
      "url": "https://www.boomlive.in/decode/whatsapp-video-call-scam-from-unknown-number-kashmir-man-sextortion-21900"
     }
    ],
-   "tone": "urgent"
+   "tone": "calm"
   },
   {
    "id": "esim-swap",
@@ -2562,7 +2562,7 @@
      "url": "https://www.business-standard.com/finance/personal-finance/46-people-duped-of-rs-26-lakh-in-gas-connection-scam-how-it-unfolded-124112000259_1.html"
     }
    ],
-   "tone": "urgent"
+   "tone": "calm"
   },
   {
    "id": "epfo-pf",
