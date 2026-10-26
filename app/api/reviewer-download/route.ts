@@ -14,7 +14,7 @@ const STEPS = {
   note: {
     title: "Reviewers, please note",
     body:
-      "The full app reads your message notifications only on your phone; your message text never leaves it. It isn’t on the Play Store yet, so to install it you’ll need to turn off Play Protect for a moment, then turn it back on. On our three test phones, Play Protect didn’t flag it. If you’d rather not, choose Ruko Lite. See tutorial here: https://youtube.com/shorts/jFjoKQka5JI",
+      "The full app reads your message notifications only on your phone; your message text never leaves it. It isn’t on the Play Store yet, so to install it you’ll need to turn off Play Protect for a moment, then turn it back on. On our three test phones, Play Protect didn’t flag it. If you’d rather not, choose Ruko Lite. See [the setup tutorial](https://youtube.com/shorts/jFjoKQka5JI).",
     warn: "No bank, police officer or genuine app will ever ask you to turn off Play Protect. This step is only for reviewers testing Ruko.",
   },
   off: {
