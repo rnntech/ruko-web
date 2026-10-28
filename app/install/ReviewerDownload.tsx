@@ -137,9 +137,9 @@ export function ReviewerDownload() {
               </ol>
               <h3 className={styles.reviewerHeading}>{unlocked.steps.install.heading}</h3>
               <p className={styles.reviewerText}>{unlocked.steps.install.text}</p>
-              {/* Version 12 (1.3) is signed with a new key (D-133): Android won't update an older Ruko over it. */}
+              {/* From 1.3 Ruko is signed with its own key (D-133): Android won't update a Ruko older than 1.3 over it. */}
               <p className={styles.reviewerText}>
-                <strong>Already have Ruko?</strong> Uninstall it first, then install this version. Android won&rsquo;t
+                <strong>Have a Ruko older than 1.3?</strong> Uninstall it first, then install this version. Android won&rsquo;t
                 install it over an older Ruko.
               </p>
               <a className={`button ${styles.download}`} href={unlocked.url} download>
