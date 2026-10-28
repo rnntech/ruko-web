@@ -1,7 +1,7 @@
 {
  "format": 1,
- "sequence": 12,
- "published": "2026-10-28T06:45:15.914Z",
+ "sequence": 13,
+ "published": "2026-10-28T14:31:47.426Z",
  "cards": [
   {
    "id": "digital-arrest",
@@ -3453,13 +3453,21 @@
   "tunnels": [],
   "freeHosting": [],
   "reportedDomains": [
+   "aechallan.qpon",
    "bsnltowerindia.com",
    "echallan-parivahan.in",
+   "echallan.cyou",
    "echallan.party",
    "echallannotice.com",
    "echallaxzv.vip",
+   "inddiapost.top",
+   "indiapostal.xyz",
+   "indiapostpayment.in",
+   "indiapostyt.vip",
    "parivahan-challan.top",
+   "parivahan.eu.cc",
    "parizvaihen.icu",
+   "pasvahan.icu",
    "sarvashikshaabhiyan.com"
   ]
  },
