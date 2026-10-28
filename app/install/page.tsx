@@ -152,6 +152,11 @@ export default function InstallPage() {
             Only install Ruko from this page or from someone on our team.{" "}
             <strong>Never install any app sent to you as a file on WhatsApp</strong>, including Ruko.
           </p>
+          {/* Version 12 (1.3) is signed with a new key (D-133): Android won't update an older Ruko over it. */}
+          <p className="measure">
+            <strong>Already have Ruko?</strong> Uninstall it first, then install this version. Android won&rsquo;t
+            install it over an older Ruko.
+          </p>
           <ol className="steps">
             <li>
               <strong>Download the file</strong> with the button above.
