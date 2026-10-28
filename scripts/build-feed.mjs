@@ -45,6 +45,7 @@ if (!/False alarms on genuine messages:\*\* 0 of/.test(report)) fail("the last t
 const cards = JSON.parse(readFileSync(join(root, "cards", "scam-cards.json"), "utf8")).cards.filter((c) => c.status === "approved");
 const detection = JSON.parse(readFileSync(detectionPath, "utf8"));
 delete detection.note;
+delete detection.reportedNote;
 delete detection.format;
 const practice = JSON.parse(readFileSync(join(web, "lib", "spot-the-scam.json"), "utf8")).items;
 const content = { cards, detection, practice };
