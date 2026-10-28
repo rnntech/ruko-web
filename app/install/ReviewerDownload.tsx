@@ -9,10 +9,12 @@ type Steps = {
     body: string;
     warn: string;
     tutorial?: string;
+    tutorialNote?: string;
     tutorialUrl?: string;
     keep?: string;
     keepLink?: string;
     guide?: string;
+    guideNote?: string;
   };
   off: { heading: string; items: string[] };
   install: { heading: string; text: string };
@@ -95,24 +97,37 @@ export function ReviewerDownload() {
               <aside className={styles.reviewerNote} aria-label={unlocked.steps.note.title}>
                 <p className={styles.reviewerNoteTitle}>{unlocked.steps.note.title}</p>
                 <p>{unlocked.steps.note.body}</p>
-                {unlocked.steps.note.tutorial && unlocked.steps.note.tutorialUrl && (
-                  <p>
-                    <a href={unlocked.steps.note.tutorialUrl} target="_blank" rel="noopener noreferrer">
-                      {unlocked.steps.note.tutorial}
-                    </a>
-                  </p>
+                {/* Owner, 28 Oct: the tutorial and the testing guide must catch a reviewer's eye. */}
+                {(unlocked.steps.note.tutorialUrl || unlocked.steps.note.guide) && (
+                  <div className={styles.reviewerLinks}>
+                    {unlocked.steps.note.tutorial && unlocked.steps.note.tutorialUrl && (
+                      <a className={styles.reviewerLink} href={unlocked.steps.note.tutorialUrl} target="_blank" rel="noopener noreferrer">
+                        <span className={styles.reviewerLinkIcon} aria-hidden="true">
+                          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M8 5.5v13l11-6.5z" fill="currentColor" /></svg>
+                        </span>
+                        <span>
+                          <span className={styles.reviewerLinkTitle}>{unlocked.steps.note.tutorial}</span>
+                          {unlocked.steps.note.tutorialNote && <span className={styles.reviewerLinkNote}>{unlocked.steps.note.tutorialNote}</span>}
+                        </span>
+                      </a>
+                    )}
+                    {unlocked.steps.note.guide && (
+                      <a className={styles.reviewerLink} href="/ruko-reviewer-guide.pdf" target="_blank" rel="noopener">
+                        <span className={styles.reviewerLinkIcon} aria-hidden="true">
+                          <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M6 2.5h8l4.5 4.5v14.5h-12.5z" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
+                            <path d="M13.5 2.5v5h5M9 12.5h6M9 16h6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+                          </svg>
+                        </span>
+                        <span>
+                          <span className={styles.reviewerLinkTitle}>{unlocked.steps.note.guide}</span>
+                          {unlocked.steps.note.guideNote && <span className={styles.reviewerLinkNote}>{unlocked.steps.note.guideNote}</span>}
+                        </span>
+                      </a>
+                    )}
+                  </div>
                 )}
                 <p className={styles.reviewerNoteWarn}>{unlocked.steps.note.warn}</p>
-                {unlocked.steps.note.keep && (
-                  <p>
-                    {unlocked.steps.note.keep} <a href="#lite-steps">{unlocked.steps.note.keepLink}</a>
-                  </p>
-                )}
-                {unlocked.steps.note.guide && (
-                  <p>
-                    <a href="/ruko-reviewer-guide.pdf">{unlocked.steps.note.guide}</a>
-                  </p>
-                )}
               </aside>
               <h3 className={styles.reviewerHeading}>{unlocked.steps.off.heading}</h3>
               <ol className={styles.reviewerSteps}>
@@ -127,6 +142,12 @@ export function ReviewerDownload() {
               </a>
               <h3 className={styles.reviewerHeading}>{unlocked.steps.on.heading}</h3>
               <p className={styles.reviewerText}>{unlocked.steps.on.text}</p>
+              {/* Owner, 28 Oct: after the install steps, not in the note. */}
+              {unlocked.steps.note.keep && (
+                <p className={styles.reviewerText}>
+                  {unlocked.steps.note.keep} <a href="#lite-steps">{unlocked.steps.note.keepLink}</a>
+                </p>
+              )}
             </div>
           )}
         </div>
