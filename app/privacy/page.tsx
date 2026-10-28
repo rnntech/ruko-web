@@ -88,7 +88,8 @@ export default function PrivacyPage() {
               Ruko uses the internet to download the latest list of scams going around. In &ldquo;Just me&rdquo; and
               &ldquo;Ask me first&rdquo;, that is all, unless you turn on &ldquo;Also check websites online&rdquo; (only
               the website&rsquo;s name goes to Google), &ldquo;Check how new a website is&rdquo; (only the website&rsquo;s
-              name goes to the public register of website names, RDAP) or &ldquo;Tell [your helper] about very long calls&rdquo;.
+              name goes to the public register of website names, RDAP), &ldquo;Check where short links lead&rdquo; (only
+              the short link goes to the service that made it, such as bit.ly, as tapping it would) or &ldquo;Tell [your helper] about very long calls&rdquo;.
             </li>
             <li>
               &ldquo;Scam of the week&rdquo; uses the scam alerts already inside the app. Sharing a scam on WhatsApp opens
