@@ -1251,6 +1251,19 @@
       "senderNote": "Not in your contacts",
       "text": "Hi aunty, Riya here, Neha's friend. Sending the photo from Neha's birthday 😊",
       "clue": "Real. A friend of the family sharing a photo, with no link to tap and nothing to pay. Unknown numbers are fine until they ask for money, a code, or an app."
+    },
+    {
+      "id": "virus-popup",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 73581 20946",
+      "text": "WARNING: Your phone is infected with 4 viruses! Your bank apps are at risk. Tap here to clean your phone now: phone-clean-secure.online",
+      "clue": "Real phone updates and virus checks come from your phone's own Settings, never from a message or a pop-up. Don't tap it; close the page.",
+      "source": {
+        "name": "ThePrint (PTI): Keralam Police Cyber Division warns against fake “update / remove virus” pop-ups (27 Oct 2026)",
+        "url": "https://theprint.in/india/keralam-police-warn-public-against-cyber-fraud-through-fake-mobile-pop-ups/3083174"
+      },
+      "card": "fake-virus-popup"
     }
   ]
 }
