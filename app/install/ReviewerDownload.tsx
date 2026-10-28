@@ -4,7 +4,16 @@ import { useState } from "react";
 import styles from "./install.module.css";
 
 type Steps = {
-  note: { title: string; body: string; warn: string; keep?: string; keepLink?: string; guide?: string };
+  note: {
+    title: string;
+    body: string;
+    warn: string;
+    tutorial?: string;
+    tutorialUrl?: string;
+    keep?: string;
+    keepLink?: string;
+    guide?: string;
+  };
   off: { heading: string; items: string[] };
   install: { heading: string; text: string };
   on: { heading: string; text: string };
@@ -86,6 +95,13 @@ export function ReviewerDownload() {
               <aside className={styles.reviewerNote} aria-label={unlocked.steps.note.title}>
                 <p className={styles.reviewerNoteTitle}>{unlocked.steps.note.title}</p>
                 <p>{unlocked.steps.note.body}</p>
+                {unlocked.steps.note.tutorial && unlocked.steps.note.tutorialUrl && (
+                  <p>
+                    <a href={unlocked.steps.note.tutorialUrl} target="_blank" rel="noopener noreferrer">
+                      {unlocked.steps.note.tutorial}
+                    </a>
+                  </p>
+                )}
                 <p className={styles.reviewerNoteWarn}>{unlocked.steps.note.warn}</p>
                 {unlocked.steps.note.keep && (
                   <p>
