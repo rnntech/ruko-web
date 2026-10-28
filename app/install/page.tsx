@@ -147,7 +147,7 @@ export default function InstallPage() {
 
       <section className="field field-white">
         <div className="container">
-          <h2>Installing Ruko Lite</h2>
+          <h2 id="lite-steps">Installing Ruko Lite</h2>
           <p className="measure">
             Only install Ruko from this page or from someone on our team.{" "}
             <strong>Never install any app sent to you as a file on WhatsApp</strong>, including Ruko.

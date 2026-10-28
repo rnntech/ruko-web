@@ -105,7 +105,7 @@ export function ReviewerDownload() {
                 <p className={styles.reviewerNoteWarn}>{unlocked.steps.note.warn}</p>
                 {unlocked.steps.note.keep && (
                   <p>
-                    {unlocked.steps.note.keep} <a href="/keep-running">{unlocked.steps.note.keepLink}</a>
+                    {unlocked.steps.note.keep} <a href="#lite-steps">{unlocked.steps.note.keepLink}</a>
                   </p>
                 )}
                 {unlocked.steps.note.guide && (
