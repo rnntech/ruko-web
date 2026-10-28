@@ -20,8 +20,8 @@ const STEPS = {
     tutorialUrl: "https://youtube.com/shorts/jFjoKQka5JI",
     warn: "No bank, police officer or genuine app will ever ask you to turn off Play Protect. This step is only for reviewers testing Ruko.",
     // Owner, 28 Oct: battery savers stop Ruko on many phones, and the testing guide as a PDF.
-    keep: "After installing, keep Ruko running: battery savers on Xiaomi, Redmi, Oppo, Vivo, Realme, OnePlus and Samsung phones stop apps in the background, and a stopped Ruko can’t warn.",
-    keepLink: "Steps for your phone",
+    keep: "After installing, also do steps 4 and 5 of “Installing Ruko Lite” on this page: they apply to the full app too (allowing a restricted setting, and keeping Ruko running).",
+    keepLink: "Go to steps 4 and 5",
     guide: "Testing guide (PDF): the rules, sample scam messages and what Ruko should do",
   },
   off: {
