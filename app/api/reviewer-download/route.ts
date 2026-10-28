@@ -16,6 +16,10 @@ const STEPS = {
     body:
       "The full app reads your message notifications only on your phone; your message text never leaves it. It isn’t on the Play Store yet, so to install it you’ll need to turn off Play Protect for a moment, then turn it back on. On our three test phones, Play Protect didn’t flag it. If you’d rather not, choose Ruko Lite.",
     warn: "No bank, police officer or genuine app will ever ask you to turn off Play Protect. This step is only for reviewers testing Ruko.",
+    // Owner, 28 Oct: battery savers stop Ruko on many phones, and the testing guide as a PDF.
+    keep: "After installing, keep Ruko running: battery savers on Xiaomi, Redmi, Oppo, Vivo, Realme, OnePlus and Samsung phones stop apps in the background, and a stopped Ruko can’t warn.",
+    keepLink: "Steps for your phone",
+    guide: "Testing guide (PDF): the rules, sample scam messages and what Ruko should do",
   },
   off: {
     heading: "1. Turn off Play Protect",

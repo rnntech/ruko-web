@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "./install.module.css";
 
 type Steps = {
-  note: { title: string; body: string; warn: string };
+  note: { title: string; body: string; warn: string; keep?: string; keepLink?: string; guide?: string };
   off: { heading: string; items: string[] };
   install: { heading: string; text: string };
   on: { heading: string; text: string };
@@ -53,7 +53,7 @@ export function ReviewerDownload() {
       >
         Download Ruko (full)
       </button>
-      <p className="note">Reviewers only: needs a code from the Ruko team · about 13 MB</p>
+      <p className="note">Reviewers only: needs a code from the Ruko team · about 14 MB</p>
 
       {open && (
         <div id="reviewer-panel" className={styles.reviewer}>
@@ -87,6 +87,16 @@ export function ReviewerDownload() {
                 <p className={styles.reviewerNoteTitle}>{unlocked.steps.note.title}</p>
                 <p>{unlocked.steps.note.body}</p>
                 <p className={styles.reviewerNoteWarn}>{unlocked.steps.note.warn}</p>
+                {unlocked.steps.note.keep && (
+                  <p>
+                    {unlocked.steps.note.keep} <a href="/keep-running">{unlocked.steps.note.keepLink}</a>
+                  </p>
+                )}
+                {unlocked.steps.note.guide && (
+                  <p>
+                    <a href="/ruko-reviewer-guide.pdf">{unlocked.steps.note.guide}</a>
+                  </p>
+                )}
               </aside>
               <h3 className={styles.reviewerHeading}>{unlocked.steps.off.heading}</h3>
               <ol className={styles.reviewerSteps}>
