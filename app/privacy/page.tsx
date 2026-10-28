@@ -106,6 +106,14 @@ export default function PrivacyPage() {
             why&rdquo;. Either of you can disconnect at any time in Settings. The long-call alert, if you turn it on,
             works the same way in any mode.
           </p>
+          <h2 style={{ marginTop: 56 }}>Only if you write to us</h2>
+          <p className="measure">
+            Settings &rarr; Help &amp; feedback (and &ldquo;Tell us&rdquo; after you say a warning was wrong) opens your own
+            email app with a draft to the Ruko team. Ruko sends nothing by itself: you see the whole email and decide
+            whether to send it. The draft adds only the app version, your phone model and Android version, the language,
+            whether protection is on, your helper mode and, for a wrong warning, which kind of warning it was. Never your
+            messages, calls, contacts or numbers. We use what you send only to answer you and to fix Ruko.
+          </p>
           <h2 style={{ marginTop: 56 }}>Deleting your data</h2>
           <p className="measure">
             Everything Ruko keeps is on your phone: your settings, the person you chose to call, scrambled codes of numbers
