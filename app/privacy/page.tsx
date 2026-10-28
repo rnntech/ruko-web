@@ -106,6 +106,12 @@ export default function PrivacyPage() {
             why&rdquo;. Either of you can disconnect at any time in Settings. The long-call alert, if you turn it on,
             works the same way in any mode.
           </p>
+          <h2 style={{ marginTop: 56 }}>When you answer &ldquo;Was this a scam?&rdquo;</h2>
+          <p className="measure">
+            After a warning, Home asks whether it was a scam. Your answer (yes, no or not sure) is sent with only the kind
+            of warning and the app version, so we can see which warnings are wrong and fix them. It is stored without any
+            ID, so it can&rsquo;t be traced to you or your phone. Never your name, number, messages or calls.
+          </p>
           <h2 style={{ marginTop: 56 }}>Only if you write to us</h2>
           <p className="measure">
             Settings &rarr; Help &amp; feedback (and &ldquo;Tell us&rdquo; after you say a warning was wrong) opens your own
