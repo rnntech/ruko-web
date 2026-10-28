@@ -9,7 +9,7 @@ type Mode = "just-me" | "ask-first" | "auto";
 // The moments the full app acts on, as it words them: calls (R1, R3, R2), messages (red, calm, and an app file while
 // a stranger is on the line, D-109), a scam link before it opens (D-090) and an app file as it installs (R8, D-093).
 const SITUATIONS: { id: WarnSituation; label: string }[] = [
-  { id: "bank", label: "A stranger keeps me on a call, and I open my bank or UPI app" },
+  { id: "bank", label: "A stranger keeps me on a call for 2+ minutes, and I open my bank or UPI app" },
   { id: "otp", label: "During the call, an OTP or bank code arrives" },
   { id: "screen", label: "The caller gets me to open a screen-sharing app" },
   { id: "message-call", label: "During a stranger’s call, the caller sends me an app file on WhatsApp" },
