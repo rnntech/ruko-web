@@ -16,13 +16,15 @@ const STEPS = {
     body:
       "The full app reads your message notifications only on your phone; your message text never leaves it. It isn’t on the Play Store yet, so to install it you’ll need to turn off Play Protect for a moment, then turn it back on. On our three test phones, Play Protect didn’t flag it. If you’d rather not, choose Ruko Lite.",
     // Owner's install tutorial (26 Oct), shown as a link under the note.
-    tutorial: "Watch the install tutorial (video)",
+    tutorial: "Watch the install tutorial",
+    tutorialNote: "Short video: installing the full app",
     tutorialUrl: "https://youtube.com/shorts/jFjoKQka5JI",
     warn: "No bank, police officer or genuine app will ever ask you to turn off Play Protect. This step is only for reviewers testing Ruko.",
     // Owner, 28 Oct: battery savers stop Ruko on many phones, and the testing guide as a PDF.
     keep: "After installing, also do steps 4 and 5 of “Installing Ruko Lite” on this page: they apply to the full app too (allowing a restricted setting, and keeping Ruko running).",
     keepLink: "Go to steps 4 and 5",
-    guide: "Testing guide (PDF): the rules, sample scam messages and what Ruko should do",
+    guide: "Testing guide (PDF)",
+    guideNote: "The rules, sample scam messages and what Ruko should do",
   },
   off: {
     heading: "1. Turn off Play Protect",

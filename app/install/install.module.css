@@ -27,6 +27,62 @@
   color: var(--caution-ink);
 }
 
+/* Owner, 28 Oct: the tutorial and the testing guide as two white cards that stand out on the note's yellow. */
+.reviewerLinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.reviewerLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 64px;
+  padding: 12px 16px;
+  border: 2px solid var(--teal-700);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.reviewerLink:hover {
+  background: var(--paper);
+}
+
+.reviewerLink:focus-visible {
+  outline: 3px solid var(--teal-700);
+  outline-offset: 2px;
+}
+
+.reviewerLinkIcon {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--teal-700);
+  color: var(--surface);
+}
+
+.reviewerLinkTitle {
+  display: block;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--teal-900);
+}
+
+.reviewerLinkNote {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  line-height: 1.35;
+}
+
 .compareTitle {
   margin-top: 64px;
 }
