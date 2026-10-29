@@ -85,11 +85,16 @@ export default function PrivacyPage() {
               services) and are never stored or sent by Ruko.
             </li>
             <li>
+              When you tap a short link (like bit.ly) or check a message that has one, Ruko asks the service that
+              made the short link where it goes, without opening the page: only the short link is sent, to that
+              service, as tapping it would. You can turn this off in Settings → Links (&ldquo;Check where short links
+              lead&rdquo;).
+            </li>
+            <li>
               Ruko uses the internet to download the latest list of scams going around. In &ldquo;Tell them automatically&rdquo;, it also tells our server every few hours that it is still running (only a code for your pairing and the time), so your helper is told if Ruko stops for a day. In &ldquo;Just me&rdquo; and
               &ldquo;Ask me first&rdquo;, that is all, unless you turn on &ldquo;Also check websites online&rdquo; (only
               the website&rsquo;s name goes to Google), &ldquo;Check how new a website is&rdquo; (only the website&rsquo;s
-              name goes to the public register of website names, RDAP), &ldquo;Check where short links lead&rdquo; (only
-              the short link goes to the service that made it, such as bit.ly, as tapping it would) or &ldquo;Tell [your helper] about very long calls&rdquo;.
+              name goes to the public register of website names, RDAP) or &ldquo;Tell [your helper] about very long calls&rdquo;.
             </li>
             <li>
               &ldquo;Scam of the week&rdquo; uses the scam alerts already inside the app. Sharing a scam on WhatsApp opens
