@@ -1,7 +1,7 @@
 {
  "format": 1,
- "sequence": 14,
- "published": "2026-10-29T06:55:55.662Z",
+ "sequence": 15,
+ "published": "2026-10-29T11:14:18.318Z",
  "cards": [
   {
    "id": "digital-arrest",
@@ -3852,7 +3852,9 @@
    }
   ],
   "brands": [],
-  "officialDomains": [],
+  "officialDomains": [
+   "getruko.vercel.app"
+  ],
   "tunnels": [],
   "freeHosting": [],
   "reportedDomains": [
