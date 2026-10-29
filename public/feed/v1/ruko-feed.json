@@ -1,7 +1,7 @@
 {
  "format": 1,
- "sequence": 16,
- "published": "2026-10-29T17:12:33.906Z",
+ "sequence": 17,
+ "published": "2026-10-29T18:09:43.896Z",
  "cards": [
   {
    "id": "digital-arrest",
@@ -3921,18 +3921,289 @@
     "word": "mudraloan",
     "name": "MUDRA",
     "card": "govt-scheme"
+   },
+   {
+    "word": "karnatakabank",
+    "name": "Karnataka Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "southindianbank",
+    "name": "South Indian Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "karurvysya",
+    "name": "Karur Vysya Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "karurvysyabank",
+    "name": "Karur Vysya Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "cityunionbank",
+    "name": "City Union Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "tamilnadmercantile",
+    "name": "Tamilnad Mercantile Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "tmbonline",
+    "name": "Tamilnad Mercantile Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "tmbnet",
+    "name": "Tamilnad Mercantile Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "dcbbank",
+    "name": "DCB Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "equitas",
+    "name": "Equitas Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "equitasbank",
+    "name": "Equitas Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "ujjivan",
+    "name": "Ujjivan Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "ujjivansfb",
+    "name": "Ujjivan Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "jkbank",
+    "name": "J&K Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "jkbankonline",
+    "name": "J&K Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "saraswatbank",
+    "name": "Saraswat Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "cosmosbank",
+    "name": "Cosmos Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "idbi",
+    "name": "IDBI Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "idbibank",
+    "name": "IDBI Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "bankofmaharashtra",
+    "name": "Bank of Maharashtra",
+    "card": "kyc-update"
+   },
+   {
+    "word": "mahabank",
+    "name": "Bank of Maharashtra",
+    "card": "kyc-update"
+   },
+   {
+    "word": "punjabandsind",
+    "name": "Punjab & Sind Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "punjabandsindbank",
+    "name": "Punjab & Sind Bank",
+    "card": "kyc-update"
+   },
+   {
+    "word": "msedcl",
+    "name": "MSEDCL",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "kseb",
+    "name": "KSEB",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "apspdcl",
+    "name": "APSPDCL",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "tgspdcl",
+    "name": "TGSPDCL",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "tsspdcl",
+    "name": "TGSPDCL",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "tgsouthernpower",
+    "name": "TGSPDCL",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "tssouthernpower",
+    "name": "TGSPDCL",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "uppcl",
+    "name": "UPPCL",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "bses",
+    "name": "BSES",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "bsesdelhi",
+    "name": "BSES",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "adanielectricity",
+    "name": "Adani Electricity",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "torrentpower",
+    "name": "Torrent Power",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "wbsedcl",
+    "name": "WBSEDCL",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "pspcl",
+    "name": "PSPCL",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "dhbvn",
+    "name": "DHBVN",
+    "card": "electricity-bill"
+   },
+   {
+    "word": "ladlibehna",
+    "name": "Ladli Behna",
+    "card": "govt-scheme"
+   },
+   {
+    "word": "ladlibahna",
+    "name": "Ladli Behna",
+    "card": "govt-scheme"
+   },
+   {
+    "word": "cmladlibahna",
+    "name": "Ladli Behna",
+    "card": "govt-scheme"
+   },
+   {
+    "word": "ladkibahin",
+    "name": "Ladki Bahin",
+    "card": "govt-scheme"
+   },
+   {
+    "word": "ladakibahin",
+    "name": "Ladki Bahin",
+    "card": "govt-scheme"
+   },
+   {
+    "word": "majhiladkibahin",
+    "name": "Ladki Bahin",
+    "card": "govt-scheme"
+   },
+   {
+    "word": "gruhalakshmi",
+    "name": "Gruha Lakshmi",
+    "card": "govt-scheme"
+   },
+   {
+    "word": "kalaignarmagalir",
+    "name": "Kalaignar Magalir Urimai",
+    "card": "govt-scheme"
+   },
+   {
+    "word": "magalirurimai",
+    "name": "Kalaignar Magalir Urimai",
+    "card": "govt-scheme"
    }
   ],
   "officialDomains": [
+   "adanielectricity.com",
+   "apcpdcl.in",
+   "apeasternpower.com",
+   "apspdcl.in",
+   "bankofmaharashtra.in",
+   "bsesbrpl.co.in",
+   "bsesdelhi.com",
+   "cityunionbank.com",
+   "cosmosbank.com",
+   "dcbbank.com",
+   "dhbvn.org.in",
+   "equitasbank.com",
    "fyers.in",
    "getruko.vercel.app",
+   "idbibank.co.in",
+   "idbicapital.com",
+   "idbidirect.in",
+   "jkbank.com",
+   "jkbankonline.com",
+   "karnatakabank.com",
+   "kseb.in",
    "lpgvitarakchayan.in",
    "mudra.org.in",
    "petrolpumpdealerchayan.in",
    "policyholder.gov.in",
+   "pspcl.in",
+   "pstcl.org",
+   "saraswatbank.com",
+   "southindianbank.com",
+   "tgnpdcl.com",
+   "tgsouthernpower.org",
    "tirumala.org",
+   "tmb.in",
+   "torrentpower.com",
    "ttdsevaonline.com",
-   "udyamimitra.in"
+   "udyamimitra.in",
+   "ujjivan.com",
+   "ujjivansfb.in",
+   "upcl.org",
+   "uppc.in",
+   "uppcl.org",
+   "uppclonline.com",
+   "upptcl.org",
+   "wbsedcl.in",
+   "wbsetcl.in"
   ],
   "tunnels": [],
   "freeHosting": [],
