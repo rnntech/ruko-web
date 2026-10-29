@@ -1,5 +1,5 @@
 {
-  "note": "Spot-the-scam test (D-049, D-097). One hard scam question per approved card (52), plus genuine look-alikes; each round shows 4 scams and 4 real ones at random, with at least one 'trap' question (D-107: 'sender' = real words from the wrong sender, 'moment' = a real message at the wrong moment; 'during' = the call it arrives in, checked against the call rules). Scams are modelled on the card's real cases (source = the card's first source); numbers, names and links are made up. Every 'sms'/'whatsapp' item is checked against Ruko's real rules by SpotTheScamTest: real ones must pass; scams must be caught unless marked rukoMayMiss (hard ones Ruko's wording rules miss, shown with a note). 'call' and 'situation' items are scenarios, not messages.",
+  "note": "Spot-the-scam test (D-049, D-097). One hard scam question per approved card (58), plus genuine look-alikes; each round shows 4 scams and 4 real ones at random, with at least one 'trap' question (D-107: 'sender' = real words from the wrong sender, 'moment' = a real message at the wrong moment; 'during' = the call it arrives in, checked against the call rules). Scams are modelled on the card's real cases (source = the card's first source); numbers, names and links are made up. Every 'sms'/'whatsapp' item is checked against Ruko's real rules by SpotTheScamTest: real ones must pass; scams must be caught unless marked rukoMayMiss (hard ones Ruko's wording rules miss, shown with a note). 'call' and 'situation' items are scenarios, not messages.",
   "items": [
     {
       "id": "debit-reply",
@@ -1264,6 +1264,88 @@
         "url": "https://theprint.in/india/keralam-police-warn-public-against-cyber-fraud-through-fake-mobile-pop-ups/3083174"
       },
       "card": "fake-virus-popup"
+    },
+    {
+      "id": "fake-army-order",
+      "card": "fake-army-order",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 90011 47263",
+      "senderNote": "Customer for your sweet shop",
+      "text": "Namaste ji, I am Subedar from Army camp. Need 15 kg sweets for unit function tomorrow. Army payment only through our QR. Please scan this code and enter your UPI PIN, the amount will come to you.",
+      "clue": "A buyer who asks you to scan their code or enter your PIN is taking money, not paying it. An Army title or uniform photo proves nothing.",
+      "source": {
+        "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+        "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+      }
+    },
+    {
+      "id": "boss-impersonation",
+      "card": "boss-impersonation",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 78290 55114",
+      "senderNote": "Photo: your company's director",
+      "text": "Good morning. I'm in a board meeting and can't take calls. I need you to buy 8 Amazon gift cards of Rs 5,000 for a client, quickly. Send me the codes here, I'll reimburse you today.",
+      "clue": "A photo on a new number proves nothing. Call your boss on the number you already have before buying or sending anything.",
+      "source": {
+        "name": "Government of Tripura, IT Directorate: advisory on fake WhatsApp profiles of senior officers asking for gift cards (2022)",
+        "url": "https://tripura.gov.in/sites/default/files/Advisory.pdf"
+      }
+    },
+    {
+      "id": "call-forwarding",
+      "card": "call-forwarding",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 70456 21983",
+      "text": "Jio: Your SIM upgrade is pending and incoming calls will stop today. To complete it, dial *401*7045621983# from your mobile now.",
+      "clue": "*401# plus a number forwards all your calls, including bank OTP calls, to someone else. Your telecom company never asks you to dial it.",
+      "source": {
+        "name": "PIB: DoT advises citizens not to dial *401# followed by an unknown number (11 Jan 2024)",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1995304"
+      }
+    },
+    {
+      "id": "tower-installation",
+      "card": "tower-installation",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 88001 39420",
+      "text": "Dear Sir, your plot is selected for Airtel 5G tower installation. Rent Rs 38,000/month + Rs 25 lakh advance. Pay Rs 15,500 NOC registration fee to confirm the agreement.",
+      "clue": "TRAI and DoT don't rent land for towers or issue tower NOCs, and real tower companies never ask for money first.",
+      "source": {
+        "name": "TRAI: Beware of fraud in the name of TRAI, mobile tower installation (Press Release 54 of 2019)",
+        "url": "https://www.trai.gov.in/sites/default/files/2024-10/PR_No.54of2019.pdf"
+      }
+    },
+    {
+      "id": "deepfake-celebrity-ad",
+      "card": "deepfake-celebrity-ad",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 93210 66457",
+      "senderNote": "Forwarded many times",
+      "text": "Big news! Watch the Finance Minister's video: government launched an AI investment platform for citizens. Invest Rs 21,000 and earn Rs 1.5 lakh every month. Register now before seats close.",
+      "clue": "No minister backs a scheme with a fixed big return. Videos can be faked with AI: check with PIB Fact Check before you trust or share.",
+      "source": {
+        "name": "News on AIR: PIB Fact Check, viral video of Finance Minister promoting investment scheme is fake",
+        "url": "https://www.newsonair.gov.in/pib-fact-check-viral-video-of-finance-minister-promoting-investment-scheme-is-fake"
+      }
+    },
+    {
+      "id": "fake-franchise",
+      "card": "fake-franchise",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 96660 12784",
+      "senderNote": "Reply to your franchise enquiry",
+      "text": "Congratulations! Your Amul parlour franchise is approved for your area. Pay Rs 25,000 registration fee to this account today to reserve the location. Security deposit details follow.",
+      "clue": "Real brands give franchises through their own website and offices. Don't pay a fee to an account from an ad or a WhatsApp message.",
+      "source": {
+        "name": "Free Press Journal (PIB Fact Check: Bharat Petroleum is not asking for a Rs 12,500 gas agency registration fee; use lpgvitarakchayan.in)",
+        "url": "https://www.freepressjournal.in/india/fact-check-is-bharat-petroleum-asking-for-rs-12500-as-registration-fee-to-provide-gas-agency-dealership"
+      }
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
  "format": 1,
- "sequence": 13,
- "published": "2026-10-28T14:31:47.426Z",
+ "sequence": 14,
+ "published": "2026-10-29T06:55:55.662Z",
  "cards": [
   {
    "id": "digital-arrest",
@@ -3430,6 +3430,385 @@
     }
    ],
    "tone": "urgent"
+  },
+  {
+   "id": "fake-army-order",
+   "status": "approved",
+   "added": "2026-10-29",
+   "notify": false,
+   "channels": [
+    "call",
+    "whatsapp"
+   ],
+   "name": {
+    "en": "“Army officer” with a big order for your shop",
+    "hi": "आपकी दुकान को बड़ा ऑर्डर देने वाला “सेना अधिकारी”",
+    "ta": "உங்கள் கடைக்குப் பெரிய ஆர்டர் தரும் “ராணுவ அதிகாரி”",
+    "te": "మీ షాప్‌కు పెద్ద ఆర్డర్ ఇచ్చే “ఆర్మీ ఆఫీసర్”",
+    "ml": "നിങ്ങളുടെ കടയിലേക്ക് വലിയ ഓർഡർ നൽകുന്ന “സൈനിക ഓഫീസർ”",
+    "kn": "ನಿಮ್ಮ ಅಂಗಡಿಗೆ ದೊಡ್ಡ ಆರ್ಡರ್ ಕೊಡುವ “ಸೇನಾ ಅಧಿಕಾರಿ”"
+   },
+   "they_say": {
+    "en": "“I’m from the Army camp. We need 40 meals / 25 lab tests / this stock for our unit. Army rules: we pay only by our QR. I’ll send ₹2 first to check.” They send an ID card or a photo in uniform.",
+    "hi": "“मैं आर्मी कैंप से बोल रहा हूं। हमारी यूनिट को 40 खाने / 25 लैब टेस्ट / यह सामान चाहिए। आर्मी के नियम से हम सिर्फ अपने QR से पेमेंट करते हैं। पहले जांच के लिए ₹2 भेजता हूं।” वे पहचान पत्र या वर्दी वाली फोटो भेजते हैं।",
+    "ta": "“நான் ராணுவ முகாமில் இருந்து பேசுகிறேன். எங்கள் பிரிவுக்கு 40 சாப்பாடு / 25 ஆய்வக சோதனை / இந்தச் சரக்கு வேண்டும். ராணுவ விதிப்படி எங்கள் QR மூலம்தான் பணம் தருவோம். சரிபார்க்க முதலில் ₹2 அனுப்புகிறேன்.” அடையாள அட்டை அல்லது சீருடைப் புகைப்படம் அனுப்புவார்கள்.",
+    "te": "“నేను ఆర్మీ క్యాంప్ నుంచి మాట్లాడుతున్నాను. మా యూనిట్‌కు 40 భోజనాలు / 25 ల్యాబ్ టెస్టులు / ఈ సరుకు కావాలి. ఆర్మీ నియమాల ప్రకారం మా QR ద్వారానే చెల్లిస్తాం. ముందు చెక్ చేయడానికి ₹2 పంపుతాను.” ఐడీ కార్డ్ లేదా యూనిఫాంలో ఉన్న ఫోటో పంపుతారు.",
+    "ml": "“ഞാൻ ആർമി ക്യാമ്പിൽ നിന്നാണ്. ഞങ്ങളുടെ യൂണിറ്റിന് 40 ഊണ് / 25 ലാബ് ടെസ്റ്റ് / ഈ സാധനങ്ങൾ വേണം. ആർമി നിയമപ്രകാരം ഞങ്ങളുടെ QR വഴി മാത്രമേ പണം തരൂ. പരിശോധിക്കാൻ ആദ്യം ₹2 അയയ്ക്കാം.” ഐഡി കാർഡോ യൂണിഫോമിലുള്ള ഫോട്ടോയോ അയയ്ക്കും.",
+    "kn": "“ನಾನು ಸೇನಾ ಕ್ಯಾಂಪ್‌ನಿಂದ ಮಾತನಾಡುತ್ತಿದ್ದೇನೆ. ನಮ್ಮ ಯೂನಿಟ್‌ಗೆ 40 ಊಟ / 25 ಲ್ಯಾಬ್ ಪರೀಕ್ಷೆ / ಈ ಸಾಮಾನು ಬೇಕು. ಸೇನೆಯ ನಿಯಮದಂತೆ ನಮ್ಮ QR ಮೂಲಕವೇ ಹಣ ಕೊಡುತ್ತೇವೆ. ಪರಿಶೀಲಿಸಲು ಮೊದಲು ₹2 ಕಳುಹಿಸುತ್ತೇನೆ.” ಗುರುತಿನ ಚೀಟಿ ಅಥವಾ ಸಮವಸ್ತ್ರದ ಫೋಟೋ ಕಳುಹಿಸುತ್ತಾರೆ."
+   },
+   "they_ask": {
+    "en": "Scan their QR code, or enter your UPI PIN, so they can “pay” you, then again after a “mistake”.",
+    "hi": "उन्हें “पेमेंट” करने देने के लिए उनका QR कोड स्कैन करें या UPI PIN डालें, फिर “गलती” के बाद दोबारा।",
+    "ta": "அவர்கள் “பணம் தர” அவர்களின் QR குறியீட்டை ஸ்கேன் செய்யுங்கள் அல்லது UPI PIN போடுங்கள், பிறகு “தவறு” நடந்ததாகச் சொல்லி மீண்டும்.",
+    "te": "వాళ్లు మీకు “చెల్లించడానికి” వాళ్ల QR కోడ్ స్కాన్ చేయమని లేదా UPI PIN వేయమని, ఆ తర్వాత “పొరపాటు” అని మళ్లీ.",
+    "ml": "അവർക്ക് “പണം തരാൻ” അവരുടെ QR കോഡ് സ്കാൻ ചെയ്യാനോ UPI PIN നൽകാനോ, പിന്നെ “അബദ്ധം പറ്റി” എന്ന് പറഞ്ഞ് വീണ്ടും.",
+    "kn": "ಅವರು “ಹಣ ಕೊಡಲು” ಅವರ QR ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ ಅಥವಾ UPI PIN ಹಾಕಿ, ನಂತರ “ತಪ್ಪಾಯಿತು” ಎಂದು ಮತ್ತೆ."
+   },
+   "red_flag": {
+    "en": "A buyer who needs you to scan or type a PIN is not paying you, they are taking money. A uniform photo or ID card proves nothing.",
+    "hi": "जिस खरीदार को आपसे QR स्कैन या PIN डलवाना है, वह पैसे दे नहीं रहा, ले रहा है। वर्दी की फोटो या पहचान पत्र से कुछ साबित नहीं होता।",
+    "ta": "உங்களை ஸ்கேன் செய்யவோ PIN போடவோ சொல்லும் வாங்குபவர் பணம் தரவில்லை, எடுக்கிறார். சீருடைப் புகைப்படமோ அடையாள அட்டையோ எதையும் நிரூபிக்காது.",
+    "te": "మిమ్మల్ని స్కాన్ చేయమని లేదా PIN వేయమని అడిగే కొనుగోలుదారు డబ్బు ఇవ్వడం లేదు, తీసుకుంటున్నారు. యూనిఫాం ఫోటో గానీ ఐడీ కార్డ్ గానీ దేన్నీ రుజువు చేయవు.",
+    "ml": "നിങ്ങളോട് സ്കാൻ ചെയ്യാനോ PIN നൽകാനോ പറയുന്ന വാങ്ങുന്നയാൾ പണം തരികയല്ല, എടുക്കുകയാണ്. യൂണിഫോം ഫോട്ടോയോ ഐഡി കാർഡോ ഒന്നും തെളിയിക്കുന്നില്ല.",
+    "kn": "ನಿಮ್ಮಿಂದ ಸ್ಕ್ಯಾನ್ ಮಾಡಿಸುವ ಅಥವಾ PIN ಹಾಕಿಸುವ ಖರೀದಿದಾರ ಹಣ ಕೊಡುತ್ತಿಲ್ಲ, ತೆಗೆದುಕೊಳ್ಳುತ್ತಿದ್ದಾನೆ. ಸಮವಸ್ತ್ರದ ಫೋಟೋ ಅಥವಾ ಗುರುತಿನ ಚೀಟಿ ಏನನ್ನೂ ಸಾಬೀತು ಮಾಡುವುದಿಲ್ಲ."
+   },
+   "do": {
+    "en": "Ask the buyer to pay to your own UPI ID or QR, or in cash on delivery. Never scan their code or enter your PIN to receive money: your PIN is only for paying. If money is gone, call 1930.",
+    "hi": "खरीदार से कहें कि आपकी अपनी UPI ID या QR पर, या सामान मिलने पर नकद भुगतान करे। पैसे पाने के लिए कभी उनका कोड स्कैन न करें, न PIN डालें: PIN सिर्फ भुगतान के लिए है। पैसे चले गए हों तो 1930 पर कॉल करें।",
+    "ta": "வாங்குபவரை உங்கள் சொந்த UPI ID அல்லது QR-க்குப் பணம் அனுப்பச் சொல்லுங்கள், அல்லது பொருள் கொடுக்கும்போது ரொக்கமாக. பணம் பெற அவர்களின் குறியீட்டை ஸ்கேன் செய்யவோ PIN போடவோ வேண்டாம்: PIN பணம் செலுத்த மட்டுமே. பணம் போயிருந்தால் 1930-ஐ அழையுங்கள்.",
+    "te": "కొనుగోలుదారును మీ సొంత UPI ID లేదా QR కు, లేదా సరుకు అందినప్పుడు నగదుగా చెల్లించమని చెప్పండి. డబ్బు అందుకోవడానికి వాళ్ల కోడ్ స్కాన్ చేయకండి, PIN వేయకండి: PIN చెల్లించడానికే. డబ్బు పోయి ఉంటే 1930 కు కాల్ చేయండి.",
+    "ml": "വാങ്ങുന്നയാളോട് നിങ്ങളുടെ സ്വന്തം UPI ID-യിലേക്കോ QR-ലേക്കോ, അല്ലെങ്കിൽ സാധനം കൈമാറുമ്പോൾ പണമായോ നൽകാൻ പറയുക. പണം കിട്ടാൻ അവരുടെ കോഡ് സ്കാൻ ചെയ്യരുത്, PIN നൽകരുത്: PIN പണം അടയ്ക്കാൻ മാത്രം. പണം പോയെങ്കിൽ 1930-ൽ വിളിക്കുക.",
+    "kn": "ಖರೀದಿದಾರರಿಗೆ ನಿಮ್ಮದೇ UPI ID ಅಥವಾ QR ಗೆ, ಇಲ್ಲವೇ ಸಾಮಾನು ಕೊಟ್ಟಾಗ ನಗದಾಗಿ ಪಾವತಿಸಲು ಹೇಳಿ. ಹಣ ಪಡೆಯಲು ಅವರ ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಬೇಡಿ, PIN ಹಾಕಬೇಡಿ: PIN ಪಾವತಿಗೆ ಮಾತ್ರ. ಹಣ ಹೋಗಿದ್ದರೆ 1930 ಗೆ ಕರೆ ಮಾಡಿ."
+   },
+   "sources": [
+    {
+     "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+     "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+    },
+    {
+     "name": "Free Press Journal (Mumbai trader loses Rs 50,000 scanning QR codes from a man posing as an Army officer)",
+     "url": "https://www.freepressjournal.in/mumbai/trader-loses-rs-50000-on-scanning-qr-codes-sent-by-a-man-posing-as-army-officer"
+    },
+    {
+     "name": "Free Press Journal (Rs 2 test, then Rs 10,000 and Rs 20,000 debited)",
+     "url": "https://www.freepressjournal.in/mumbai/posing-as-army-officer-fraudster-dupes-bizman"
+    },
+    {
+     "name": "Tribune (fraudsters posing as Army men dupe residents)",
+     "url": "https://www.tribuneindia.com/news/haryana/fraudsters-posing-as-army-men-on-social-media-dupe-residents-416052"
+    }
+   ],
+   "tone": "urgent"
+  },
+  {
+   "id": "boss-impersonation",
+   "status": "approved",
+   "added": "2026-10-29",
+   "notify": false,
+   "channels": [
+    "whatsapp"
+   ],
+   "name": {
+    "en": "Your “boss” on WhatsApp asks for gift cards or a payment",
+    "hi": "WhatsApp पर आपका “बॉस” गिफ्ट कार्ड या पेमेंट मांगता है",
+    "ta": "WhatsApp-இல் உங்கள் “பாஸ்” கிஃப்ட் கார்டு அல்லது பணம் கேட்கிறார்",
+    "te": "WhatsAppలో మీ “బాస్” గిఫ్ట్ కార్డులు లేదా పేమెంట్ అడుగుతారు",
+    "ml": "WhatsApp-ൽ നിങ്ങളുടെ “ബോസ്” ഗിഫ്റ്റ് കാർഡോ പണമോ ചോദിക്കുന്നു",
+    "kn": "WhatsAppನಲ್ಲಿ ನಿಮ್ಮ “ಬಾಸ್” ಗಿಫ್ಟ್ ಕಾರ್ಡ್ ಅಥವಾ ಹಣ ಕೇಳುತ್ತಾರೆ"
+   },
+   "they_say": {
+    "en": "A new number with your boss’s or a senior officer’s photo: “I’m in a meeting, can’t talk. Buy 10 Amazon gift cards urgently and send me the codes. I’ll pay you back.” Or: “Transfer this amount to the vendor now.”",
+    "hi": "आपके बॉस या किसी बड़े अधिकारी की फोटो वाला नया नंबर: “मीटिंग में हूं, बात नहीं कर सकता। जल्दी 10 Amazon गिफ्ट कार्ड खरीदकर कोड भेजो। पैसे लौटा दूंगा।” या: “यह रकम अभी वेंडर को भेज दो।”",
+    "ta": "உங்கள் பாஸ் அல்லது மூத்த அதிகாரியின் புகைப்படத்துடன் புதிய எண்: “மீட்டிங்கில் இருக்கிறேன், பேச முடியாது. அவசரமாக 10 Amazon கிஃப்ட் கார்டு வாங்கி குறியீடுகளை அனுப்புங்கள். பணத்தைத் திருப்பித் தருகிறேன்.” அல்லது: “இந்தத் தொகையை இப்போதே வெண்டருக்கு அனுப்புங்கள்.”",
+    "te": "మీ బాస్ లేదా పెద్ద అధికారి ఫోటోతో కొత్త నంబర్: “మీటింగ్‌లో ఉన్నాను, మాట్లాడలేను. అర్జెంట్‌గా 10 Amazon గిఫ్ట్ కార్డులు కొని కోడ్‌లు పంపండి. డబ్బు తిరిగిస్తాను.” లేదా: “ఈ మొత్తం ఇప్పుడే వెండర్‌కు పంపండి.”",
+    "ml": "നിങ്ങളുടെ ബോസിന്റെയോ മുതിർന്ന ഉദ്യോഗസ്ഥന്റെയോ ഫോട്ടോയുള്ള പുതിയ നമ്പർ: “മീറ്റിങ്ങിലാണ്, സംസാരിക്കാൻ പറ്റില്ല. ഉടനെ 10 Amazon ഗിഫ്റ്റ് കാർഡ് വാങ്ങി കോഡുകൾ അയയ്ക്കൂ. പണം തിരികെ തരാം.” അല്ലെങ്കിൽ: “ഈ തുക ഇപ്പോൾത്തന്നെ വെണ്ടർക്ക് അയയ്ക്കൂ.”",
+    "kn": "ನಿಮ್ಮ ಬಾಸ್ ಅಥವಾ ಹಿರಿಯ ಅಧಿಕಾರಿಯ ಫೋಟೋ ಇರುವ ಹೊಸ ನಂಬರ್: “ಮೀಟಿಂಗ್‌ನಲ್ಲಿದ್ದೇನೆ, ಮಾತನಾಡಲು ಆಗದು. ತುರ್ತಾಗಿ 10 Amazon ಗಿಫ್ಟ್ ಕಾರ್ಡ್ ಖರೀದಿಸಿ ಕೋಡ್ ಕಳುಹಿಸಿ. ಹಣ ವಾಪಸ್ ಕೊಡುತ್ತೇನೆ.” ಅಥವಾ: “ಈ ಮೊತ್ತವನ್ನು ಈಗಲೇ ವೆಂಡರ್‌ಗೆ ಕಳುಹಿಸಿ.”"
+   },
+   "they_ask": {
+    "en": "Buy gift cards and share the codes, or send company money, quickly and quietly.",
+    "hi": "गिफ्ट कार्ड खरीदकर कोड भेजें, या कंपनी का पैसा भेजें, जल्दी और चुपचाप।",
+    "ta": "கிஃப்ட் கார்டு வாங்கி குறியீடுகளைப் பகிருங்கள், அல்லது நிறுவனப் பணத்தை அனுப்புங்கள், விரைவாகவும் ரகசியமாகவும்.",
+    "te": "గిఫ్ట్ కార్డులు కొని కోడ్‌లు షేర్ చేయండి, లేదా కంపెనీ డబ్బు పంపండి, త్వరగా, గుట్టుగా.",
+    "ml": "ഗിഫ്റ്റ് കാർഡ് വാങ്ങി കോഡ് പങ്കിടുക, അല്ലെങ്കിൽ കമ്പനിയുടെ പണം അയയ്ക്കുക, വേഗത്തിലും രഹസ്യമായും.",
+    "kn": "ಗಿಫ್ಟ್ ಕಾರ್ಡ್ ಖರೀದಿಸಿ ಕೋಡ್ ಹಂಚಿ, ಅಥವಾ ಕಂಪನಿಯ ಹಣ ಕಳುಹಿಸಿ, ಬೇಗ ಮತ್ತು ಗುಟ್ಟಾಗಿ."
+   },
+   "red_flag": {
+    "en": "A photo on a new number proves nothing. No real boss pays you back in gift card codes or asks for a secret transfer.",
+    "hi": "नए नंबर पर लगी फोटो से कुछ साबित नहीं होता। कोई असली बॉस गिफ्ट कार्ड कोड नहीं मंगवाता, न चुपचाप पैसे भिजवाता है।",
+    "ta": "புதிய எண்ணில் உள்ள புகைப்படம் எதையும் நிரூபிக்காது. உண்மையான பாஸ் கிஃப்ட் கார்டு குறியீடுகளையோ ரகசியப் பணப் பரிமாற்றத்தையோ கேட்க மாட்டார்.",
+    "te": "కొత్త నంబర్‌పై ఉన్న ఫోటో దేన్నీ రుజువు చేయదు. నిజమైన బాస్ గిఫ్ట్ కార్డ్ కోడ్‌లు గానీ గుట్టుగా డబ్బు పంపమని గానీ అడగరు.",
+    "ml": "പുതിയ നമ്പറിലെ ഫോട്ടോ ഒന്നും തെളിയിക്കുന്നില്ല. യഥാർഥ ബോസ് ഗിഫ്റ്റ് കാർഡ് കോഡോ രഹസ്യമായി പണമയയ്ക്കലോ ആവശ്യപ്പെടില്ല.",
+    "kn": "ಹೊಸ ನಂಬರ್‌ನ ಫೋಟೋ ಏನನ್ನೂ ಸಾಬೀತು ಮಾಡುವುದಿಲ್ಲ. ನಿಜವಾದ ಬಾಸ್ ಗಿಫ್ಟ್ ಕಾರ್ಡ್ ಕೋಡ್ ಆಗಲಿ ಗುಟ್ಟಾದ ಹಣ ವರ್ಗಾವಣೆಯಾಗಲಿ ಕೇಳುವುದಿಲ್ಲ."
+   },
+   "do": {
+    "en": "Call the person on the number you already have before you buy or send anything. Report the fake number. If money is gone, call 1930.",
+    "hi": "कुछ भी खरीदने या भेजने से पहले उस व्यक्ति को उसी नंबर पर कॉल करें जो आपके पास पहले से है। नकली नंबर की शिकायत करें। पैसे चले गए हों तो 1930 पर कॉल करें।",
+    "ta": "எதையும் வாங்கும் அல்லது அனுப்பும் முன், உங்களிடம் ஏற்கனவே உள்ள எண்ணில் அவரை அழைத்துக் கேளுங்கள். போலி எண்ணைப் புகார் செய்யுங்கள். பணம் போயிருந்தால் 1930-ஐ அழையுங்கள்.",
+    "te": "ఏదైనా కొనే లేదా పంపే ముందు, మీ దగ్గర ఇప్పటికే ఉన్న నంబర్‌కు ఆ వ్యక్తికి కాల్ చేయండి. నకిలీ నంబర్‌పై ఫిర్యాదు చేయండి. డబ్బు పోయి ఉంటే 1930 కు కాల్ చేయండి.",
+    "ml": "എന്തെങ്കിലും വാങ്ങുന്നതിനോ അയയ്ക്കുന്നതിനോ മുമ്പ്, നിങ്ങളുടെ കൈയിലുള്ള പഴയ നമ്പറിൽ ആ വ്യക്തിയെ വിളിച്ച് ഉറപ്പാക്കുക. വ്യാജ നമ്പർ റിപ്പോർട്ട് ചെയ്യുക. പണം പോയെങ്കിൽ 1930-ൽ വിളിക്കുക.",
+    "kn": "ಏನನ್ನಾದರೂ ಖರೀದಿಸುವ ಅಥವಾ ಕಳುಹಿಸುವ ಮೊದಲು, ನಿಮ್ಮ ಬಳಿ ಈಗಾಗಲೇ ಇರುವ ನಂಬರ್‌ಗೆ ಆ ವ್ಯಕ್ತಿಗೆ ಕರೆ ಮಾಡಿ ಖಚಿತಪಡಿಸಿ. ನಕಲಿ ನಂಬರ್ ಬಗ್ಗೆ ದೂರು ನೀಡಿ. ಹಣ ಹೋಗಿದ್ದರೆ 1930 ಗೆ ಕರೆ ಮಾಡಿ."
+   },
+   "sources": [
+    {
+     "name": "Government of Tripura, IT Directorate: advisory on fake WhatsApp profiles of senior officers asking for gift cards (2022)",
+     "url": "https://tripura.gov.in/sites/default/files/Advisory.pdf"
+    },
+    {
+     "name": "Free Press Journal (Mumbai Police advisory on the gift card scam)",
+     "url": "https://www.freepressjournal.in/amp/mumbai/mumbai-police-issue-advisory-warning-citizens-against-gift-card-scam"
+    }
+   ],
+   "tone": "urgent"
+  },
+  {
+   "id": "call-forwarding",
+   "status": "approved",
+   "added": "2026-10-29",
+   "notify": false,
+   "channels": [
+    "call"
+   ],
+   "name": {
+    "en": "“Dial *401# and this number” from your “mobile network”",
+    "hi": "आपके “मोबाइल नेटवर्क” से: “*401# और यह नंबर डायल करें”",
+    "ta": "உங்கள் “மொபைல் நெட்வொர்க்”-இலிருந்து: “*401# மற்றும் இந்த எண்ணை டயல் செய்யுங்கள்”",
+    "te": "మీ “మొబైల్ నెట్‌వర్క్” నుంచి: “*401# ఈ నంబర్ డయల్ చేయండి”",
+    "ml": "നിങ്ങളുടെ “മൊബൈൽ നെറ്റ്‌വർക്കിൽ” നിന്ന്: “*401#-ഉം ഈ നമ്പറും ഡയൽ ചെയ്യൂ”",
+    "kn": "ನಿಮ್ಮ “ಮೊಬೈಲ್ ನೆಟ್‌ವರ್ಕ್”ನಿಂದ: “*401# ಮತ್ತು ಈ ನಂಬರ್ ಡಯಲ್ ಮಾಡಿ”"
+   },
+   "they_say": {
+    "en": "“I’m calling from your SIM company / courier. There’s a problem with your network or parcel. Dial *401# followed by this number to fix it.”",
+    "hi": "“मैं आपकी सिम कंपनी / कूरियर से बोल रहा हूं। आपके नेटवर्क या पार्सल में दिक्कत है। ठीक करने के लिए *401# के बाद यह नंबर डायल करें।”",
+    "ta": "“உங்கள் சிம் நிறுவனம் / கூரியரிலிருந்து பேசுகிறேன். உங்கள் நெட்வொர்க் அல்லது பார்சலில் பிரச்சனை. சரிசெய்ய *401# பிறகு இந்த எண்ணை டயல் செய்யுங்கள்.”",
+    "te": "“మీ సిమ్ కంపెనీ / కొరియర్ నుంచి మాట్లాడుతున్నాను. మీ నెట్‌వర్క్ లేదా పార్సెల్‌లో సమస్య ఉంది. సరిచేయడానికి *401# తర్వాత ఈ నంబర్ డయల్ చేయండి.”",
+    "ml": "“നിങ്ങളുടെ സിം കമ്പനി / കൊറിയറിൽ നിന്നാണ് വിളിക്കുന്നത്. നെറ്റ്‌വർക്കിലോ പാഴ്സലിലോ പ്രശ്നമുണ്ട്. ശരിയാക്കാൻ *401#-ന് ശേഷം ഈ നമ്പർ ഡയൽ ചെയ്യൂ.”",
+    "kn": "“ನಿಮ್ಮ ಸಿಮ್ ಕಂಪನಿ / ಕೊರಿಯರ್‌ನಿಂದ ಕರೆ ಮಾಡುತ್ತಿದ್ದೇನೆ. ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್ ಅಥವಾ ಪಾರ್ಸೆಲ್‌ನಲ್ಲಿ ಸಮಸ್ಯೆ ಇದೆ. ಸರಿಪಡಿಸಲು *401# ನಂತರ ಈ ನಂಬರ್ ಡಯಲ್ ಮಾಡಿ.”"
+   },
+   "they_ask": {
+    "en": "Dial a code that starts with * or #, followed by their number.",
+    "hi": "* या # से शुरू होने वाला कोड, उसके बाद उनका नंबर डायल करें।",
+    "ta": "* அல்லது # உடன் தொடங்கும் குறியீட்டையும், அதன் பின் அவர்களின் எண்ணையும் டயல் செய்யுங்கள்.",
+    "te": "* లేదా # తో మొదలయ్యే కోడ్, తర్వాత వాళ్ల నంబర్ డయల్ చేయండి.",
+    "ml": "* അല്ലെങ്കിൽ # കൊണ്ട് തുടങ്ങുന്ന കോഡും പിന്നെ അവരുടെ നമ്പറും ഡയൽ ചെയ്യുക.",
+    "kn": "* ಅಥವಾ # ನಿಂದ ಶುರುವಾಗುವ ಕೋಡ್, ನಂತರ ಅವರ ನಂಬರ್ ಡಯಲ್ ಮಾಡಿ."
+   },
+   "red_flag": {
+    "en": "That code sends all your calls, including the bank’s OTP calls, to the scammer. Your telecom company never asks you to dial *401#.",
+    "hi": "यह कोड आपकी सारी कॉल, बैंक की OTP वाली कॉल भी, ठग के फोन पर भेज देता है। आपकी टेलीकॉम कंपनी कभी *401# डायल करने को नहीं कहती।",
+    "ta": "இந்தக் குறியீடு உங்கள் எல்லா அழைப்புகளையும், வங்கியின் OTP அழைப்புகள் உட்பட, மோசடிக்காரருக்குத் திருப்பிவிடும். உங்கள் டெலிகாம் நிறுவனம் *401# டயல் செய்யச் சொல்லாது.",
+    "te": "ఈ కోడ్ మీ కాల్స్ అన్నింటినీ, బ్యాంక్ OTP కాల్స్‌తో సహా, మోసగాడి ఫోన్‌కు మళ్లిస్తుంది. మీ టెలికాం కంపెనీ ఎప్పుడూ *401# డయల్ చేయమని అడగదు.",
+    "ml": "ഈ കോഡ് നിങ്ങളുടെ എല്ലാ കോളുകളും, ബാങ്കിന്റെ OTP കോളുകൾ ഉൾപ്പെടെ, തട്ടിപ്പുകാരന്റെ ഫോണിലേക്ക് തിരിച്ചുവിടും. നിങ്ങളുടെ ടെലികോം കമ്പനി ഒരിക്കലും *401# ഡയൽ ചെയ്യാൻ പറയില്ല.",
+    "kn": "ಈ ಕೋಡ್ ನಿಮ್ಮ ಎಲ್ಲಾ ಕರೆಗಳನ್ನು, ಬ್ಯಾಂಕ್‌ನ OTP ಕರೆಗಳನ್ನೂ ಸೇರಿ, ವಂಚಕನ ಫೋನ್‌ಗೆ ತಿರುಗಿಸುತ್ತದೆ. ನಿಮ್ಮ ಟೆಲಿಕಾಂ ಕಂಪನಿ ಎಂದಿಗೂ *401# ಡಯಲ್ ಮಾಡಲು ಹೇಳುವುದಿಲ್ಲ."
+   },
+   "do": {
+    "en": "Never dial *401# followed by a number someone gives you. Check call forwarding in your phone settings and turn it off if it is on. If money is gone, call 1930.",
+    "hi": "कोई भी नंबर देकर कहे तो *401# कभी डायल न करें। फोन की सेटिंग में कॉल फॉरवर्डिंग देखें और चालू हो तो बंद करें। पैसे चले गए हों तो 1930 पर कॉल करें।",
+    "ta": "யாராவது கொடுக்கும் எண்ணுடன் *401#-ஐ ஒருபோதும் டயல் செய்யாதீர்கள். போன் அமைப்புகளில் கால் ஃபார்வர்டிங்கைப் பார்த்து, இயக்கத்தில் இருந்தால் நிறுத்துங்கள். பணம் போயிருந்தால் 1930-ஐ அழையுங்கள்.",
+    "te": "ఎవరో ఇచ్చిన నంబర్‌తో *401# ఎప్పుడూ డయల్ చేయకండి. ఫోన్ సెట్టింగ్స్‌లో కాల్ ఫార్వర్డింగ్ చూసి, ఆన్‌లో ఉంటే ఆపేయండి. డబ్బు పోయి ఉంటే 1930 కు కాల్ చేయండి.",
+    "ml": "ആരെങ്കിലും തരുന്ന നമ്പറിനൊപ്പം *401# ഒരിക്കലും ഡയൽ ചെയ്യരുത്. ഫോൺ സെറ്റിങ്സിൽ കോൾ ഫോർവേഡിങ് നോക്കി, ഓണാണെങ്കിൽ ഓഫ് ചെയ്യുക. പണം പോയെങ്കിൽ 1930-ൽ വിളിക്കുക.",
+    "kn": "ಯಾರೋ ಕೊಟ್ಟ ನಂಬರ್ ಜೊತೆ *401# ಎಂದಿಗೂ ಡಯಲ್ ಮಾಡಬೇಡಿ. ಫೋನ್ ಸೆಟ್ಟಿಂಗ್ಸ್‌ನಲ್ಲಿ ಕಾಲ್ ಫಾರ್ವರ್ಡಿಂಗ್ ನೋಡಿ, ಆನ್ ಆಗಿದ್ದರೆ ಆಫ್ ಮಾಡಿ. ಹಣ ಹೋಗಿದ್ದರೆ 1930 ಗೆ ಕರೆ ಮಾಡಿ."
+   },
+   "sources": [
+    {
+     "name": "PIB: DoT advises citizens not to dial *401# followed by an unknown number (11 Jan 2024)",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1995304"
+    },
+    {
+     "name": "Tribune (Centre warns users against dialling *401#)",
+     "url": "https://www.tribuneindia.com/news/india/malicious-calls-centre-warns-users-against-dialling-401-followed-by-unknown-mobile-number-580387"
+    },
+    {
+     "name": "ThePrint (citizens advised not to dial *401#)",
+     "url": "https://theprint.in/economy/citizens-advised-not-to-dial-401-followed-by-unknown-mobile-number-on-receiving-malicious-calls/1920239"
+    }
+   ],
+   "tone": "urgent"
+  },
+  {
+   "id": "tower-installation",
+   "status": "approved",
+   "added": "2026-10-29",
+   "notify": false,
+   "channels": [
+    "call",
+    "sms",
+    "whatsapp"
+   ],
+   "name": {
+    "en": "“Rent your roof or land for a mobile tower”",
+    "hi": "“मोबाइल टावर के लिए अपनी छत या जमीन किराए पर दें”",
+    "ta": "“மொபைல் டவருக்கு உங்கள் மாடி அல்லது நிலத்தை வாடகைக்குக் கொடுங்கள்”",
+    "te": "“మొబైల్ టవర్ కోసం మీ మేడ లేదా స్థలం అద్దెకు ఇవ్వండి”",
+    "ml": "“മൊബൈൽ ടവറിനായി നിങ്ങളുടെ ടെറസോ സ്ഥലമോ വാടകയ്ക്ക് നൽകൂ”",
+    "kn": "“ಮೊಬೈಲ್ ಟವರ್‌ಗೆ ನಿಮ್ಮ ತಾರಸಿ ಅಥವಾ ಜಮೀನು ಬಾಡಿಗೆಗೆ ಕೊಡಿ”"
+   },
+   "they_say": {
+    "en": "“Your land is approved for a 5G tower. Rent ₹45,000 a month and ₹40 lakh advance. Pay ₹20,000 registration / NOC fee to TRAI first.” They send an approval letter with a government logo.",
+    "hi": "“आपकी जमीन 5G टावर के लिए मंजूर हो गई है। ₹45,000 महीना किराया और ₹40 लाख एडवांस। पहले TRAI को ₹20,000 रजिस्ट्रेशन / NOC फीस भरें।” वे सरकारी लोगो वाला मंजूरी पत्र भेजते हैं।",
+    "ta": "“உங்கள் நிலம் 5G டவருக்கு அனுமதிக்கப்பட்டுள்ளது. மாதம் ₹45,000 வாடகை, ₹40 லட்சம் முன்பணம். முதலில் TRAI-க்கு ₹20,000 பதிவு / NOC கட்டணம் செலுத்துங்கள்.” அரசு லோகோவுடன் அனுமதிக் கடிதம் அனுப்புவார்கள்.",
+    "te": "“మీ స్థలం 5G టవర్‌కు ఆమోదం పొందింది. నెలకు ₹45,000 అద్దె, ₹40 లక్షల అడ్వాన్స్. ముందు TRAIకి ₹20,000 రిజిస్ట్రేషన్ / NOC ఫీజు కట్టండి.” ప్రభుత్వ లోగోతో ఆమోద పత్రం పంపుతారు.",
+    "ml": "“നിങ്ങളുടെ സ്ഥലം 5G ടവറിന് അംഗീകരിച്ചു. മാസം ₹45,000 വാടക, ₹40 ലക്ഷം അഡ്വാൻസ്. ആദ്യം TRAI-ക്ക് ₹20,000 രജിസ്ട്രേഷൻ / NOC ഫീസ് അടയ്ക്കൂ.” സർക്കാർ ലോഗോയുള്ള അംഗീകാരക്കത്ത് അയയ്ക്കും.",
+    "kn": "“ನಿಮ್ಮ ಜಮೀನು 5G ಟವರ್‌ಗೆ ಅನುಮೋದನೆಯಾಗಿದೆ. ತಿಂಗಳಿಗೆ ₹45,000 ಬಾಡಿಗೆ, ₹40 ಲಕ್ಷ ಮುಂಗಡ. ಮೊದಲು TRAIಗೆ ₹20,000 ನೋಂದಣಿ / NOC ಶುಲ್ಕ ಕಟ್ಟಿ.” ಸರ್ಕಾರಿ ಲೋಗೋ ಇರುವ ಅನುಮೋದನಾ ಪತ್ರ ಕಳುಹಿಸುತ್ತಾರೆ."
+   },
+   "they_ask": {
+    "en": "Pay a registration, NOC, stamp duty or “government tax” fee before the tower comes.",
+    "hi": "टावर लगने से पहले रजिस्ट्रेशन, NOC, स्टांप ड्यूटी या “सरकारी टैक्स” की फीस भरें।",
+    "ta": "டவர் வருவதற்கு முன் பதிவு, NOC, முத்திரைக் கட்டணம் அல்லது “அரசு வரி” கட்டணம் செலுத்துங்கள்.",
+    "te": "టవర్ వచ్చే ముందు రిజిస్ట్రేషన్, NOC, స్టాంప్ డ్యూటీ లేదా “ప్రభుత్వ పన్ను” ఫీజు కట్టండి.",
+    "ml": "ടവർ വരുന്നതിന് മുമ്പ് രജിസ്ട്രേഷൻ, NOC, സ്റ്റാമ്പ് ഡ്യൂട്ടി അല്ലെങ്കിൽ “സർക്കാർ നികുതി” ഫീസ് അടയ്ക്കുക.",
+    "kn": "ಟವರ್ ಬರುವ ಮೊದಲು ನೋಂದಣಿ, NOC, ಸ್ಟಾಂಪ್ ಡ್ಯೂಟಿ ಅಥವಾ “ಸರ್ಕಾರಿ ತೆರಿಗೆ” ಶುಲ್ಕ ಕಟ್ಟಿ."
+   },
+   "red_flag": {
+    "en": "TRAI and DoT don’t rent premises for towers or issue tower NOCs, and real tower companies don’t ask for advance money.",
+    "hi": "TRAI और DoT टावर के लिए जगह किराए पर नहीं लेते, न टावर का NOC देते हैं, और असली टावर कंपनियां एडवांस पैसे नहीं मांगतीं।",
+    "ta": "TRAI-யும் DoT-யும் டவருக்கு இடத்தை வாடகைக்கு எடுப்பதில்லை, டவர் NOC தருவதில்லை; உண்மையான டவர் நிறுவனங்கள் முன்பணம் கேட்பதில்லை.",
+    "te": "TRAI, DoT టవర్ కోసం స్థలం అద్దెకు తీసుకోవు, టవర్ NOC ఇవ్వవు; నిజమైన టవర్ కంపెనీలు ముందుగా డబ్బు అడగవు.",
+    "ml": "TRAI-യും DoT-യും ടവറിനായി സ്ഥലം വാടകയ്ക്കെടുക്കുകയോ ടവർ NOC നൽകുകയോ ചെയ്യുന്നില്ല; യഥാർഥ ടവർ കമ്പനികൾ മുൻകൂർ പണം ചോദിക്കില്ല.",
+    "kn": "TRAI ಮತ್ತು DoT ಟವರ್‌ಗೆ ಜಾಗ ಬಾಡಿಗೆಗೆ ಪಡೆಯುವುದಿಲ್ಲ, ಟವರ್ NOC ಕೊಡುವುದಿಲ್ಲ; ನಿಜವಾದ ಟವರ್ ಕಂಪನಿಗಳು ಮುಂಗಡ ಹಣ ಕೇಳುವುದಿಲ್ಲ."
+   },
+   "do": {
+    "en": "Don’t pay any fee for a tower offer. Check the company with your local telecom office or the DoT website, and report the offer to the police. If money is gone, call 1930.",
+    "hi": "टावर के ऑफर के लिए कोई फीस न भरें। कंपनी की जांच अपने स्थानीय टेलीकॉम कार्यालय या DoT की वेबसाइट से करें, और ऑफर की शिकायत पुलिस में करें। पैसे चले गए हों तो 1930 पर कॉल करें।",
+    "ta": "டவர் சலுகைக்கு எந்தக் கட்டணமும் செலுத்தாதீர்கள். நிறுவனத்தை உள்ளூர் டெலிகாம் அலுவலகம் அல்லது DoT இணையதளத்தில் சரிபாருங்கள், காவல்துறையில் புகார் செய்யுங்கள். பணம் போயிருந்தால் 1930-ஐ அழையுங்கள்.",
+    "te": "టవర్ ఆఫర్‌కు ఎలాంటి ఫీజు కట్టకండి. కంపెనీని మీ స్థానిక టెలికాం కార్యాలయం లేదా DoT వెబ్‌సైట్‌లో చెక్ చేయండి, పోలీసులకు ఫిర్యాదు చేయండి. డబ్బు పోయి ఉంటే 1930 కు కాల్ చేయండి.",
+    "ml": "ടവർ ഓഫറിന് ഒരു ഫീസും അടയ്ക്കരുത്. കമ്പനിയെ പ്രാദേശിക ടെലികോം ഓഫീസിലോ DoT വെബ്സൈറ്റിലോ പരിശോധിക്കുക, പൊലീസിൽ പരാതിപ്പെടുക. പണം പോയെങ്കിൽ 1930-ൽ വിളിക്കുക.",
+    "kn": "ಟವರ್ ಆಫರ್‌ಗೆ ಯಾವುದೇ ಶುಲ್ಕ ಕಟ್ಟಬೇಡಿ. ಕಂಪನಿಯನ್ನು ಸ್ಥಳೀಯ ಟೆಲಿಕಾಂ ಕಚೇರಿ ಅಥವಾ DoT ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಪರಿಶೀಲಿಸಿ, ಪೊಲೀಸರಿಗೆ ದೂರು ನೀಡಿ. ಹಣ ಹೋಗಿದ್ದರೆ 1930 ಗೆ ಕರೆ ಮಾಡಿ."
+   },
+   "sources": [
+    {
+     "name": "TRAI: Beware of fraud in the name of TRAI, mobile tower installation (Press Release 54 of 2019)",
+     "url": "https://www.trai.gov.in/sites/default/files/2024-10/PR_No.54of2019.pdf"
+    }
+   ],
+   "tone": "urgent"
+  },
+  {
+   "id": "deepfake-celebrity-ad",
+   "status": "approved",
+   "added": "2026-10-29",
+   "notify": false,
+   "channels": [
+    "social_media",
+    "whatsapp"
+   ],
+   "name": {
+    "en": "A video of a minister or celebrity selling an investment",
+    "hi": "किसी मंत्री या सेलिब्रिटी का निवेश बेचता हुआ वीडियो",
+    "ta": "அமைச்சர் அல்லது பிரபலம் முதலீட்டைப் பரிந்துரைக்கும் வீடியோ",
+    "te": "మంత్రి లేదా సెలబ్రిటీ పెట్టుబడిని సిఫార్సు చేసే వీడియో",
+    "ml": "മന്ത്രിയോ സെലിബ്രിറ്റിയോ നിക്ഷേപം പ്രചരിപ്പിക്കുന്ന വീഡിയോ",
+    "kn": "ಮಂತ್ರಿ ಅಥವಾ ಸೆಲೆಬ್ರಿಟಿ ಹೂಡಿಕೆ ಮಾರುವ ವೀಡಿಯೊ"
+   },
+   "they_say": {
+    "en": "A Facebook or YouTube ad, or a WhatsApp link: the Finance Minister or a famous businessman says “Invest ₹21,000 on this government-backed platform and earn ₹1.5 lakh a month.” It is made with AI.",
+    "hi": "Facebook या YouTube विज्ञापन, या WhatsApp लिंक: वित्त मंत्री या कोई मशहूर उद्योगपति कहता है “इस सरकार समर्थित प्लेटफॉर्म पर ₹21,000 लगाइए और हर महीने ₹1.5 लाख कमाइए।” यह AI से बना होता है।",
+    "ta": "Facebook அல்லது YouTube விளம்பரம், அல்லது WhatsApp இணைப்பு: நிதி அமைச்சர் அல்லது பிரபல தொழிலதிபர் “அரசு ஆதரவு பெற்ற இந்தத் தளத்தில் ₹21,000 முதலீடு செய்து மாதம் ₹1.5 லட்சம் சம்பாதியுங்கள்” என்கிறார். இது AI-யால் உருவாக்கப்பட்டது.",
+    "te": "Facebook లేదా YouTube ప్రకటన, లేదా WhatsApp లింక్: ఆర్థిక మంత్రి లేదా పేరున్న వ్యాపారవేత్త “ప్రభుత్వ మద్దతు ఉన్న ఈ ప్లాట్‌ఫామ్‌లో ₹21,000 పెట్టి నెలకు ₹1.5 లక్షలు సంపాదించండి” అంటారు. ఇది AIతో తయారైంది.",
+    "ml": "Facebook അല്ലെങ്കിൽ YouTube പരസ്യം, അല്ലെങ്കിൽ WhatsApp ലിങ്ക്: ധനമന്ത്രിയോ പ്രശസ്ത വ്യവസായിയോ “സർക്കാർ പിന്തുണയുള്ള ഈ പ്ലാറ്റ്‌ഫോമിൽ ₹21,000 നിക്ഷേപിച്ച് മാസം ₹1.5 ലക്ഷം നേടൂ” എന്ന് പറയുന്നു. ഇത് AI കൊണ്ട് ഉണ്ടാക്കിയതാണ്.",
+    "kn": "Facebook ಅಥವಾ YouTube ಜಾಹೀರಾತು, ಅಥವಾ WhatsApp ಲಿಂಕ್: ಹಣಕಾಸು ಸಚಿವರು ಅಥವಾ ಪ್ರಸಿದ್ಧ ಉದ್ಯಮಿ “ಸರ್ಕಾರದ ಬೆಂಬಲದ ಈ ವೇದಿಕೆಯಲ್ಲಿ ₹21,000 ಹೂಡಿ ತಿಂಗಳಿಗೆ ₹1.5 ಲಕ್ಷ ಗಳಿಸಿ” ಎನ್ನುತ್ತಾರೆ. ಇದು AIನಿಂದ ತಯಾರಾದದ್ದು."
+   },
+   "they_ask": {
+    "en": "Register on their site, pay a starting amount, then pay “tax” or “fees” to withdraw.",
+    "hi": "उनकी साइट पर रजिस्टर करें, शुरुआती रकम भरें, फिर पैसे निकालने के लिए “टैक्स” या “फीस” भरें।",
+    "ta": "அவர்களின் தளத்தில் பதிவு செய்து, தொடக்கத் தொகை செலுத்தி, பணம் எடுக்க “வரி” அல்லது “கட்டணம்” செலுத்துங்கள்.",
+    "te": "వాళ్ల సైట్‌లో రిజిస్టర్ చేసి, మొదటి మొత్తం కట్టి, డబ్బు తీసుకోవడానికి “పన్ను” లేదా “ఫీజు” కట్టండి.",
+    "ml": "അവരുടെ സൈറ്റിൽ രജിസ്റ്റർ ചെയ്ത്, തുടക്കത്തുക അടച്ച്, പണം പിൻവലിക്കാൻ “നികുതി”യോ “ഫീസോ” അടയ്ക്കുക.",
+    "kn": "ಅವರ ಸೈಟ್‌ನಲ್ಲಿ ನೋಂದಾಯಿಸಿ, ಆರಂಭಿಕ ಮೊತ್ತ ಕಟ್ಟಿ, ಹಣ ಹಿಂಪಡೆಯಲು “ತೆರಿಗೆ” ಅಥವಾ “ಶುಲ್ಕ” ಕಟ್ಟಿ."
+   },
+   "red_flag": {
+    "en": "No minister or government backs a platform that promises a fixed big return. A famous face in an ad proves nothing: videos can be faked.",
+    "hi": "कोई मंत्री या सरकार तय बड़े मुनाफे वाले किसी प्लेटफॉर्म का समर्थन नहीं करती। विज्ञापन में मशहूर चेहरा होने से कुछ साबित नहीं होता: वीडियो नकली बन सकते हैं।",
+    "ta": "நிலையான பெரிய லாபம் தருவதாகச் சொல்லும் தளத்தை எந்த அமைச்சரும் அரசும் ஆதரிப்பதில்லை. விளம்பரத்தில் பிரபல முகம் இருப்பது எதையும் நிரூபிக்காது: வீடியோக்களைப் போலியாக உருவாக்கலாம்.",
+    "te": "స్థిరమైన భారీ లాభం హామీ ఇచ్చే ప్లాట్‌ఫామ్‌కు ఏ మంత్రీ, ప్రభుత్వమూ మద్దతు ఇవ్వదు. ప్రకటనలో పేరున్న ముఖం ఉండటం దేన్నీ రుజువు చేయదు: వీడియోలు నకిలీగా తయారు చేయొచ్చు.",
+    "ml": "ഉറപ്പായ വലിയ ലാഭം വാഗ്ദാനം ചെയ്യുന്ന പ്ലാറ്റ്‌ഫോമിനെ ഒരു മന്ത്രിയും സർക്കാരും പിന്തുണയ്ക്കുന്നില്ല. പരസ്യത്തിലെ പ്രശസ്ത മുഖം ഒന്നും തെളിയിക്കുന്നില്ല: വീഡിയോകൾ വ്യാജമായി ഉണ്ടാക്കാം.",
+    "kn": "ನಿಗದಿತ ದೊಡ್ಡ ಲಾಭ ಭರವಸೆ ನೀಡುವ ವೇದಿಕೆಗೆ ಯಾವ ಸಚಿವರೂ ಸರ್ಕಾರವೂ ಬೆಂಬಲ ನೀಡುವುದಿಲ್ಲ. ಜಾಹೀರಾತಿನಲ್ಲಿ ಪ್ರಸಿದ್ಧ ಮುಖ ಇರುವುದು ಏನನ್ನೂ ಸಾಬೀತು ಮಾಡುವುದಿಲ್ಲ: ವೀಡಿಯೊಗಳನ್ನು ನಕಲಿ ಮಾಡಬಹುದು."
+   },
+   "do": {
+    "en": "Don’t click or pay. Check such claims with PIB Fact Check (WhatsApp +91 8799711259) before you trust or share them. If money is gone, call 1930.",
+    "hi": "क्लिक न करें, पैसे न भरें। ऐसे दावों पर भरोसा करने या शेयर करने से पहले PIB Fact Check (WhatsApp +91 8799711259) से जांचें। पैसे चले गए हों तो 1930 पर कॉल करें।",
+    "ta": "கிளிக் செய்யவோ பணம் செலுத்தவோ வேண்டாம். நம்புவதற்கு அல்லது பகிர்வதற்கு முன் PIB Fact Check (WhatsApp +91 8799711259) மூலம் சரிபாருங்கள். பணம் போயிருந்தால் 1930-ஐ அழையுங்கள்.",
+    "te": "క్లిక్ చేయకండి, డబ్బు కట్టకండి. నమ్మే లేదా షేర్ చేసే ముందు PIB Fact Check (WhatsApp +91 8799711259) తో చెక్ చేయండి. డబ్బు పోయి ఉంటే 1930 కు కాల్ చేయండి.",
+    "ml": "ക്ലിക്ക് ചെയ്യരുത്, പണം അടയ്ക്കരുത്. വിശ്വസിക്കുന്നതിനോ പങ്കിടുന്നതിനോ മുമ്പ് PIB Fact Check (WhatsApp +91 8799711259) വഴി പരിശോധിക്കുക. പണം പോയെങ്കിൽ 1930-ൽ വിളിക്കുക.",
+    "kn": "ಕ್ಲಿಕ್ ಮಾಡಬೇಡಿ, ಹಣ ಕಟ್ಟಬೇಡಿ. ನಂಬುವ ಅಥವಾ ಹಂಚುವ ಮೊದಲು PIB Fact Check (WhatsApp +91 8799711259) ಮೂಲಕ ಪರಿಶೀಲಿಸಿ. ಹಣ ಹೋಗಿದ್ದರೆ 1930 ಗೆ ಕರೆ ಮಾಡಿ."
+   },
+   "sources": [
+    {
+     "name": "News on AIR: PIB Fact Check, viral video of Finance Minister promoting investment scheme is fake",
+     "url": "https://www.newsonair.gov.in/pib-fact-check-viral-video-of-finance-minister-promoting-investment-scheme-is-fake"
+    },
+    {
+     "name": "Free Press Journal (PIB busts AI video of the Finance Minister endorsing a guaranteed-return scheme)",
+     "url": "https://www.freepressjournal.in/business/scam-alert-sitharaman-seen-endorsing-guaranteed-return-scheme-pib-busts-ai-generated-video"
+    }
+   ],
+   "tone": "urgent"
+  },
+  {
+   "id": "fake-franchise",
+   "status": "approved",
+   "added": "2026-10-29",
+   "notify": false,
+   "channels": [
+    "social_media",
+    "call",
+    "whatsapp",
+    "website"
+   ],
+   "name": {
+    "en": "A franchise or dealership offer that needs a “registration fee”",
+    "hi": "“रजिस्ट्रेशन फीस” मांगने वाला फ्रेंचाइजी या डीलरशिप ऑफर",
+    "ta": "“பதிவுக் கட்டணம்” கேட்கும் ஃபிரான்சைஸ் அல்லது டீலர்ஷிப் சலுகை",
+    "te": "“రిజిస్ట్రేషన్ ఫీజు” అడిగే ఫ్రాంచైజీ లేదా డీలర్‌షిప్ ఆఫర్",
+    "ml": "“രജിസ്ട്രേഷൻ ഫീസ്” ചോദിക്കുന്ന ഫ്രാഞ്ചൈസി അല്ലെങ്കിൽ ഡീലർഷിപ്പ് ഓഫർ",
+    "kn": "“ನೋಂದಣಿ ಶುಲ್ಕ” ಕೇಳುವ ಫ್ರಾಂಚೈಸಿ ಅಥವಾ ಡೀಲರ್‌ಶಿಪ್ ಆಫರ್"
+   },
+   "they_say": {
+    "en": "An ad or website for a famous brand (a clothing store, dairy, gas agency, JioMart): “Your franchise is approved. Pay ₹25,000 registration, then the security deposit and stock advance.” They send an approval letter.",
+    "hi": "किसी मशहूर ब्रांड (कपड़ों की दुकान, डेयरी, गैस एजेंसी, JioMart) का विज्ञापन या वेबसाइट: “आपकी फ्रेंचाइजी मंजूर हो गई है। ₹25,000 रजिस्ट्रेशन, फिर सिक्योरिटी डिपॉजिट और स्टॉक एडवांस भरें।” वे मंजूरी पत्र भेजते हैं।",
+    "ta": "பிரபல பிராண்டின் (துணிக்கடை, பால் நிறுவனம், கேஸ் ஏஜென்சி, JioMart) விளம்பரம் அல்லது இணையதளம்: “உங்கள் ஃபிரான்சைஸ் அனுமதிக்கப்பட்டது. ₹25,000 பதிவுக் கட்டணம், பிறகு பாதுகாப்பு வைப்பு, சரக்கு முன்பணம் செலுத்துங்கள்.” அனுமதிக் கடிதம் அனுப்புவார்கள்.",
+    "te": "పేరున్న బ్రాండ్ (బట్టల షాప్, డెయిరీ, గ్యాస్ ఏజెన్సీ, JioMart) ప్రకటన లేదా వెబ్‌సైట్: “మీ ఫ్రాంచైజీ ఆమోదం పొందింది. ₹25,000 రిజిస్ట్రేషన్, తర్వాత సెక్యూరిటీ డిపాజిట్, స్టాక్ అడ్వాన్స్ కట్టండి.” ఆమోద పత్రం పంపుతారు.",
+    "ml": "പ്രശസ്ത ബ്രാൻഡിന്റെ (തുണിക്കട, ഡെയറി, ഗ്യാസ് ഏജൻസി, JioMart) പരസ്യമോ വെബ്സൈറ്റോ: “നിങ്ങളുടെ ഫ്രാഞ്ചൈസി അംഗീകരിച്ചു. ₹25,000 രജിസ്ട്രേഷൻ, പിന്നെ സെക്യൂരിറ്റി ഡെപ്പോസിറ്റും സ്റ്റോക്ക് അഡ്വാൻസും അടയ്ക്കൂ.” അംഗീകാരക്കത്ത് അയയ്ക്കും.",
+    "kn": "ಪ್ರಸಿದ್ಧ ಬ್ರ್ಯಾಂಡ್‌ನ (ಬಟ್ಟೆ ಅಂಗಡಿ, ಡೈರಿ, ಗ್ಯಾಸ್ ಏಜೆನ್ಸಿ, JioMart) ಜಾಹೀರಾತು ಅಥವಾ ವೆಬ್‌ಸೈಟ್: “ನಿಮ್ಮ ಫ್ರಾಂಚೈಸಿ ಅನುಮೋದನೆಯಾಗಿದೆ. ₹25,000 ನೋಂದಣಿ, ನಂತರ ಭದ್ರತಾ ಠೇವಣಿ ಮತ್ತು ಸ್ಟಾಕ್ ಮುಂಗಡ ಕಟ್ಟಿ.” ಅನುಮೋದನಾ ಪತ್ರ ಕಳುಹಿಸುತ್ತಾರೆ."
+   },
+   "they_ask": {
+    "en": "Pay registration, licence, security deposit or stock fees to a personal or unknown account.",
+    "hi": "किसी निजी या अनजान खाते में रजिस्ट्रेशन, लाइसेंस, सिक्योरिटी डिपॉजिट या स्टॉक की फीस भरें।",
+    "ta": "தனிப்பட்ட அல்லது தெரியாத கணக்கிற்கு பதிவு, உரிமம், பாதுகாப்பு வைப்பு அல்லது சரக்குக் கட்டணம் செலுத்துங்கள்.",
+    "te": "వ్యక్తిగత లేదా తెలియని ఖాతాకు రిజిస్ట్రేషన్, లైసెన్స్, సెక్యూరిటీ డిపాజిట్ లేదా స్టాక్ ఫీజు కట్టండి.",
+    "ml": "വ്യക്തിഗതമോ അറിയാത്തതോ ആയ അക്കൗണ്ടിലേക്ക് രജിസ്ട്രേഷൻ, ലൈസൻസ്, സെക്യൂരിറ്റി ഡെപ്പോസിറ്റ് അല്ലെങ്കിൽ സ്റ്റോക്ക് ഫീസ് അടയ്ക്കുക.",
+    "kn": "ವೈಯಕ್ತಿಕ ಅಥವಾ ಗೊತ್ತಿಲ್ಲದ ಖಾತೆಗೆ ನೋಂದಣಿ, ಪರವಾನಗಿ, ಭದ್ರತಾ ಠೇವಣಿ ಅಥವಾ ಸ್ಟಾಕ್ ಶುಲ್ಕ ಕಟ್ಟಿ."
+   },
+   "red_flag": {
+    "en": "Real brands give franchises through their own website and offices, not through ads, WhatsApp or a fee to a phone number.",
+    "hi": "असली ब्रांड फ्रेंचाइजी अपनी वेबसाइट और दफ्तरों से देते हैं, विज्ञापन, WhatsApp या किसी फोन नंबर पर फीस लेकर नहीं।",
+    "ta": "உண்மையான பிராண்டுகள் ஃபிரான்சைஸை தங்கள் இணையதளம், அலுவலகங்கள் மூலமே தருகின்றன; விளம்பரம், WhatsApp அல்லது போன் எண்ணுக்குக் கட்டணம் மூலம் அல்ல.",
+    "te": "నిజమైన బ్రాండ్లు ఫ్రాంచైజీని తమ వెబ్‌సైట్, కార్యాలయాల ద్వారానే ఇస్తాయి; ప్రకటనలు, WhatsApp లేదా ఫోన్ నంబర్‌కు ఫీజు ద్వారా కాదు.",
+    "ml": "യഥാർഥ ബ്രാൻഡുകൾ ഫ്രാഞ്ചൈസി നൽകുന്നത് അവരുടെ വെബ്സൈറ്റും ഓഫീസുകളും വഴിയാണ്; പരസ്യം, WhatsApp, ഫോൺ നമ്പറിലേക്കുള്ള ഫീസ് വഴിയല്ല.",
+    "kn": "ನಿಜವಾದ ಬ್ರ್ಯಾಂಡ್‌ಗಳು ಫ್ರಾಂಚೈಸಿಯನ್ನು ತಮ್ಮ ವೆಬ್‌ಸೈಟ್ ಮತ್ತು ಕಚೇರಿಗಳ ಮೂಲಕ ಕೊಡುತ್ತವೆ; ಜಾಹೀರಾತು, WhatsApp ಅಥವಾ ಫೋನ್ ನಂಬರ್‌ಗೆ ಶುಲ್ಕದ ಮೂಲಕ ಅಲ್ಲ."
+   },
+   "do": {
+    "en": "Check the offer only on the company’s own website and call the number listed there. For LPG dealerships, use only lpgvitarakchayan.in. Don’t pay any fee from an ad or message. If money is gone, call 1930.",
+    "hi": "ऑफर की जांच सिर्फ कंपनी की अपनी वेबसाइट पर करें और वहां दिए नंबर पर कॉल करें। LPG डीलरशिप के लिए सिर्फ lpgvitarakchayan.in देखें। किसी विज्ञापन या संदेश से कोई फीस न भरें। पैसे चले गए हों तो 1930 पर कॉल करें।",
+    "ta": "சலுகையை நிறுவனத்தின் சொந்த இணையதளத்தில் மட்டுமே சரிபார்த்து, அங்குள்ள எண்ணை அழையுங்கள். LPG டீலர்ஷிப்புக்கு lpgvitarakchayan.in மட்டும். விளம்பரம் அல்லது செய்தி மூலம் எந்தக் கட்டணமும் செலுத்தாதீர்கள். பணம் போயிருந்தால் 1930-ஐ அழையுங்கள்.",
+    "te": "ఆఫర్‌ను కంపెనీ సొంత వెబ్‌సైట్‌లోనే చెక్ చేసి, అక్కడ ఉన్న నంబర్‌కు కాల్ చేయండి. LPG డీలర్‌షిప్ కోసం lpgvitarakchayan.in మాత్రమే. ప్రకటన లేదా మెసేజ్ ద్వారా ఎలాంటి ఫీజు కట్టకండి. డబ్బు పోయి ఉంటే 1930 కు కాల్ చేయండి.",
+    "ml": "ഓഫർ കമ്പനിയുടെ സ്വന്തം വെബ്സൈറ്റിൽ മാത്രം പരിശോധിച്ച്, അവിടെയുള്ള നമ്പറിൽ വിളിക്കുക. LPG ഡീലർഷിപ്പിന് lpgvitarakchayan.in മാത്രം. പരസ്യമോ സന്ദേശമോ വഴി ഒരു ഫീസും അടയ്ക്കരുത്. പണം പോയെങ്കിൽ 1930-ൽ വിളിക്കുക.",
+    "kn": "ಆಫರ್ ಅನ್ನು ಕಂಪನಿಯ ಸ್ವಂತ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಮಾತ್ರ ಪರಿಶೀಲಿಸಿ, ಅಲ್ಲಿನ ನಂಬರ್‌ಗೆ ಕರೆ ಮಾಡಿ. LPG ಡೀಲರ್‌ಶಿಪ್‌ಗೆ lpgvitarakchayan.in ಮಾತ್ರ. ಜಾಹೀರಾತು ಅಥವಾ ಸಂದೇಶದ ಮೂಲಕ ಯಾವುದೇ ಶುಲ್ಕ ಕಟ್ಟಬೇಡಿ. ಹಣ ಹೋಗಿದ್ದರೆ 1930 ಗೆ ಕರೆ ಮಾಡಿ."
+   },
+   "sources": [
+    {
+     "name": "Free Press Journal (PIB Fact Check: Bharat Petroleum is not asking for a Rs 12,500 gas agency registration fee; use lpgvitarakchayan.in)",
+     "url": "https://www.freepressjournal.in/india/fact-check-is-bharat-petroleum-asking-for-rs-12500-as-registration-fee-to-provide-gas-agency-dealership"
+    },
+    {
+     "name": "Tribune (Reliance Retail warns of fake JioMart websites seeking franchisees)",
+     "url": "https://www.tribuneindia.com/news/business/reliance-retail-warns-of-fake-jiomart-websites-seeking-franchisees-132267"
+    },
+    {
+     "name": "Business Standard (people falling prey to fake Amul franchise ads: GCMMF)",
+     "url": "https://business-standard.com/article/pti-stories/people-falling-prey-to-fake-amul-franchise-advts-gcmmf-119011601302_1.html"
+    }
+   ],
+   "tone": "urgent"
   }
  ],
  "detection": {
@@ -3446,6 +3825,30 @@
    {
     "regex": "\\b(confirm(ed)?|tatkal)\\s+(train\\s+|railway\\s+)?tickets?\\b.{0,160}(\\bupi\\b|\\bgpay\\b|\\bphonepe\\b|\\bpaytm\\b|\\bqr\\b|[a-z0-9._-]{3,}@[a-z]{2,})",
     "card": "booking-fraud"
+   },
+   {
+    "regex": "\\b(army|military|cantonment|jawan|bsf|crpf|cisf)\\b.{0,200}\\b(scan\\w*\\b.{0,30}\\b(qr|code)|enter\\b.{0,20}\\b(upi )?pin)\\b",
+    "card": "fake-army-order"
+   },
+   {
+    "regex": "\\b(scan|enter)\\b.{0,60}\\b(qr|pin)\\b.{0,80}\\b(get|receive)\\b.{0,30}\\b(double|back|refund\\w*)\\b",
+    "card": "qr-receive-money"
+   },
+   {
+    "regex": "\\b(buy|purchase|get me)\\b.{0,40}\\b(gift ?cards?|vouchers?|google play cards?)\\b.{0,120}\\b(codes?|send|share)\\b",
+    "card": "boss-impersonation"
+   },
+   {
+    "regex": "\\*\\s?401\\s?[#*]",
+    "card": "call-forwarding"
+   },
+   {
+    "regex": "\\btowers?\\b.{0,40}\\b(install\\w*|rent|lease|sanction\\w*|approv\\w*)\\b.{0,160}\\b(pay|deposit)\\w*\\b.{0,60}\\b(fees?|tax|charges?|amount)\\b",
+    "card": "tower-installation"
+   },
+   {
+    "regex": "\\b(annual fee|joining fee|card limit)\\b.{0,40}\\bcredit ?card\\b.{0,120}\\b(tell|share|send|give|read)\\s+(me|us)\\b.{0,30}\\b(otp|cvv|card number)\\b",
+    "card": "credit-card-call"
    }
   ],
   "brands": [],
@@ -4735,6 +5138,88 @@
     "url": "https://theprint.in/india/keralam-police-warn-public-against-cyber-fraud-through-fake-mobile-pop-ups/3083174"
    },
    "card": "fake-virus-popup"
+  },
+  {
+   "id": "fake-army-order",
+   "card": "fake-army-order",
+   "label": "scam",
+   "channel": "whatsapp",
+   "sender": "+91 90011 47263",
+   "senderNote": "Customer for your sweet shop",
+   "text": "Namaste ji, I am Subedar from Army camp. Need 15 kg sweets for unit function tomorrow. Army payment only through our QR. Please scan this code and enter your UPI PIN, the amount will come to you.",
+   "clue": "A buyer who asks you to scan their code or enter your PIN is taking money, not paying it. An Army title or uniform photo proves nothing.",
+   "source": {
+    "name": "RBI: BE(A)WARE booklet on frauds and precautions (2022)",
+    "url": "https://www.rbi.org.in/commonman/Upload/english/Content/PDFs/English%20BEAWARE.pdf"
+   }
+  },
+  {
+   "id": "boss-impersonation",
+   "card": "boss-impersonation",
+   "label": "scam",
+   "channel": "whatsapp",
+   "sender": "+91 78290 55114",
+   "senderNote": "Photo: your company's director",
+   "text": "Good morning. I'm in a board meeting and can't take calls. I need you to buy 8 Amazon gift cards of Rs 5,000 for a client, quickly. Send me the codes here, I'll reimburse you today.",
+   "clue": "A photo on a new number proves nothing. Call your boss on the number you already have before buying or sending anything.",
+   "source": {
+    "name": "Government of Tripura, IT Directorate: advisory on fake WhatsApp profiles of senior officers asking for gift cards (2022)",
+    "url": "https://tripura.gov.in/sites/default/files/Advisory.pdf"
+   }
+  },
+  {
+   "id": "call-forwarding",
+   "card": "call-forwarding",
+   "label": "scam",
+   "channel": "sms",
+   "sender": "+91 70456 21983",
+   "text": "Jio: Your SIM upgrade is pending and incoming calls will stop today. To complete it, dial *401*7045621983# from your mobile now.",
+   "clue": "*401# plus a number forwards all your calls, including bank OTP calls, to someone else. Your telecom company never asks you to dial it.",
+   "source": {
+    "name": "PIB: DoT advises citizens not to dial *401# followed by an unknown number (11 Jan 2024)",
+    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1995304"
+   }
+  },
+  {
+   "id": "tower-installation",
+   "card": "tower-installation",
+   "label": "scam",
+   "channel": "sms",
+   "sender": "+91 88001 39420",
+   "text": "Dear Sir, your plot is selected for Airtel 5G tower installation. Rent Rs 38,000/month + Rs 25 lakh advance. Pay Rs 15,500 NOC registration fee to confirm the agreement.",
+   "clue": "TRAI and DoT don't rent land for towers or issue tower NOCs, and real tower companies never ask for money first.",
+   "source": {
+    "name": "TRAI: Beware of fraud in the name of TRAI, mobile tower installation (Press Release 54 of 2019)",
+    "url": "https://www.trai.gov.in/sites/default/files/2024-10/PR_No.54of2019.pdf"
+   }
+  },
+  {
+   "id": "deepfake-celebrity-ad",
+   "card": "deepfake-celebrity-ad",
+   "label": "scam",
+   "channel": "whatsapp",
+   "sender": "+91 93210 66457",
+   "senderNote": "Forwarded many times",
+   "text": "Big news! Watch the Finance Minister's video: government launched an AI investment platform for citizens. Invest Rs 21,000 and earn Rs 1.5 lakh every month. Register now before seats close.",
+   "clue": "No minister backs a scheme with a fixed big return. Videos can be faked with AI: check with PIB Fact Check before you trust or share.",
+   "source": {
+    "name": "News on AIR: PIB Fact Check, viral video of Finance Minister promoting investment scheme is fake",
+    "url": "https://www.newsonair.gov.in/pib-fact-check-viral-video-of-finance-minister-promoting-investment-scheme-is-fake"
+   }
+  },
+  {
+   "id": "fake-franchise",
+   "card": "fake-franchise",
+   "label": "scam",
+   "channel": "whatsapp",
+   "sender": "+91 96660 12784",
+   "senderNote": "Reply to your franchise enquiry",
+   "text": "Congratulations! Your Amul parlour franchise is approved for your area. Pay Rs 25,000 registration fee to this account today to reserve the location. Security deposit details follow.",
+   "clue": "Real brands give franchises through their own website and offices. Don't pay a fee to an account from an ad or a WhatsApp message.",
+   "source": {
+    "name": "Free Press Journal (PIB Fact Check: Bharat Petroleum is not asking for a Rs 12,500 gas agency registration fee; use lpgvitarakchayan.in)",
+    "url": "https://www.freepressjournal.in/india/fact-check-is-bharat-petroleum-asking-for-rs-12500-as-registration-fee-to-provide-gas-agency-dealership"
+   }
   }
  ]
 }
