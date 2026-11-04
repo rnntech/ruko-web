@@ -1,5 +1,5 @@
 {
-  "note": "Spot-the-scam test (D-049, D-097). One hard scam question per approved card (58), plus genuine look-alikes; each round shows 4 scams and 4 real ones at random, with at least one 'trap' question (D-107: 'sender' = real words from the wrong sender, 'moment' = a real message at the wrong moment; 'during' = the call it arrives in, checked against the call rules). Scams are modelled on the card's real cases (source = the card's first source); numbers, names and links are made up. Every 'sms'/'whatsapp' item is checked against Ruko's real rules by SpotTheScamTest: real ones must pass; scams must be caught unless marked rukoMayMiss (hard ones Ruko's wording rules miss, shown with a note). 'call' and 'situation' items are scenarios, not messages.",
+  "note": "Spot-the-scam test (D-049, D-097). One hard scam question per approved card, plus genuine look-alikes; each round shows 4 scams and 4 real ones at random, with at least one 'trap' question (D-107: 'sender' = real words from the wrong sender, 'moment' = a real message at the wrong moment; 'during' = the call it arrives in, checked against the call rules). Scams are modelled on the card's real cases (source = the card's first source); numbers, names and links are made up. Every 'sms'/'whatsapp' item is checked against Ruko's real rules by SpotTheScamTest: real ones must pass; scams must be caught unless marked rukoMayMiss (hard ones Ruko's wording rules miss, shown with a note). 'call' and 'situation' items are scenarios, not messages.",
   "items": [
     {
       "id": "debit-reply",
@@ -1346,6 +1346,49 @@
         "name": "Free Press Journal (PIB Fact Check: Bharat Petroleum is not asking for a Rs 12,500 gas agency registration fee; use lpgvitarakchayan.in)",
         "url": "https://www.freepressjournal.in/india/fact-check-is-bharat-petroleum-asking-for-rs-12500-as-registration-fee-to-provide-gas-agency-dealership"
       }
+    },
+    {
+      "id": "festival-money-link",
+      "card": "festival-money-link",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "Pooja Sharma",
+      "senderNote": "Saved in your contacts",
+      "text": "Mujhe laga tha fake hai 😂 par sach me ₹2,000 mil gaye, tum log bhi try karo!\n\nhttps://kovaj.buzz/TrBsQ8vLwp/in-en?2047199352110846315&s=wa&t=18120451172&",
+      "clue": "A friend’s number proves nothing: their WhatsApp may be hacked. Call them before you open anything. No government or company hands out festival money through a link.",
+      "source": {
+        "name": "Business Today (PIB Fact Check, 2 Nov 2026: the ₹8,000 Diwali bonus message is fake)",
+        "url": "https://www.businesstoday.in/india/story/rs-8000-diwali-bonus-scam-pib-warns-against-fake-whatsapp-messages-claiming-pms-cash-benefit-565151-2026-11-03"
+      }
+    },
+    {
+      "id": "voter-list-sir",
+      "card": "voter-list-sir",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 90412 77361",
+      "senderNote": "Not in your contacts",
+      "text": "Election notice: your name was removed from the draft voter list because of document problems. Click to restore it and upload your Aadhaar: voterlist-restore.in/sir/4471",
+      "clue": "Election officers don’t ask for documents through links like this. Contact your BLO, or use only the ECINET app or the Election Commission’s official portal.",
+      "source": {
+        "name": "The Hans India (Hyderabad District Election Officer and police: OTP fraud during SIR)",
+        "url": "https://www.thehansindia.com/news/cities/hyderabad/beware-sir-scammers-on-the-prowl-with-otp-frauds-1095783"
+      }
+    },
+    {
+      "id": "lost-iphone-phish",
+      "card": "lost-iphone-phish",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 88109 24517",
+      "senderNote": "Sent to you two days after your iPhone was stolen",
+      "text": "Apple Support: your lost iPhone has been switched off. Act now to erase your contacts and photos: apple-findmy-support.top/verify",
+      "clue": "Whoever has your phone wants your Apple ID and OTP so they can sell it. Use only the Find My app or icloud.com/find.",
+      "source": {
+        "name": "Deccan Chronicle (I4C advisory: fake Apple Support messages to people who lost an iPhone)",
+        "url": "https://www.deccanchronicle.com/nation/i4c-warns-iphone-users-against-phishing-scam-using-fake-apple-support-messages-1958768"
+      },
+      "rukoMayMiss": true
     }
   ]
 }
