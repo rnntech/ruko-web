@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-19",
+  "updated": "2026-11-04",
   "note": "Trusted sources for scam cards (D-035, docs/CONTRACTS.md Section 5a). A card may only cite a link whose host is one of these domains or ends with '.<domain>'. The scam-update agent reads only these. Add a source only after checking it is a government body, regulator, court reporter, wire service, established news outlet or IFCN fact-checker. Never social media posts, forwards or blogs.",
   "sources": [
     {
@@ -217,6 +217,16 @@
       "name": "HP Gas (HPCL), a government oil company: its own site (impersonated organisation, D-071)",
       "domain": "hindustanpetroleum.com",
       "type": "official"
+    },
+    {
+      "name": "Business Today (India Today Group)",
+      "domain": "businesstoday.in",
+      "type": "news"
+    },
+    {
+      "name": "Amar Ujala (Hindi daily)",
+      "domain": "amarujala.com",
+      "type": "news"
     }
   ]
 }
