@@ -1389,6 +1389,21 @@
         "url": "https://www.deccanchronicle.com/nation/i4c-warns-iphone-users-against-phishing-scam-using-fake-apple-support-messages-1958768"
       },
       "rukoMayMiss": true
+    },
+    {
+      "id": "fake-court-website",
+      "card": "fake-court-website",
+      "label": "scam",
+      "channel": "website",
+      "sender": "A link in a message",
+      "senderNote": "Not in your contacts",
+      "text": "Supreme Court of India: the notice for your case is ready. Log in with your details to view it: sci-court-case.in/notice/2291",
+      "clue": "The Supreme Court’s website is sci.gov.in. Check the address, and don’t give personal details, bank details or passwords on any other site.",
+      "source": {
+        "name": "LiveLaw (Supreme Court Registry notice, 13 Aug 2026: sp-court-in.com)",
+        "url": "https://www.livelaw.in/top-stories/supreme-court-warns-against-fake-websites-impersonating-its-official-website-545691"
+      },
+      "rukoMayMiss": true
     }
   ]
 }
