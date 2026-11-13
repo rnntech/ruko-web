@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04",
+  "updated": "2026-11-13",
   "note": "Trusted sources for scam cards (D-035, docs/CONTRACTS.md Section 5a). A card may only cite a link whose host is one of these domains or ends with '.<domain>'. The scam-update agent reads only these. Add a source only after checking it is a government body, regulator, court reporter, wire service, established news outlet or IFCN fact-checker. Never social media posts, forwards or blogs.",
   "sources": [
     {
@@ -101,6 +101,16 @@
     {
       "name": "The Hindu",
       "domain": "thehindu.com",
+      "type": "news"
+    },
+    {
+      "name": "Asianet News (news network since 1993; D-215)",
+      "domain": "asianetnews.com",
+      "type": "news"
+    },
+    {
+      "name": "Kerala Kaumudi (Malayalam daily since 1911; D-213)",
+      "domain": "keralakaumudi.com",
       "type": "news"
     },
     {
@@ -226,6 +236,21 @@
     {
       "name": "Amar Ujala (Hindi daily)",
       "domain": "amarujala.com",
+      "type": "news"
+    },
+    {
+      "name": "Scam.sg (Singapore anti-scam site)",
+      "domain": "scam.sg",
+      "type": "government"
+    },
+    {
+      "name": "Malayala Manorama / Manorama Online (Malayalam daily since 1888; Kerala police warnings on fake GST officers and AutoPay charity QRs, 13 Nov 2026)",
+      "domain": "manoramaonline.com",
+      "type": "news"
+    },
+    {
+      "name": "TV9 Kannada (TV9 Network’s Kannada news channel; Karnataka department and police warnings, 13 Nov 2026)",
+      "domain": "tv9kannada.com",
       "type": "news"
     }
   ]
