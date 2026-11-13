@@ -1389,6 +1389,177 @@
         "url": "https://www.deccanchronicle.com/nation/i4c-warns-iphone-users-against-phishing-scam-using-fake-apple-support-messages-1958768"
       },
       "rukoMayMiss": true
+    },
+    {
+      "id": "fake-court-website",
+      "card": "fake-court-website",
+      "label": "scam",
+      "channel": "website",
+      "sender": "A link in a message",
+      "senderNote": "Not in your contacts",
+      "text": "Supreme Court of India: the notice for your case is ready. Log in with your details to view it: sci-court-case.in/notice/2291",
+      "clue": "The Supreme Court’s website is sci.gov.in. Check the address, and don’t give personal details, bank details or passwords on any other site.",
+      "source": {
+        "name": "LiveLaw (Supreme Court Registry notice, 13 Aug 2026: sp-court-in.com)",
+        "url": "https://www.livelaw.in/top-stories/supreme-court-warns-against-fake-websites-impersonating-its-official-website-545691"
+      },
+      "rukoMayMiss": true
+    },
+    {
+      "id": "scholarship-qr",
+      "card": "scholarship-qr",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 70214 58836",
+      "senderNote": "Not in your contacts",
+      "text": "Dear parent, your child's scholarship of Rs 12,500 is approved by the Education Department. To receive the amount, scan the QR code we send and enter your UPI PIN. First pay Rs 499 registration fee today.",
+      "clue": "You never scan a QR code or enter your UPI PIN to receive money: the PIN is only for paying. Check any scholarship with the school first.",
+      "source": {
+        "name": "The Hans India (Bapatla SP, 3 Sep 2026: fake scholarship calls ask for fees, bank details and OTPs; check with the school or official websites; 1930)",
+        "url": "https://www.thehansindia.com/news/cities/ongole/bapatla-students-warned-against-cyber-frauds-1117155"
+      }
+    },
+    {
+      "id": "water-bill",
+      "card": "water-bill",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 93981 20457",
+      "senderNote": "Not in your contacts",
+      "text": "Dear Consumer, your water bill is not updated. Your water supply will be disconnected tonight at 9.30 PM. Please contact our officer immediately on 9398120457.",
+      "clue": "The water board doesn't send cut-off warnings from an ordinary mobile number. Don't call it: check your bill on the board's official helpline.",
+      "source": {
+        "name": "Deccan Chronicle (Cyberabad Cyber Crime DCP, 6 Jun 2026: fake water-board bill, meter and CAN messages; ₹10–20 fees and remote apps; don’t share OTP, CVV or UPI PIN)",
+        "url": "https://www.deccanchronicle.com/southern-states/telangana/hyderabad-people-warned-of-cyber-crimes-in-name-of-water-board-1961695"
+      }
+    },
+    {
+      "id": "romance-police-threat",
+      "card": "romance-police-threat",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 88264 71903",
+      "senderNote": "Not in your contacts",
+      "text": "“This is Inspector Rathore, Delhi Police cyber cell. The girl you chatted with on Facebook has filed a complaint, and your videos are with us. Pay Rs 50,000 now to close the case, or we arrest you today.”",
+      "clue": "Real police never ask for money on a phone call to close a case. The friendly profile and the “inspector” work together. Cut the call and call 1930.",
+      "source": {
+        "name": "Free Press Journal (Mumbai, 1 Nov 2026: a Facebook “friend”, then fake Delhi and Jaipur “police inspectors” demand money to settle a case)",
+        "url": "https://www.freepressjournal.in/mumbai/mumbai-cyber-fraud-kanjurmarg-retiree-loses-1528-lakh-in-sextortion-scam-after-accepting-facebook-friend-request"
+      }
+    },
+    {
+      "id": "astrology-puja-fee",
+      "card": "astrology-puja-fee",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 79068 33152",
+      "senderNote": "Not in your contacts",
+      "text": "Jai Mata Di. Your problem is very serious, the first puja was not enough. Send Rs 5,100 today for a special vashikaran puja, or the effect will turn against your family.",
+      "clue": "A quick fix sold through an ad, with a new fee every time, is the trick. Threats when you stop paying show it was never a puja.",
+      "source": {
+        "name": "Deccan Chronicle (Cyberabad cybercrime police, 27 May 2026: fake astrology, tantra and vashikaran ads; repeated fees, then threats; don’t share OTPs or UPI PINs; 1930)",
+        "url": "https://www.deccanchronicle.com/southern-states/telangana/20-year-old-sentenced-to-20-years-in-jail-and-rs-50000-fine-for-raping-4-year-old-1959380"
+      },
+      "rukoMayMiss": true
+    },
+    {
+      "id": "cyber-slavery-job",
+      "card": "cyber-slavery-job",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 90302 64418",
+      "senderNote": "Not in your contacts",
+      "text": "“Data-entry job in Bangkok, AC office, Rs 1.2 lakh salary every month, no interview. Pay Rs 2 lakh and we arrange your ticket and a tourist visa. The work visa comes later.”",
+      "clue": "A real job abroad comes with a work visa and a signed contract, through a recruiting agent you can check. A tourist visa for a job is the trap.",
+      "source": {
+        "name": "Deccan Chronicle (Visakhapatnam police, 6 Nov 2026: agent sent youth as “data-entry operators” to scam centres in Cambodia, Myanmar and Bangkok)",
+        "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/overseas-job-racket-pd-act-ivoked-against-human-trafficker-2002123"
+      }
+    },
+    {
+      "id": "viral-video-link",
+      "card": "viral-video-link",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 63054 92871",
+      "senderNote": "Not in your contacts",
+      "text": "Bro is this you in this video?? It's viral everywhere. Watch the 2 min video here: clipviral-watch.xyz/v/58213",
+      "clue": "A shocking video “about you” from a stranger is bait to make you tap without thinking. Don't open the link.",
+      "source": {
+        "name": "Asianet Suvarna News (7 Jun 2026: “your video went viral” links from unknown numbers lead to APKs, UPI PIN pages and screen sharing)",
+        "url": "https://kannada.asianetnews.com/gallery/technology/be-alert-a-2-minute-video-will-empty-your-bank-account-this-is-a-new-cyber-scam-mrq-01fsn9y"
+      },
+      "rukoMayMiss": true
+    },
+    {
+      "id": "fake-trend-app",
+      "card": "fake-trend-app",
+      "label": "scam",
+      "channel": "whatsapp",
+      "sender": "+91 81479 20356",
+      "senderNote": "Not in your contacts",
+      "text": "Make your 1980s retro AI photo FREE! Not on Play Store, download the app here: retro80s-aiphoto.top/RetroAI.apk",
+      "clue": "Real apps come from the Play Store or App Store, not as a file in a link. An app like this can take over your phone or misuse your photos.",
+      "source": {
+        "name": "Asianet Suvarna News (Karnataka State Police, 12 Sep 2026: fake 1980s AI photo-trend apps sent as APK links; photos misused for deepfake blackmail; 1930)",
+        "url": "https://kannada.asianetnews.com/karnataka-districts/1980s-ai-photo-trend-karnataka-police-issue-warning-to-the-public-sns/articleshow-ggpggy7"
+      }
+    },
+    {
+      "id": "fake-phone-update",
+      "card": "fake-phone-update",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 74287 51690",
+      "senderNote": "Not in your contacts",
+      "text": "URGENT system update required for your Vivo phone. Install the Origin OS update now or your phone will be blocked in 24 hours: originos-update.top/install",
+      "clue": "Real phone updates come only from Settings on your phone, never from a link in a message. A threat to block your phone is a sign of a scam.",
+      "source": {
+        "name": "Asianet News (Kerala Police, 20 Apr 2026: fake “Origin OS update” for Vivo and iQOO phones; if you tapped a suspicious link, disconnect from the internet and remove unknown apps)",
+        "url": "https://www.asianetnews.com/local-news/kerala-police-urges-caution-cyber-gangs-targeting-vivo-and-iq00-users-warning-that-money-will-be-stolen-articleshow-kc2fvai"
+      },
+      "rukoMayMiss": true
+    },
+    {
+      "id": "fake-gst-officer",
+      "card": "fake-gst-officer",
+      "label": "scam",
+      "channel": "call",
+      "sender": "+91 96053 18724",
+      "senderNote": "Not in your contacts",
+      "text": "“I'm calling from the GST vigilance department. A case is booked against your shop. Pay Rs 25,000 fine now on this UPI number, or our team will seal your shop today.”",
+      "clue": "Pressure to pay a stranger by UPI on the call is the trick. A real GST notice has a DIN you can check on the CBIC website.",
+      "source": {
+        "name": "Manorama Online (Idukki district police, 12 Aug 2026: fake GST, police and vigilance officers call traders for UPI money or OTPs; don’t pay, check with the office’s official number, call 1930 within the hour)",
+        "url": "https://www.manoramaonline.com/district-news/idukki/2026/08/12/gst-scam-kerala-alert.html"
+      }
+    },
+    {
+      "id": "qr-autopay-charity",
+      "card": "qr-autopay-charity",
+      "label": "scam",
+      "channel": "situation",
+      "sender": "A volunteer at a tourist spot",
+      "text": "A volunteer collecting for a children's charity asks you to scan a QR code and donate Rs 500. After you scan, your UPI app shows “AutoPay: Rs 500 monthly” just before the PIN.",
+      "clue": "“AutoPay” or “recurring” on a donation is the trick: it takes money every month. Cancel, and only pay a one-time amount.",
+      "source": {
+        "name": "Manorama Online (Kozhikode, 15 Oct 2026: charity QR codes that set up a monthly UPI AutoPay; check “one-time” or “recurring” before the PIN; cancel unwanted AutoPay in your app)",
+        "url": "https://www.manoramaonline.com/district-news/kozhikode/2026/10/15/upi-qr-code-auto-pay-fraud-scam.html"
+      }
+    },
+    {
+      "id": "fastag-kyc",
+      "card": "fastag-kyc",
+      "label": "scam",
+      "channel": "sms",
+      "sender": "+91 89201 47365",
+      "senderNote": "Not in your contacts",
+      "text": "Your FASTag KYC is pending. Your FASTag will be deactivated today. Update KYC now: fastag-kycupdate.in/verify",
+      "clue": "Use only the Rajmargyatra app, NHAI, or your FASTag bank's official app or website. Never open FASTag links from messages.",
+      "source": {
+        "name": "Free Press Journal (NHAI, 13 Mar 2026: the FASTag annual pass is sold only in the Rajmargyatra app; links on WhatsApp or SMS are fake; never share FASTag or vehicle details elsewhere)",
+        "url": "https://www.freepressjournal.in/tech/nhai-warns-highway-users-against-fake-fastag-annual-pass-websites-step-by-step-guide-on-how-to-book-it-via-official-app"
+      }
     }
   ]
 }
